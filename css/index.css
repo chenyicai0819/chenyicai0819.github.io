@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0; 
+}
+#myboy{
+    width: 322.8px;
+    height: 430.8px;
+    position: absolute;
+    margin:0 auto;
+}
+#myboy_p1{
+    position: relative;
+    left: 100px;
+    top: 430px;
+    color: brown;
+}
