@@ -12,15 +12,17 @@ permalink: /about/
 </div>
 <br style="line-height:10%;">
 
-I’m a PhD student in machine learning at [City University of Hong Kong](https://www.cityu.edu.hk/), supervised by [Qingfu Zhang](http://www.cityu.edu.hk/stfprofile/qingfu.zhang.htm).
+I’m a bachelor student in Information and Computing Science at [Guilin University Of Electronic Technology](http://www.gliet.edu.cn/).
 
-My recent research interests include Multi-Objective optimization(MOO), Multi Task Learning(MTL) and Network Architecture Search(NAS).
+I am now learning java development and professional related knowledge.
 
-Before my PhD, I got my bachelor's degree from Xi'an Jiaotong University.
+Before going to university, I went to high school in Wenchang Middle School in Hainan Province.
 
 
 
 ### Contact
 
-My email is _zhiyuan.yang (at) my.cityu.edu.hk_
+My email is chenyicai0819@foxmail.com
+
+My WeChat is George_Chan0819
 
