@@ -1,11 +1,9 @@
-title: Crazyang'Log
+title: George Chan
 author:
-  name: yzy1996
-  email: im.crazyang@gmail.com
+  name: chenyicai0819
+  email: chenyicai0819@foxmail.com
 description: > # this means to ignore newlines until "show_excerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  让我来给你讲讲他的传奇故事吧。
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
@@ -17,7 +15,7 @@ minima:
   # generate social links in footer
   social_links:
     #twitter: jekyllrb
-    github:  yzy1996
+    github:  chenyicai0819
     # devto: jekyll
     # dribbble: jekyll
     # facebook: jekyll
