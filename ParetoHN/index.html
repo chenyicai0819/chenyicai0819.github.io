@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta property="og:image" content="https://avivnavon.github.io/ParetoHN/resources/mmnist_fashion_and_mnist_evolve.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="Learning the Pareto Front with Hypernetworks">
+    <meta name="author" content="
+    Aviv Navon, 
+    Aviv Shamsian, 
+    Gal Chechik,   
+    Ethan Fetaya"
+    >
+
+    <title>Learning the Pareto Front with Hypernetworks</title>
+    <!-- Bootstrap core CSS -->
+    <!--link href="bootstrap.min.css" rel="stylesheet"-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="offcanvas.css" rel="stylesheet">
+</head>
+
+<!-- MathJax -->
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+
+
+<body>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container"></div>
+    <!-- <h1> <b>!!!WIP!!!</b> </h1> -->
+    <h1>Learning the Pareto Front with Hypernetworks</h1>
+    <h3>ICLR 2021</h3>
+    <hr>
+    <p class="authors">
+        <tr>
+            <span style="font-size:24px"><a href="https://avivnavon.github.io/">Aviv Navon*</a><sup>1</sup></span> &nbsp;
+            <span style="font-size:24px"><a href="https://avivsham.github.io/">Aviv Shamsian*</a><sup>1</sup></span>&nbsp;
+        <tr>
+            <span style="font-size:24px"><a href="https://chechiklab.biu.ac.il/">Gal Chechik</a><sup>1,2</sup></span> &nbsp;
+            <span style="font-size:24px"><a href="http://www.eng.biu.ac.il/fetayae/">Ethan Fetaya</a><sup>1</sup></span> &nbsp;
+        </tr>
+    </p>
+
+    <span style="font-size:18px">* equal contribution</span>
+    <br>
+    <br>
+    <table align=center>
+        <tr>
+            <td align=center>
+                <center>
+                    <span style="font-size:20px">
+                        <sup>1</sup>Bar-Ilan University
+                        <br>
+                        <sup>2</sup>NVIDIA Research
+                    </span>
+                </center>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+
+    <div class="btn-group" role="group" aria-label="Top menu">
+        <a class="btn btn-primary" href="https://arxiv.org/abs/2010.04104">Paper</a>
+        <a class="btn btn-primary" href="https://github.com/AvivNavon/pareto-hypernetworks">Code</a>
+    </div>
+
+    
+
+</div>
+
+<!-- /Users/avivnavon/Desktop/avivnavon.github.io -->
+
+<div class="container">
+    <div class="section">
+         <center><img src="resources/toy_pareto_front_phn_only.png" align="middle" style='max-width: 30%'> </center>
+        <hr>
+        <p>
+            Multi objective optimization problems are prevalent in machine learning. These problems have a set of optimal solutions, called the Pareto front, where each point on the front represents a different trade-off between possibly conflicting objectives. Recent optimization algorithms can target a specific desired ray in loss space, but still face two grave limitations: (i) A separate model has to be trained 
+            for each point on the front; and (ii) The exact trade-off must be known prior to the optimization process. Here, we tackle the problem of learning the entire Pareto front, with the capability of selecting a desired operating point on the front after training. We call this new setup  <i>Pareto-Front Learning</i> (PFL).
+            <br>
+            <br>
+            We describe an approach to PFL implemented using HyperNetworks, which we term <i>Pareto HyperNetworks</i> (PHNs). PHN learns the entire Pareto front simultaneously using a single hypernetwork, which receives as input a desired preference vector, and returns a Pareto-optimal model whose loss vector is in the desired ray. The unified model is <i>runtime efficient</i> compared to training multiple models, and generalizes to new operating points not used during training. We evaluate our method on a wide set of problems, from multi-task learning, through fairness, to image segmentation with auxiliaries. PHNs learns the entire Pareto front in roughly the same time as learning a single point on the front, and also reaches a better solution set. PFL opens the door to new applications where models are selected based on preferences that are only available at run time.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Multi-objective Optimization</h2>
+        <hr>
+        <p>
+            The goal of Multi-Objective Optimization (MOO) is to find Pareto optimal solutions corresponding to different trade-offs between objectives.<br>
+            <b>Pareto dominance:</b> Solution A (i.e. model) is said to dominate solution B if it is not worst on all objective, and improves B on at least one objective.<br>
+            <b>Pareto optimality:</b>A point that is not dominated by any other point is called Pareto optimal.<br>
+            <b>Pareto front:</b>The set of all Pareto optimal points is called the Pareto front.<br>
+        </p>
+    </div>
+
+
+    <div class="section">
+        <h2>Pareto Hypernetworks</h2>
+        <center><img src="resources/phn.png" align="middle" style='max-width: 30%'> </center>
+        <hr>
+        <p>
+            In this work, we propose using a single hypernetwok, termed Pareto HyperNetwork (PHN), to learn the entire Pareto front. PHN acts on a preference vector, that represent a desired trade-off between tasks, to produce the weights of a target network. PHN is optimized to output weights that are (i) Pareto optimal, and; (ii) corresponds to the preference vector.
+            
+
+        </p>
+    </div>
+
+    <div class="section">
+        <center><h2>Experiments</h2></center>
+        <hr>
+        <h3>An illustrative example</h3>
+        <hr>
+        <p>
+            <figure>
+            <center>
+                <figcaption></figcaption>
+                <img src="resources/toy_pareto_front_for_page.png" align="middle" style='max-width: 100%'> 
+            </center>
+            </figure>
+
+        Pareto front (solid line) for 2D loss space and several rays (colored dashed lines) representing various possible preferences. Unlike other approaches that train a model per-ray, a single PHN model converges to the entire Pareto front, mapping any given preference ray to its corresponding solution on the front.
+
+            
+        </p>
+    <!-- <div class="section"> -->
+        <br>
+        <h3>Multi-task classification</h3>
+        <hr>
+        <p>
+            <figure>
+            <center>
+                <figcaption></figcaption>
+                <img src="resources/mmnist_fashion_and_mnist_evolve.png" align="middle" style='max-width: 60%'> 
+            </center>
+            </figure>
+
+         We evaluated PHN using the three Multi-MNIST datasets, a commonly used MOO benchmarks. PHN achives better performance with significantly less training time, compared with baseline methods. The above figure presents the learned Pareto front and corresponding accuracies thought the training process, over the Multi-Fashion + MNIST test set.
+
+         <!-- <figure>
+            <center>
+                <img src="resources/cub_table.png" align="middle" style='max-width: 60%'> 
+                <figcaption></figcaption>
+            </center>
+            </figure> -->
+
+        </p>
+        
+    </div>
+
+    <!-- <div class="section"> -->
+        <br>
+        <h3>Fairness</h3>
+        <hr>
+        <p>
+            <figure>
+            <center>
+                <figcaption>The <i>accuracy-fairness trade-off</i> learned by PHN, for the Adult dataset.</figcaption>
+                <img src="resources/fairness_adult_phn.png" align="middle" style='max-width: 40%'> 
+            </center>
+            </figure>
+
+            Fairness has become a popular topic in machine learning in recent years, and numerous approaches have been proposed for modeling and incorporating fairness into ML systems. Here, we tackle a 3-dimensional optimization problem, with classification objective, and two fairness objectives: False Positive (FP) fairness, and False Negative (FN) fairness. As before, PHN outperform all baselines, in terms of objective space coverage (measured by Hypervolume), with reduuced training time.
+        </p>
+
+    <!--     <figure>
+            <center>
+                <img src="resources/nyu_table.png" align="middle" style='max-width: 55%'> 
+                <figcaption></figcaption>
+            </center>
+        </figure> -->
+
+    <!-- </div> -->
+    <br>
+        <h3>The Quality-Runtime tradeoff</h3>
+        <hr>
+        <p>
+            <figure>
+            <center>
+                <figcaption>Hypervolume vs. runtime (min.) comparing PHN with preference-specific LS and EPO, on the Multi-Fashion + MNIST dataset. PHN achieves higher HV in significantly less run-time (x-axis in log scale).</figcaption>
+                <img src="resources/runtime_fushion_mnist_for_fig.png" align="middle" style='max-width: 40%'> 
+            </center>
+        </figure>
+
+            PHN learns the entire front in a single model, but the competing methods need to train multiple models to cover the pareto front. As a result, these methods have clear trade off between performance and runtime. We find that PHN can achieve superior overall solutions while being \(10 \sim 50\) times faster.
+
+        </p>
+
+    </div>
+
+
+    <div class="section">
+        <h2>Paper</h2>
+        <!-- <hr> -->
+        <div>
+            <div class="list-group">
+                <a href="https://arxiv.org/abs/2010.04104"
+                   class="list-group-item">
+                   <center>
+                    <img src="resources/paper.png" style="width:50%; margin-right:-20px; margin-top:-10px;">
+                    </center>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Bibtex</h2>
+        <hr>
+        <div class="bibtexsection">
+    @inproceedings{
+        navon2021learning,
+        title={Learning the Pareto Front with Hypernetworks},
+        author={Aviv Navon and Aviv Shamsian and Gal Chechik and Ethan Fetaya},
+        booktitle={International Conference on Learning Representations},
+        year={2021},
+        url={https://openreview.net/forum?id=NjF772F4ZZR}
+    }
+        </div>
+    </div>
+
+    <hr>
+
+    <footer>
+    </footer>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+<hr>
+<footer>The website template is available at <a href="https://www.bootstrapcdn.com/">BootstrapCDN</a>.</footer>
+
+</body>
+</html>
