@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        记录博客主页的搭建(二) - George&#39;blog
+        
+    </title>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/aircloud.css">
+
+    
+<link rel="stylesheet" href="/css/gitment.css">
+
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> 让我来给你讲讲他的传奇故事吧 </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar ">
+            <img src="/img/avatar.jpg" />
+        </div>
+        <div class="name">
+            <i>George Chan</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>主页</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>标签</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>存档</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>关于</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>搜索</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AE%B0%E5%BD%95%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E7%9A%84%E6%90%AD%E5%BB%BA-%E4%BA%8C"><span class="toc-text">记录博客主页的搭建(二)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%8C%E6%88%90%E4%B8%8A%E7%AF%87%E6%96%87%E7%AB%A0%E7%9A%84%E6%89%80%E6%9C%89%E6%AD%A5%E9%AA%A4"><span class="toc-text">完成上篇文章的所有步骤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E6%83%B3%E8%A6%81%E7%9A%84%E4%B8%BB%E9%A2%98"><span class="toc-text">选择想要的主题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%A0%87%E7%AD%BE%E4%BB%A5%E5%8F%8A%E5%AD%98%E6%A1%A3"><span class="toc-text">创建标签以及存档</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%B4%E6%8D%A2%E5%A4%B4%E5%83%8F%E4%BB%A5%E5%8F%8A%E7%BD%91%E7%AB%99logo"><span class="toc-text">更换头像以及网站logo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%AB%99%E6%A0%87%E9%A2%98"><span class="toc-text">网站标题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AD%BE%E5%90%8D"><span class="toc-text">签名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD"><span class="toc-text">搜索功能</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A4%BE%E4%BA%A4%E7%BD%91%E7%BB%9C"><span class="toc-text">社交网络</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B5%9E%E8%B5%8F%E5%8A%9F%E8%83%BD"><span class="toc-text">赞赏功能</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E7%94%A8%E6%88%B7%E5%90%8D"><span class="toc-text">修改用户名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%8C%E6%88%90%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%8D%A2"><span class="toc-text">完成主题更换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2%E5%88%B0GitHub"><span class="toc-text">部署到GitHub</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%B8%E5%85%B3%E9%93%BE%E6%8E%A5"><span class="toc-text">相关链接</span></a></li></ol></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">搜索</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i> 让我来给你讲讲他的传奇故事吧 </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        记录博客主页的搭建(二)
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2021-06-24 10:02:55</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#Hexo" title="Hexo">Hexo</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#记录" title="记录">记录</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content no-indent">
+        <h1 id="记录博客主页的搭建-二"><a href="#记录博客主页的搭建-二" class="headerlink" title="记录博客主页的搭建(二)"></a>记录博客主页的搭建(二)</h1><h2 id="完成上篇文章的所有步骤"><a href="#完成上篇文章的所有步骤" class="headerlink" title="完成上篇文章的所有步骤"></a>完成上篇文章的所有步骤</h2><p>主题是个性化个人博客的很重要的一个模块，当然hexo默认也有一个主题，但是我们可以到<a target="_blank" rel="noopener" href="https://hexo.io/themes/">hexo的主题商城</a>中下载更多我们喜欢的主题。</p>
+<p><img src="https://ftp.bmp.ovh/imgs/2021/06/e2ca448dcc957f2e.jpg"></p>
+<h2 id="选择想要的主题"><a href="#选择想要的主题" class="headerlink" title="选择想要的主题"></a>选择想要的主题</h2><p>点击大图可以进行预览，点击名称就可以进入主题的GitHub仓库，就可以进行clone了</p>
+<p>然后在本地clone主题的仓库，放到hexo目录的themes文件夹中，再去修改_config.yml文件，就可以应用这个主题了</p>
+<p>将theme后面的名称改为刚才clone的文件夹名称，就可以应用主题了</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: hexo-theme-aircloud</span><br></pre></td></tr></table></figure>
+
+<h2 id="创建标签以及存档"><a href="#创建标签以及存档" class="headerlink" title="创建标签以及存档"></a>创建标签以及存档</h2><p>默认的主题是不带有标签和介绍的，这时候需要在博客根目录的source文件夹下建立tags文件夹和about文件夹。</p>
+<p><em>注：建议不要直接新建文件，而是采用 hexo 的 hexo new page tags 和 hexo new page about 的方式新建文件，这样可以被 hexo 索引到。</em></p>
+<p>创建好之后在两个文件夹的index.md中分别输入以下内容</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">layout: &quot;tags&quot;</span><br><span class="line">title: &quot;Tags&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">layout: &quot;about&quot;</span><br><span class="line">title: &quot;About&quot;</span><br><span class="line">date: 2016-04-21 04:48:33</span><br><span class="line">comments: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>再次打开主页就会看到生成了两个新的列表</p>
+<h2 id="更换头像以及网站logo"><a href="#更换头像以及网站logo" class="headerlink" title="更换头像以及网站logo"></a>更换头像以及网站logo</h2><p>在博客根目录的 source 文件夹下建立 img 文件夹<br>*采用 hexo 的 hexo new page img *</p>
+<p>然后并将头像文件命名为avatar.jpg，logo文件命名为favicon.ico</p>
+<p>然后修改_config.yml文件，增加以下内容</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sidebar-avatar: img/avatar.jpg</span><br></pre></td></tr></table></figure>
+<p>就可以了</p>
+<h2 id="网站标题"><a href="#网站标题" class="headerlink" title="网站标题"></a>网站标题</h2><p>在 _config.yml 文件中，增加以下内容</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SEOTitle: George&#x27;blog</span><br></pre></td></tr></table></figure>
+<p>冒号后面修改成你想要的名字就可以了</p>
+<h2 id="签名"><a href="#签名" class="headerlink" title="签名"></a>签名</h2><p>比如最顶端的签名，我们同样可以自定义</p>
+<p><img src="https://ftp.bmp.ovh/imgs/2021/06/89d7894724475826.jpg"></p>
+<p>只要在_config.yml文件，修改以下内容即可</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">subtitle: 你想要的签名</span><br></pre></td></tr></table></figure>
+
+<h2 id="搜索功能"><a href="#搜索功能" class="headerlink" title="搜索功能"></a>搜索功能</h2><p>搜索功能同样是不自带的，我们在安装搜索功能之前，首先要安装一个插件<br>在git中输入以下命令进行安装</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-generator-search --save</span><br></pre></td></tr></table></figure>
+
+<p>然后在_config.yml文件中增加以下内容即可</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.json</span><br><span class="line">  field: post</span><br></pre></td></tr></table></figure>
+
+<h2 id="社交网络"><a href="#社交网络" class="headerlink" title="社交网络"></a>社交网络</h2><p>底部的社交网络我们可以自行修改，但是只能在官方限制的范围内进行修改<br>编辑根目录的 _config.yml 文件，增加：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># SNS settings</span><br><span class="line"># 一些社交平台地址，支持以下几种：</span><br><span class="line">weibo_username:     5676314204</span><br><span class="line">zhihu_username:     swaggy-chen</span><br><span class="line">github_username:    chenyicai0819</span><br><span class="line">twitter_username:   George chan</span><br></pre></td></tr></table></figure>
+<p><em>还有一些其他的社交网络可以参考官方文档</em></p>
+<h2 id="赞赏功能"><a href="#赞赏功能" class="headerlink" title="赞赏功能"></a>赞赏功能</h2><p>我们同样可以在我们的博客中添加一个赞赏功能<br>只要在img文件夹中增加收款码图片，并命名为donate.jpg<br>然后在 _config.yml 文件中增加以下内容，即可在在每篇文章下面增加一个赞赏功能</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">donate:</span><br><span class="line">  img: img/donate.jpg</span><br><span class="line">  content: 感谢鼓励</span><br></pre></td></tr></table></figure>
+
+<h2 id="修改用户名"><a href="#修改用户名" class="headerlink" title="修改用户名"></a>修改用户名</h2><p>只需修改 _config.yml 文件，中以下内容，即可修改用户名</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">author: 你的用户名</span><br></pre></td></tr></table></figure>
+
+<h2 id="完成主题更换"><a href="#完成主题更换" class="headerlink" title="完成主题更换"></a>完成主题更换</h2><p>至此，基本的冤死就已经设置完毕了，基本上只要修改 _config.yml 文件，就可以控制网站中所有的元素了，而官方的帮助文档也写的很清楚如何对各个模块进行设置</p>
+<p>我的这篇文章只是针对我的设置进行了一个记录，所以需要更多资料的可以去参考官方的文档，基本上是写的非常明白了</p>
+<h2 id="部署到GitHub"><a href="#部署到GitHub" class="headerlink" title="部署到GitHub"></a>部署到GitHub</h2><p>跟之前一样，完成修改之后要部署到github，只需要以下几行命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean  //清除缓存文件db.json和已生成的静态文件public</span><br><span class="line">hexo g   //生成网站静态文件到默认设置的public文件夹</span><br><span class="line">hexo d   //部署网站到设定的仓库</span><br></pre></td></tr></table></figure>
+
+<p>部署完成之后稍等一会，就可以看到修改之后的内容了</p>
+<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">官方文档</a></p>
+<p><a target="_blank" rel="noopener" href="https://hexo.io/themes/">主题商城</a></p>
+
+        
+            <div class="donate-container">
+    <div class="donate-button">
+        <button id="donate-button">赞赏</button>
+    </div>
+    <div class="donate-img-container hide" id="donate-img-container">
+        <img id="donate-img" src="" data-src="/img/donate.jpg">
+        <p> 感谢鼓励 </p>
+    </div>
+</div>
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+
+        <div id="lv-container">
+        </div>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        <li>
+            <a target="_blank" href="https://twitter.com/George chan">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-twitter"></i>
+                            </span>
+            </a>
+        </li>
+        
+        
+        <li>
+            <a target="_blank" href="https://www.zhihu.com/people/swaggy-chen">
+                            <span class="fa-stack fa-lg">
+                                 <i class="iconfont icon-zhihu"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank" href="http://weibo.com/5676314204">
+                            <span class="fa-stack fa-lg">
+                                  <i class="iconfont icon-weibo"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/chenyicai0819">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span>/</span>
+        
+        <span><a href="mailto:chenyicai0819@foxmail.com">联系我的邮箱</a></span>
+        <span>/</span>
+        
+        <span><a target="_blank" rel="noopener" href="https://user.qzone.qq.com/2495842975/main">我的QQzone</a></span>
+        <span>/</span>
+        
+        <span><a href="#">相信美好的事情就要发生</a></span>
+        <span>/</span>
+        
+    </p>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>  Theme <a target="_blank" rel="noopener" href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="/js/index.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+</html>
