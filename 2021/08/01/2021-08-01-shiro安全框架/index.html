@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        shiro安全框架 - George&#39;blog
+        
+    </title>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/aircloud.css">
+
+    
+<link rel="stylesheet" href="/css/gitment.css">
+
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> 让我来给你讲讲他的传奇故事吧 </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar ">
+            <img src="/img/avatar.jpg" />
+        </div>
+        <div class="name">
+            <i>George Chan</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>主页</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>标签</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>存档</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>关于</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>搜索</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#shiro%E5%AE%89%E5%85%A8%E6%A1%86%E6%9E%B6"><span class="toc-text">shiro安全框架</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E7%AE%80%E8%BF%B0"><span class="toc-text">1、简述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E6%9E%B6%E6%9E%84"><span class="toc-text">2、架构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E5%AE%9E%E7%8E%B0Realm"><span class="toc-text">3、实现Realm</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E3%80%81Shiro%E9%85%8D%E7%BD%AE"><span class="toc-text">4、Shiro配置</span></a></li></ol></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">搜索</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i> 让我来给你讲讲他的传奇故事吧 </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        shiro安全框架
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2021-08-01 20:19:41</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#shiro" title="shiro">shiro</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content no-indent">
+        <h1 id="shiro安全框架"><a href="#shiro安全框架" class="headerlink" title="shiro安全框架"></a>shiro安全框架</h1><h2 id="1、简述"><a href="#1、简述" class="headerlink" title="1、简述"></a>1、简述</h2><p>shiro是apache公司所出品的开源安全框架<br>其可以用于：</p>
+<ol>
+<li>处理身份认证</li>
+<li>授权</li>
+<li>企业会话管理和加密</li>
+</ol>
+<p>相对于Spring security来说更加简单，使用也更加灵活</p>
+<p>在使用shiro的时候可以不依赖于任何容器，既可以在javaSE下使用，同样可以在JavaEE下使用</p>
+<h2 id="2、架构"><a href="#2、架构" class="headerlink" title="2、架构"></a>2、架构</h2><ol>
+<li>使用用户的登录信息构建令牌<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">UsernamePasswordToken token = <span class="keyword">new</span> UsernamePasswordToken(username, password);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+token可以理解为一个用户令牌，等于的过程可以理解为shiro检验用户令牌是否具有合法的身份以及相关的权限</li>
+<li>执行登录</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SecurityUtils.setSecurityManager(securityManager); <span class="comment">// 注入SecurityManager</span></span><br><span class="line">Subject subject = SecurityUtils.getSubject(); <span class="comment">// 获取Subject单例对象</span></span><br><span class="line">subject.login(token); <span class="comment">// 执行登录</span></span><br></pre></td></tr></table></figure>
+<p>shiro中最核心的部分就是securityManger，它主要负责安全认证和授权。当我们在使用这个框架的时候，shiro已经将一切的操作封装成一个盒子了，我们在使用的时候可以把它当成一个黑盒来进行使用。SecurityUtils对象，本质上就是一个工厂类似Spring中的ApplicationContext。Subject，翻译过来就是项目的意思，他是一个需要通过shiro保护的一个抽象概念。<br>通过1令牌和项目的登录关系，保证了我们的安全。</p>
+<ol start="3">
+<li>判断用户</li>
+</ol>
+<p>这一步中的内容shiro无法帮我们进行实现，我们只有通过最原始的手段来实现登录用户的判断，就是查询数据库。</p>
+<p>例如：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (!token.getUsername().equals(name)) &#123;</span><br><span class="line">  <span class="comment">//shiro底层会抛出一个异常</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//判断密码</span></span><br><span class="line"><span class="keyword">return</span> <span class="keyword">new</span> SimpleAuthenticationInfo(<span class="string">&quot;&quot;</span>, password, <span class="string">&quot;&quot;</span>);</span><br></pre></td></tr></table></figure>
+<p>第一个if语句中首先会判断数据库中查到的name于输入的用户名2是否一致，如果不一致，则会抛出一个异常<br>然后SimpleAuthenticationInfo中可以用于判断密码的正确性，同样是从数据库查出来的数据做对比。</p>
+<h2 id="3、实现Realm"><a href="#3、实现Realm" class="headerlink" title="3、实现Realm"></a>3、实现Realm</h2><ol>
+<li>创建一个Realm</li>
+</ol>
+<p>Realm即领域，相当于datasource数据源，securityManager进行安全认证需要通过Realm获取用户权限数据，比如：如果用户身份数据在数据库那么realm就需要从数据库获取用户身份信息，但是Realm并不止局限于数据的存取，其中还有很多认证授权校验相关的代码<br>我们可以自定义一个MyRealm，用于我们的项目之中，但是前提是这个类必须继承于AuthorizingRealm父类，然后实现两个方法<br>AuthorizationInfo doGetAuthorizationInfo以及AuthenticationInfo doGetAuthenticationInfo<br>AuthenticationInfo代表了用户的角色信息集合，AuthorizationInfo代表了角色的权限信息集合。如此一来，当设计人员对项目中的某一个url路径设置了只允许某个角色或具有某种权限才可以访问的控制约束的时候，Shiro就可以通过以上两个对象来判断。</p>
+<p>我们也可以简单看作：<br><strong>doGetAuthenticationInfo()</strong> 方法：用来验证当前登录的用户，获取认证信息。<br><strong>doGetAuthorizationInfo()</strong> 方法：为当前登录成功的用户授予权限和分配角色。</p>
+<ol start="2">
+<li>从数据库查询数据</li>
+</ol>
+<p>在数据库中查询登陆人信息的时候，仅仅需要查询用户的id，这时还未涉及到密码，也就是说即使用户输入的密码不正确，照样可以查询出该用户。<br>然后，将该用户的相关信息封装到authcInfo中并返回给Shiro接下来就该Shiro上场了，将封装的用户信息与用户的输入信息（用户名、密码）进行对比、校验（注意，这里对密码也要进行校验）。校验通过则允许用户登录，否则跳转到指定页面。</p>
+<h2 id="4、Shiro配置"><a href="#4、Shiro配置" class="headerlink" title="4、Shiro配置"></a>4、Shiro配置</h2><ol>
+<li>在ShiroConfig中配置Realm</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Bean(name=&quot;MyRealm&quot;)</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> MyRealm <span class="title">myRealm</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> MyRealm();</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>配置安全管理器SecurityManager</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Bean(name=&quot;securityManager&quot;)</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> DefaultWebSecurityManager <span class="title">getDefaultWebSecurityManager</span><span class="params">(<span class="meta">@Qualifier(&quot;MyRealm&quot;)</span> MyRealm myRealm)</span> </span>&#123;</span><br><span class="line">    DefaultWebSecurityManager securityManager = <span class="keyword">new</span> DefaultWebSecurityManager();</span><br><span class="line">    <span class="comment">//关联Realm</span></span><br><span class="line">    securityManager.setRealm(myRealm);</span><br><span class="line">    <span class="keyword">return</span> securityManager;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<p>当我们配置安全管理器的时候，需要将前面的Realm添加进来，这样子才可以访问到Realm</p>
+<ol start="3">
+<li>配置Shiro过滤器</li>
+</ol>
+<p>shiro中自带好了配置的过滤器，我们在使用之前需要将其进行导入</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">ShiroFilterFactoryBean shiroFilterFactoryBean = <span class="keyword">new</span> ShiroFilterFactoryBean();</span><br><span class="line"><span class="comment">//设置安全管理器</span></span><br><span class="line">shiroFilterFactoryBean.setSecurityManager(securityManager);</span><br><span class="line"><span class="comment">//添加Shiro内置过滤器</span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">Shiro内置过滤器，可以实现权限相关的拦截器</span></span><br><span class="line"><span class="comment">常用的有：</span></span><br><span class="line"><span class="comment">anon：无需认证就能访问</span></span><br><span class="line"><span class="comment">authc：必须认证才能访问</span></span><br><span class="line"><span class="comment">user：必须拥有 “记住我” 功能才能使用</span></span><br><span class="line"><span class="comment">perms：拥有对某个资源的权限才能访问</span></span><br><span class="line"><span class="comment">role： 拥有对某个角色权限才能访问</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">LinkedHashMap&lt;String, String&gt; filterMap = <span class="keyword">new</span> LinkedHashMap&lt;String,String&gt;();</span><br><span class="line"><span class="comment">//这里我们要将不进行拦截的放在前面</span></span><br><span class="line">filterMap.put(<span class="string">&quot;/login&quot;</span>, <span class="string">&quot;anon&quot;</span>);</span><br><span class="line">filterMap.put(<span class="string">&quot;/*&quot;</span>, <span class="string">&quot;authc&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//最后设置验证失败的时候所跳转的界面</span></span><br><span class="line">shiroFilterFactoryBean.setLoginUrl(<span class="string">&quot;/toLogin&quot;</span>);</span><br></pre></td></tr></table></figure>
+<p>此时当我们未登陆的时候，点击被拦截的模块，就会跳到我们所指定的网页，而没有拦截的网页则可以正常显示。</p>
+
+        
+            <div class="donate-container">
+    <div class="donate-button">
+        <button id="donate-button">赞赏</button>
+    </div>
+    <div class="donate-img-container hide" id="donate-img-container">
+        <img id="donate-img" src="" data-src="/img/donate.jpg">
+        <p> 感谢鼓励 </p>
+    </div>
+</div>
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+
+        <div id="lv-container">
+        </div>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        <li>
+            <a target="_blank" href="https://twitter.com/George chan">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-twitter"></i>
+                            </span>
+            </a>
+        </li>
+        
+        
+        <li>
+            <a target="_blank" href="https://www.zhihu.com/people/swaggy-chen">
+                            <span class="fa-stack fa-lg">
+                                 <i class="iconfont icon-zhihu"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank" href="http://weibo.com/5676314204">
+                            <span class="fa-stack fa-lg">
+                                  <i class="iconfont icon-weibo"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/chenyicai0819">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span>/</span>
+        
+        <span><a href="mailto:chenyicai0819@foxmail.com">联系我的邮箱</a></span>
+        <span>/</span>
+        
+        <span><a target="_blank" rel="noopener" href="https://user.qzone.qq.com/2495842975/main">我的QQzone</a></span>
+        <span>/</span>
+        
+        <span><a href="#">相信美好的事情就要发生</a></span>
+        <span>/</span>
+        
+    </p>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>  Theme <a target="_blank" rel="noopener" href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="/js/index.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+</html>
