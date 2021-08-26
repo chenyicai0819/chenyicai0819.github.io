@@ -144,7 +144,7 @@
 </span>
 </span>
     </div>
-    <div class="post-content no-indent">
+    <div class="post-content ">
         <h1 id="罗马数字转整数"><a href="#罗马数字转整数" class="headerlink" title="罗马数字转整数"></a>罗马数字转整数</h1><h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/roman-to-integer/">lettcode-13题</a><br>难度：简单<br><img src="https://i.bmp.ovh/imgs/2021/06/ed551dd42d8355cf.png"></p>
 <h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>对于每个罗马符号所对应的数值，我们可以将其用一个HashMap存起来，将其字符作为key，以及数值为相应的value</p>
 <p>在方法中对输入的字符串的所有字符进行遍历，get到所对应的值，并拿到它的后一位数的值，如果当前符号的值大于后一位符号的值，则进行＋运算，否则-运算。</p>
