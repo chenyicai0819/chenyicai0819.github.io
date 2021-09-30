@@ -1,15 +1,15 @@
-var imgDataPath = "../photos.json"; //Í¼Æ¬ï¿½ï¿½ï¿½Æ¸ß¿ï¿½ï¿½ï¿½Ï¢jsonï¿½Ä¼ï¿½Â·ï¿½ï¿½
-var imgPath = "https://cdn.jsdelivr.net/gh/Goopher97/blog_volantis_auto@main/photos/"; //Í¼Æ¬ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½
-var imgMaxNum = 50; //Í¼Æ¬ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½
+var imgDataPath = "./photos.json"; //Í¼Æ¬Ãû³Æ¸ß¿íÐÅÏ¢jsonÎÄ¼þÂ·¾¶
+var imgPath = "https://cdn.jsdelivr.net/gh/Goopher97/blog_volantis_auto@main/photos/"; //Í¼Æ¬·ÃÎÊÂ·¾¶
+var imgMaxNum = 50; //Í¼Æ¬ÏÔÊ¾ÊýÁ¿
  
 var windowWidth =
     window.innerWidth ||
     document.documentElement.clientWidth ||
     document.body.clientWidth;
 if (windowWidth < 768) {
-    var imageWidth = 145; //Í¼Æ¬ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½(ï¿½Ö»ï¿½ï¿½ï¿½)
+    var imageWidth = 145; //Í¼Æ¬ÏÔÊ¾¿í¶È(ÊÖ»ú¶Ë)
 } else {
-    var imageWidth = 250; //Í¼Æ¬ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½
+    var imageWidth = 250; //Í¼Æ¬ÏÔÊ¾¿í¶È
 }
  
 const photo = {
