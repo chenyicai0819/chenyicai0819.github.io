@@ -1,17 +1,17 @@
-var imgDataPath = "../photos.json"; //ͼƬ���Ƹ߿���Ϣjson�ļ�·��
-var imgPath = "https://cdn.jsdelivr.net/gh/Goopher97/blog_volantis_auto@main/photos/"; //ͼƬ����·��
+var imgDataPath = "../puotos/photos.json"; //ͼƬ���Ƹ߿���Ϣjson�ļ�·��
+var imgPath = "../photos/"; //ͼƬ����·��
 var imgMaxNum = 50; //ͼƬ��ʾ����
- 
+
 var windowWidth =
     window.innerWidth ||
     document.documentElement.clientWidth ||
     document.body.clientWidth;
 if (windowWidth < 768) {
-    var imageWidth = 145; //ͼƬ��ʾ����(�ֻ���)
+    var imageWidth = 145; //ͼƬ��ʾ���(�ֻ���)
 } else {
-    var imageWidth = 250; //ͼƬ��ʾ����
+    var imageWidth = 250; //ͼƬ��ʾ���
 }
- 
+
 const photo = {
     page: 1,
     offset: imgMaxNum,
@@ -52,10 +52,10 @@ const photo = {
             imageX,
             imageY,
             li = "";
- 
+
         let liHtml = "";
         let contentHtml = "";
- 
+
         data.forEach((item, index) => {
             const activeClass = index === 0 ? "active" : "";
             liHtml += `<li class="nav-item" role="presentation">
@@ -82,10 +82,10 @@ const photo = {
             li += this.constructHtml(imgOptions);
         });
         contentHtml += ` <div class="tab-pane fade show active"  role="tabpanel" aria-labelledby="home-tab">${li}</div>`;
- 
+
         const ulHtml = `<ul class="nav nav-tabs" id="myTab" role="tablist">${liHtml}</ul>`;
         const tabContent = `<div class="tab-content" id="myTabContent">${contentHtml}</div>`;
- 
+
         $("#imageTab").append(ulHtml);
         $(".ImageGrid").append(tabContent);
         this.minigrid();
