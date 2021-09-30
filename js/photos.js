@@ -1,5 +1,5 @@
-var imgDataPath = "../puotos/photos.json"; //ͼƬ���Ƹ߿���Ϣjson�ļ�·��
-var imgPath = "../photos/"; //ͼƬ����·��
+var imgDataPath = "./photos.json"; //ͼƬ���Ƹ߿���Ϣjson�ļ�·��
+var imgPath = "http://r08fniq3q.hn-bkt.clouddn.com/xc/"; //ͼƬ����·��
 var imgMaxNum = 50; //ͼƬ��ʾ����
 
 var windowWidth =
