@@ -1,0 +1,1 @@
+document.writeln("<iframe scrolling=\'no\' src=\'https://tianqiapi.com/api.php?style=tx&skin=pitaya\' frameborder=\'0\' width=\'200\' height=\'50\' allowtransparency=\'true\'></iframe>");
