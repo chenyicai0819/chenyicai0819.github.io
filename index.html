@@ -23,7 +23,7 @@
   <meta content="George&#39;s Blog" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1633244983265" as="style">
+  <link rel="preload" href="/css/style.css?time=1633273877043" as="style">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
@@ -1873,8 +1873,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1633244983265" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1633244983265"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1633273877043" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1633273877043"></noscript>
     <script>
       var userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1907,9 +1907,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>抱歉，您的瀏覽器無法訪問本站</b></span><br/>`+
-        `<span class="kill-c">微軟已經於2016年終止了對 Internet Explorer (IE) 10 及更早版本的支持，<br/>繼續使用存在極大的安全隱患，請使用當代主流的瀏覽器進行訪問。</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-cn/WindowsForBusiness/End-of-IE-support"><strong>了解詳情 ></strong></a>`+
+        `<span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>`+
+        `<span class="kill-c">Microsoft has terminated support for Internet Explorer (IE) 10 and earlier versions in 2016. <br/>There are great security risks to continue using it. Please use contemporary mainstream browsers to access.</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-cn/WindowsForBusiness/End-of-IE-support"><strong>Learn more ></strong></a>`+
     '</div>');
 </script>
 
@@ -1937,9 +1937,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>抱歉，您的瀏覽器無法訪問本站</b></span><br/>
-        <span class="kill-c">本頁面需要瀏覽器支持（啟用）JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解詳情 ></strong></a>
+        <span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>
+        <span class="kill-c">This page requires browser support (enable) JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>Learn more ></strong></a>
     </div>
 </noscript>
 
@@ -2665,6 +2665,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
+          
+        
       
     
     
@@ -2672,7 +2674,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/03/2021-10-03-SpringCloud%E5%BE%AE%E6%9C%8D%E5%8A%A1/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/03/2021-10-03-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0_%E8%AE%BE%E8%AE%A1hash%E9%9B%86%E5%90%88%E3%80%81hash%E6%98%A0%E5%B0%84/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="George's Blog">
   </span>
@@ -2686,7 +2688,71 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/10/03/2021-10-03-SpringCloud%E5%BE%AE%E6%9C%8D%E5%8A%A1/"  itemprop="url">
+      <a href="/2021/10/03/2021-10-03-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0_%E8%AE%BE%E8%AE%A1hash%E9%9B%86%E5%90%88%E3%80%81hash%E6%98%A0%E5%B0%84/"  itemprop="url">
+        算法学习_设计hash集合、hash映射
+      </a>
+    </h2>
+  
+  <div class='md' itemprop="articleBody">
+    
+      
+        设计hash集合、hash映射题目1lettcode-705题难度：简单
+解题思路既然说是一个HashSet，所以他就是一个不可重复的集合，就意味着在该集合中每个元素只能出现一次。
+所以说我们就可以用boolean类型的数组来模拟出这样的一个集合
+数组的索引就对应了set的key，数组所对应的布尔值就是set的value，当其为true1时就说明存在，否则就是不存在
+具体实现方式如下
+具体代...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' target="_blank" rel="noopener" href='https://github.com/chenyicai0819'><img src='https://z3.ax1x.com/2021/09/30/4oKiUx.jpg' alt="This is a picture without description" ></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://z3.ax1x.com/2021/09/30/4oKiUx.jpg">
+            <meta itemprop="name" content="George chan">
+            <meta itemprop="url" content="https://github.com/chenyicai0819">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2021-10-03T22:21:21+08:00">2021-10-03</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2021/10/03/2021-10-03-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0_%E8%AE%BE%E8%AE%A1hash%E9%9B%86%E5%90%88%E3%80%81hash%E6%98%A0%E5%B0%84/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/03/2021-10-03-SpringCloud%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%85%A5%E9%97%A8/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="George's Blog">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2021/10/03/2021-10-03-SpringCloud%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%85%A5%E9%97%A8/"  itemprop="url">
         SpringCloud微服务入门
       </a>
     </h2>
@@ -2716,8 +2782,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       </div>
       
         <div>
-          <a class='readmore' href='/2021/10/03/2021-10-03-SpringCloud%E5%BE%AE%E6%9C%8D%E5%8A%A1/' itemprop="url">
-            閱讀全文
+          <a class='readmore' href='/2021/10/03/2021-10-03-SpringCloud%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%85%A5%E9%97%A8/' itemprop="url">
+            Read More
           </a>
         </div>
       
@@ -2779,7 +2845,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/2021/10/01/2021-10-01-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0_%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97%E3%80%81%E9%98%9F%E5%88%97%E5%AE%9E%E7%8E%B0%E6%A0%88/' itemprop="url">
-            閱讀全文
+            Read More
           </a>
         </div>
       
@@ -2794,7 +2860,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/01/2021-10-01-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0_%E6%9C%80%E8%BF%91%E7%9A%84%E8%AF%B7%E6%B1%82%E6%AC%A1%E6%95%B0%20-%20%E5%89%AF%E6%9C%AC/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/01/2021-10-01-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0_%E6%9C%80%E8%BF%91%E7%9A%84%E8%AF%B7%E6%B1%82%E6%AC%A1%E6%95%B0/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="George's Blog">
   </span>
@@ -2808,7 +2874,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/10/01/2021-10-01-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0_%E6%9C%80%E8%BF%91%E7%9A%84%E8%AF%B7%E6%B1%82%E6%AC%A1%E6%95%B0%20-%20%E5%89%AF%E6%9C%AC/"  itemprop="url">
+      <a href="/2021/10/01/2021-10-01-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0_%E6%9C%80%E8%BF%91%E7%9A%84%E8%AF%B7%E6%B1%82%E6%AC%A1%E6%95%B0/"  itemprop="url">
         算法学习_最近的请求次数
       </a>
     </h2>
@@ -2843,8 +2909,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       </div>
       
         <div>
-          <a class='readmore' href='/2021/10/01/2021-10-01-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0_%E6%9C%80%E8%BF%91%E7%9A%84%E8%AF%B7%E6%B1%82%E6%AC%A1%E6%95%B0%20-%20%E5%89%AF%E6%9C%AC/' itemprop="url">
-            閱讀全文
+          <a class='readmore' href='/2021/10/01/2021-10-01-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0_%E6%9C%80%E8%BF%91%E7%9A%84%E8%AF%B7%E6%B1%82%E6%AC%A1%E6%95%B0/' itemprop="url">
+            Read More
           </a>
         </div>
       
@@ -2904,7 +2970,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/2021/09/29/2021-09-29-Redis%E4%BD%BF%E7%94%A8%E6%B3%A8%E8%A7%A3%E5%AE%9E%E7%8E%B0%E4%BA%8C%E7%BA%A7%E7%BC%93%E5%AD%98/' itemprop="url">
-            閱讀全文
+            Read More
           </a>
         </div>
       
@@ -2967,7 +3033,7 @@ Redis不仅仅支持简单的key-value类型的数据，同时还提供list，se
       
         <div>
           <a class='readmore' href='/2021/09/29/2021-09-29-Redis%E7%9A%84%E5%85%A5%E9%97%A8%E4%BD%BF%E7%94%A8/' itemprop="url">
-            閱讀全文
+            Read More
           </a>
         </div>
       
@@ -3028,7 +3094,7 @@ Redis不仅仅支持简单的key-value类型的数据，同时还提供list，se
       
         <div>
           <a class='readmore' href='/2021/09/26/2021-09-26-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0_%E8%AE%BE%E8%AE%A1%E6%9C%89%E5%BA%8F%E6%B5%81/' itemprop="url">
-            閱讀全文
+            Read More
           </a>
         </div>
       
@@ -3089,7 +3155,7 @@ Redis不仅仅支持简单的key-value类型的数据，同时还提供list，se
       
         <div>
           <a class='readmore' href='/2021/09/26/2021-09-26-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0_%E8%AE%BE%E8%AE%A1%E5%81%9C%E8%BD%A6%E7%B3%BB%E7%BB%9F/' itemprop="url">
-            閱讀全文
+            Read More
           </a>
         </div>
       
@@ -3151,7 +3217,7 @@ Redis不仅仅支持简单的key-value类型的数据，同时还提供list，se
       
         <div>
           <a class='readmore' href='/2021/09/25/2021-09-25-java%E6%A0%88/' itemprop="url">
-            閱讀全文
+            Read More
           </a>
         </div>
       
@@ -3214,67 +3280,7 @@ Redis不仅仅支持简单的key-value类型的数据，同时还提供list，se
       
         <div>
           <a class='readmore' href='/2021/08/27/2021-08-27-%E5%87%86%E5%A4%87%E9%98%85%E8%AF%BB%E5%B0%8F%E7%B1%B3%E5%8D%81%E5%B9%B4%E7%BA%AA%E5%BF%B5%E3%80%8A%E4%B8%80%E5%BE%80%E6%97%A0%E5%89%8D%E3%80%8B%20-%20%E5%89%AF%E6%9C%AC%20-%20%E5%89%AF%E6%9C%AC/' itemprop="url">
-            閱讀全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/26/2021-08-26-%E5%AF%B9SpringIOC%E7%9A%84%E7%90%86%E8%A7%A3/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="George's Blog">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/08/26/2021-08-26-%E5%AF%B9SpringIOC%E7%9A%84%E7%90%86%E8%A7%A3/"  itemprop="url">
-        对SpringIOC的理解
-      </a>
-    </h2>
-  
-  <div class='md' itemprop="articleBody">
-    
-      
-        对SpringIOC的理解1、何为IOC​    IOC—Inversion of Control，即“控制反转”，不是什么技术，而是一种设计思想。在Java开发中，IOC意味着将你设计好的对象交给容器控制，而不是传统的在你的对象内部直接控制。如何理解好IOC呢？理解好Ioc的关键是要明确“谁控制谁，控制什么，为何是反转（有反转就应该有正转了），哪些方面反转了”，那我们来分析一下
-1.1 谁...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' target="_blank" rel="noopener" href='https://github.com/chenyicai0819'><img src='https://z3.ax1x.com/2021/09/30/4oKiUx.jpg' alt="This is a picture without description" ></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://z3.ax1x.com/2021/09/30/4oKiUx.jpg">
-            <meta itemprop="name" content="George chan">
-            <meta itemprop="url" content="https://github.com/chenyicai0819">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-08-26T09:45:01+08:00">2021-08-26</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/08/26/2021-08-26-%E5%AF%B9SpringIOC%E7%9A%84%E7%90%86%E8%A7%A3/' itemprop="url">
-            閱讀全文
+            Read More
           </a>
         </div>
       
@@ -3299,7 +3305,7 @@ Redis不仅仅支持简单的key-value类型的数据，同时还提供list，se
         
           <a class="next" rel="next" href="/page/2/">
             <section class="post next white-box shadow">
-              &nbsp;下一頁&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i>
+              &nbsp;Next&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i>
             </section>
           </a>
         
@@ -3395,7 +3401,7 @@ Redis不仅仅支持简单的key-value类型的数据，同时还提供list，se
 
 
     <div class='content'>
-      <a href="/tags/HashMap/" style="font-size: 14px; color: #999">HashMap</a> <a href="/tags/Hexo/" style="font-size: 19px; color: #777">Hexo</a> <a href="/tags/Swing/" style="font-size: 14px; color: #999">Swing</a> <a href="/tags/java/" style="font-size: 24px; color: #555">java</a> <a href="/tags/redis/" style="font-size: 19px; color: #777">redis</a> <a href="/tags/shiro/" style="font-size: 14px; color: #999">shiro</a> <a href="/tags/springcloud/" style="font-size: 14px; color: #999">springcloud</a> <a href="/tags/%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/" style="font-size: 14px; color: #999">学习总结</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 14px; color: #999">数据结构</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 24px; color: #555">算法</a> <a href="/tags/%E8%AE%B0%E5%BD%95/" style="font-size: 19px; color: #777">记录</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 19px; color: #777">随笔</a>
+      <a href="/tags/HashMap/" style="font-size: 14px; color: #999">HashMap</a> <a href="/tags/Hexo/" style="font-size: 17.33px; color: #828282">Hexo</a> <a href="/tags/Swing/" style="font-size: 14px; color: #999">Swing</a> <a href="/tags/java/" style="font-size: 20.67px; color: #6c6c6c">java</a> <a href="/tags/redis/" style="font-size: 17.33px; color: #828282">redis</a> <a href="/tags/shiro/" style="font-size: 14px; color: #999">shiro</a> <a href="/tags/springcloud/" style="font-size: 14px; color: #999">springcloud</a> <a href="/tags/%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/" style="font-size: 14px; color: #999">学习总结</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 14px; color: #999">数据结构</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 24px; color: #555">算法</a> <a href="/tags/%E8%AE%B0%E5%BD%95/" style="font-size: 17.33px; color: #828282">记录</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 17.33px; color: #828282">随笔</a>
     </div>
   </section>
 
@@ -3420,7 +3426,7 @@ Redis不仅仅支持简单的key-value类型的数据，同时还提供list，se
       
         <div class="webinfo-item">
           <div>文章数目：</div>
-          <div>18 篇</div>
+          <div>19 篇</div>
         </div>
       
 
@@ -3442,7 +3448,7 @@ Redis不仅仅支持简单的key-value类型的数据，同时还提供list，se
       
         <div class="webinfo-item">
           <div>本站总字数：</div>
-          <div>16.3k 字</div>
+          <div>16.7k 字</div>
         </div>
       
 
@@ -3461,7 +3467,7 @@ Redis不仅仅支持简单的key-value类型的数据，同时还提供list，se
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Sun Oct 03 2021 15:09:42 GMT+0800 (中国标准时间)</div>
+            <div id="last-update" style="display: none;">Sun Oct 03 2021 23:11:16 GMT+0800 (中国标准时间)</div>
             <div id="last-update-show">2021-10-03 日</div>
           
         </div>
@@ -3538,7 +3544,7 @@ Redis不仅仅支持简单的key-value类型的数据，同时还提供list，se
 
  
   <div class='content'> 
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2021/10/03/2021-10-03-SpringCloud%E5%BE%AE%E6%9C%8D%E5%8A%A1/"><div class="item"><time>2021-10-03</time></div><span>SpringCloud微服务入门</span></a></li><li><a class="widget-last" href="/2021/10/01/2021-10-01-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0_%E6%9C%80%E8%BF%91%E7%9A%84%E8%AF%B7%E6%B1%82%E6%AC%A1%E6%95%B0%20-%20%E5%89%AF%E6%9C%AC/"><div class="item"><time>2021-10-02</time></div><span>算法学习_最近的请求次数</span></a></li><li><a class="widget-last" href="/2021/10/01/2021-10-01-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0_%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97%E3%80%81%E9%98%9F%E5%88%97%E5%AE%9E%E7%8E%B0%E6%A0%88/"><div class="item"><time>2021-10-02</time></div><span>算法学习_栈实现队列、队列实现栈</span></a></li><li><a class="widget-last" href="/2021/09/29/2021-09-29-Redis%E4%BD%BF%E7%94%A8%E6%B3%A8%E8%A7%A3%E5%AE%9E%E7%8E%B0%E4%BA%8C%E7%BA%A7%E7%BC%93%E5%AD%98/"><div class="item"><time>2021-10-02</time></div><span>Redis使用注解实现二级缓存</span></a></li><li><a class="widget-last" href="/2021/09/29/2021-09-29-Redis%E7%9A%84%E5%85%A5%E9%97%A8%E4%BD%BF%E7%94%A8/"><div class="item"><time>2021-10-02</time></div><span>Redis入门使用</span></a></li></ul> 
+    <ul class="list entry navigation"><li><a class="widget-last" href="/2021/10/03/2021-10-03-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0_%E8%AE%BE%E8%AE%A1hash%E9%9B%86%E5%90%88%E3%80%81hash%E6%98%A0%E5%B0%84/"><div class="item"><time>2021-10-03</time></div><span>算法学习_设计hash集合、hash映射</span></a></li><li><a class="widget-last" href="/2021/10/03/2021-10-03-SpringCloud%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%85%A5%E9%97%A8/"><div class="item"><time>2021-10-03</time></div><span>SpringCloud微服务入门</span></a></li><li><a class="widget-last" href="/2021/10/01/2021-10-01-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0_%E6%9C%80%E8%BF%91%E7%9A%84%E8%AF%B7%E6%B1%82%E6%AC%A1%E6%95%B0/"><div class="item"><time>2021-10-02</time></div><span>算法学习_最近的请求次数</span></a></li><li><a class="widget-last" href="/2021/10/01/2021-10-01-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0_%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97%E3%80%81%E9%98%9F%E5%88%97%E5%AE%9E%E7%8E%B0%E6%A0%88/"><div class="item"><time>2021-10-02</time></div><span>算法学习_栈实现队列、队列实现栈</span></a></li><li><a class="widget-last" href="/2021/09/29/2021-09-29-Redis%E4%BD%BF%E7%94%A8%E6%B3%A8%E8%A7%A3%E5%AE%9E%E7%8E%B0%E4%BA%8C%E7%BA%A7%E7%BC%93%E5%AD%98/"><div class="item"><time>2021-10-02</time></div><span>Redis使用注解实现二级缓存</span></a></li></ul> 
   </div> 
 </section> 
 
@@ -3728,7 +3734,7 @@ Redis不仅仅支持简单的key-value类型的数据，同时还提供list，se
       
     
       
-        <p>本站使用 <a target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/tree/dev">Volantis</a> 作為主題，您可以在 GitHub 找到<a target="_blank" rel="noopener" href="https://github.com/volantis-x/volantis-docs">本站源碼</a>。</p>
+        <p>Uses <a target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/tree/dev">Volantis</a> as theme. You can find <a href="GitHub">source</a> in <a target="_blank" rel="noopener" href="https://github.com/volantis-x/volantis-docs">https://github.com/volantis-x/volantis-docs</a>.</p>
 
       
     
@@ -3786,8 +3792,8 @@ Redis不仅仅支持简单的key-value类型的数据，同时还提供list，se
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1633244983265')
-      volantis.js('/js/message.js?time=1633244983265', () => {
+      volantis.css('/css/message.css?time=1633273877043')
+      volantis.js('/js/message.js?time=1633273877043', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -3832,8 +3838,8 @@ Redis不仅仅支持简单的key-value类型的数据，同时还提供list，se
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1633244983265')
-      volantis.js('/js/message.js?time=1633244983265', () => {
+      volantis.css('/css/message.css?time=1633273877043')
+      volantis.js('/js/message.js?time=1633273877043', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -3892,8 +3898,8 @@ Redis不仅仅支持简单的key-value类型的数据，同时还提供list，se
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1633244983265')
-      volantis.js('/js/message.js?time=1633244983265', () => {
+      volantis.css('/css/message.css?time=1633273877043')
+      volantis.js('/js/message.js?time=1633273877043', () => {
         hideMessage(done);
       });
     } else {
@@ -4038,19 +4044,19 @@ volantis.pjax.push(bindToggleButton);
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1633244983265")
+        volantis.js("/js/plugins/sites.js?time=1633273877043")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1633244983265")
+        volantis.js("/js/plugins/friends.js?time=1633273877043")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1633244983265")
+        volantis.js("/js/plugins/contributors.js?time=1633273877043")
       }
     
   };
@@ -4241,7 +4247,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-<script src="/js/app.js?time=1633244983265.js"></script>
+<script src="/js/app.js?time=1633273877043.js"></script>
 
 
 <!-- optional -->
@@ -4254,7 +4260,7 @@ volantis.pjax.push(bindToggleButton);
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1633244983265");
+    return volantis.js("/js/search/hexo.js?time=1633273877043");
   }
 
   function loadSearchService() {
@@ -4528,7 +4534,7 @@ volantis.pjax.push(bindToggleButton);
 
 
   <script>
-  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp"];
+  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -4571,7 +4577,7 @@ volantis.pjax.push(bindToggleButton);
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/parallax.js?time=1633244983265').then(()=>{
+    volantis.js('/js/parallax.js?time=1633273877043').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
