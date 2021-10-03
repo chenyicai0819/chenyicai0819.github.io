@@ -8,7 +8,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="http://example.com/2021/09/29/2021-09-29-redis使用注解实现二级缓存/"/>
+  <link rel="canonical" href="http://example.com/2021/10/03/2021-10-03-springcloud微服务/"/>
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
@@ -23,26 +23,26 @@
   <meta content="George&#39;s Blog" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1633244983163" as="style">
+  <link rel="preload" href="/css/style.css?time=1633244983160" as="style">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- 页面元数据 -->
-  <title>Redis使用注解实现二级缓存 - George's Blog</title>
-  <meta name="keywords" content="java,redis,null">
-  <meta name="description" content="Redis使用注解实现二级缓存1、介绍上一篇文章中，我们实现二级缓存的方式是通过java代码判断Redis是否存在缓存，然后决定从何处取数据，但是这种方法在我们有大量的需要用到缓存的地方的时候，会产生大量的冗余代码，而且有大量的判断语句，让我们的代码不能够专注于业务上面，这样子是不太好的。 所以在Spring的3.1版本之后就引入了对注解的支持，我们可以通过在类上、方法上标记注解来实现二级缓存的存">
+  <title>SpringCloud微服务入门 - George's Blog</title>
+  <meta name="keywords" content="java,springcloud,null">
+  <meta name="description" content="SpringCloud微服务入门1、微服务的发展历程1.1、单体结构简介：将业务的所有功能集中在一个项目中开发，打成一个包部署。我们之前所做的学生管理系统基本都是单体结构优点：结构简单、部署成本低缺点：耦合度高 1.2、分布式结构简介：根据业务功能对系统进行拆分，每个业务模块作为独立项目开发，称为一个服务。优点：降低服务耦合、有利于服务升级拓展分布式架构的要考虑的问题：服务拆分粒度如何？服务集群地">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Redis使用注解实现二级缓存">
-<meta property="og:url" content="http://example.com/2021/09/29/2021-09-29-Redis%E4%BD%BF%E7%94%A8%E6%B3%A8%E8%A7%A3%E5%AE%9E%E7%8E%B0%E4%BA%8C%E7%BA%A7%E7%BC%93%E5%AD%98/index.html">
+<meta property="og:title" content="SpringCloud微服务入门">
+<meta property="og:url" content="http://example.com/2021/10/03/2021-10-03-SpringCloud%E5%BE%AE%E6%9C%8D%E5%8A%A1/index.html">
 <meta property="og:site_name" content="George&#39;s Blog">
-<meta property="og:description" content="Redis使用注解实现二级缓存1、介绍上一篇文章中，我们实现二级缓存的方式是通过java代码判断Redis是否存在缓存，然后决定从何处取数据，但是这种方法在我们有大量的需要用到缓存的地方的时候，会产生大量的冗余代码，而且有大量的判断语句，让我们的代码不能够专注于业务上面，这样子是不太好的。 所以在Spring的3.1版本之后就引入了对注解的支持，我们可以通过在类上、方法上标记注解来实现二级缓存的存">
+<meta property="og:description" content="SpringCloud微服务入门1、微服务的发展历程1.1、单体结构简介：将业务的所有功能集中在一个项目中开发，打成一个包部署。我们之前所做的学生管理系统基本都是单体结构优点：结构简单、部署成本低缺点：耦合度高 1.2、分布式结构简介：根据业务功能对系统进行拆分，每个业务模块作为独立项目开发，称为一个服务。优点：降低服务耦合、有利于服务升级拓展分布式架构的要考虑的问题：服务拆分粒度如何？服务集群地">
 <meta property="og:locale">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2021-09-29T09:34:06.000Z">
-<meta property="article:modified_time" content="2021-10-01T16:03:41.055Z">
+<meta property="article:published_time" content="2021-10-03T05:44:20.000Z">
+<meta property="article:modified_time" content="2021-10-03T07:07:55.798Z">
 <meta property="article:author" content="George Chan">
 <meta property="article:tag" content="java">
-<meta property="article:tag" content="redis">
+<meta property="article:tag" content="springcloud">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
   <!-- feed -->
@@ -1879,8 +1879,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1633244983163" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1633244983163"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1633244983160" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1633244983160"></noscript>
     <script>
       var userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -2616,7 +2616,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://example.com/2021/09/29/2021-09-29-Redis%E4%BD%BF%E7%94%A8%E6%B3%A8%E8%A7%A3%E5%AE%9E%E7%8E%B0%E4%BA%8C%E7%BA%A7%E7%BC%93%E5%AD%98/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/03/2021-10-03-SpringCloud%E5%BE%AE%E6%9C%8D%E5%8A%A1/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="George's Blog">
   </span>
@@ -2633,7 +2633,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        Redis使用注解实现二级缓存
+        SpringCloud微服务入门
       </h1>
       <div class='new-meta-box'>
         
@@ -2654,10 +2654,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2021-09-29T17:34:06+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2021-10-03T13:44:20+08:00">
   <a class='notlink' href="/" onclick="return false;" title="Click me!" >
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Sep 29, 2021</p>
+    <p>发布于：Oct 3, 2021</p>
   </a>
 </div>
 
@@ -2668,7 +2668,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item browse leancloud">
     <a class='notlink' href="/" onclick="return false;" title="Click me!" >
       
-      <div id="lc-pv" data-title="Redis使用注解实现二级缓存" data-path="/2021/09/29/2021-09-29-Redis%E4%BD%BF%E7%94%A8%E6%B3%A8%E8%A7%A3%E5%AE%9E%E7%8E%B0%E4%BA%8C%E7%BA%A7%E7%BC%93%E5%AD%98/">
+      <div id="lc-pv" data-title="SpringCloud微服务入门" data-path="/2021/10/03/2021-10-03-SpringCloud%E5%BE%AE%E6%9C%8D%E5%8A%A1/">
         <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
         <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
         次浏览
@@ -2689,61 +2689,65 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h1 id="Redis使用注解实现二级缓存"><a href="#Redis使用注解实现二级缓存" class="headerlink" title="Redis使用注解实现二级缓存"></a>Redis使用注解实现二级缓存</h1><h2 id="1、介绍"><a href="#1、介绍" class="headerlink" title="1、介绍"></a>1、介绍</h2><div class="story post-story"><p>上一篇文章中，我们实现二级缓存的方式是通过java代码判断Redis是否存在缓存，然后决定从何处取数据，但是这种方法在我们有大量的需要用到缓存的地方的时候，会产生大量的冗余代码，而且有大量的判断语句，让我们的代码不能够专注于业务上面，这样子是不太好的。</p>
-<p>所以在Spring的3.1版本之后就引入了对注解的支持，我们可以通过在类上、方法上标记注解来实现二级缓存的存取</p>
-<p>其三个注解分别为：<code>Cacheable</code> ，<code>CacheEvict</code>，<code>CachePut</code></p>
-<p>下面我会将三个注解分别展开进行简单解释</p>
-</div><h2 id="2、Cacheable注解"><a href="#2、Cacheable注解" class="headerlink" title="2、Cacheable注解"></a>2、Cacheable注解</h2><div class="story post-story"><ul>
-<li>@Cacheable可以标记在一个方法上，也可以标记在一个类上。</li>
-<li>对于一个支持缓存的方法，Spring会在其被调用后将其返回值缓存起来，以保证下次利用同样的参数来执行该方法时可以直接从缓存中获取结果，而不需要再次执行该方法。</li>
-<li>Spring在缓存方法的返回值时是以键值对进行缓存的，值就是方法的返回结果。</li>
-<li>至于键的话，Spring又支持两种策略，默认策略和自定义策略，这个稍后会进行说明。</li>
-<li>需要注意的是当一个支持缓存的方法在对象内部被调用时是不会触发缓存功能的。</li>
-<li>@Cacheable可以指定三个属性，value、key和condition。</li>
+    <h1 id="SpringCloud微服务入门"><a href="#SpringCloud微服务入门" class="headerlink" title="SpringCloud微服务入门"></a>SpringCloud微服务入门</h1><h2 id="1、微服务的发展历程"><a href="#1、微服务的发展历程" class="headerlink" title="1、微服务的发展历程"></a>1、微服务的发展历程</h2><div class="story post-story"><h3 id="1-1、单体结构"><a href="#1-1、单体结构" class="headerlink" title="1.1、单体结构"></a>1.1、单体结构</h3><p>简介：将业务的所有功能集中在一个项目中开发，打成一个包部署。我们之前所做的学生管理系统基本都是单体结构<br>优点：结构简单、部署成本低<br>缺点：耦合度高</p>
+<h3 id="1-2、分布式结构"><a href="#1-2、分布式结构" class="headerlink" title="1.2、分布式结构"></a>1.2、分布式结构</h3><p>简介：根据业务功能对系统进行拆分，每个业务模块作为独立项目开发，称为一个服务。<br>优点：降低服务耦合、有利于服务升级拓展<br>分布式架构的要考虑的问题：<br>服务拆分粒度如何？<br>服务集群地址如何维护？<br>服务之间如何实现远程调用？<br>服务健康状态如何感知？</p>
+<h3 id="1-3、微服务架构"><a href="#1-3、微服务架构" class="headerlink" title="1.3、微服务架构"></a>1.3、微服务架构</h3><p>简介：微服务是一种经过良好架构设计的分布式架构方案。<br>优点：拆分粒度更小、服务更独立、耦合度更低<br>缺点：架构非常复杂，运维、监控、部署难度提高<br>微服务架构的特征：</p>
+<ul>
+<li>单一职责：微服务拆分粒度更小，每一个服务都对应唯一的业务能力，做到单一职责，避免重复业务开发</li>
+<li>面向服务：微服务对外暴露业务接口</li>
+<li>自治：团队独立、技术独立、数据独立、部署独立</li>
+<li>隔离性强：服务调用做好隔离、容错、降级，避免出现级联问题</li>
 </ul>
-<h3 id="2-1、value属性"><a href="#2-1、value属性" class="headerlink" title="2.1、value属性"></a>2.1、value属性</h3><p>value属性是必须指定的，其表示当前方法的返回值是会被缓存在哪个Cache上的，对应Cache的名称。其可以是一个Cache也可以是多个Cache，当需要指定多个Cache时其是一个数组。<br>如下例子所示：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping(&quot;selectForAll&quot;)</span></span><br><span class="line"><span class="meta">@Cacheable(value = &quot;MYBATIS:com.chen.mysqlredisdemo.StudentMapper::AllStudent&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> List&lt;Student&gt; <span class="title">selectStudentForAll</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    List&lt;Student&gt; studentList = studentService.selectStudentForAll();</span><br><span class="line">    <span class="keyword">return</span> studentList;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</div><h2 id="2、使用SpringCloud"><a href="#2、使用SpringCloud" class="headerlink" title="2、使用SpringCloud"></a>2、使用SpringCloud</h2><div class="story post-story"><p>SpringCloud并不是一个全新的框架，其实他是一个将其他开源的框架集合的一个大篮子<br>得益于SpringBoot框架方便的使用，我们也能很轻松地在SpringBoot上整合SpriongCloud的模块<br>以下是SpringBoot和SpringCloud的版本匹配表，如果不按照这个规则，就有可能出现很多奇怪的问题<img src="https://bu.dusays.com/2021/10/03/9337d5a6f9ca0.png" class="lazyload" data-srcset="https://bu.dusays.com/2021/10/03/9337d5a6f9ca0.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+<h3 id="2-1、服务拆分"><a href="#2-1、服务拆分" class="headerlink" title="2.1、服务拆分"></a>2.1、服务拆分</h3><p>当我们使用微服务时，实际上就是相当于把原本在一起的模块拆分成一个一个的小的模块，所以我们在进行服务拆分时必须注意以下几点：</p>
+<ol>
+<li>单一职责：不同微服务，不要重复开发相同业务</li>
+<li>数据独立：不要访问其它微服务的数据库</li>
+<li>面向服务：将自己的业务暴露为接口，供其它微服务调用</li>
+</ol>
+<h3 id="2-2、服务调用"><a href="#2-2、服务调用" class="headerlink" title="2.2、服务调用"></a>2.2、服务调用</h3><p>当我们成功拆分出两个服务的时候，在使用时，肯定会出现A调用B，B调用C的情况出现，而此时我们想到的第一个方法就是根据服务的IP地址和端口进行调用。<img src="https://bu.dusays.com/2021/10/03/3cfda9ed84286.png" class="lazyload" data-srcset="https://bu.dusays.com/2021/10/03/3cfda9ed84286.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+<p>但是此时会出现一个问题，实际情况中我们一个服务肯定不只是只有一个地址，可能会有多个一样的服务，作为负载均衡。但是如果每个服务我们都需要通过IP+端口的方式来连接，那么当我们修改一个服务的端口时，就要相应地修改很多个调用他的端口的服务，显然是很麻烦的，而且也不能实现真正的负载均衡。所以我们需要一个注册中心来统一管理我们的所有服务。<br>所以就有了eureka</p>
+<h3 id="2-3、eureka注册中心"><a href="#2-3、eureka注册中心" class="headerlink" title="2.3、eureka注册中心"></a>2.3、eureka注册中心</h3><p>消费者该如何获取服务提供者具体信息？</p>
+<ul>
+<li>服务提供者启动时向eureka注册自己的信息</li>
+<li>eureka保存这些信息</li>
+<li>消费者根据服务名称向eureka拉取提供者信息</li>
+</ul>
+<p>如果有多个服务提供者，消费者该如何选择？</p>
+<ul>
+<li>服务消费者利用负载均衡算法，从服务列表中挑选一个</li>
+</ul>
+<p>消费者如何感知服务提供者健康状态？</p>
+<ul>
+<li>服务提供者会每隔30秒向EurekaServer发送心跳请求，报告健康状态</li>
+<li>eureka会更新记录服务列表信息，心跳不正常会被剔除</li>
+<li>消费者就可以拉取到最新的信息</li>
+</ul>
+<p>现在我们来创建一个eureka注册中心：</p>
+<ol>
+<li>我们需要创建一个普通的maven项目，然后在其中引入依赖：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;    </span><br><span class="line">	&lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;    </span><br><span class="line">	&lt;artifactId&gt;spring-cloud-starter-netflix-eureka-server&lt;/artifactId&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure></li>
+<li>在启动类上添加<code>@EnableEurekaServer</code>注解</li>
+<li>然后创建一个配置文件<code>Application.yml</code>,在其中添加以下内容<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">server:</span> </span><br><span class="line">	<span class="attr">port:</span> <span class="number">10086</span> <span class="comment">#端口</span></span><br><span class="line"><span class="attr">spring:</span>  </span><br><span class="line">	<span class="attr">application:</span>    </span><br><span class="line">		<span class="attr">name:</span> <span class="string">eurekaserver</span><span class="comment">#服务名称</span></span><br><span class="line"><span class="attr">eureka:</span> </span><br><span class="line">	<span class="attr">client:</span>    </span><br><span class="line">		<span class="attr">service-url:</span>       </span><br><span class="line">			<span class="attr">defaultZone:</span> <span class="string">http://127.0.0.1:10086/eureka/</span> <span class="comment"># eureka的地址，将自己注册到eureka中</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>以上就成功创建了一个eureka注册中心，运行打开端口，就可以看到我们创建好的注册中心<img src="https://bu.dusays.com/2021/10/03/aee959c4bd69a.png" class="lazyload" data-srcset="https://bu.dusays.com/2021/10/03/aee959c4bd69a.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+<p>注册成功的服务会显示在<code>Instances currently registered with Eureka</code>处</p>
+<p>接下来我们将客户端注册到注册中心去</p>
+<ol>
+<li>我们在需要加入的服务中添加以下依赖：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;    </span><br><span class="line">	&lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;    </span><br><span class="line">	&lt;artifactId&gt;spring-cloud-starter-netflix-eureka-client&lt;/artifactId&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure></li>
+<li>然后再配置文件中添加以下内容<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span> </span><br><span class="line">	<span class="attr">application:</span></span><br><span class="line">    <span class="attr">name:</span> <span class="string">orderservice</span></span><br><span class="line"><span class="attr">eureka:</span></span><br><span class="line">	<span class="attr">client:</span></span><br><span class="line">		<span class="attr">service-url:</span></span><br><span class="line">			<span class="attr">defaultZone:</span> <span class="string">http://127.0.0.1:10086/eureka/</span></span><br></pre></td></tr></table></figure>
+与上面一样，将自己注册到了注册中心中<img src="https://bu.dusays.com/2021/10/03/28ced8e089410.png" class="lazyload" data-srcset="https://bu.dusays.com/2021/10/03/28ced8e089410.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></li>
+</ol>
+<h3 id="2-4、eureka服务调用"><a href="#2-4、eureka服务调用" class="headerlink" title="2.4、eureka服务调用"></a>2.4、eureka服务调用</h3><p>在成功将服务注册到eureka中之后，我们就可以使用服务名来替代端口地址对服务进行调用了</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String url = <span class="string">&quot;http://userservice/user/&quot;</span> + order.getUserId();</span><br></pre></td></tr></table></figure>
+<p>但这不是一个真实有效的地址，是不能直接进行访问的，只能通过eureka进行访问</p>
+</div><h2 id="3、负载均衡"><a href="#3、负载均衡" class="headerlink" title="3、负载均衡"></a>3、负载均衡</h2><div class="story post-story"><h3 id="3-1、认识负载均衡"><a href="#3-1、认识负载均衡" class="headerlink" title="3.1、认识负载均衡"></a>3.1、认识负载均衡</h3><p>以下是负载均衡的一个流程图（此流程图也解释了如何通过服务名调用对应的服务）<img src="https://bu.dusays.com/2021/10/03/7165d0dd07c93.png" class="lazyload" data-srcset="https://bu.dusays.com/2021/10/03/7165d0dd07c93.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+<p>负载均衡简单来说就是我们有多个同名的服务，他们做的是一样的事情，我们希望所有的请求给他们所有人一起分担，而不是一个人抗下所有的请求，所以这个时候负载均衡就起到了作用，根据不同的规则，负载均衡可以以不同的策略对请求的服务进行管理，可以极大减小服务器的压力。</p>
+<h3 id="3-2、负载均衡策略"><a href="#3-2、负载均衡策略" class="headerlink" title="3.2、负载均衡策略"></a>3.2、负载均衡策略</h3><p>以下就是负载均衡的策略规则<br><img src="https://bu.dusays.com/2021/10/03/c6326bca1dd7c.png" class="lazyload" data-srcset="https://bu.dusays.com/2021/10/03/c6326bca1dd7c.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+<p><img src="https://bu.dusays.com/2021/10/03/eb43a6d5349a9.png" class="lazyload" data-srcset="https://bu.dusays.com/2021/10/03/eb43a6d5349a9.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+<p><strong>饥饿加载</strong><br>Ribbon默认是采用懒加载，即第一次访问时才会去创建LoadBalanceClient，请求时间会很长。<br>而饥饿加载则会在项目启动时创建，降低第一次访问的耗时，通过下面配置开启饥饿加载：</p>
+<p>在yml配置文件中加入以下内容，就可以开启饥饿加载模式：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">ribbon:</span></span><br><span class="line">	<span class="attr">eager-load:</span></span><br><span class="line">		<span class="attr">enabled:</span> <span class="literal">true</span> <span class="comment"># 开启饥饿加载 </span></span><br><span class="line">			<span class="attr">clients:</span> <span class="string">userservice</span> <span class="comment"># 指定对userservice这个服务饥饿加载</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="2-2、key属性"><a href="#2-2、key属性" class="headerlink" title="2.2、key属性"></a>2.2、key属性</h3><ul>
-<li>key属性是用来指定Spring缓存方法的返回结果时对应的key的。</li>
-<li>该属性支持SpringEL表达式。当我们没有指定该属性时，Spring将使用默认策略生成key。</li>
-<li>定义策略是指我们可以通过Spring的EL表达式来指定我们的key。这里的EL表达式可以使用方法参数及它们对应的属性。使用方法参数时我们可以直接使用“#参数名”或者“#p参数index”。<br>如下例子所示：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping(&quot;/selectForOne/&#123;sId&#125;&quot;)</span></span><br><span class="line"><span class="meta">@Cacheable(value = &quot;MYBATIS:com.chen.mysqlredisdemo.StudentMapper&quot;, key = &quot;#sId&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Student <span class="title">selectStudentForOne</span><span class="params">(<span class="meta">@PathVariable</span> <span class="keyword">int</span> sId)</span> </span>&#123;</span><br><span class="line">	Student student = studentService.selectStudentForOne(sId);</span><br><span class="line">	<span class="keyword">return</span> student;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-此时，如果我查询了一个sId为1800710318的学生<br>那么上面的方法中最后缓存的键为：<code>MYBATIS:com.chen.mysqlredisdemo.StudentMapper::1800710318</code></li>
-</ul>
-<h3 id="2-3、condition属性"><a href="#2-3、condition属性" class="headerlink" title="2.3、condition属性"></a>2.3、condition属性</h3><ul>
-<li>condition属性可以用于指定缓存发生的条件。</li>
-<li>有的时候我们可能并不希望缓存一个方法所有的返回结果，这时候通过condition属性可以实现这一功能。</li>
-<li>condition属性默认为空，表示将缓存所有的调用情形。</li>
-<li>其值是通过SpringEL表达式来指定的，当为true时表示进行缓存处理；当为false时表示不进行缓存处理，即每次调用该方法时该方法都会执行一次。<br>如下例子所示：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping(&quot;/selectForOne/&#123;sId&#125;&quot;)</span></span><br><span class="line"><span class="meta">@Cacheable(value = &quot;MYBATIS:com.chen.mysqlredisdemo.StudentMapper&quot;, key = &quot;#sId&quot;,condition = &quot;#sId&gt;1800710301&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Student <span class="title">selectStudentForOne</span><span class="params">(<span class="meta">@PathVariable</span> <span class="keyword">int</span> sId)</span> </span>&#123;</span><br><span class="line">	Student student = studentService.selectStudentForOne(sId);</span><br><span class="line">	<span class="keyword">return</span> student;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-上面的例子就表示当查询的sId大于1800710318的时候才会执行缓存的操作</li>
-</ul>
-</div><h2 id="3、CachePut注解"><a href="#3、CachePut注解" class="headerlink" title="3、CachePut注解"></a>3、CachePut注解</h2><div class="story post-story"><ul>
-<li>在支持Spring Cache的环境下，对于使用@Cacheable标注的方法，Spring在每次执行前都会检查Cache中是否存在相同key的缓存元素，如果存在就不再执行该方法，而是直接从缓存中获取结果进行返回，否则才会执行并将返回结果存入指定的缓存中。</li>
-<li>@CachePut也可以声明一个方法支持缓存功能。</li>
-<li>与@Cacheable不同的是使用@CachePut标注的方法在执行前不会去检查缓存中是否存在之前执行过的结果，而是每次都会执行该方法，并将执行结果以键值对的形式存入指定的缓存中。</li>
-<li>@CachePut也可以标注在类上和方法上。使用@CachePut时我们可以指定的属性跟@Cacheable是一样的。</li>
-</ul>
-<p>简而言之就是CachePut只会往缓存中写数据，不会从缓存中拿数据</p>
-</div><h2 id="4、CacheEvict注解"><a href="#4、CacheEvict注解" class="headerlink" title="4、CacheEvict注解"></a>4、CacheEvict注解</h2><div class="story post-story"><ul>
-<li>@CacheEvict是用来标注在需要清除缓存元素的方法或类上的。当标记在一个类上时表示其中所有的方法的执行都会触发缓存的清除操作。</li>
-<li>@CacheEvict可以指定的属性有value、key、condition、allEntries和beforeInvocation。</li>
-<li>其中value、key和condition的语义与@Cacheable对应的属性类似。即value表示清除操作是发生在哪些Cache上的（对应Cache的名称）；key表示需要清除的是哪个key，如未指定则会使用默认策略生成的key；condition表示清除操作发生的条件。</li>
-<li>与前面不同的不同的是有了两个多出来的属性：<code>allEntries</code>和<code>beforeInvocation</code></li>
-</ul>
-<h3 id="4-1、allEntries属性"><a href="#4-1、allEntries属性" class="headerlink" title="4.1、allEntries属性"></a>4.1、allEntries属性</h3><ul>
-<li>allEntries是boolean类型，表示是否需要清除缓存中的所有元素。</li>
-<li>默认为false，表示不需要。当指定了allEntries为true时，Spring Cache将忽略指定的key。</li>
-<li>有的时候我们需要Cache一下清除所有的元素，这比一个一个清除元素更有效率。</li>
-</ul>
-<h3 id="4-2、beforeInvocation属性"><a href="#4-2、beforeInvocation属性" class="headerlink" title="4.2、beforeInvocation属性"></a>4.2、beforeInvocation属性</h3><ul>
-<li>清除操作默认是在对应方法成功执行之后触发的，即方法如果因为抛出异常而未能成功返回时也不会触发清除操作。</li>
-<li>使用beforeInvocation可以改变触发清除操作的时间，当我们指定该属性值为true时，Spring会在调用该方法之前清除缓存中的指定元素。</li>
-</ul>
-</div><h2 id="5、Caching注解"><a href="#5、Caching注解" class="headerlink" title="5、Caching注解"></a>5、Caching注解</h2><div class="story post-story"><p>@Caching注解可以让我们在一个方法或者类上同时指定多个Spring Cache相关的注解。<br>其拥有三个属性：cacheable、put和evict，分别用于指定@Cacheable、@CachePut和@CacheEvict。</p>
-<p>其例子如下</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> <span class="meta">@Caching(cacheable = @Cacheable(&quot;users&quot;), evict = &#123; @CacheEvict(&quot;cache2&quot;), @CacheEvict(value = &quot;cache3&quot;, allEntries = true) &#125;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> User <span class="title">find</span><span class="params">(Integer id)</span> </span>&#123;</span><br><span class="line">	returnnull;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>上面的例子通过一个Caching注解，实现了三种注解同事的配置，相当于一个大集合</p>
-</div><h2 id="6、总结"><a href="#6、总结" class="headerlink" title="6、总结"></a>6、总结</h2><div class="story post-story"><p>SpringBoot中大量使用了注解、替代了原有的配置文件。<br>大大减少了冗余代码，方便地实现了注解中所设置好的功能。<br>使得我们的代码简洁易懂。<br>除了官方默认的注解，同时我们还可以自定义很多注解，极大方便了我们的使用。</p>
 
 </div>
   </div>
@@ -2763,7 +2767,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
             
               
-                <p>本文永久链接是：<a href=http://example.com/2021/09/29/2021-09-29-Redis%E4%BD%BF%E7%94%A8%E6%B3%A8%E8%A7%A3%E5%AE%9E%E7%8E%B0%E4%BA%8C%E7%BA%A7%E7%BC%93%E5%AD%98/>http://example.com/2021/09/29/2021-09-29-Redis%E4%BD%BF%E7%94%A8%E6%B3%A8%E8%A7%A3%E5%AE%9E%E7%8E%B0%E4%BA%8C%E7%BA%A7%E7%BC%93%E5%AD%98/</a></p>
+                <p>本文永久链接是：<a href=http://example.com/2021/10/03/2021-10-03-SpringCloud%E5%BE%AE%E6%9C%8D%E5%8A%A1/>http://example.com/2021/10/03/2021-10-03-SpringCloud%E5%BE%AE%E6%9C%8D%E5%8A%A1/</a></p>
               
             
           </blockquote>
@@ -2780,10 +2784,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2021-10-02T00:03:41+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2021-10-03T15:07:55+08:00">
   <a class='notlink' href="/" onclick="return false;" title="Click me!" >
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Oct 2, 2021</p>
+    <p>更新于：Oct 3, 2021</p>
   </a>
 </div>
 
@@ -2792,8 +2796,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/java/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>java</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/redis/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>redis</p></a></div>
-  <span hidden itemprop="keywords">java redis</span>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/java/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>java</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/springcloud/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>springcloud</p></a></div>
+  <span hidden itemprop="keywords">java springcloud</span>
 
 
         
@@ -2806,7 +2810,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2021/09/29/2021-09-29-Redis%E4%BD%BF%E7%94%A8%E6%B3%A8%E8%A7%A3%E5%AE%9E%E7%8E%B0%E4%BA%8C%E7%BA%A7%E7%BC%93%E5%AD%98/&title=Redis使用注解实现二级缓存 - George's Blog&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2021/10/03/2021-10-03-SpringCloud%E5%BE%AE%E6%9C%8D%E5%8A%A1/&title=SpringCloud微服务入门 - George's Blog&summary="
           
           >
           
@@ -2818,7 +2822,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2021/09/29/2021-09-29-Redis%E4%BD%BF%E7%94%A8%E6%B3%A8%E8%A7%A3%E5%AE%9E%E7%8E%B0%E4%BA%8C%E7%BA%A7%E7%BC%93%E5%AD%98/&title=Redis使用注解实现二级缓存 - George's Blog&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2021/10/03/2021-10-03-SpringCloud%E5%BE%AE%E6%9C%8D%E5%8A%A1/&title=SpringCloud微服务入门 - George's Blog&summary="
           
           >
           
@@ -2830,7 +2834,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2021/09/29/2021-09-29-Redis%E4%BD%BF%E7%94%A8%E6%B3%A8%E8%A7%A3%E5%AE%9E%E7%8E%B0%E4%BA%8C%E7%BA%A7%E7%BC%93%E5%AD%98/&title=Redis使用注解实现二级缓存 - George's Blog&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2021/10/03/2021-10-03-SpringCloud%E5%BE%AE%E6%9C%8D%E5%8A%A1/&title=SpringCloud微服务入门 - George's Blog&summary="
           
           >
           
@@ -2863,18 +2867,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2021/10/01/2021-10-01-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0_%E6%9C%80%E8%BF%91%E7%9A%84%E8%AF%B7%E6%B1%82%E6%AC%A1%E6%95%B0%20-%20%E5%89%AF%E6%9C%AC/'>
-          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>算法学习_最近的请求次数</p>
-          <p class='content'>最近的请求次数题目lettcode-933题难度：简单
-解题思路从题目上来看，一时半会看不出来是什么意思。
-其实所输入的数字t就是一个毫秒数，根据这个数来判断3000毫秒之前的数，如果小于300...</p>
-        </a>
       
-      
-        <a class='next' href='/2021/09/29/2021-09-29-Redis%E7%9A%84%E5%85%A5%E9%97%A8%E4%BD%BF%E7%94%A8/'>
-          <p class='title'>Redis入门使用<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>Redis入门使用1、Redis简介
-简介Redis 是完全开源的，遵守 BSD 协议，是一个高性能的 key-value 数据库。Redis 与其他 key - value 缓存产品有以下三个...</p>
+        <a class='next' href='/2021/10/01/2021-10-01-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0_%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97%E3%80%81%E9%98%9F%E5%88%97%E5%AE%9E%E7%8E%B0%E6%A0%88/'>
+          <p class='title'>算法学习_栈实现队列、队列实现栈<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>栈实现队列、队列实现栈题目1、用栈来实现队列lettcode-232题难度：简单
+1.1、 解题思路栈是一个先进后出的数据结构，而队列是一个先进先出的数据结构，所以我们想要用栈来实现队列，就必须...</p>
         </a>
       
     </div>
@@ -2906,7 +2903,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E4%BB%8B%E7%BB%8D"><span class="toc-text">1、介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81Cacheable%E6%B3%A8%E8%A7%A3"><span class="toc-text">2、Cacheable注解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1%E3%80%81value%E5%B1%9E%E6%80%A7"><span class="toc-text">2.1、value属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2%E3%80%81key%E5%B1%9E%E6%80%A7"><span class="toc-text">2.2、key属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3%E3%80%81condition%E5%B1%9E%E6%80%A7"><span class="toc-text">2.3、condition属性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81CachePut%E6%B3%A8%E8%A7%A3"><span class="toc-text">3、CachePut注解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E3%80%81CacheEvict%E6%B3%A8%E8%A7%A3"><span class="toc-text">4、CacheEvict注解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1%E3%80%81allEntries%E5%B1%9E%E6%80%A7"><span class="toc-text">4.1、allEntries属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2%E3%80%81beforeInvocation%E5%B1%9E%E6%80%A7"><span class="toc-text">4.2、beforeInvocation属性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E3%80%81Caching%E6%B3%A8%E8%A7%A3"><span class="toc-text">5、Caching注解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6%E3%80%81%E6%80%BB%E7%BB%93"><span class="toc-text">6、总结</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%9A%84%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B"><span class="toc-text">1、微服务的发展历程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1%E3%80%81%E5%8D%95%E4%BD%93%E7%BB%93%E6%9E%84"><span class="toc-text">1.1、单体结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2%E3%80%81%E5%88%86%E5%B8%83%E5%BC%8F%E7%BB%93%E6%9E%84"><span class="toc-text">1.2、分布式结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3%E3%80%81%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84"><span class="toc-text">1.3、微服务架构</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E4%BD%BF%E7%94%A8SpringCloud"><span class="toc-text">2、使用SpringCloud</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1%E3%80%81%E6%9C%8D%E5%8A%A1%E6%8B%86%E5%88%86"><span class="toc-text">2.1、服务拆分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2%E3%80%81%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8"><span class="toc-text">2.2、服务调用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3%E3%80%81eureka%E6%B3%A8%E5%86%8C%E4%B8%AD%E5%BF%83"><span class="toc-text">2.3、eureka注册中心</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4%E3%80%81eureka%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8"><span class="toc-text">2.4、eureka服务调用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1"><span class="toc-text">3、负载均衡</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1%E3%80%81%E8%AE%A4%E8%AF%86%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1"><span class="toc-text">3.1、认识负载均衡</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2%E3%80%81%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E7%AD%96%E7%95%A5"><span class="toc-text">3.2、负载均衡策略</span></a></li></ol></li></ol>
     </div>
   </section>
 
@@ -2958,7 +2955,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <script>
   window.pdata={}
   pdata.ispage=true;
-  pdata.postTitle="Redis使用注解实现二级缓存";
+  pdata.postTitle="SpringCloud微服务入门";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3118,8 +3115,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1633244983163')
-      volantis.js('/js/message.js?time=1633244983163', () => {
+      volantis.css('/css/message.css?time=1633244983160')
+      volantis.js('/js/message.js?time=1633244983160', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -3164,8 +3161,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1633244983163')
-      volantis.js('/js/message.js?time=1633244983163', () => {
+      volantis.css('/css/message.css?time=1633244983160')
+      volantis.js('/js/message.js?time=1633244983160', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -3224,8 +3221,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1633244983163')
-      volantis.js('/js/message.js?time=1633244983163', () => {
+      volantis.css('/css/message.css?time=1633244983160')
+      volantis.js('/js/message.js?time=1633244983160', () => {
         hideMessage(done);
       });
     } else {
@@ -3370,19 +3367,19 @@ volantis.pjax.push(bindToggleButton);
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1633244983163")
+        volantis.js("/js/plugins/sites.js?time=1633244983160")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1633244983163")
+        volantis.js("/js/plugins/friends.js?time=1633244983160")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1633244983163")
+        volantis.js("/js/plugins/contributors.js?time=1633244983160")
       }
     
   };
@@ -3573,7 +3570,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-<script src="/js/app.js?time=1633244983163.js"></script>
+<script src="/js/app.js?time=1633244983160.js"></script>
 
 
 <!-- optional -->
@@ -3586,7 +3583,7 @@ volantis.pjax.push(bindToggleButton);
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1633244983163");
+    return volantis.js("/js/search/hexo.js?time=1633244983160");
   }
 
   function loadSearchService() {
@@ -3860,7 +3857,7 @@ volantis.pjax.push(bindToggleButton);
 
 
   <script>
-  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp"];
+  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -3903,7 +3900,7 @@ volantis.pjax.push(bindToggleButton);
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/parallax.js?time=1633244983163').then(()=>{
+    volantis.js('/js/parallax.js?time=1633244983160').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4097,7 +4094,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"George's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2021/09/29/2021-09-29-Redis使用注解实现二级缓存/","name":"Redis使用注解实现二级缓存"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Redis使用注解实现二级缓存","description":"","datePublished":"2021-09-29T09:34:06.000Z","dateModified":"2021-10-01T16:03:41.055Z","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2021/09/29/2021-09-29-Redis%E4%BD%BF%E7%94%A8%E6%B3%A8%E8%A7%A3%E5%AE%9E%E7%8E%B0%E4%BA%8C%E7%BA%A7%E7%BC%93%E5%AD%98/"},"author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"George's Blog","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2021/09/29/2021-09-29-Redis%E4%BD%BF%E7%94%A8%E6%B3%A8%E8%A7%A3%E5%AE%9E%E7%8E%B0%E4%BA%8C%E7%BA%A7%E7%BC%93%E5%AD%98/","wordCount":0,"keywords":"java,redis","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"George's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2021/10/03/2021-10-03-SpringCloud微服务/","name":"SpringCloud微服务入门"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"SpringCloud微服务入门","description":"","datePublished":"2021-10-03T05:44:20.000Z","dateModified":"2021-10-03T07:07:55.798Z","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2021/10/03/2021-10-03-SpringCloud%E5%BE%AE%E6%9C%8D%E5%8A%A1/"},"author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"George's Blog","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2021/10/03/2021-10-03-SpringCloud%E5%BE%AE%E6%9C%8D%E5%8A%A1/","wordCount":0,"keywords":"java,springcloud","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 <!-- more -->
