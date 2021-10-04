@@ -23,7 +23,7 @@
   <meta content="George&#39;s Blog" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1633329615520" as="style">
+  <link rel="preload" href="/css/style.css?time=1633352714248" as="style">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
@@ -39,7 +39,7 @@
 <meta property="og:locale">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2021-10-03T05:44:20.000Z">
-<meta property="article:modified_time" content="2021-10-04T06:38:53.464Z">
+<meta property="article:modified_time" content="2021-10-04T13:03:46.990Z">
 <meta property="article:author" content="George Chan">
 <meta property="article:tag" content="java">
 <meta property="article:tag" content="springcloud">
@@ -1879,8 +1879,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1633329615520" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1633329615520"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1633352714248" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1633352714248"></noscript>
     <script>
       var userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1913,9 +1913,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
-        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-cn/WindowsForBusiness/End-of-IE-support"><strong>了解详情 ></strong></a>`+
+        `<span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>`+
+        `<span class="kill-c">Microsoft has terminated support for Internet Explorer (IE) 10 and earlier versions in 2016. <br/>There are great security risks to continue using it. Please use contemporary mainstream browsers to access.</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-cn/WindowsForBusiness/End-of-IE-support"><strong>Learn more ></strong></a>`+
     '</div>');
 </script>
 
@@ -1943,9 +1943,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>
-        <span class="kill-c">本页面需要浏览器支持（启用）JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情 ></strong></a>
+        <span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>
+        <span class="kill-c">This page requires browser support (enable) JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>Learn more ></strong></a>
     </div>
 </noscript>
 
@@ -2791,7 +2791,207 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li><p>此时不同空间中的服务是不能相互访问的</p>
 </li>
 </ol>
-</div><h2 id="5、总结"><a href="#5、总结" class="headerlink" title="5、总结"></a>5、总结</h2><div class="story post-story"><p>SpringCloud微服务还有很多要学习的内容，这部分只是很简单的一部分入门，所以还是要多多学习</p>
+</div><h2 id="5、Nacos配置管理"><a href="#5、Nacos配置管理" class="headerlink" title="5、Nacos配置管理"></a>5、Nacos配置管理</h2><div class="story post-story"><h3 id="5-1、Nacos实现配置的管理"><a href="#5-1、Nacos实现配置的管理" class="headerlink" title="5.1、Nacos实现配置的管理"></a>5.1、Nacos实现配置的管理</h3><p>Nacos有一个功能，就是可以将为服务的配置管理到自己的注册中心去，然后我们就可以通过远程调用，来使用这些配置在远端的配置文件。<br>但是这又有什么用处呢？<br>用处就是当我们有一些需要修改的开关型配置文件，我们希望修改时不影响到程序的运行，只要我们对程序进行了更改，就会自动进行配置，也叫做热部署。<br>所以Nacos的配置管理就可以实现这样的一个功能。<br>那么要怎么实现呢？</p>
+<ol>
+<li><p>首先我们进入到Nacos的配置管理界面，打开配置列表，点击右上角的<code>+</code> 创建新的配置<img src="https://z3.ax1x.com/2021/10/04/4XiLA1.png" class="lazyload" data-srcset="https://z3.ax1x.com/2021/10/04/4XiLA1.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+</li>
+<li><p>如下图一样配置好文件，然后可以在下面的黑色输入框以<code>yml</code> 文件的格式输入你想要的配置内容，完成之后点击发布即可<img src="https://z3.ax1x.com/2021/10/04/4XkuRK.png" class="lazyload" data-srcset="https://z3.ax1x.com/2021/10/04/4XkuRK.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+</li>
+<li><p>现在我们就可以去java代码中进行配置的拉取了</p>
+</li>
+</ol>
+<h3 id="5-2、配置的拉取"><a href="#5-2、配置的拉取" class="headerlink" title="5.2、配置的拉取"></a>5.2、配置的拉取</h3><p>创建好了配置文件，我们现在需要去java代码中对其进行拉取。<br>而以往我们运行微服务时直接就会读取 <code>application.yml</code> 这个配置文件，如何在读取他之前先读取Nacos上的配置文件呢？<br>这时，我们就可以添加一个优先级更高的配置文件<code>bootstrap.yml</code> ，在里面编写读取Nacos配置的配置。</p>
+<p><img src="https://z3.ax1x.com/2021/10/04/4XA3lT.png" class="lazyload" data-srcset="https://z3.ax1x.com/2021/10/04/4XA3lT.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+<ol>
+<li><p>首先引入Nacos配置文件的依赖</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--&lt;nacos配置依赖--&gt;</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">	&lt;groupId&gt;com.alibaba.cloud&lt;/groupId&gt;</span><br><span class="line">	&lt;artifactId&gt;spring-cloud-starter-alibaba-nacos-config&lt;/artifactId&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure></li>
+<li><p>然后我们创建一个 <code>bootstrap.yml</code> ，里面写的是拉取远程配置的代码</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">application:</span></span><br><span class="line">    <span class="attr">name:</span> <span class="string">userservice</span></span><br><span class="line">  <span class="attr">profiles:</span></span><br><span class="line">    <span class="attr">active:</span> <span class="string">dev</span> <span class="comment"># 环境</span></span><br><span class="line">  <span class="attr">cloud:</span></span><br><span class="line">    <span class="attr">nacos:</span></span><br><span class="line">      <span class="attr">server-addr:</span> <span class="string">localhost:8848</span> <span class="comment"># nacos地址</span></span><br><span class="line">      <span class="attr">config:</span></span><br><span class="line">        <span class="attr">file-extension:</span> <span class="string">yaml</span> <span class="comment"># 文件后缀名</span></span><br></pre></td></tr></table></figure>
+<p>比如这里我们读取了 <code>userservice-dev.yaml</code> 文件的内容</p>
+</li>
+<li><p>然后我们检验一下是否能拿到远程的配置，以下是我们的远程配置文件中所包含的内容</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">pattern:</span></span><br><span class="line">    <span class="attr">dateformat:</span> <span class="string">yyyy/MM/dd</span> <span class="string">HH:mm:ss</span></span><br></pre></td></tr></table></figure>
+<p>然后我们在Controller文件中获取一下配置文件，然后输出到屏幕上</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Value(&quot;$&#123;pattern.dateformat&#125;&quot;)</span></span><br><span class="line"><span class="keyword">private</span> String dateformat;</span><br><span class="line"></span><br><span class="line"><span class="meta">@GetMapping(&quot;now&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">now</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> LocalDateTime.now().format(DateTimeFormatter.ofPattern(dateformat));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如果读取成功屏幕上就会按照前面的格式输出时间<img src="https://z3.ax1x.com/2021/10/04/4XEA41.png" class="lazyload" data-srcset="https://z3.ax1x.com/2021/10/04/4XEA41.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+</li>
+</ol>
+<h3 id="5-3、配置热更新"><a href="#5-3、配置热更新" class="headerlink" title="5.3、配置热更新"></a>5.3、配置热更新</h3><p>有了配置文件之后，我们现在要来配置热更新了。<br>最简单的方法就是通过注解的方式来进行添加，就是以下的这种方法</p>
+<p>在 <code>@Value</code> 注入的变量所在类上添加注解 <code>@RefreshScope</code></p>
+<p>另一种方法就是使用 <code>@ConfigurationProperties</code> 注解来实现。</p>
+<p>首先我们创建一个 <code>PatternProperties </code> 类，然后在上面标上 <code>@ConfigurationProperties(prefix = &quot;pattern&quot;)</code> ,<code>@Component</code> ,<code>@Data</code> 等注解。<br>然后在类中创建一个私有成员变量<code>private String dateformat;</code> ，然后其他的控制器中对其进行注入并调用，就可以实现热更新。</p>
+<h3 id="5-4、多环境配置共享"><a href="#5-4、多环境配置共享" class="headerlink" title="5.4、多环境配置共享"></a>5.4、多环境配置共享</h3><p><img src="https://z3.ax1x.com/2021/10/04/4XZMtA.png" class="lazyload" data-srcset="https://z3.ax1x.com/2021/10/04/4XZMtA.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+<p>而在不同微服务之间可以共享配置文件，可以通过下面的两种方式来指定：</p>
+<ol>
+<li>方式一<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line">	<span class="attr">application:</span></span><br><span class="line">		<span class="attr">name:</span> <span class="string">userservice</span> <span class="comment"># 服务名称</span></span><br><span class="line">	<span class="attr">profiles:</span></span><br><span class="line">		<span class="attr">active:</span> <span class="string">dev</span> <span class="comment"># 环境，</span></span><br><span class="line">	<span class="attr">cloud:</span></span><br><span class="line">		<span class="attr">nacos:</span></span><br><span class="line">			<span class="attr">server-addr:</span> <span class="string">localhost:8848</span> <span class="comment"># Nacos地址</span></span><br><span class="line">			<span class="attr">config:</span> </span><br><span class="line">				<span class="attr">file-extension:</span> <span class="string">yaml</span> <span class="comment"># 文件后缀名</span></span><br><span class="line">				<span class="attr">shared-configs:</span> <span class="comment"># 多微服务间共享的配置列表</span></span><br><span class="line">					<span class="bullet">-</span> <span class="attr">dataId:</span> <span class="string">common.yaml</span> <span class="comment"># 要共享的配置文件id</span></span><br></pre></td></tr></table></figure></li>
+<li>方式二<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line">	<span class="attr">application:</span></span><br><span class="line">		<span class="attr">name:</span> <span class="string">userservice</span> <span class="comment"># 服务名称</span></span><br><span class="line">	<span class="attr">profiles:</span></span><br><span class="line">		<span class="attr">active:</span> <span class="string">dev</span> <span class="comment"># 环境，</span></span><br><span class="line">	<span class="attr">cloud:</span></span><br><span class="line">		<span class="attr">nacos:</span></span><br><span class="line">			<span class="attr">server-addr:</span> <span class="string">localhost:8848</span> <span class="comment"># Nacos地址</span></span><br><span class="line">			<span class="attr">config:</span> </span><br><span class="line">            	<span class="attr">file-extension:</span> <span class="string">yaml</span> <span class="comment"># 文件后缀名</span></span><br><span class="line">				<span class="attr">extends-configs:</span> <span class="comment"># 多微服务间共享的配置列表</span></span><br><span class="line">					<span class="bullet">-</span> <span class="attr">dataId:</span> <span class="string">extend.yaml</span> <span class="comment"># 要共享的配置文件id</span></span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="5-5、Nacos集群搭建"><a href="#5-5、Nacos集群搭建" class="headerlink" title="5.5、Nacos集群搭建"></a>5.5、Nacos集群搭建</h3><p>以下是教程中所要搭建的集群结构</p>
+<p><img src="https://z3.ax1x.com/2021/10/04/4Xe2Kf.png" class="lazyload" data-srcset="https://z3.ax1x.com/2021/10/04/4Xe2Kf.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+<p>三个nacos节点的地址：</p>
+<table>
+<thead>
+<tr>
+<th>节点</th>
+<th>ip</th>
+<th>port</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>nacos1</td>
+<td>192.168.150.1</td>
+<td>8845</td>
+</tr>
+<tr>
+<td>nacos2</td>
+<td>192.168.150.1</td>
+<td>8846</td>
+</tr>
+<tr>
+<td>nacos3</td>
+<td>192.168.150.1</td>
+<td>8847</td>
+</tr>
+</tbody></table>
+<p><strong>然后我们现在开始搭建我们的集群</strong></p>
+<p>搭建集群的基本步骤：</p>
+<ul>
+<li>搭建数据库，初始化数据库表结构</li>
+<li>下载nacos安装包</li>
+<li>配置nacos</li>
+<li>启动nacos集群</li>
+<li>nginx反向代理</li>
+</ul>
+<ol>
+<li><p>初始化数据库</p>
+<p>我们在我们的数据库中创建好一个我们所需要的数据库</p>
+</li>
+<li><p>然后安装包我们已经下载过了，就可以直接跳过，然后配置一下nacos</p>
+<p>进入nacos的conf目录，修改配置文件cluster.conf.example，重命名为cluster.conf：<br><img src="https://z3.ax1x.com/2021/10/04/4Xeva4.png" class="lazyload" data-srcset="https://z3.ax1x.com/2021/10/04/4Xeva4.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+<p>然后添加以下三个地址</p>
+<p><img src="https://z3.ax1x.com/2021/10/04/4XmfQx.png" class="lazyload" data-srcset="https://z3.ax1x.com/2021/10/04/4XmfQx.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+<p>然后修改application.properties文件，添加数据库配置</p>
+</li>
+</ol>
+<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">spring.datasource.platform</span>=<span class="string">mysql</span></span><br><span class="line"><span class="meta">db.num</span>=<span class="string">1</span></span><br><span class="line"><span class="meta">db.url.0</span>=<span class="string">jdbc:mysql://127.0.0.1:3306/nacos?characterEncoding=utf8&amp;connectTimeout=1000&amp;socketTimeout=3000&amp;autoReconnect=true&amp;useUnicode=true&amp;useSSL=false&amp;serverTimezone=UTC</span></span><br><span class="line"><span class="meta">db.user.0</span>=<span class="string">root</span></span><br><span class="line"><span class="meta">db.password.0</span>=<span class="string">123</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><p>启动</p>
+<p>将nacos文件夹复制三份，分别命名为：nacos1、nacos2、nacos3</p>
+<p>然后分别修改三个文件夹中的 <code>application.properties</code> ，</p>
+<p>nacos1:</p>
+</li>
+</ol>
+<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">server.port</span>=<span class="string">8845</span></span><br></pre></td></tr></table></figure>
+
+<p>   nacos2:</p>
+<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">server.port</span>=<span class="string">8846</span></span><br></pre></td></tr></table></figure>
+
+<p>   nacos3:</p>
+<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">server.port</span>=<span class="string">8847</span></span><br></pre></td></tr></table></figure>
+
+<p>   然后分别启动三个nacos节点：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">startup.cmd</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>Nginx反向代理</li>
+</ol>
+<p>安装好nginx之后，打开文件夹。修改conf/nginx.conf文件，配置如下：</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">upstream</span> nacos-cluster &#123;</span><br><span class="line">    <span class="attribute">server</span> <span class="number">127.0.0.1:8845</span>;</span><br><span class="line">	<span class="attribute">server</span> <span class="number">127.0.0.1:8846</span>;</span><br><span class="line">	<span class="attribute">server</span> <span class="number">127.0.0.1:8847</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="section">server</span> &#123;</span><br><span class="line">    <span class="attribute">listen</span>       <span class="number">80</span>;</span><br><span class="line">    <span class="attribute">server_name</span>  localhost;</span><br><span class="line"></span><br><span class="line">    <span class="attribute">location</span> /nacos &#123;</span><br><span class="line">        <span class="attribute">proxy_pass</span> http://nacos-cluster;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>然后在浏览器访问：<a target="_blank" rel="noopener" href="http://localhost/nacos%E5%8D%B3%E5%8F%AF%E3%80%82">http://localhost/nacos即可。</a></p>
+<p>代码中application.yml文件配置如下：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line"> <span class="attr">cloud:</span></span><br><span class="line">   <span class="attr">nacos:</span></span><br><span class="line">     <span class="attr">server-addr:</span> <span class="string">localhost:80</span> <span class="comment"># Nacos地址</span></span><br></pre></td></tr></table></figure>
+
+</div><h2 id="6、客户端Feign"><a href="#6、客户端Feign" class="headerlink" title="6、客户端Feign"></a>6、客户端Feign</h2><div class="story post-story"><p>Feign是一个声明式的http客户端，官方地址：<a target="_blank" rel="noopener" href="https://github.com/OpenFeign/feign">https://github.com/OpenFeign/feign</a><br>其作用就是帮助我们优雅的实现http请求的发送</p>
+<p><img src="https://z3.ax1x.com/2021/10/04/4Xtf4x.png" class="lazyload" data-srcset="https://z3.ax1x.com/2021/10/04/4Xtf4x.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+<h3 id="6-1、使用"><a href="#6-1、使用" class="headerlink" title="6.1、使用"></a>6.1、使用</h3><ol>
+<li><p>引入依赖</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.cloud<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-cloud-starter-openfeign<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><p>在order-service的启动类添加注解开启Feign的功能：<img src="https://z3.ax1x.com/2021/10/04/4XNUMD.png" class="lazyload" data-srcset="https://z3.ax1x.com/2021/10/04/4XNUMD.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+</li>
+<li><p>编写feign客户端</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@FeignClient(&quot;userservice&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">UserClient</span> </span>&#123;</span><br><span class="line">	<span class="meta">@GetMapping(&quot;/user/&#123;id&#125;&quot;)</span> </span><br><span class="line">	<span class="function">User <span class="title">findById</span><span class="params">(<span class="meta">@PathVariable(&quot;id&quot;)</span> Long id)</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>主要是基于SpringMVC的注解来声明远程调用的信息，比如：</p>
+</li>
+</ol>
+<ul>
+<li>服务名称：userservice</li>
+<li>请求方式：GET</li>
+<li>请求路径：/user/{id}</li>
+<li>请求参数：Long id</li>
+<li>返回值类型：User</li>
+</ul>
+<p>使用这种方式就可以很方便地代替之前的url的调用方式，代码变得更加清晰简洁。<br>以下就是调用的内容</p>
+<ol start="4">
+<li>调用<br><img src="https://z3.ax1x.com/2021/10/04/4XUSF1.png" class="lazyload" data-srcset="https://z3.ax1x.com/2021/10/04/4XUSF1.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></li>
+</ol>
+<h3 id="6-2、自定义Feign的配置"><a href="#6-2、自定义Feign的配置" class="headerlink" title="6.2、自定义Feign的配置"></a>6.2、自定义Feign的配置</h3><p>Feign运行自定义配置来覆盖默认配置，可以修改的配置如下：<img src="https://z3.ax1x.com/2021/10/04/4XUiQO.png" class="lazyload" data-srcset="https://z3.ax1x.com/2021/10/04/4XUiQO.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+<p>一般情况下我们会修改日志级别,最好用basic或none</p>
+<h3 id="6-3、配置Feign的日志"><a href="#6-3、配置Feign的日志" class="headerlink" title="6.3、配置Feign的日志"></a>6.3、配置Feign的日志</h3><p>配置日志时我们也有两种方式，一种是配置文件的方式，另一种是java代码的方式</p>
+<ol>
+<li>配置文件方式</li>
+</ol>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">feign:</span></span><br><span class="line">	<span class="attr">client:</span></span><br><span class="line">		<span class="attr">config:</span></span><br><span class="line">			<span class="attr">default:</span> <span class="comment"># 这里用default就是全局配置，如果是写服务名称，则是针对某个微服务的配置</span></span><br><span class="line">				<span class="attr">loggerLevel:</span> <span class="string">FULL</span> <span class="comment">#  日志级别</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>java代码方式</li>
+</ol>
+<p>首先我们声明一个Bean</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FeignClientConfiguration</span> </span>&#123;</span><br><span class="line">	<span class="meta">@Bean</span></span><br><span class="line">	<span class="keyword">public</span> Logger.<span class="function">Level <span class="title">feignLogLevel</span><span class="params">()</span></span>&#123;</span><br><span class="line">		<span class="keyword">return</span> Logger.Level.BASIC; </span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>然后如果是全局配置，我们就放到 <code>@EnableFeignClients</code> 这个注解中</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@EnableFeignClients(defaultConfiguration = FeignClientConfiguration.class)</span> </span><br></pre></td></tr></table></figure>
+<p>如果是局部配置，我们就放到 <code>@FeignClient</code> 这个注解中</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@FeignClient(value = &quot;userservice&quot;, configuration = FeignClientConfiguration.class)</span> </span><br></pre></td></tr></table></figure>
+
+<h3 id="6-4、性能优化"><a href="#6-4、性能优化" class="headerlink" title="6.4、性能优化"></a>6.4、性能优化</h3><p>Feign底层发起http请求，依赖于其它的框架。其底层客户端实现包括：</p>
+<ul>
+<li>URLConnection：默认实现，不支持连接池</li>
+<li>Apache HttpClient ：支持连接池</li>
+<li>OKHttp：支持连接池</li>
+</ul>
+<p>因此提高Feign的性能主要手段就是使用<strong>连接池</strong>代替默认的URLConnection。<br>这里我们用Apache的HttpClient来演示。</p>
+<ol>
+<li>引入依赖<br>在order-service的pom文件中引入Apache的HttpClient依赖：<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--httpClient的依赖 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>io.github.openfeign<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>feign-httpclient<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li>配置连接池<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">feign:</span></span><br><span class="line">  <span class="attr">client:</span></span><br><span class="line">    <span class="attr">config:</span></span><br><span class="line">      <span class="attr">default:</span> <span class="comment"># default全局的配置</span></span><br><span class="line">        <span class="attr">loggerLevel:</span> <span class="string">BASIC</span> <span class="comment"># 日志级别，BASIC就是基本的请求和响应信息</span></span><br><span class="line">  <span class="attr">httpclient:</span></span><br><span class="line">    <span class="attr">enabled:</span> <span class="literal">true</span> <span class="comment"># 开启feign对HttpClient的支持</span></span><br><span class="line">    <span class="attr">max-connections:</span> <span class="number">200</span> <span class="comment"># 最大的连接数</span></span><br><span class="line">    <span class="attr">max-connections-per-route:</span> <span class="number">50</span> <span class="comment"># 每个路径的最大连接数</span></span><br></pre></td></tr></table></figure></li>
+<li>优化总结<br>总结，Feign的优化：</li>
+</ol>
+<p>1.日志级别尽量用basic<br>2.使用HttpClient或OKHttp代替URLConnection<br>①  引入feign-httpClient依赖<br>②  配置文件开启httpClient功能，设置连接池参数</p>
+<h3 id="6-5、最佳实践"><a href="#6-5、最佳实践" class="headerlink" title="6.5、最佳实践"></a>6.5、最佳实践</h3><p>所谓最近实践，就是使用过程中总结的经验，最好的一种使用方式。<br>自习观察可以发现，Feign的客户端与服务提供者的controller代码非常相似：<br>feign客户端：<img src="https://z3.ax1x.com/2021/10/04/4X0pHe.png" class="lazyload" data-srcset="https://z3.ax1x.com/2021/10/04/4X0pHe.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ><br>UserController：<img src="https://z3.ax1x.com/2021/10/04/4X0k9I.png" class="lazyload" data-srcset="https://z3.ax1x.com/2021/10/04/4X0k9I.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+<p>我们有两种方法来优化重复的代码编写</p>
+<ol>
+<li>继承方式</li>
+<li>抽取方式</li>
+</ol>
+<p>首先来说一下<strong>继承方式</strong>：<br>一样的代码可以通过继承来共享：<br>1）定义一个API接口，利用定义方法，并基于SpringMVC注解做声明。<br>2）Feign客户端和Controller都集成这个接口<img src="https://z3.ax1x.com/2021/10/04/4X0EgP.png" class="lazyload" data-srcset="https://z3.ax1x.com/2021/10/04/4X0EgP.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+<p>优点：</p>
+<ul>
+<li>简单</li>
+<li>实现了代码共享</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>服务提供方、服务消费方紧耦合</li>
+<li>参数列表中的注解映射并不会继承，因此Controller中必须再次声明方法、参数列表、注解</li>
+</ul>
+<p>然后是<strong>抽取的方式</strong><br>将Feign的Client抽取为独立模块，并且把接口有关的POJO、默认的Feign配置都放到这个模块中，提供给所有消费者使用。<br>例如，将UserClient、User、Feign的默认配置都抽取到一个feign-api包中，所有微服务引用该依赖包，即可直接使用<br><img src="https://z3.ax1x.com/2021/10/04/4X0dUJ.png" class="lazyload" data-srcset="https://z3.ax1x.com/2021/10/04/4X0dUJ.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+<h3 id="6-6、基于抽取的最佳实践"><a href="#6-6、基于抽取的最佳实践" class="headerlink" title="6.6、基于抽取的最佳实践"></a>6.6、基于抽取的最佳实践</h3><ol>
+<li>首先创建一个公共类 <code>feign-api</code></li>
+<li>在这个类中引入依赖<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.cloud<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-cloud-starter-openfeign<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li>然后，order-service中编写的UserClient、User、DefaultFeignConfiguration都复制到feign-api项目中<br><img src="https://z3.ax1x.com/2021/10/04/4X0RVe.png" class="lazyload" data-srcset="https://z3.ax1x.com/2021/10/04/4X0RVe.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></li>
+<li>在order-service中使用feign-api（引入api的依赖）<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>cn.itcast.demo<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>feign-api<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li>修改order-service中的所有与上述三个组件有关的导包部分，改成导入feign-api中的包</li>
+<li>此时当我们重启测试的时候，就会发现出错了，出错内容如下<br><img src="https://z3.ax1x.com/2021/10/04/4X07Kf.png" class="lazyload" data-srcset="https://z3.ax1x.com/2021/10/04/4X07Kf.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></li>
+</ol>
+<p>这是因为UserClient现在在cn.itcast.feign.clients包下，<br>而order-service的@EnableFeignClients注解是在cn.itcast.order包下，不在同一个包，无法扫描到UserClient。<br>7. 解决扫描包问题</p>
+<p>有两种方法，一种是：指定Feign应该扫描的包</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@EnableFeignClients(basePackages = &quot;cn.itcast.feign.clients&quot;)</span></span><br></pre></td></tr></table></figure>
+<p>一种是指定要加载的Client的接口</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@EnableFeignClients(clients = &#123;UserClient.class&#125;)</span></span><br></pre></td></tr></table></figure>
+
+<ol start="8">
+<li>至此，就设置完毕了</li>
+</ol>
 
 </div>
   </div>
@@ -2828,7 +3028,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2021-10-04T14:38:53+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2021-10-04T21:03:46+08:00">
   <a class='notlink' href="/" onclick="return false;" title="Click me!" >
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：Oct 4, 2021</p>
@@ -2954,7 +3154,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%9A%84%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B"><span class="toc-text">1、微服务的发展历程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1%E3%80%81%E5%8D%95%E4%BD%93%E7%BB%93%E6%9E%84"><span class="toc-text">1.1、单体结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2%E3%80%81%E5%88%86%E5%B8%83%E5%BC%8F%E7%BB%93%E6%9E%84"><span class="toc-text">1.2、分布式结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3%E3%80%81%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84"><span class="toc-text">1.3、微服务架构</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E4%BD%BF%E7%94%A8SpringCloud"><span class="toc-text">2、使用SpringCloud</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1%E3%80%81%E6%9C%8D%E5%8A%A1%E6%8B%86%E5%88%86"><span class="toc-text">2.1、服务拆分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2%E3%80%81%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8"><span class="toc-text">2.2、服务调用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3%E3%80%81eureka%E6%B3%A8%E5%86%8C%E4%B8%AD%E5%BF%83"><span class="toc-text">2.3、eureka注册中心</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4%E3%80%81eureka%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8"><span class="toc-text">2.4、eureka服务调用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1"><span class="toc-text">3、负载均衡</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1%E3%80%81%E8%AE%A4%E8%AF%86%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1"><span class="toc-text">3.1、认识负载均衡</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2%E3%80%81%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E7%AD%96%E7%95%A5"><span class="toc-text">3.2、负载均衡策略</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E3%80%81SpringCloud-Alibaba"><span class="toc-text">4、SpringCloud Alibaba</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1%E3%80%81%E6%B3%A8%E5%86%8C%E4%B8%AD%E5%BF%83Nacos"><span class="toc-text">4.1、注册中心Nacos</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2%E3%80%81%E5%B0%86%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E5%88%B0Nacos"><span class="toc-text">4.2、将服务注册到Nacos</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3%E3%80%81%E6%9C%8D%E5%8A%A1%E9%9B%86%E7%BE%A4"><span class="toc-text">4.3、服务集群</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4%E3%80%81%E7%8E%AF%E5%A2%83%E9%9A%94%E7%A6%BB-namespace"><span class="toc-text">4.4、环境隔离 - namespace</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E3%80%81%E6%80%BB%E7%BB%93"><span class="toc-text">5、总结</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%9A%84%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B"><span class="toc-text">1、微服务的发展历程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1%E3%80%81%E5%8D%95%E4%BD%93%E7%BB%93%E6%9E%84"><span class="toc-text">1.1、单体结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2%E3%80%81%E5%88%86%E5%B8%83%E5%BC%8F%E7%BB%93%E6%9E%84"><span class="toc-text">1.2、分布式结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3%E3%80%81%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84"><span class="toc-text">1.3、微服务架构</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E4%BD%BF%E7%94%A8SpringCloud"><span class="toc-text">2、使用SpringCloud</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1%E3%80%81%E6%9C%8D%E5%8A%A1%E6%8B%86%E5%88%86"><span class="toc-text">2.1、服务拆分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2%E3%80%81%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8"><span class="toc-text">2.2、服务调用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3%E3%80%81eureka%E6%B3%A8%E5%86%8C%E4%B8%AD%E5%BF%83"><span class="toc-text">2.3、eureka注册中心</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4%E3%80%81eureka%E6%9C%8D%E5%8A%A1%E8%B0%83%E7%94%A8"><span class="toc-text">2.4、eureka服务调用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1"><span class="toc-text">3、负载均衡</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1%E3%80%81%E8%AE%A4%E8%AF%86%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1"><span class="toc-text">3.1、认识负载均衡</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2%E3%80%81%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E7%AD%96%E7%95%A5"><span class="toc-text">3.2、负载均衡策略</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E3%80%81SpringCloud-Alibaba"><span class="toc-text">4、SpringCloud Alibaba</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1%E3%80%81%E6%B3%A8%E5%86%8C%E4%B8%AD%E5%BF%83Nacos"><span class="toc-text">4.1、注册中心Nacos</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2%E3%80%81%E5%B0%86%E6%9C%8D%E5%8A%A1%E6%B3%A8%E5%86%8C%E5%88%B0Nacos"><span class="toc-text">4.2、将服务注册到Nacos</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3%E3%80%81%E6%9C%8D%E5%8A%A1%E9%9B%86%E7%BE%A4"><span class="toc-text">4.3、服务集群</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4%E3%80%81%E7%8E%AF%E5%A2%83%E9%9A%94%E7%A6%BB-namespace"><span class="toc-text">4.4、环境隔离 - namespace</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E3%80%81Nacos%E9%85%8D%E7%BD%AE%E7%AE%A1%E7%90%86"><span class="toc-text">5、Nacos配置管理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1%E3%80%81Nacos%E5%AE%9E%E7%8E%B0%E9%85%8D%E7%BD%AE%E7%9A%84%E7%AE%A1%E7%90%86"><span class="toc-text">5.1、Nacos实现配置的管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2%E3%80%81%E9%85%8D%E7%BD%AE%E7%9A%84%E6%8B%89%E5%8F%96"><span class="toc-text">5.2、配置的拉取</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-3%E3%80%81%E9%85%8D%E7%BD%AE%E7%83%AD%E6%9B%B4%E6%96%B0"><span class="toc-text">5.3、配置热更新</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-4%E3%80%81%E5%A4%9A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%85%B1%E4%BA%AB"><span class="toc-text">5.4、多环境配置共享</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-5%E3%80%81Nacos%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA"><span class="toc-text">5.5、Nacos集群搭建</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6%E3%80%81%E5%AE%A2%E6%88%B7%E7%AB%AFFeign"><span class="toc-text">6、客户端Feign</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#6-1%E3%80%81%E4%BD%BF%E7%94%A8"><span class="toc-text">6.1、使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-2%E3%80%81%E8%87%AA%E5%AE%9A%E4%B9%89Feign%E7%9A%84%E9%85%8D%E7%BD%AE"><span class="toc-text">6.2、自定义Feign的配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-3%E3%80%81%E9%85%8D%E7%BD%AEFeign%E7%9A%84%E6%97%A5%E5%BF%97"><span class="toc-text">6.3、配置Feign的日志</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-4%E3%80%81%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96"><span class="toc-text">6.4、性能优化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-5%E3%80%81%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5"><span class="toc-text">6.5、最佳实践</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-6%E3%80%81%E5%9F%BA%E4%BA%8E%E6%8A%BD%E5%8F%96%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5"><span class="toc-text">6.6、基于抽取的最佳实践</span></a></li></ol></li></ol>
     </div>
   </section>
 
@@ -3108,7 +3308,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
     
       
-        <p>本站使用 <a target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/tree/dev">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="noopener" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
+        <p>Uses <a target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/tree/dev">Volantis</a> as theme. You can find <a href="GitHub">source</a> in <a target="_blank" rel="noopener" href="https://github.com/volantis-x/volantis-docs">https://github.com/volantis-x/volantis-docs</a>.</p>
 
       
     
@@ -3166,8 +3366,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1633329615520')
-      volantis.js('/js/message.js?time=1633329615520', () => {
+      volantis.css('/css/message.css?time=1633352714248')
+      volantis.js('/js/message.js?time=1633352714248', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -3212,8 +3412,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1633329615520')
-      volantis.js('/js/message.js?time=1633329615520', () => {
+      volantis.css('/css/message.css?time=1633352714248')
+      volantis.js('/js/message.js?time=1633352714248', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -3272,8 +3472,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1633329615520')
-      volantis.js('/js/message.js?time=1633329615520', () => {
+      volantis.css('/css/message.css?time=1633352714248')
+      volantis.js('/js/message.js?time=1633352714248', () => {
         hideMessage(done);
       });
     } else {
@@ -3418,19 +3618,19 @@ volantis.pjax.push(bindToggleButton);
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1633329615520")
+        volantis.js("/js/plugins/sites.js?time=1633352714248")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1633329615520")
+        volantis.js("/js/plugins/friends.js?time=1633352714248")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1633329615520")
+        volantis.js("/js/plugins/contributors.js?time=1633352714248")
       }
     
   };
@@ -3621,7 +3821,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-<script src="/js/app.js?time=1633329615520.js"></script>
+<script src="/js/app.js?time=1633352714248.js"></script>
 
 
 <!-- optional -->
@@ -3634,7 +3834,7 @@ volantis.pjax.push(bindToggleButton);
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1633329615520");
+    return volantis.js("/js/search/hexo.js?time=1633352714248");
   }
 
   function loadSearchService() {
@@ -3908,7 +4108,7 @@ volantis.pjax.push(bindToggleButton);
 
 
   <script>
-  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp"];
+  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -3951,7 +4151,7 @@ volantis.pjax.push(bindToggleButton);
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/parallax.js?time=1633329615520').then(()=>{
+    volantis.js('/js/parallax.js?time=1633352714248').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4145,7 +4345,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"George's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2021/10/03/2021-10-03-SpringCloud微服务入门/","name":"SpringCloud微服务入门"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"SpringCloud微服务入门","description":"","datePublished":"2021-10-03T05:44:20.000Z","dateModified":"2021-10-04T06:38:53.464Z","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2021/10/03/2021-10-03-SpringCloud%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%85%A5%E9%97%A8/"},"author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"George's Blog","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2021/10/03/2021-10-03-SpringCloud%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%85%A5%E9%97%A8/","wordCount":0,"keywords":"java,springcloud","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"George's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2021/10/03/2021-10-03-SpringCloud微服务入门/","name":"SpringCloud微服务入门"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"SpringCloud微服务入门","description":"","datePublished":"2021-10-03T05:44:20.000Z","dateModified":"2021-10-04T13:03:46.990Z","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2021/10/03/2021-10-03-SpringCloud%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%85%A5%E9%97%A8/"},"author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"George's Blog","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2021/10/03/2021-10-03-SpringCloud%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%85%A5%E9%97%A8/","wordCount":0,"keywords":"java,springcloud","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 <!-- more -->
