@@ -8,7 +8,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://example.com/archives/2021/08/"/>
+  <link rel="canonical" href="http://example.com/archives/2021/11/"/>
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
@@ -23,16 +23,16 @@
   <meta content="George&#39;s Blog" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1636735173223" as="style">
+  <link rel="preload" href="/css/style.css?time=1636735173244" as="style">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- 页面元数据 -->
-  <title>Archive: 2021/8 - George's Blog</title>
+  <title>Archive: 2021/11 - George's Blog</title>
   <meta name="keywords" content="null">
   <meta property="og:type" content="website">
 <meta property="og:title" content="George&#39;s Blog">
-<meta property="og:url" content="http://example.com/archives/2021/08/index.html">
+<meta property="og:url" content="http://example.com/archives/2021/11/index.html">
 <meta property="og:site_name" content="George&#39;s Blog">
 <meta property="og:locale">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
@@ -1873,8 +1873,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1636735173223" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1636735173223"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1636735173244" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1636735173244"></noscript>
     <script>
       var userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -2617,12 +2617,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
-          
-        
-          
-        
-          
-        
       
     
     
@@ -2630,7 +2624,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/27/2021-08-27-%E5%87%86%E5%A4%87%E9%98%85%E8%AF%BB%E5%B0%8F%E7%B1%B3%E5%8D%81%E5%B9%B4%E7%BA%AA%E5%BF%B5%E3%80%8A%E4%B8%80%E5%BE%80%E6%97%A0%E5%89%8D%E3%80%8B%20-%20%E5%89%AF%E6%9C%AC%20-%20%E5%89%AF%E6%9C%AC/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2021/11/12/2021-11-12-Service%E4%B8%AD%E5%8C%85%E5%90%AB%E5%93%AA%E4%BA%9B%E4%BB%A3%E7%A0%81/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="George's Blog">
   </span>
@@ -2644,19 +2638,27 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/08/27/2021-08-27-%E5%87%86%E5%A4%87%E9%98%85%E8%AF%BB%E5%B0%8F%E7%B1%B3%E5%8D%81%E5%B9%B4%E7%BA%AA%E5%BF%B5%E3%80%8A%E4%B8%80%E5%BE%80%E6%97%A0%E5%89%8D%E3%80%8B%20-%20%E5%89%AF%E6%9C%AC%20-%20%E5%89%AF%E6%9C%AC/"  itemprop="url">
-        准备阅读小米十年纪念《一往无前》
+      <a href="/2021/11/12/2021-11-12-Service%E4%B8%AD%E5%8C%85%E5%90%AB%E5%93%AA%E4%BA%9B%E4%BB%A3%E7%A0%81/"  itemprop="url">
+        Service中包含哪些代码
       </a>
     </h2>
   
   <div class='md' itemprop="articleBody">
     
       
-        准备阅读小米十年纪念《一往无前》作为一个不太资深的老米粉，自从小米发布新书《一往无前》以来一直想阅读一下，感受一下大厂发展的心路历程，但是一直都没有提上日程，而今天决定正式开始阅读此书，但是可能耗时会较长，现在这里做一个标记，阅读完毕务必完成一篇读后感。
+        Service中包含哪些代码1、简介Service层中 = 核心功能(几十行 上百代码) + 额外功能(附加功能)
 
-2021.09.21 因为一直都在面试，所以阅读计划得往后推迟一点了。
+核心功能业务运算DAO调用
+额外功能 
+不属于业务
+可有可无
+代码量很小 
 
 
+
+以及：事务、日志、性能…
+Service层，作为程序的业务层面，其中最重要的必然是程序的业务流程，只有对程序的业务流程有足够的了解，才能写出优秀的Service层代码。
+不冗余，是一个程序员代码...
       
     
   </div>
@@ -2672,205 +2674,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             <meta itemprop="url" content="https://github.com/chenyicai0819">
           </span>
         
-        <time itemprop="dateCreated datePublished" datetime="2021-08-27T00:46:22+08:00">2021-08-27</time>
+        <time itemprop="dateCreated datePublished" datetime="2021-11-12T23:49:01+08:00">2021-11-12</time>
         
       </div>
       
         <div>
-          <a class='readmore' href='/2021/08/27/2021-08-27-%E5%87%86%E5%A4%87%E9%98%85%E8%AF%BB%E5%B0%8F%E7%B1%B3%E5%8D%81%E5%B9%B4%E7%BA%AA%E5%BF%B5%E3%80%8A%E4%B8%80%E5%BE%80%E6%97%A0%E5%89%8D%E3%80%8B%20-%20%E5%89%AF%E6%9C%AC%20-%20%E5%89%AF%E6%9C%AC/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/26/2021-08-26-%E5%AF%B9SpringIOC%E7%9A%84%E7%90%86%E8%A7%A3/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="George's Blog">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/08/26/2021-08-26-%E5%AF%B9SpringIOC%E7%9A%84%E7%90%86%E8%A7%A3/"  itemprop="url">
-        对SpringIOC的理解
-      </a>
-    </h2>
-  
-  <div class='md' itemprop="articleBody">
-    
-      
-        对SpringIOC的理解1、何为IOC​    IOC—Inversion of Control，即“控制反转”，不是什么技术，而是一种设计思想。在Java开发中，IOC意味着将你设计好的对象交给容器控制，而不是传统的在你的对象内部直接控制。如何理解好IOC呢？理解好Ioc的关键是要明确“谁控制谁，控制什么，为何是反转（有反转就应该有正转了），哪些方面反转了”，那我们来分析一下
-1.1 谁...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' target="_blank" rel="noopener" href='https://github.com/chenyicai0819'><img src='https://z3.ax1x.com/2021/09/30/4oKiUx.jpg' alt="This is a picture without description" ></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://z3.ax1x.com/2021/09/30/4oKiUx.jpg">
-            <meta itemprop="name" content="George chan">
-            <meta itemprop="url" content="https://github.com/chenyicai0819">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-08-26T09:45:01+08:00">2021-08-26</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/08/26/2021-08-26-%E5%AF%B9SpringIOC%E7%9A%84%E7%90%86%E8%A7%A3/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/20/2021-08-20-%E6%9C%80%E8%BF%91%E4%B8%80%E6%AE%B5%E6%97%B6%E9%97%B4%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="George's Blog">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/08/20/2021-08-20-%E6%9C%80%E8%BF%91%E4%B8%80%E6%AE%B5%E6%97%B6%E9%97%B4%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"  itemprop="url">
-        最近一段时间的学习总结
-      </a>
-    </h2>
-  
-  <div class='md' itemprop="articleBody">
-    
-      
-        最近一段时间的学习总结项目部分
-完成了学生宿舍系统的答辩
-成功将学生宿舍为系统部署到了服务器上
-准备进行学生宿舍系统的小程序的设计，但是实在是没有时间
-完成了国医堂小程序的开发(React+Taro+Taro UI)
-完成了小程序API的开发(Vue+SpringBoot+MyBatis-Plus)
-国医堂小程序后台开发完毕(VUE+SpringBoot+MyBatis-Plus+Eleme...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' target="_blank" rel="noopener" href='https://github.com/chenyicai0819'><img src='https://z3.ax1x.com/2021/09/30/4oKiUx.jpg' alt="This is a picture without description" ></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://z3.ax1x.com/2021/09/30/4oKiUx.jpg">
-            <meta itemprop="name" content="George chan">
-            <meta itemprop="url" content="https://github.com/chenyicai0819">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-08-20T01:16:32+08:00">2021-08-20</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/08/20/2021-08-20-%E6%9C%80%E8%BF%91%E4%B8%80%E6%AE%B5%E6%97%B6%E9%97%B4%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/01/2021-08-01-shiro%E5%AE%89%E5%85%A8%E6%A1%86%E6%9E%B6/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="George's Blog">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/08/01/2021-08-01-shiro%E5%AE%89%E5%85%A8%E6%A1%86%E6%9E%B6/"  itemprop="url">
-        shiro安全框架
-      </a>
-    </h2>
-  
-  <div class='md' itemprop="articleBody">
-    
-      
-        shiro安全框架1、简述shiro是apache公司所出品的开源安全框架其可以用于：
-
-处理身份认证
-授权
-企业会话管理和加密
-
-相对于Spring security来说更加简单，使用也更加灵活
-在使用shiro的时候可以不依赖于任何容器，既可以在javaSE下使用，同样可以在JavaEE下使用
-2、架构
-使用用户的登录信息构建令牌12UsernamePasswordToken token...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' target="_blank" rel="noopener" href='https://github.com/chenyicai0819'><img src='https://z3.ax1x.com/2021/09/30/4oKiUx.jpg' alt="This is a picture without description" ></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://z3.ax1x.com/2021/09/30/4oKiUx.jpg">
-            <meta itemprop="name" content="George chan">
-            <meta itemprop="url" content="https://github.com/chenyicai0819">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-08-01T20:19:41+08:00">2021-08-01</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/08/01/2021-08-01-shiro%E5%AE%89%E5%85%A8%E6%A1%86%E6%9E%B6/' itemprop="url">
+          <a class='readmore' href='/2021/11/12/2021-11-12-Service%E4%B8%AD%E5%8C%85%E5%90%AB%E5%93%AA%E4%BA%9B%E4%BB%A3%E7%A0%81/' itemprop="url">
             Read More
           </a>
         </div>
@@ -3044,7 +2853,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Sat Nov 13 2021 00:39:30 GMT+0800 (中国标准时间)</div>
+            <div id="last-update" style="display: none;">Sat Nov 13 2021 00:39:31 GMT+0800 (中国标准时间)</div>
             <div id="last-update-show">2021-11-13 日</div>
           
         </div>
@@ -3375,8 +3184,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1636735173223')
-      volantis.js('/js/message.js?time=1636735173223', () => {
+      volantis.css('/css/message.css?time=1636735173244')
+      volantis.js('/js/message.js?time=1636735173244', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -3421,8 +3230,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1636735173223')
-      volantis.js('/js/message.js?time=1636735173223', () => {
+      volantis.css('/css/message.css?time=1636735173244')
+      volantis.js('/js/message.js?time=1636735173244', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -3481,8 +3290,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1636735173223')
-      volantis.js('/js/message.js?time=1636735173223', () => {
+      volantis.css('/css/message.css?time=1636735173244')
+      volantis.js('/js/message.js?time=1636735173244', () => {
         hideMessage(done);
       });
     } else {
@@ -3627,19 +3436,19 @@ volantis.pjax.push(bindToggleButton);
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1636735173223")
+        volantis.js("/js/plugins/sites.js?time=1636735173244")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1636735173223")
+        volantis.js("/js/plugins/friends.js?time=1636735173244")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1636735173223")
+        volantis.js("/js/plugins/contributors.js?time=1636735173244")
       }
     
   };
@@ -3830,7 +3639,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-<script src="/js/app.js?time=1636735173223.js"></script>
+<script src="/js/app.js?time=1636735173244.js"></script>
 
 
 <!-- optional -->
@@ -3843,7 +3652,7 @@ volantis.pjax.push(bindToggleButton);
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1636735173223");
+    return volantis.js("/js/search/hexo.js?time=1636735173244");
   }
 
   function loadSearchService() {
@@ -4117,7 +3926,7 @@ volantis.pjax.push(bindToggleButton);
 
 
   <script>
-  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp"];
+  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -4160,7 +3969,7 @@ volantis.pjax.push(bindToggleButton);
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/parallax.js?time=1636735173223').then(()=>{
+    volantis.js('/js/parallax.js?time=1636735173244').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4354,7 +4163,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"George's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/archives/2021/","name":"2021年"}},{"@type":"ListItem","position":4,"item":{"@id":"http://example.com/archives/2021/8/","name":"8月"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"George's Blog","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"George's Blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"George's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/archives/2021/","name":"2021年"}},{"@type":"ListItem","position":4,"item":{"@id":"http://example.com/archives/2021/11/","name":"11月"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"George's Blog","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"George's Blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}}]</script>
 
 
 <!-- more -->

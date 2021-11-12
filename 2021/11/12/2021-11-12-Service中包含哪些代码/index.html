@@ -7,8 +7,8 @@
   <meta name="generator" content="Hexo 5.4.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://example.com/archives/2021/08/"/>
+  
+  <link rel="canonical" href="http://example.com/2021/11/12/2021-11-12-service中包含哪些代码/"/>
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
@@ -23,20 +23,25 @@
   <meta content="George&#39;s Blog" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1636735173223" as="style">
+  <link rel="preload" href="/css/style.css?time=1636735173005" as="style">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- 页面元数据 -->
-  <title>Archive: 2021/8 - George's Blog</title>
-  <meta name="keywords" content="null">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="George&#39;s Blog">
-<meta property="og:url" content="http://example.com/archives/2021/08/index.html">
+  <title>Service中包含哪些代码 - George's Blog</title>
+  <meta name="keywords" content="java,null">
+  <meta name="description" content="Service中包含哪些代码1、简介Service层中 &#x3D; 核心功能(几十行 上百代码) + 额外功能(附加功能)  核心功能业务运算DAO调用 额外功能  不属于业务 可有可无 代码量很小     以及：事务、日志、性能… Service层，作为程序的业务层面，其中最重要的必然是程序的业务流程，只有对程序的业务流程有足够的了解，才能写出优秀的Service层代码。 不冗余，是一个程序员代码水平的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Service中包含哪些代码">
+<meta property="og:url" content="http://example.com/2021/11/12/2021-11-12-Service%E4%B8%AD%E5%8C%85%E5%90%AB%E5%93%AA%E4%BA%9B%E4%BB%A3%E7%A0%81/index.html">
 <meta property="og:site_name" content="George&#39;s Blog">
+<meta property="og:description" content="Service中包含哪些代码1、简介Service层中 &#x3D; 核心功能(几十行 上百代码) + 额外功能(附加功能)  核心功能业务运算DAO调用 额外功能  不属于业务 可有可无 代码量很小     以及：事务、日志、性能… Service层，作为程序的业务层面，其中最重要的必然是程序的业务流程，只有对程序的业务流程有足够的了解，才能写出优秀的Service层代码。 不冗余，是一个程序员代码水平的">
 <meta property="og:locale">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2021-11-12T15:49:01.000Z">
+<meta property="article:modified_time" content="2021-11-12T16:35:26.168Z">
 <meta property="article:author" content="George Chan">
+<meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
   <!-- feed -->
@@ -1873,8 +1878,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1636735173223" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1636735173223"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1636735173005" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1636735173005"></noscript>
     <script>
       var userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -2301,7 +2306,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <!-- Custom Files head end-->
 </head>
   <body itemscope itemtype="http://schema.org/WebPage">
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2537,7 +2542,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  dock' style="display: ;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div id="parallax-window"></div>
 
@@ -2609,288 +2614,247 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-	
-		
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/27/2021-08-27-%E5%87%86%E5%A4%87%E9%98%85%E8%AF%BB%E5%B0%8F%E7%B1%B3%E5%8D%81%E5%B9%B4%E7%BA%AA%E5%BF%B5%E3%80%8A%E4%B8%80%E5%BE%80%E6%97%A0%E5%89%8D%E3%80%8B%20-%20%E5%89%AF%E6%9C%AC%20-%20%E5%89%AF%E6%9C%AC/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2021/11/12/2021-11-12-Service%E4%B8%AD%E5%8C%85%E5%90%AB%E5%93%AA%E4%BA%9B%E4%BB%A3%E7%A0%81/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="George's Blog">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/08/27/2021-08-27-%E5%87%86%E5%A4%87%E9%98%85%E8%AF%BB%E5%B0%8F%E7%B1%B3%E5%8D%81%E5%B9%B4%E7%BA%AA%E5%BF%B5%E3%80%8A%E4%B8%80%E5%BE%80%E6%97%A0%E5%89%8D%E3%80%8B%20-%20%E5%89%AF%E6%9C%AC%20-%20%E5%89%AF%E6%9C%AC/"  itemprop="url">
-        准备阅读小米十年纪念《一往无前》
-      </a>
-    </h2>
-  
-  <div class='md' itemprop="articleBody">
     
-      
-        准备阅读小米十年纪念《一往无前》作为一个不太资深的老米粉，自从小米发布新书《一往无前》以来一直想阅读一下，感受一下大厂发展的心路历程，但是一直都没有提上日程，而今天决定正式开始阅读此书，但是可能耗时会较长，现在这里做一个标记，阅读完毕务必完成一篇读后感。
-
-2021.09.21 因为一直都在面试，所以阅读计划得往后推迟一点了。
-
-
-      
     
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+      <h1 class="title" itemprop="name headline">
+        Service中包含哪些代码
+      </h1>
+      <div class='new-meta-box'>
         
           
-          <a class='avatar' target="_blank" rel="noopener" href='https://github.com/chenyicai0819'><img src='https://z3.ax1x.com/2021/09/30/4oKiUx.jpg' alt="This is a picture without description" ></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://z3.ax1x.com/2021/09/30/4oKiUx.jpg">
-            <meta itemprop="name" content="George chan">
-            <meta itemprop="url" content="https://github.com/chenyicai0819">
-          </span>
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' target="_blank" href="https://github.com/chenyicai0819" rel="nofollow noopener">
+    <img itemprop="image" src="https://z3.ax1x.com/2021/09/30/4oKiUx.jpg" class="lazyload" data-srcset="https://z3.ax1x.com/2021/09/30/4oKiUx.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
+    <p itemprop="name">George chan</p>
+  </a>
+</div>
+
+          
         
-        <time itemprop="dateCreated datePublished" datetime="2021-08-27T00:46:22+08:00">2021-08-27</time>
+          
+            
+
+          
         
-      </div>
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2021-11-12T23:49:01+08:00">
+  <a class='notlink' href="/" onclick="return false;" title="Click me!" >
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Nov 12, 2021</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink' href="/" onclick="return false;" title="Click me!" >
       
-        <div>
-          <a class='readmore' href='/2021/08/27/2021-08-27-%E5%87%86%E5%A4%87%E9%98%85%E8%AF%BB%E5%B0%8F%E7%B1%B3%E5%8D%81%E5%B9%B4%E7%BA%AA%E5%BF%B5%E3%80%8A%E4%B8%80%E5%BE%80%E6%97%A0%E5%89%8D%E3%80%8B%20-%20%E5%89%AF%E6%9C%AC%20-%20%E5%89%AF%E6%9C%AC/' itemprop="url">
-            Read More
-          </a>
+      <div id="lc-pv" data-title="Service中包含哪些代码" data-path="/2021/11/12/2021-11-12-Service%E4%B8%AD%E5%8C%85%E5%90%AB%E5%93%AA%E4%BA%9B%E4%BB%A3%E7%A0%81/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h1 id="Service中包含哪些代码"><a href="#Service中包含哪些代码" class="headerlink" title="Service中包含哪些代码"></a>Service中包含哪些代码</h1><h2 id="1、简介"><a href="#1、简介" class="headerlink" title="1、简介"></a>1、简介</h2><div class="story post-story"><p>Service层中 = 核心功能(几十行 上百代码) + 额外功能(附加功能)</p>
+<ol>
+<li>核心功能<br>业务运算<br>DAO调用</li>
+<li>额外功能 <ol>
+<li>不属于业务</li>
+<li>可有可无</li>
+<li>代码量很小 </li>
+</ol>
+</li>
+</ol>
+<p>以及：事务、日志、性能…</p>
+<p>Service层，作为程序的业务层面，其中最重要的必然是程序的业务流程，只有对程序的业务流程有足够的了解，才能写出优秀的Service层代码。</p>
+<p>不冗余，是一个程序员代码水平的一个体现。</p>
+</div><h2 id="2、接口"><a href="#2、接口" class="headerlink" title="2、接口"></a>2、接口</h2><div class="story post-story"><p>为什么要先写接口？<br>接口的作用是什么？</p>
+<p>这里我引用一句话:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">接口主要用于描述类具有什么功能，而并不给出每个功能的具体实现。一个类可以实现一个或多个接口，并在需要接口的地方，随时使用实现了相应接口的对象。——《Java核心技术卷一》</span><br></pre></td></tr></table></figure>
+<p>这句话所描述的是接口的扩展性。简而言就是：接口是一个统一的插座，如果有需要我们就可以直接进行调用，实现了即插即用。</p>
+<p>例如：有一个登录功能需要我们去实现，而该系统又有多种登陆方式，我们不可能每种接口都写一个Service代码给Controller进行调用，这样是十分繁琐的。而我们将多种登陆的方式统一成一个接口，然后根据用户的需求来分配最后实际的实现类。此时对于使用者来说，他们只需要关注的是登陆这个方法，整个登陆操作变得十分灵活，根据不同的场景使用不同的方式登陆。</p>
+<p>对于开发者来说，接口中清晰地列出了所有地方法，对于后期的维护以及修改也是有极大的方便。</p>
+</div><h2 id="3、Service之间的互相调用"><a href="#3、Service之间的互相调用" class="headerlink" title="3、Service之间的互相调用"></a>3、Service之间的互相调用</h2><div class="story post-story"><p>Service层之间可以相互调用吗？</p>
+<p>这个问题相信很多人都有过思考，理论上来讲是不应该相互进行调用的，因为Service层的存在的一个很重要的目的就是 <strong>解耦</strong> 。</p>
+<p>将业务层的每一个业务独立出来，以至于他们之间不相互影响，能够实现代码的优化，否则多种业务的代码混在一起，长久之后谁都看不出来代码的逻辑。所以说Service层就实现了这一个很重要的功能。</p>
+<p>所以如果Service层之间的代码相互调用，是不是会是一种倒退呢？</p>
+<p>有些人可能会问，有些业务中确实是会使用到其他业务中的代码，那这部分代码怎么办？重新写？那是不可能的，这又犯了冗余这个错误。所以我们该怎么解决呢？</p>
+<p>首先，我们要清楚，这个情况是出于Service间有通用的逻辑，而不是通用的业务，每个Service对应一个业务，业务之间应该有明确的分界，不然会出现业务间的耦合，这是设计的不合理。</p>
+<p> 既然是通用的逻辑，我们是不是又可以把他们抽象出来，独立成一个工具类，当我们需要的时候直接进行调用这个工具类就可以了呢？</p>
+<p> 所以我个人认为Service层之间是不建议相互调用的。</p>
+</div><h2 id="4、需要向Conrtroller层展示业务吗？"><a href="#4、需要向Conrtroller层展示业务吗？" class="headerlink" title="4、需要向Conrtroller层展示业务吗？"></a>4、需要向Conrtroller层展示业务吗？</h2><div class="story post-story"><p>当我们实现一个登录功能的时候，Controller层，调用Service层，往往我以前的写法是，Service返回登录成功或者失败的代码，然后Controller进行一个判断，判断是否成功登录，然后再向前端返回信息。这样子的写法有个问题，Controller判断的一个过程，算不算是业务？如果算，是不是Controller层又接触到了业务？</p>
+<p>又回到了之前的问题，为什么要有Service层？</p>
+<p>所以说，我们应该让Controller层尽可能少的接触到业务，所以我们的写法可以优化为，再Service层做完所有业务相关的工作，最后返回给Controller层的是一个开箱即用的接口，这样子是不是可以避免Controller层接触到业务相关的代码呢？<br>这就又符合了我们使用Service层的初衷了。</p>
+</div><h2 id="5、最后"><a href="#5、最后" class="headerlink" title="5、最后"></a>5、最后</h2><div class="story post-story"><p>在看了一些文章之后，个人的一些小小观点。</p>
+
+</div>
+  </div>
+  
+  
+    
+    <div class='footer'>
+      
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=http://example.com/2021/11/12/2021-11-12-Service%E4%B8%AD%E5%8C%85%E5%90%AB%E5%93%AA%E4%BA%9B%E4%BB%A3%E7%A0%81/>http://example.com/2021/11/12/2021-11-12-Service%E4%B8%AD%E5%8C%85%E5%90%AB%E5%93%AA%E4%BA%9B%E4%BB%A3%E7%A0%81/</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2021-11-13T00:35:26+08:00">
+  <a class='notlink' href="/" onclick="return false;" title="Click me!" >
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Nov 13, 2021</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/26/2021-08-26-%E5%AF%B9SpringIOC%E7%9A%84%E7%90%86%E8%A7%A3/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="George's Blog">
-  </span>
+          
   
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/08/26/2021-08-26-%E5%AF%B9SpringIOC%E7%9A%84%E7%90%86%E8%A7%A3/"  itemprop="url">
-        对SpringIOC的理解
-      </a>
-    </h2>
-  
-  <div class='md' itemprop="articleBody">
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/java/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>java</p></a></div>
+  <span hidden itemprop="keywords">java</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
       
-        对SpringIOC的理解1、何为IOC​    IOC—Inversion of Control，即“控制反转”，不是什么技术，而是一种设计思想。在Java开发中，IOC意味着将你设计好的对象交给容器控制，而不是传统的在你的对象内部直接控制。如何理解好IOC呢？理解好Ioc的关键是要明确“谁控制谁，控制什么，为何是反转（有反转就应该有正转了），哪些方面反转了”，那我们来分析一下
-1.1 谁...
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2021/11/12/2021-11-12-Service%E4%B8%AD%E5%8C%85%E5%90%AB%E5%93%AA%E4%BA%9B%E4%BB%A3%E7%A0%81/&title=Service中包含哪些代码 - George's Blog&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2021/11/12/2021-11-12-Service%E4%B8%AD%E5%8C%85%E5%90%AB%E5%93%AA%E4%BA%9B%E4%BB%A3%E7%A0%81/&title=Service中包含哪些代码 - George's Blog&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2021/11/12/2021-11-12-Service%E4%B8%AD%E5%8C%85%E5%90%AB%E5%93%AA%E4%BA%9B%E4%BB%A3%E7%A0%81/&title=Service中包含哪些代码 - George's Blog&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
+          
+        </a>
+      
+    
+      
+    
       
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' target="_blank" rel="noopener" href='https://github.com/chenyicai0819'><img src='https://z3.ax1x.com/2021/09/30/4oKiUx.jpg' alt="This is a picture without description" ></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://z3.ax1x.com/2021/09/30/4oKiUx.jpg">
-            <meta itemprop="name" content="George chan">
-            <meta itemprop="url" content="https://github.com/chenyicai0819">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-08-26T09:45:01+08:00">2021-08-26</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/08/26/2021-08-26-%E5%AF%B9SpringIOC%E7%9A%84%E7%90%86%E8%A7%A3/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
 </div>
 
-          </div>
+
+
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/20/2021-08-20-%E6%9C%80%E8%BF%91%E4%B8%80%E6%AE%B5%E6%97%B6%E9%97%B4%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="George's Blog">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
+    </div>
+    <!-- Custom Files bottomMeta begin -->
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/08/20/2021-08-20-%E6%9C%80%E8%BF%91%E4%B8%80%E6%AE%B5%E6%97%B6%E9%97%B4%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"  itemprop="url">
-        最近一段时间的学习总结
-      </a>
-    </h2>
-  
-  <div class='md' itemprop="articleBody">
-    
-      
-        最近一段时间的学习总结项目部分
-完成了学生宿舍系统的答辩
-成功将学生宿舍为系统部署到了服务器上
-准备进行学生宿舍系统的小程序的设计，但是实在是没有时间
-完成了国医堂小程序的开发(React+Taro+Taro UI)
-完成了小程序API的开发(Vue+SpringBoot+MyBatis-Plus)
-国医堂小程序后台开发完毕(VUE+SpringBoot+MyBatis-Plus+Eleme...
-      
-    
+    <!-- Custom Files bottomMeta end -->
   </div>
+
+
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' target="_blank" rel="noopener" href='https://github.com/chenyicai0819'><img src='https://z3.ax1x.com/2021/09/30/4oKiUx.jpg' alt="This is a picture without description" ></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://z3.ax1x.com/2021/09/30/4oKiUx.jpg">
-            <meta itemprop="name" content="George chan">
-            <meta itemprop="url" content="https://github.com/chenyicai0819">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-08-20T01:16:32+08:00">2021-08-20</time>
-        
-      </div>
+  
+
+  
+    <div class="prev-next">
       
-        <div>
-          <a class='readmore' href='/2021/08/20/2021-08-20-%E6%9C%80%E8%BF%91%E4%B8%80%E6%AE%B5%E6%97%B6%E9%97%B4%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/' itemprop="url">
-            Read More
-          </a>
-        </div>
+      
+        <a class='next' href='/2021/10/09/2021-10-09-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0_leetcode%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%9D%97/'>
+          <p class='title'>算法学习_leetcode设计模块<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>leetcode设计模块1、子矩形查询题目lettcode-1476题难度：中等
+解题思路按照题目的要求，我们需要根据输入的坐标，拿到该坐标的值。以及根据输入的两个坐标和一个值，修改两个坐标之间...</p>
+        </a>
       
     </div>
   
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/01/2021-08-01-shiro%E5%AE%89%E5%85%A8%E6%A1%86%E6%9E%B6/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="George's Blog">
-  </span>
+  <!-- Custom Files postEnd begin-->
   
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/08/01/2021-08-01-shiro%E5%AE%89%E5%85%A8%E6%A1%86%E6%9E%B6/"  itemprop="url">
-        shiro安全框架
-      </a>
-    </h2>
-  
-  <div class='md' itemprop="articleBody">
-    
-      
-        shiro安全框架1、简述shiro是apache公司所出品的开源安全框架其可以用于：
-
-处理身份认证
-授权
-企业会话管理和加密
-
-相对于Spring security来说更加简单，使用也更加灵活
-在使用shiro的时候可以不依赖于任何容器，既可以在javaSE下使用，同样可以在JavaEE下使用
-2、架构
-使用用户的登录信息构建令牌12UsernamePasswordToken token...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' target="_blank" rel="noopener" href='https://github.com/chenyicai0819'><img src='https://z3.ax1x.com/2021/09/30/4oKiUx.jpg' alt="This is a picture without description" ></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://z3.ax1x.com/2021/09/30/4oKiUx.jpg">
-            <meta itemprop="name" content="George chan">
-            <meta itemprop="url" content="https://github.com/chenyicai0819">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-08-01T20:19:41+08:00">2021-08-01</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/08/01/2021-08-01-shiro%E5%AE%89%E5%85%A8%E6%A1%86%E6%9E%B6/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
+  <!-- Custom Files postEnd end-->
+</article>
 
 
-	
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2898,295 +2862,46 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
 
-<section class="widget blogger shadow desktop mobile pjax">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://z3.ax1x.com/2021/09/30/4oKMVI.jpg' alt="This is a picture without description" />
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">George's Blog</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:chenyc2021@qq.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/chenyicai0819"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://c.y.qq.com/base/fcgi-bin/u?__=gaK0sy46"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile pjax">
+  <section class="widget toc-wrapper shadow desktop mobile pjax" id="toc-div" >
     
   <header>
     
-      <a href='/#/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <a href="/tags/HashMap/" style="font-size: 14px; color: #999">HashMap</a> <a href="/tags/Hexo/" style="font-size: 17.33px; color: #828282">Hexo</a> <a href="/tags/Swagger/" style="font-size: 14px; color: #999">Swagger</a> <a href="/tags/Swing/" style="font-size: 14px; color: #999">Swing</a> <a href="/tags/java/" style="font-size: 20.67px; color: #6c6c6c">java</a> <a href="/tags/redis/" style="font-size: 17.33px; color: #828282">redis</a> <a href="/tags/shiro/" style="font-size: 14px; color: #999">shiro</a> <a href="/tags/springcloud/" style="font-size: 14px; color: #999">springcloud</a> <a href="/tags/%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/" style="font-size: 14px; color: #999">学习总结</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 14px; color: #999">数据结构</a> <a href="/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/" style="font-size: 14px; color: #999">消息队列</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 24px; color: #555">算法</a> <a href="/tags/%E8%AE%B0%E5%BD%95/" style="font-size: 17.33px; color: #828282">记录</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 17.33px; color: #828282">随笔</a>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E7%AE%80%E4%BB%8B"><span class="toc-text">1、简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E6%8E%A5%E5%8F%A3"><span class="toc-text">2、接口</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81Service%E4%B9%8B%E9%97%B4%E7%9A%84%E4%BA%92%E7%9B%B8%E8%B0%83%E7%94%A8"><span class="toc-text">3、Service之间的互相调用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E3%80%81%E9%9C%80%E8%A6%81%E5%90%91Conrtroller%E5%B1%82%E5%B1%95%E7%A4%BA%E4%B8%9A%E5%8A%A1%E5%90%97%EF%BC%9F"><span class="toc-text">4、需要向Conrtroller层展示业务吗？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E3%80%81%E6%9C%80%E5%90%8E"><span class="toc-text">5、最后</span></a></li></ol>
     </div>
   </section>
-
-
-  
-
-  
-    
-    
-
-<section class="widget shadow desktop mobile pjax">
-  
-  <header>
-    
-      <i class="fas fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>24 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已运行时间：</div>
-          <div id="webinfo-runtime-count" publish_date="03/24/2020 21:34:09"></div>
-        </div>
-        <script>
-          var BirthDay = new Date(new Date('2021/06/21'));
-          var today = new Date();
-          var timeold = (today.getTime() - BirthDay.getTime());
-          var daysold = Math.floor(timeold / (24 * 60 * 60 * 1000));
-          document.getElementById('webinfo-runtime-count').innerHTML = daysold + ' 天';
-        </script>
-      
-
-
-      
-        <div class="webinfo-item">
-          <div>本站总字数：</div>
-          <div>30.3k 字</div>
-        </div>
-      
-
-      
-
-      
-        <div class="webinfo-item">
-          <div>本站被访问了：</div>
-          
-          <div><span id="lc-sv"><span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span></span> 次</div>
-          
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          
-            <div id="last-update" style="display: none;">Sat Nov 13 2021 00:39:30 GMT+0800 (中国标准时间)</div>
-            <div id="last-update-show">2021-11-13 日</div>
-          
-        </div>
-        
-        <script>
-          function timeago(dateTimeStamp) {
-              var minute = 1000 * 60; //把分，时，天，周，半个月，一个月用毫秒表示
-              var hour = minute * 60;
-              var day = hour * 24;
-              var week = day * 7;
-              var month = day * 30;
-              var now = new Date().getTime(); //获取当前时间毫秒
-              var diffValue = now - dateTimeStamp; //时间差
-              if (diffValue < 0) {
-                  return;
-              }
-              var minC = diffValue / minute; //计算时间差的分，时，天，周，月
-              var hourC = diffValue / hour;
-              var dayC = diffValue / day;
-              var weekC = diffValue / week;
-              var monthC = diffValue / month;
-              if (monthC >= 1 && monthC <= 3) {
-                  result = " " + parseInt(monthC) + " 月前"
-              } else if (weekC >= 1 && weekC <= 3) {
-                  result = " " + parseInt(weekC) + " 周前"
-              } else if (dayC >= 1 && dayC <= 6) {
-                  result = " " + parseInt(dayC) + " 天前"
-              } else if (hourC >= 1 && hourC <= 23) {
-                  result = " " + parseInt(hourC) + " 小时前"
-              } else if (minC >= 1 && minC <= 59) {
-                  result = " " + parseInt(minC) + " 分钟前"
-              } else if (diffValue >= 0 && diffValue <= minute) {
-                  result = "刚刚"
-              } else {
-                  var datetime = new Date();
-                  datetime.setTime(dateTimeStamp);
-                  var Nyear = datetime.getFullYear();
-                  var Nmonth = datetime.getMonth() + 1 < 10 ? "0" + (datetime.getMonth() + 1) : datetime.getMonth() + 1;
-                  var Ndate = datetime.getDate() < 10 ? "0" + datetime.getDate() : datetime.getDate();
-                  var Nhour = datetime.getHours() < 10 ? "0" + datetime.getHours() : datetime.getHours();
-                  var Nminute = datetime.getMinutes() < 10 ? "0" + datetime.getMinutes() : datetime.getMinutes();
-                  var Nsecond = datetime.getSeconds() < 10 ? "0" + datetime.getSeconds() : datetime.getSeconds();
-                  result = Nyear + "-" + Nmonth + "-" + Ndate
-              }
-              return result;
-          }
-          var lastUpDate = document.getElementById('last-update').innerHTML;
-          try {
-            document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
-          } catch (error) {
-            document.getElementById('last-update-show').innerHTML = '2021-11-13 日';
-          }
-        </script>
-        
-      
-    </div>
-  </div>
-</section>
-
-  
-
-  
-    
-     
-
- 
-<section class="widget shadow desktop mobile pjax"> 
-  
-  <header>
-    
-      <i class="fas fa-clock WISTERIA fa-fw" aria-hidden="true"></i><span class='name'>最近更新</span>
-    
-  </header>
-
- 
-  <div class='content'> 
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2021/11/12/2021-11-12-Service%E4%B8%AD%E5%8C%85%E5%90%AB%E5%93%AA%E4%BA%9B%E4%BB%A3%E7%A0%81/"><div class="item"><time>2021-11-13</time></div><span>Service中包含哪些代码</span></a></li><li><a class="widget-last" href="/2021/10/09/2021-10-09-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0_leetcode%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%9D%97/"><div class="item"><time>2021-10-09</time></div><span>算法学习_leetcode设计模块</span></a></li><li><a class="widget-last" href="/2021/10/06/2021-10-06-RabbitMQ%E5%85%A5%E9%97%A8%E4%BD%BF%E7%94%A8/"><div class="item"><time>2021-10-07</time></div><span>RabbitMQ入门使用</span></a></li><li><a class="widget-last" href="/2021/10/03/2021-10-03-SpringCloud%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%85%A5%E9%97%A8/"><div class="item"><time>2021-10-05</time></div><span>SpringCloud微服务入门</span></a></li><li><a class="widget-last" href="/2021/10/05/2021-10-05-Swagger3%E5%85%A5%E9%97%A8%E4%BD%BF%E7%94%A8/"><div class="item"><time>2021-10-05</time></div><span>Swagger3入门使用</span></a></li></ul> 
-  </div> 
-</section> 
-
-  
-
-  
-    
-    
-
-
-  <section class='widget shadow desktop mobile pjax music'>
-    
-
-    <div class='content'>
-      
-
-  
-    <meting-js
-      theme='#1BCDFC'
-      autoplay='false'
-      volume='0.7'
-      loop='all'
-      order='list'
-      fixed='false'
-      list-max-height='320px'
-      server='netease'
-      type='playlist'
-      id='5062959861'
-      list-folded='true'>
-    </meting-js>
-  
-
-
-    </div>
-  </section>
-
-
-  
-
-  
-    
-    
-
-<section class="widget qrcode shadow desktop mobile pjax">
-  
-
-  <div class='content article-entry'>
-    
-      <img src='https://z3.ax1x.com/2021/09/30/4ouYH1.jpg'
-      
-        height='90px'
-      />
-    
-      <img src='https://z3.ax1x.com/2021/09/30/4ouQ9U.png'
-      
-        height='90px'
-      />
-    
-  </div>
-</section>
 
   
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3203,14 +2918,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="Service中包含哪些代码";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3219,14 +2935,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.remove("show");
+    l_header.classList.add("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="half";
-      cover_wrapper.style.display="";
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
       scroll_down.style.display="none";
     
   
@@ -3375,8 +3091,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1636735173223')
-      volantis.js('/js/message.js?time=1636735173223', () => {
+      volantis.css('/css/message.css?time=1636735173005')
+      volantis.js('/js/message.js?time=1636735173005', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -3421,8 +3137,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1636735173223')
-      volantis.js('/js/message.js?time=1636735173223', () => {
+      volantis.css('/css/message.css?time=1636735173005')
+      volantis.js('/js/message.js?time=1636735173005', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -3481,8 +3197,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1636735173223')
-      volantis.js('/js/message.js?time=1636735173223', () => {
+      volantis.css('/css/message.css?time=1636735173005')
+      volantis.js('/js/message.js?time=1636735173005', () => {
         hideMessage(done);
       });
     } else {
@@ -3627,19 +3343,19 @@ volantis.pjax.push(bindToggleButton);
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1636735173223")
+        volantis.js("/js/plugins/sites.js?time=1636735173005")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1636735173223")
+        volantis.js("/js/plugins/friends.js?time=1636735173005")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1636735173223")
+        volantis.js("/js/plugins/contributors.js?time=1636735173005")
       }
     
   };
@@ -3830,7 +3546,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-<script src="/js/app.js?time=1636735173223.js"></script>
+<script src="/js/app.js?time=1636735173005.js"></script>
 
 
 <!-- optional -->
@@ -3843,7 +3559,7 @@ volantis.pjax.push(bindToggleButton);
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1636735173223");
+    return volantis.js("/js/search/hexo.js?time=1636735173005");
   }
 
   function loadSearchService() {
@@ -4117,7 +3833,7 @@ volantis.pjax.push(bindToggleButton);
 
 
   <script>
-  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp"];
+  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -4160,7 +3876,7 @@ volantis.pjax.push(bindToggleButton);
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/parallax.js?time=1636735173223').then(()=>{
+    volantis.js('/js/parallax.js?time=1636735173005').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4354,7 +4070,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"George's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/archives/2021/","name":"2021年"}},{"@type":"ListItem","position":4,"item":{"@id":"http://example.com/archives/2021/8/","name":"8月"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"George's Blog","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"George's Blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"George's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2021/11/12/2021-11-12-Service中包含哪些代码/","name":"Service中包含哪些代码"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Service中包含哪些代码","description":"","datePublished":"2021-11-12T15:49:01.000Z","dateModified":"2021-11-12T16:35:26.168Z","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2021/11/12/2021-11-12-Service%E4%B8%AD%E5%8C%85%E5%90%AB%E5%93%AA%E4%BA%9B%E4%BB%A3%E7%A0%81/"},"author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"George's Blog","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2021/11/12/2021-11-12-Service%E4%B8%AD%E5%8C%85%E5%90%AB%E5%93%AA%E4%BA%9B%E4%BB%A3%E7%A0%81/","wordCount":0,"keywords":"java","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 <!-- more -->
