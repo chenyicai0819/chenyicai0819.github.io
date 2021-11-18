@@ -8,7 +8,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="http://example.com/img/"/>
+  <link rel="canonical" href="http://example.com/2021/07/21/2021-07-21-springboot存储图片到数据库/"/>
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
@@ -23,22 +23,26 @@
   <meta content="George&#39;s Blog" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1637249548837" as="style">
+  <link rel="preload" href="/css/style.css?time=1637249549008" as="style">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- 页面元数据 -->
-  <title>img - George's Blog</title>
-  <meta name="keywords" content="null">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="img">
-<meta property="og:url" content="http://example.com/img/index.html">
+  <title>SpringBoot将图片存储到数据库 - George's Blog</title>
+  <meta name="keywords" content="java,SpringBoot,null">
+  <meta name="description" content="SpringBoot将图片存储到数据库存储方式将图片转化为blob的二进制格式，然后存储到数据库即可，从数据中取出时，将blob格式的二进制文字从数据库中取出，用Object的方式来获取，然后转化为图片的格式，即可在屏幕上显示 上传图片Controller层 12345678910111213@PostMapping(&quot;&#x2F;add&#x2F;image&quot;)@ResponseBodypubl">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SpringBoot将图片存储到数据库">
+<meta property="og:url" content="http://example.com/2021/07/21/2021-07-21-Springboot%E5%AD%98%E5%82%A8%E5%9B%BE%E7%89%87%E5%88%B0%E6%95%B0%E6%8D%AE%E5%BA%93/index.html">
 <meta property="og:site_name" content="George&#39;s Blog">
+<meta property="og:description" content="SpringBoot将图片存储到数据库存储方式将图片转化为blob的二进制格式，然后存储到数据库即可，从数据中取出时，将blob格式的二进制文字从数据库中取出，用Object的方式来获取，然后转化为图片的格式，即可在屏幕上显示 上传图片Controller层 12345678910111213@PostMapping(&quot;&#x2F;add&#x2F;image&quot;)@ResponseBodypubl">
 <meta property="og:locale">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2021-06-21T15:46:17.000Z">
-<meta property="article:modified_time" content="2021-06-21T15:46:17.510Z">
+<meta property="article:published_time" content="2021-07-21T12:19:41.000Z">
+<meta property="article:modified_time" content="2021-11-18T15:28:30.024Z">
 <meta property="article:author" content="George Chan">
+<meta property="article:tag" content="java">
+<meta property="article:tag" content="SpringBoot">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
   <!-- feed -->
@@ -1875,8 +1879,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1637249548837" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1637249548837"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1637249549008" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1637249549008"></noscript>
     <script>
       var userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -2539,7 +2543,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper page dock' style="display: none;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div id="parallax-window"></div>
 
@@ -2611,8 +2615,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow article-type-page" id="page" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://example.com/img/index.html">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2021/07/21/2021-07-21-Springboot%E5%AD%98%E5%82%A8%E5%9B%BE%E7%89%87%E5%88%B0%E6%95%B0%E6%8D%AE%E5%BA%93/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="George's Blog">
   </span>
@@ -2629,7 +2633,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        img
+        SpringBoot将图片存储到数据库
       </h1>
       <div class='new-meta-box'>
         
@@ -2650,10 +2654,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2021-06-21T23:46:17+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2021-07-21T20:19:41+08:00">
   <a class='notlink' href="/" onclick="return false;" title="Click me!" >
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Jun 21, 2021</p>
+    <p>发布于：Jul 21, 2021</p>
   </a>
 </div>
 
@@ -2664,7 +2668,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item browse leancloud">
     <a class='notlink' href="/" onclick="return false;" title="Click me!" >
       
-      <div id="lc-pv" data-title="img" data-path="/img/">
+      <div id="lc-pv" data-title="SpringBoot将图片存储到数据库" data-path="/2021/07/21/2021-07-21-Springboot%E5%AD%98%E5%82%A8%E5%9B%BE%E7%89%87%E5%88%B0%E6%95%B0%E6%8D%AE%E5%BA%93/">
         <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
         <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
         次浏览
@@ -2685,10 +2689,64 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    
+    <h1 id="SpringBoot将图片存储到数据库"><a href="#SpringBoot将图片存储到数据库" class="headerlink" title="SpringBoot将图片存储到数据库"></a>SpringBoot将图片存储到数据库</h1><h2 id="存储方式"><a href="#存储方式" class="headerlink" title="存储方式"></a>存储方式</h2><div class="story post-story"><p>将图片转化为blob的二进制格式，然后存储到数据库即可，从数据中取出时，将blob格式的二进制文字从数据库中取出，用Object的方式来获取，然后转化为图片的格式，即可在屏幕上显示</p>
+</div><h2 id="上传图片"><a href="#上传图片" class="headerlink" title="上传图片"></a>上传图片</h2><div class="story post-story"><p><strong>Controller层</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">@PostMapping(&quot;/add/image&quot;)</span><br><span class="line">@ResponseBody</span><br><span class="line">public String addImage(@RequestParam(&quot;file&quot;) MultipartFile file,@RequestParam(&quot;id&quot;) Integer id) throws Exception&#123;</span><br><span class="line">    if(!file.isEmpty())&#123;</span><br><span class="line">        BASE64Encoder encoder = new BASE64Encoder();</span><br><span class="line">        String image = encoder.encode(file.getBytes());</span><br><span class="line">        TestPo testPo = new TestPo();</span><br><span class="line">        testPo.setId(id);</span><br><span class="line">        testPo.setImage(image);</span><br><span class="line">        testService.addImage(testPo);</span><br><span class="line">    &#125;</span><br><span class="line">    return &quot;ok&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Controoler层主要对上传的图片文件进行处理，当上传的图片不为空的时候，定义一个字符串加密算法，然后将文件的字节编码进行加密，再定义一个实体类对象，将id以及加密之后的文件发送给业务层。</p>
+<p><strong>Service层</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public String addImage(TestPo testPo)&#123;</span><br><span class="line">    testMapper.insertImage(testPo);</span><br><span class="line">    return &quot;ok&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>接受Controller的请求并返回对应的类型</p>
+<p><strong>Mapper接口</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@Mapper</span><br><span class="line">public interface TestMapper &#123;</span><br><span class="line">    void insertImage(TestPo testPo);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<p><strong>Mapper.xml</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;insert id = &quot;insertImage&quot; parameterType=&quot;cn.edu.guet.bean.TestPo&quot;&gt;</span><br><span class="line">    insert into image(id,image) values(#&#123;id&#125;,#&#123;image&#125;)</span><br><span class="line">&lt;/insert&gt;</span><br></pre></td></tr></table></figure>
+<p>执行sql语句，进行文件的存储，存储为BLOB格式。</p>
+<p><strong>html页面</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;Title&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;form action=&quot;http://localhost:8081/add/image&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;</span><br><span class="line">    &lt;input type=&quot;text&quot; name=&quot;id&quot; /&gt;&lt;br/&gt;</span><br><span class="line">    &lt;input type=&quot;file&quot; name=&quot;file&quot; /&gt;&lt;br/&gt;</span><br><span class="line">    &lt;input type=&quot;submit&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;提交&quot; /&gt;</span><br><span class="line">&lt;/form&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://i.bmp.ovh/imgs/2021/07/f2e9299cb07318f4.png" class="lazyload" data-srcset="https://i.bmp.ovh/imgs/2021/07/f2e9299cb07318f4.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"></p>
+</div><h2 id="读取图片"><a href="#读取图片" class="headerlink" title="读取图片"></a>读取图片</h2><div class="story post-story"><p><strong>Controller层</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@GetMapping(&quot;/get/image&quot;)</span><br><span class="line">@ResponseBody</span><br><span class="line">public void getImage(@RequestParam(&quot;id&quot;) Integer id, HttpServletResponse response) throws Exception&#123;</span><br><span class="line">    testService.getImage(id,response);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>主要是接收url请求，根据id给servce层发送请求</p>
+<p><strong>Service层</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">public String getImage(Integer id, HttpServletResponse response)&#123;</span><br><span class="line">    try &#123;</span><br><span class="line">        TestPo testPo = testMapper.selectImageById(id);</span><br><span class="line">        byte[] image = (byte[])testPo.getImage();</span><br><span class="line">        String value = new String(image,&quot;UTF-8&quot;);</span><br><span class="line">        BASE64Decoder decoder = new BASE64Decoder();</span><br><span class="line">        byte[] bytes = decoder.decodeBuffer(value);</span><br><span class="line">        for(int i=0;i&lt;bytes.length;i++)&#123;</span><br><span class="line">            if(bytes[i]&lt;0)&#123;</span><br><span class="line">                bytes[i]+=256;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        response.setContentType(&quot;image/jpeg&quot;);</span><br><span class="line">        ServletOutputStream out = response.getOutputStream();</span><br><span class="line">        out.write(bytes);</span><br><span class="line">        out.flush();</span><br><span class="line">        out.close();</span><br><span class="line">    &#125;catch (Exception e)&#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return &quot;ok&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>service层对读取出来的二进制进行处理，用byte[]数据类型存储，然后将其转码成UTF-8的格式，此时我们可以得到想要的BASe64字节码，接着将其解码成为byte[]格式，只有这样才能生成图片，setContentType用于设置生成的图片的格式，然后通过流操作，将图片发送到Controller层，最后在前端显示出来</p>
+<p><strong>Maoopper接口</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@Mapper</span><br><span class="line">public interface TestMapper &#123;</span><br><span class="line">    TestPo selectImageById(Integer id);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Mapper.xml</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;select id=&quot;selectImageById&quot; parameterType=&quot;Integer&quot; resultType=&quot;cn.edu.guet.bean.TestPo&quot;&gt;</span><br><span class="line">    select * from image where id = #&#123;id&#125;</span><br><span class="line">&lt;/select&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>html界面</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;Title&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;img src=&quot;http://localhost:8081/get/image?id=2&quot; alt=&quot;Responsive image&quot;&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://i.bmp.ovh/imgs/2021/07/c01afbdf281ae7d2.png" class="lazyload" data-srcset="https://i.bmp.ovh/imgs/2021/07/c01afbdf281ae7d2.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"></p>
+
+</div>
   </div>
   
+  
+    
+    <div class='footer'>
+      
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=http://example.com/2021/07/21/2021-07-21-Springboot%E5%AD%98%E5%82%A8%E5%9B%BE%E7%89%87%E5%88%B0%E6%95%B0%E6%8D%AE%E5%BA%93/>http://example.com/2021/07/21/2021-07-21-Springboot%E5%AD%98%E5%82%A8%E5%9B%BE%E7%89%87%E5%88%B0%E6%95%B0%E6%8D%AE%E5%BA%93/</a></p>
+              
+            
+          </blockquote>
+        </div>
+      
+      
+    </div>
   
   
     
@@ -2698,10 +2756,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2021-06-21T23:46:17+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2021-11-18T23:28:30+08:00">
   <a class='notlink' href="/" onclick="return false;" title="Click me!" >
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Jun 21, 2021</p>
+    <p>更新于：Nov 18, 2021</p>
   </a>
 </div>
 
@@ -2709,6 +2767,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         
           
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/java/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>java</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/SpringBoot/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>SpringBoot</p></a></div>
+  <span hidden itemprop="keywords">java SpringBoot</span>
+
 
         
       
@@ -2720,7 +2782,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/img/index.html&title=img - George's Blog&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2021/07/21/2021-07-21-Springboot%E5%AD%98%E5%82%A8%E5%9B%BE%E7%89%87%E5%88%B0%E6%95%B0%E6%8D%AE%E5%BA%93/&title=SpringBoot将图片存储到数据库 - George's Blog&summary="
           
           >
           
@@ -2732,7 +2794,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/img/index.html&title=img - George's Blog&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2021/07/21/2021-07-21-Springboot%E5%AD%98%E5%82%A8%E5%9B%BE%E7%89%87%E5%88%B0%E6%95%B0%E6%8D%AE%E5%BA%93/&title=SpringBoot将图片存储到数据库 - George's Blog&summary="
           
           >
           
@@ -2744,7 +2806,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/img/index.html&title=img - George's Blog&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2021/07/21/2021-07-21-Springboot%E5%AD%98%E5%82%A8%E5%9B%BE%E7%89%87%E5%88%B0%E6%95%B0%E6%8D%AE%E5%BA%93/&title=SpringBoot将图片存储到数据库 - George's Blog&summary="
           
           >
           
@@ -2775,27 +2837,32 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
   
+    <div class="prev-next">
+      
+        <a class='prev' href='/2021/07/22/2021-07-22-springboot+mybatis%E6%95%B4%E5%90%88%E6%94%AF%E4%BB%98%E5%AE%9D%E6%94%AF%E4%BB%98/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>springboot+mybatis整合支付宝支付</p>
+          <p class='content'>springboot+mybatis整合支付宝支付准备支付宝沙箱环境
+需要三个网站来准备支付宝的沙箱环境：
+
+支付宝开放平台
+开放平台-沙箱环境
+miniU研发工作室
+
+具体配置过程百度即可be...</p>
+        </a>
+      
+      
+        <a class='next' href='/2021/07/01/2021-07-01-%E8%BF%87%E6%BB%A4%E5%99%A8(Filter)%E5%9C%A8Web%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/'>
+          <p class='title'>过滤器(Filter)在Web中的应用<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>Java Web之过滤器(Filter)过滤器(Filter)过滤器，从字面意思上理解，就是用于过滤作用的工具。在Java web中，过滤器的作用是对Web资源进行拦截，经过处理之后，再交给下一...</p>
+        </a>
+      
+    </div>
+  
   <!-- Custom Files postEnd begin-->
   
   <!-- Custom Files postEnd end-->
 </article>
-
-
-  
-
-  
-  <article class="post white-box reveal shadow" id="comments">
-    <span hidden>
-      <meta itemprop="discussionUrl" content="/img/index.html#comments">
-    </span>
-    <p ct><i class='fas fa-comments'></i> 留言</p>
-    
-    
-    <div id="layoutHelper-comments"></div>
-
-  </article>
-  
-
 
 
 
@@ -2809,9 +2876,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
+  <section class="widget toc-wrapper shadow desktop mobile pjax" id="toc-div" >
+    
+  <header>
+    
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E6%96%B9%E5%BC%8F"><span class="toc-text">存储方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87"><span class="toc-text">上传图片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%BB%E5%8F%96%E5%9B%BE%E7%89%87"><span class="toc-text">读取图片</span></a></li></ol>
+    </div>
+  </section>
 
   
 
@@ -2860,8 +2937,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="SpringBoot将图片存储到数据库";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3026,8 +3103,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1637249548837')
-      volantis.js('/js/message.js?time=1637249548837', () => {
+      volantis.css('/css/message.css?time=1637249549008')
+      volantis.js('/js/message.js?time=1637249549008', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -3072,8 +3149,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1637249548837')
-      volantis.js('/js/message.js?time=1637249548837', () => {
+      volantis.css('/css/message.css?time=1637249549008')
+      volantis.js('/js/message.js?time=1637249549008', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -3132,8 +3209,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1637249548837')
-      volantis.js('/js/message.js?time=1637249548837', () => {
+      volantis.css('/css/message.css?time=1637249549008')
+      volantis.js('/js/message.js?time=1637249549008', () => {
         hideMessage(done);
       });
     } else {
@@ -3278,19 +3355,19 @@ volantis.pjax.push(bindToggleButton);
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1637249548837")
+        volantis.js("/js/plugins/sites.js?time=1637249549008")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1637249548837")
+        volantis.js("/js/plugins/friends.js?time=1637249549008")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1637249548837")
+        volantis.js("/js/plugins/contributors.js?time=1637249549008")
       }
     
   };
@@ -3481,7 +3558,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-<script src="/js/app.js?time=1637249548837.js"></script>
+<script src="/js/app.js?time=1637249549008.js"></script>
 
 
 <!-- optional -->
@@ -3494,7 +3571,7 @@ volantis.pjax.push(bindToggleButton);
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1637249548837");
+    return volantis.js("/js/search/hexo.js?time=1637249549008");
   }
 
   function loadSearchService() {
@@ -3768,7 +3845,7 @@ volantis.pjax.push(bindToggleButton);
 
 
   <script>
-  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp"];
+  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -3811,7 +3888,7 @@ volantis.pjax.push(bindToggleButton);
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/parallax.js?time=1637249548837').then(()=>{
+    volantis.js('/js/parallax.js?time=1637249549008').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4005,7 +4082,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"George's Blog"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"George's Blog","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"George's Blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"George's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2021/07/21/2021-07-21-Springboot存储图片到数据库/","name":"SpringBoot将图片存储到数据库"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"SpringBoot将图片存储到数据库","description":"","datePublished":"2021-07-21T12:19:41.000Z","dateModified":"2021-11-18T15:28:30.024Z","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2021/07/21/2021-07-21-Springboot%E5%AD%98%E5%82%A8%E5%9B%BE%E7%89%87%E5%88%B0%E6%95%B0%E6%8D%AE%E5%BA%93/"},"author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"George's Blog","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2021/07/21/2021-07-21-Springboot%E5%AD%98%E5%82%A8%E5%9B%BE%E7%89%87%E5%88%B0%E6%95%B0%E6%8D%AE%E5%BA%93/","wordCount":0,"keywords":"java,SpringBoot","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 <!-- more -->
