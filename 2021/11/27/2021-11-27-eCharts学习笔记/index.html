@@ -7,8 +7,8 @@
   <meta name="generator" content="Hexo 5.4.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://cyc0819.top/tags/前端/"/>
+  
+  <link rel="canonical" href="http://cyc0819.top/2021/11/27/2021-11-27-echarts学习笔记/"/>
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
@@ -23,20 +23,26 @@
   <meta content="George&#39;s Blog" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1638366947940" as="style">
+  <link rel="preload" href="/css/style.css?time=1638366945897" as="style">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- 页面元数据 -->
-  <title>標籤：前端 - George's Blog</title>
-  <meta name="keywords" content="null">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="George&#39;s Blog">
-<meta property="og:url" content="http://cyc0819.top/tags/%E5%89%8D%E7%AB%AF/index.html">
+  <title>eCharts学习笔记 - George's Blog</title>
+  <meta name="keywords" content="前端,eCharts,null">
+  <meta name="description" content="eCharts 学习笔记1、简介eCharts 是百度出品的一款基于 JavaScript 的数据可视化图表库，提供直观，生动，可交互，可个性化定制的数据可视化图表。最开始是由百度团队开源的，后面于2018年交由Apache基金会，称为ASF孵化项目。并于2021年1月26日正式毕业。 2、在 Vue 中使用 首先下载 eCharts：1npm install echarts --save 全局引">
+<meta property="og:type" content="article">
+<meta property="og:title" content="eCharts学习笔记">
+<meta property="og:url" content="http://cyc0819.top/2021/11/27/2021-11-27-eCharts%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="George&#39;s Blog">
+<meta property="og:description" content="eCharts 学习笔记1、简介eCharts 是百度出品的一款基于 JavaScript 的数据可视化图表库，提供直观，生动，可交互，可个性化定制的数据可视化图表。最开始是由百度团队开源的，后面于2018年交由Apache基金会，称为ASF孵化项目。并于2021年1月26日正式毕业。 2、在 Vue 中使用 首先下载 eCharts：1npm install echarts --save 全局引">
 <meta property="og:locale">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2021-11-27T14:04:25.000Z">
+<meta property="article:modified_time" content="2021-11-29T09:37:00.581Z">
 <meta property="article:author" content="George Chan">
+<meta property="article:tag" content="前端">
+<meta property="article:tag" content="eCharts">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
   <!-- feed -->
@@ -1874,8 +1880,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1638366947940" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1638366947940"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1638366945897" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1638366945897"></noscript>
     <script>
       var userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -2538,7 +2544,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper  dock' style="display: none;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div id="parallax-window"></div>
 
@@ -2609,155 +2615,370 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
-  
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
   <link itemprop="mainEntityOfPage" href="http://cyc0819.top/2021/11/27/2021-11-27-eCharts%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="George's Blog">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/11/27/2021-11-27-eCharts%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"  itemprop="url">
+    
+    
+      <h1 class="title" itemprop="name headline">
         eCharts学习笔记
-      </a>
-    </h2>
-  
-  <div class='md' itemprop="articleBody">
-    
-      
-        eCharts 学习笔记1、简介eCharts 是百度出品的一款基于 JavaScript 的数据可视化图表库，提供直观，生动，可交互，可个性化定制的数据可视化图表。最开始是由百度团队开源的，后面于2018年交由Apache基金会，称为ASF孵化项目。并于2021年1月26日正式毕业。
-2、在 Vue 中使用
-首先下载 eCharts：1npm install echarts --save
-...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+      </h1>
+      <div class='new-meta-box'>
         
           
-          <a class='avatar' target="_blank" rel="noopener" href='https://github.com/chenyicai0819'><img src='https://z3.ax1x.com/2021/09/30/4oKiUx.jpg' alt="This is a picture without description" ></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://z3.ax1x.com/2021/09/30/4oKiUx.jpg">
-            <meta itemprop="name" content="George chan">
-            <meta itemprop="url" content="https://github.com/chenyicai0819">
-          </span>
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' target="_blank" href="https://github.com/chenyicai0819" rel="nofollow noopener">
+    <img itemprop="image" src="https://z3.ax1x.com/2021/09/30/4oKiUx.jpg" class="lazyload" data-srcset="https://z3.ax1x.com/2021/09/30/4oKiUx.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
+    <p itemprop="name">George chan</p>
+  </a>
+</div>
+
+          
         
-        <time itemprop="dateCreated datePublished" datetime="2021-11-27T22:04:25+08:00">2021-11-27</time>
+          
+            
+
+          
         
-      </div>
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2021-11-27T22:04:25+08:00">
+  <a class='notlink' href="/" onclick="return false;" title="Click me!" >
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Nov 27, 2021</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink' href="/" onclick="return false;" title="Click me!" >
       
-        <div>
-          <a class='readmore' href='/2021/11/27/2021-11-27-eCharts%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/' itemprop="url">
-            閱讀全文
-          </a>
+      <div id="lc-pv" data-title="eCharts学习笔记" data-path="/2021/11/27/2021-11-27-eCharts%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h1 id="eCharts-学习笔记"><a href="#eCharts-学习笔记" class="headerlink" title="eCharts 学习笔记"></a>eCharts 学习笔记</h1><h2 id="1、简介"><a href="#1、简介" class="headerlink" title="1、简介"></a>1、简介</h2><div class="story post-story"><p>eCharts 是百度出品的一款基于 JavaScript 的数据可视化图表库，提供直观，生动，可交互，可个性化定制的数据可视化图表。最开始是由百度团队开源的，后面于2018年交由Apache基金会，称为ASF孵化项目。并于2021年1月26日正式毕业。</p>
+</div><h2 id="2、在-Vue-中使用"><a href="#2、在-Vue-中使用" class="headerlink" title="2、在 Vue 中使用"></a>2、在 Vue 中使用</h2><div class="story post-story"><ol>
+<li>首先下载 eCharts：<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install echarts --save</span><br></pre></td></tr></table></figure></li>
+<li>全局引入 eCharts:<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> echarts <span class="keyword">from</span> <span class="string">&#x27;echarts&#x27;</span>;</span><br></pre></td></tr></table></figure></li>
+<li>或者可以按需引入<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 引入 echarts 核心模块，核心模块提供了 echarts 使用必须要的接口。</span></span><br><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> echarts <span class="keyword">from</span> <span class="string">&#x27;echarts/core&#x27;</span>;</span><br><span class="line"><span class="comment">// 引入柱状图图表，图表后缀都为 Chart</span></span><br><span class="line"><span class="keyword">import</span> &#123; BarChart &#125; <span class="keyword">from</span> <span class="string">&#x27;echarts/charts&#x27;</span>;</span><br><span class="line"><span class="comment">// 引入提示框，标题，直角坐标系，数据集，内置数据转换器组件，组件后缀都为 Component</span></span><br><span class="line"><span class="keyword">import</span> &#123;</span><br><span class="line">  TitleComponent,</span><br><span class="line">  TooltipComponent,</span><br><span class="line">  GridComponent,</span><br><span class="line">  DatasetComponent,</span><br><span class="line">  DatasetComponentOption,</span><br><span class="line">  TransformComponent</span><br><span class="line">&#125; <span class="keyword">from</span> <span class="string">&#x27;echarts/components&#x27;</span>;</span><br><span class="line"><span class="comment">// 标签自动布局，全局过渡动画等特性</span></span><br><span class="line"><span class="keyword">import</span> &#123; LabelLayout, UniversalTransition &#125; <span class="keyword">from</span> <span class="string">&#x27;echarts/features&#x27;</span>;</span><br><span class="line"><span class="comment">// 引入 Canvas 渲染器，注意引入 CanvasRenderer 或者 SVGRenderer 是必须的一步</span></span><br><span class="line"><span class="keyword">import</span> &#123; CanvasRenderer &#125; <span class="keyword">from</span> <span class="string">&#x27;echarts/renderers&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 注册必须的组件</span></span><br><span class="line">echarts.use([</span><br><span class="line">  TitleComponent,</span><br><span class="line">  TooltipComponent,</span><br><span class="line">  GridComponent,</span><br><span class="line">  DatasetComponent,</span><br><span class="line">  TransformComponent,</span><br><span class="line">  BarChart,</span><br><span class="line">  LabelLayout,</span><br><span class="line">  UniversalTransition,</span><br><span class="line">  CanvasRenderer</span><br><span class="line">]);</span><br></pre></td></tr></table></figure>
+</div><h2 id="3、基本语法结构"><a href="#3、基本语法结构" class="headerlink" title="3、基本语法结构"></a>3、基本语法结构</h2><div class="story post-story"></li>
+</ol>
+<p>在使用 eCharts 之前，我们需要给它一个 DOM 容器，官方是推荐我们使用具有定义好的长和宽的一个父容器（可以是 div ）。<br>所以我们首先构建一个父容器 div 来存放 eCharts 图表</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;billreport&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">:style</span>=<span class="string">&quot;&#123; width: &#x27;95%&#x27;, height: &#x27;500px&#x27; &#125;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>由于 eCharts 基于js构建的，所以只要会js的语法，eCharts的语法自然也不在话下。<br>而 eCharts 的基本语法结构为：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">setup</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"><span class="keyword">const</span> data=reactive(&#123;</span><br><span class="line">    <span class="attr">option</span>:&#123;</span><br><span class="line">    	<span class="comment">//图表信息</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> ech = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">	<span class="comment">//绘制图表的方法</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">onBeforeMount(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">	<span class="comment">//在页面渲染之前加载图表的信息</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+</div><h2 id="4、图表配置信息"><a href="#4、图表配置信息" class="headerlink" title="4、图表配置信息"></a>4、图表配置信息</h2><div class="story post-story"><p>图表配置信息，即 option 中的内容，在这一部分，我们将配置一系列的信息，正是这些信息生成了对应的图表。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">option:&#123;</span><br><span class="line">	<span class="attr">title</span>:&#123;</span><br><span class="line">		<span class="attr">text</span>: <span class="string">&quot;收入与支出趋势图&quot;</span><span class="comment">//图表的标题</span></span><br><span class="line">	&#125;,</span><br><span class="line">	<span class="attr">tooltip</span>:&#123;<span class="comment">//提示的信息</span></span><br><span class="line">		<span class="attr">trigger</span>:<span class="string">&#x27;axis&#x27;</span><span class="comment">//触发方式</span></span><br><span class="line">	&#125;,</span><br><span class="line">    <span class="attr">legend</span>: &#123;<span class="comment">//图例</span></span><br><span class="line">        <span class="attr">data</span>: [&#123;</span><br><span class="line">        	<span class="attr">name</span>: <span class="string">&#x27;收入&#x27;</span>,</span><br><span class="line">        	<span class="comment">// 强制设置图形为圆。</span></span><br><span class="line">        	<span class="attr">icon</span>: <span class="string">&#x27;circle&#x27;</span>,</span><br><span class="line">        	<span class="comment">// 设置文本为红色</span></span><br><span class="line">        	<span class="attr">textStyle</span>: &#123;</span><br><span class="line">            	<span class="attr">color</span>: <span class="string">&#x27;red&#x27;</span></span><br><span class="line">        	&#125;</span><br><span class="line">    	&#125;,</span><br><span class="line">              &#123;</span><br><span class="line">        	<span class="attr">name</span>: <span class="string">&#x27;支出&#x27;</span>,</span><br><span class="line">        	<span class="comment">// 强制设置图形为圆。</span></span><br><span class="line">        	<span class="attr">icon</span>: <span class="string">&#x27;circle&#x27;</span>,</span><br><span class="line">        	<span class="comment">// 设置文本为红色</span></span><br><span class="line">        	<span class="attr">textStyle</span>: &#123;</span><br><span class="line">            	<span class="attr">color</span>: <span class="string">&#x27;red&#x27;</span></span><br><span class="line">        	&#125;</span><br><span class="line">    	&#125;]<span class="comment">//图例的标题，分别对应 series 中的数据</span></span><br><span class="line">    &#125;，</span><br><span class="line">    <span class="attr">xAxis</span>: &#123;<span class="comment">//配置要在x轴显示的项</span></span><br><span class="line">        <span class="attr">type</span>: <span class="string">&#x27;category&#x27;</span>,<span class="comment">//&#x27;value&#x27; 数值轴，适用于连续数据。 &#x27;category&#x27; 类目轴，适用于离散的类目数据，为该类型时必须通过 data 设置类目数据。 &#x27;time&#x27; 时间轴，适用于连续的时序数据，与数值轴相比时间轴带有时间的格式化，在刻度计算上也有所不同，例如会根据跨度的范围来决定使用月，星期，日还是小时范围的刻度。 &#x27;log&#x27; 对数轴。适用于对数数据。</span></span><br><span class="line">        <span class="attr">boundaryGap</span>: <span class="literal">false</span>,<span class="comment">// 刻度离纵轴有无间隙，默认true有间距</span></span><br><span class="line">        <span class="attr">data</span>: []<span class="comment">//横轴坐标的值</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">yAxis</span>: &#123;<span class="comment">//配置y轴的项，配置与x轴类似</span></span><br><span class="line">        <span class="attr">type</span>: <span class="string">&#x27;value&#x27;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">series</span>: [<span class="comment">//系列列表,显示在图表中的内容</span></span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attr">name</span>: <span class="string">&#x27;收入&#x27;</span>,<span class="comment">//系列名称</span></span><br><span class="line">        <span class="attr">type</span>: <span class="string">&#x27;line&#x27;</span>,<span class="comment">//图表类型</span></span><br><span class="line">        <span class="attr">stack</span>: <span class="string">&#x27;收入&#x27;</span>,<span class="comment">//堆叠，如果有相同名称的会堆叠</span></span><br><span class="line">        <span class="attr">data</span>: []</span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attr">name</span>: <span class="string">&#x27;支出&#x27;</span>,</span><br><span class="line">        <span class="attr">type</span>: <span class="string">&#x27;line&#x27;</span>,</span><br><span class="line">        <span class="attr">stack</span>: <span class="string">&#x27;支出&#x27;</span>,</span><br><span class="line">        <span class="attr">data</span>: []</span><br><span class="line">      &#125;</span><br><span class="line">   ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>图表类型表：</p>
+<table>
+<thead>
+<tr>
+<th>配置</th>
+<th>图表类型</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>type: ‘bar’</td>
+<td>柱状/条形图</td>
+</tr>
+<tr>
+<td>type: ‘line’</td>
+<td>折线/面积图</td>
+</tr>
+<tr>
+<td>type: ‘pie’</td>
+<td>饼图</td>
+</tr>
+<tr>
+<td>type: ‘scatter’</td>
+<td>散点（气泡）图</td>
+</tr>
+<tr>
+<td>type: ‘effectScatter’</td>
+<td>带有涟漪特效动画的散点（气泡）</td>
+</tr>
+<tr>
+<td>type: ‘radar’</td>
+<td>雷达图</td>
+</tr>
+<tr>
+<td>type: ‘tree’</td>
+<td>树型图</td>
+</tr>
+<tr>
+<td>type: ‘treemap’</td>
+<td>树型图</td>
+</tr>
+<tr>
+<td>type: ‘sunburst’</td>
+<td>旭日图</td>
+</tr>
+<tr>
+<td>type: ‘boxplot’</td>
+<td>箱形图</td>
+</tr>
+<tr>
+<td>type: ‘candlestick’</td>
+<td>K线图</td>
+</tr>
+<tr>
+<td>type: ‘heatmap’</td>
+<td>热力图</td>
+</tr>
+<tr>
+<td>type: ‘map’</td>
+<td>地图</td>
+</tr>
+<tr>
+<td>type: ‘parallel’</td>
+<td>平行坐标系的系列</td>
+</tr>
+<tr>
+<td>type: ‘lines’</td>
+<td>线图</td>
+</tr>
+<tr>
+<td>type: ‘graph’</td>
+<td>关系图</td>
+</tr>
+<tr>
+<td>type: ‘sankey’</td>
+<td>桑基图</td>
+</tr>
+<tr>
+<td>type: ‘funnel’</td>
+<td>漏斗图</td>
+</tr>
+<tr>
+<td>type: ‘gauge’</td>
+<td>仪表盘</td>
+</tr>
+<tr>
+<td>type: ‘pictorialBar’</td>
+<td>象形柱图</td>
+</tr>
+<tr>
+<td>type: ‘themeRiver’</td>
+<td>主题河流</td>
+</tr>
+<tr>
+<td>type: ‘custom’</td>
+<td>自定义系列</td>
+</tr>
+</tbody></table>
+</div><h2 id="5、x-轴、y-轴"><a href="#5、x-轴、y-轴" class="headerlink" title="5、x 轴、y 轴"></a>5、x 轴、y 轴</h2><div class="story post-story"><p>x 轴和 y 轴都由轴线、刻度、刻度标签、轴标题四个部分组成。<br>一般情况下，二维的图标结构都会有 x 轴和 y 轴，通常情况下，x 轴会在图表的下方，而 y 轴在图表的左边。<br>而 eCharts 也提供了一些特定的坐标轴的设置选项，如：<br><strong>轴线：</strong><br>我们可以通过 axisLine 来对轴线进行设置，比如轴线两头的箭头，轴线的样式等等，比如：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">option = &#123;</span><br><span class="line">  <span class="attr">xAxis</span>: &#123;</span><br><span class="line">    <span class="attr">axisLine</span>: &#123;</span><br><span class="line">      <span class="attr">show</span>:<span class="string">&#x27;true&#x27;</span> <span class="comment">//显示轴线</span></span><br><span class="line">      <span class="attr">symbol</span>: <span class="string">&#x27;arrow&#x27;</span>, <span class="comment">//轴线两边的箭头</span></span><br><span class="line">      <span class="attr">lineStyle</span>: &#123; <span class="comment">//轴线的样式，有颜色、宽度、类型等等</span></span><br><span class="line">        <span class="attr">type</span>: <span class="string">&#x27;dashed&#x27;</span></span><br><span class="line">        <span class="comment">// ...</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">yAxis</span>: &#123;</span><br><span class="line">    <span class="attr">axisLine</span>: &#123;</span><br><span class="line">      <span class="attr">symbol</span>: <span class="string">&#x27;arrow&#x27;</span>,</span><br><span class="line">      <span class="attr">lineStyle</span>: &#123;</span><br><span class="line">        <span class="attr">type</span>: <span class="string">&#x27;dashed&#x27;</span></span><br><span class="line">        <span class="comment">// ...</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>轴线两边的箭头选项：<br><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211129165935.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211129165935.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+<p><strong>坐标轴刻度：</strong><br>ECharts 提供了轴线 axisTick 相关的配置，我们可以根据实际情况调整，例如刻度线的长度，样式等。以下是一个坐标轴刻度的例子：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">option = &#123;</span><br><span class="line">  <span class="attr">xAxis</span>: &#123;</span><br><span class="line">    <span class="attr">axisTick</span>: &#123;</span><br><span class="line">      <span class="attr">show</span>:<span class="literal">true</span> <span class="comment">//开启坐标轴刻度</span></span><br><span class="line">      <span class="attr">alignWithLabel</span>:<span class="literal">true</span> <span class="comment">//使刻度与标签对其（类目轴中在 boundaryGap 为 true 的时候有效）</span></span><br><span class="line">      <span class="attr">inside</span>:<span class="literal">true</span> <span class="comment">//刻度线是否朝里（true为朝里）</span></span><br><span class="line">      interval：<span class="number">0</span> <span class="comment">//坐标轴刻度的显示间隔,如果设置为 1，表示『隔一个标签显示一个标签』，如果值为 2，表示隔两个标签显示一个标签，以此类推。</span></span><br><span class="line">      <span class="attr">length</span>: <span class="number">6</span>,<span class="comment">//刻度线的长度</span></span><br><span class="line">      <span class="attr">lineStyle</span>: &#123; <span class="comment">//样式设置</span></span><br><span class="line">        <span class="attr">type</span>: <span class="string">&#x27;dashed&#x27;</span></span><br><span class="line">        <span class="comment">// ...</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">yAxis</span>: &#123;</span><br><span class="line">    <span class="attr">axisTick</span>: &#123;</span><br><span class="line">      <span class="attr">length</span>: <span class="number">6</span>,</span><br><span class="line">      <span class="attr">lineStyle</span>: &#123;</span><br><span class="line">        <span class="attr">type</span>: <span class="string">&#x27;dashed&#x27;</span></span><br><span class="line">        <span class="comment">// ...</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p><strong>刻度标签：</strong><br>ECharts 提供了轴线 axisLabel 相关的配置，我们可以根据实际情况调整。以下是一个例子：<br><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211129171709.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211129171709.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ><br>如上图所示，下面的星期就是刻度标签</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">option = &#123;</span><br><span class="line">  <span class="attr">xAxis</span>: &#123;</span><br><span class="line">    <span class="attr">axisLabel</span>: &#123;</span><br><span class="line">      <span class="attr">show</span>:<span class="literal">true</span> <span class="comment">//显示刻度标签</span></span><br><span class="line">      <span class="attr">interval</span>:<span class="number">0</span> <span class="comment">//显示刻度，同上</span></span><br><span class="line">      <span class="attr">inside</span>:<span class="literal">true</span> <span class="comment">//标签是否朝里（true朝里）</span></span><br><span class="line">      rotate：<span class="number">45</span> <span class="comment">// 标签偏移的角度</span></span><br><span class="line">      <span class="attr">margin</span>:<span class="number">5</span> <span class="comment">//标签与轴线的距离</span></span><br><span class="line">      <span class="attr">formatter</span>: <span class="string">&#x27;&#123;value&#125; kg&#x27;</span>, <span class="comment">//刻度标签的内容格式器，支持字符串模板和回调函数两种形式。</span></span><br><span class="line">      <span class="attr">align</span>: <span class="string">&#x27;center&#x27;</span> <span class="comment">//文字水平对齐方式，默认自动。可选为：&#x27;left&#x27;,&#x27;center&#x27;,&#x27;right&#x27;</span></span><br><span class="line">      <span class="comment">// ...</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">yAxis</span>: &#123;</span><br><span class="line">    <span class="attr">axisLabel</span>: &#123;</span><br><span class="line">      <span class="attr">formatter</span>: <span class="string">&#x27;&#123;value&#125; 元&#x27;</span>,</span><br><span class="line">      <span class="attr">align</span>: <span class="string">&#x27;center&#x27;</span></span><br><span class="line">      <span class="comment">// ...</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p><strong>标签中的formatter：</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 使用字符串模板，模板变量为刻度默认标签 &#123;value&#125;</span></span><br><span class="line"><span class="attr">formatter</span>: <span class="string">&#x27;&#123;value&#125; kg&#x27;</span></span><br><span class="line"><span class="comment">// 使用函数模板，函数参数分别为刻度数值（类目），刻度的索引</span></span><br><span class="line"><span class="attr">formatter</span>: <span class="function"><span class="keyword">function</span> (<span class="params">value, index</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> value + <span class="string">&#x27;kg&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>更多关于 formatter 的内容可以参考官方的 <a target="_blank" rel="noopener" href="https://echarts.apache.org/zh/option.html#xAxis.axisLabel.formatter">API</a></p>
+</div><h2 id="6、主题配置"><a href="#6、主题配置" class="headerlink" title="6、主题配置"></a>6、主题配置</h2><div class="story post-story"><p>在eCharts的内部，内置了两套主题，分别是亮色主题以及暗色主题<br>通过以下的方式，我们可以修改主题</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> chart = echarts.init(dom, <span class="string">&#x27;light&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> chart = echarts.init(dom, <span class="string">&#x27;dark&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<p>或者我们可以通过eCharts的<a target="_blank" rel="noopener" href="https://echarts.apache.org/zh/theme-builder.html">主题编辑器</a>来创建自己的主题<img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211128132725.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211128132725.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+</div><h2 id="7、数据集（dataset）"><a href="#7、数据集（dataset）" class="headerlink" title="7、数据集（dataset）"></a>7、数据集（dataset）</h2><div class="story post-story"><p>dataset 组件可以用于单独的数据集声明，从而数据可以单独管理，被多个组件复用，并且可以基于数据指定数据到视觉的映射。</p>
+<p><strong>写法一：</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">dataset: &#123;</span><br><span class="line">    <span class="comment">// 提供一份数据。</span></span><br><span class="line">    <span class="comment">//第一行对应的是 x 轴</span></span><br><span class="line">    <span class="attr">source</span>: [</span><br><span class="line">        [<span class="string">&#x27;product&#x27;</span>, <span class="string">&#x27;2015&#x27;</span>, <span class="string">&#x27;2016&#x27;</span>, <span class="string">&#x27;2017&#x27;</span>],</span><br><span class="line">        [<span class="string">&#x27;Matcha Latte&#x27;</span>, <span class="number">43.3</span>, <span class="number">85.8</span>, <span class="number">93.7</span>],</span><br><span class="line">        [<span class="string">&#x27;Milk Tea&#x27;</span>, <span class="number">83.1</span>, <span class="number">73.4</span>, <span class="number">55.1</span>],</span><br><span class="line">        [<span class="string">&#x27;Cheese Cocoa&#x27;</span>, <span class="number">86.4</span>, <span class="number">65.2</span>, <span class="number">82.5</span>],</span><br><span class="line">        [<span class="string">&#x27;Walnut Brownie&#x27;</span>, <span class="number">72.4</span>, <span class="number">53.9</span>, <span class="number">39.1</span>]</span><br><span class="line">    ]</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+<p>在 dataset 中管理数据之后，就可以不用在 series 单独进行数据的声明，而是直接在 data 除进行调用</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 声明多个柱状图系列，默认情况下，每个系列会自动对应到 dataset 的每一列。</span></span><br><span class="line"><span class="attr">series</span>: [</span><br><span class="line">    &#123;<span class="attr">type</span>: <span class="string">&#x27;bar&#x27;</span>&#125;,</span><br><span class="line">    &#123;<span class="attr">type</span>: <span class="string">&#x27;bar&#x27;</span>&#125;,</span><br><span class="line">    &#123;<span class="attr">type</span>: <span class="string">&#x27;bar&#x27;</span>&#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<p><strong>写法二：</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">dataset: &#123;</span><br><span class="line">    <span class="comment">// 这里指定了维度名的顺序，从而可以利用默认的维度到坐标轴的映射。</span></span><br><span class="line">    <span class="comment">// 如果不指定 dimensions，也可以通过指定 series.encode 完成映射，参见后文。</span></span><br><span class="line">    <span class="attr">dimensions</span>: [<span class="string">&#x27;product&#x27;</span>, <span class="string">&#x27;2015&#x27;</span>, <span class="string">&#x27;2016&#x27;</span>, <span class="string">&#x27;2017&#x27;</span>],</span><br><span class="line">        <span class="attr">source</span>: [</span><br><span class="line">            &#123;<span class="attr">product</span>: <span class="string">&#x27;Matcha Latte&#x27;</span>, <span class="string">&#x27;2015&#x27;</span>: <span class="number">43.3</span>, <span class="string">&#x27;2016&#x27;</span>: <span class="number">85.8</span>, <span class="string">&#x27;2017&#x27;</span>: <span class="number">93.7</span>&#125;,</span><br><span class="line">            &#123;<span class="attr">product</span>: <span class="string">&#x27;Milk Tea&#x27;</span>, <span class="string">&#x27;2015&#x27;</span>: <span class="number">83.1</span>, <span class="string">&#x27;2016&#x27;</span>: <span class="number">73.4</span>, <span class="string">&#x27;2017&#x27;</span>: <span class="number">55.1</span>&#125;,</span><br><span class="line">            &#123;<span class="attr">product</span>: <span class="string">&#x27;Cheese Cocoa&#x27;</span>, <span class="string">&#x27;2015&#x27;</span>: <span class="number">86.4</span>, <span class="string">&#x27;2016&#x27;</span>: <span class="number">65.2</span>, <span class="string">&#x27;2017&#x27;</span>: <span class="number">82.5</span>&#125;,</span><br><span class="line">            &#123;<span class="attr">product</span>: <span class="string">&#x27;Walnut Brownie&#x27;</span>, <span class="string">&#x27;2015&#x27;</span>: <span class="number">72.4</span>, <span class="string">&#x27;2016&#x27;</span>: <span class="number">53.9</span>, <span class="string">&#x27;2017&#x27;</span>: <span class="number">39.1</span>&#125;</span><br><span class="line">        ]</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+</div><h2 id="8、图例"><a href="#8、图例" class="headerlink" title="8、图例"></a>8、图例</h2><div class="story post-story"><p>图例是图表中对内容区元素的注释、用不同形状、颜色、文字等来标示不同数据列，通过点击对应数据列的标记，可以显示或隐藏该数据列。图例虽然不是图表中的主要信息、却是了解图表信息的钥匙。<br>以下是一个例子：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">option = &#123;</span><br><span class="line">  <span class="attr">legend</span>: &#123;</span><br><span class="line">    <span class="attr">type</span>:<span class="string">&#x27;plain&#x27;</span> <span class="comment">//图例的类型可选值：&#x27;scroll&#x27;：可滚动翻页的图例。当图例数量较多时可以使用。</span></span><br><span class="line">    <span class="comment">// Try &#x27;horizontal&#x27;</span></span><br><span class="line">    <span class="attr">orient</span>: <span class="string">&#x27;vertical&#x27;</span>, <span class="comment">//图例列表的布局朝向。可选：&#x27;horizontal&#x27;水平，&#x27;vertical&#x27;垂直</span></span><br><span class="line">    <span class="attr">right</span>: <span class="number">10</span>, <span class="comment">//图例组件离容器右侧的距离。</span></span><br><span class="line">    <span class="attr">top</span>: <span class="string">&#x27;center&#x27;</span> <span class="comment">//图例组件离容器上侧的距离。</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">dataset</span>: &#123;</span><br><span class="line">    <span class="attr">source</span>: [</span><br><span class="line">      [<span class="string">&#x27;product&#x27;</span>, <span class="string">&#x27;2015&#x27;</span>, <span class="string">&#x27;2016&#x27;</span>, <span class="string">&#x27;2017&#x27;</span>],</span><br><span class="line">      [<span class="string">&#x27;Matcha Latte&#x27;</span>, <span class="number">43.3</span>, <span class="number">85.8</span>, <span class="number">93.7</span>],</span><br><span class="line">      [<span class="string">&#x27;Milk Tea&#x27;</span>, <span class="number">83.1</span>, <span class="number">73.4</span>, <span class="number">55.1</span>],</span><br><span class="line">      [<span class="string">&#x27;Cheese Cocoa&#x27;</span>, <span class="number">86.4</span>, <span class="number">65.2</span>, <span class="number">82.5</span>],</span><br><span class="line">      [<span class="string">&#x27;Walnut Brownie&#x27;</span>, <span class="number">72.4</span>, <span class="number">53.9</span>, <span class="number">39.1</span>]</span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">xAxis</span>: &#123; <span class="attr">type</span>: <span class="string">&#x27;category&#x27;</span> &#125;,</span><br><span class="line">  <span class="attr">yAxis</span>: &#123;&#125;,</span><br><span class="line">  <span class="attr">series</span>: [&#123; <span class="attr">type</span>: <span class="string">&#x27;bar&#x27;</span> &#125;, &#123; <span class="attr">type</span>: <span class="string">&#x27;bar&#x27;</span> &#125;, &#123; <span class="attr">type</span>: <span class="string">&#x27;bar&#x27;</span> &#125;]</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>显示内容如下：<img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211129173307.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211129173307.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ><br>更多内容参考官方 <a target="_blank" rel="noopener" href="https://echarts.apache.org/zh/option.html#legend">API</a></p>
+
+</div>
+  </div>
+  
+  
+    
+    <div class='footer'>
+      
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=http://cyc0819.top/2021/11/27/2021-11-27-eCharts%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/>http://cyc0819.top/2021/11/27/2021-11-27-eCharts%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2021-11-29T17:37:00+08:00">
+  <a class='notlink' href="/" onclick="return false;" title="Click me!" >
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Nov 29, 2021</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://cyc0819.top/2021/11/17/2021-11-17-%E6%88%91%E4%BB%AC%E8%BF%98%E6%9C%89%E5%BF%85%E8%A6%81%E6%B7%B1%E5%85%A5%E5%AD%A6%E4%B9%A0jQuery%E5%90%97/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="George's Blog">
-  </span>
+          
   
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/11/17/2021-11-17-%E6%88%91%E4%BB%AC%E8%BF%98%E6%9C%89%E5%BF%85%E8%A6%81%E6%B7%B1%E5%85%A5%E5%AD%A6%E4%B9%A0jQuery%E5%90%97/"  itemprop="url">
-        我们还有必要深入学习jQuery吗
-      </a>
-    </h2>
-  
-  <div class='md' itemprop="articleBody">
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%89%8D%E7%AB%AF/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>前端</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/eCharts/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>eCharts</p></a></div>
+  <span hidden itemprop="keywords">前端 eCharts</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
       
-        我们还有必要深入学习 jQuery 吗表达想法前几天在某个视频平台看到一个博主的视频，该博主对于『 我们还有必要深入学习 jQuery 吗？』这个问题做出了一个很肯定的答案：就是没有必要。
-而他对于这个结论并也不是空穴来风，同样是做出了一系列的解释。比如说：jQuery 已经过时了、Vue.js以及React.js这样的前端框架能更好地实现jQuery所能实现的功能等等。
-当然，作为该博主的...
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://cyc0819.top/2021/11/27/2021-11-27-eCharts%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&title=eCharts学习笔记 - George's Blog&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://cyc0819.top/2021/11/27/2021-11-27-eCharts%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&title=eCharts学习笔记 - George's Blog&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://cyc0819.top/2021/11/27/2021-11-27-eCharts%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&title=eCharts学习笔记 - George's Blog&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
+          
+        </a>
+      
+    
+      
+    
       
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+</div>
+
+
+
         
-          
-          <a class='avatar' target="_blank" rel="noopener" href='https://github.com/chenyicai0819'><img src='https://z3.ax1x.com/2021/09/30/4oKiUx.jpg' alt="This is a picture without description" ></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://z3.ax1x.com/2021/09/30/4oKiUx.jpg">
-            <meta itemprop="name" content="George chan">
-            <meta itemprop="url" content="https://github.com/chenyicai0819">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-11-17T23:27:41+08:00">2021-11-17</time>
-        
-      </div>
       
-        <div>
-          <a class='readmore' href='/2021/11/17/2021-11-17-%E6%88%91%E4%BB%AC%E8%BF%98%E6%9C%89%E5%BF%85%E8%A6%81%E6%B7%B1%E5%85%A5%E5%AD%A6%E4%B9%A0jQuery%E5%90%97/' itemprop="url">
-            閱讀全文
-          </a>
-        </div>
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2021/11/30/2021-11-30-%E5%9B%9E%E9%A1%BESSM%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>回顾SSM框架整合</p>
+          <p class='content'>回顾SSM框架整合1、环境
+jdk 1.8.0_271
+Maven 3.6.1
+mySQL 8.0
+Tomcat 9.0.27
+
+2、创建数据库首先创建一个测试用的数据库 books：
+1234...</p>
+        </a>
+      
+      
+        <a class='next' href='/2021/11/20/2021-11-20-SpringSecurity+JWT%E5%AE%9E%E7%8E%B0%E7%9A%84%E7%99%BB%E5%BD%95%E8%AE%A4%E8%AF%81/'>
+          <p class='title'>SpringSecurity+JWT实现的登录认证<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>SpringSecurity+JWT实现的登录认证1、简介
+Spring Security在 Web 编程开发中，登录安全往往也是很重要的一个部分，而 Spring Security 所做得就是...</p>
+        </a>
       
     </div>
   
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
+  <!-- Custom Files postEnd begin-->
   
-    
-  
+  <!-- Custom Files postEnd end-->
+</article>
 
 
-    
-  
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2765,295 +2986,46 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
 
-<section class="widget blogger shadow desktop mobile pjax">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://z3.ax1x.com/2021/09/30/4oKMVI.jpg' alt="This is a picture without description" />
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">George's Blog</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:chenyc2021@qq.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/chenyicai0819"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://c.y.qq.com/base/fcgi-bin/u?__=gaK0sy46"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile pjax">
+  <section class="widget toc-wrapper shadow desktop mobile pjax" id="toc-div" >
     
   <header>
     
-      <a href='/#/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <a href="/tags/HashMap/" style="font-size: 14px; color: #999">HashMap</a> <a href="/tags/Hexo/" style="font-size: 16.5px; color: #888">Hexo</a> <a href="/tags/JWT/" style="font-size: 14px; color: #999">JWT</a> <a href="/tags/MyBatis/" style="font-size: 14px; color: #999">MyBatis</a> <a href="/tags/SpringBoot/" style="font-size: 16.5px; color: #888">SpringBoot</a> <a href="/tags/SpringCloud/" style="font-size: 14px; color: #999">SpringCloud</a> <a href="/tags/SpringSecurity/" style="font-size: 14px; color: #999">SpringSecurity</a> <a href="/tags/Swagger/" style="font-size: 14px; color: #999">Swagger</a> <a href="/tags/Swing/" style="font-size: 14px; color: #999">Swing</a> <a href="/tags/eCharts/" style="font-size: 14px; color: #999">eCharts</a> <a href="/tags/java/" style="font-size: 24px; color: #555">java</a> <a href="/tags/redis/" style="font-size: 16.5px; color: #888">redis</a> <a href="/tags/shiro/" style="font-size: 14px; color: #999">shiro</a> <a href="/tags/spring/" style="font-size: 14px; color: #999">spring</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 16.5px; color: #888">前端</a> <a href="/tags/%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/" style="font-size: 14px; color: #999">学习总结</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 14px; color: #999">数据结构</a> <a href="/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/" style="font-size: 14px; color: #999">消息队列</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 21.5px; color: #666">算法</a> <a href="/tags/%E8%AE%B0%E5%BD%95/" style="font-size: 16.5px; color: #888">记录</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 19px; color: #777">随笔</a>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E7%AE%80%E4%BB%8B"><span class="toc-text">1、简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E5%9C%A8-Vue-%E4%B8%AD%E4%BD%BF%E7%94%A8"><span class="toc-text">2、在 Vue 中使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E7%BB%93%E6%9E%84"><span class="toc-text">3、基本语法结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E3%80%81%E5%9B%BE%E8%A1%A8%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF"><span class="toc-text">4、图表配置信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E3%80%81x-%E8%BD%B4%E3%80%81y-%E8%BD%B4"><span class="toc-text">5、x 轴、y 轴</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6%E3%80%81%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE"><span class="toc-text">6、主题配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7%E3%80%81%E6%95%B0%E6%8D%AE%E9%9B%86%EF%BC%88dataset%EF%BC%89"><span class="toc-text">7、数据集（dataset）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8%E3%80%81%E5%9B%BE%E4%BE%8B"><span class="toc-text">8、图例</span></a></li></ol>
     </div>
   </section>
-
-
-  
-
-  
-    
-    
-
-<section class="widget shadow desktop mobile pjax">
-  
-  <header>
-    
-      <i class="fas fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>30 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已运行时间：</div>
-          <div id="webinfo-runtime-count" publish_date="03/24/2020 21:34:09"></div>
-        </div>
-        <script>
-          var BirthDay = new Date(new Date('2021/06/21'));
-          var today = new Date();
-          var timeold = (today.getTime() - BirthDay.getTime());
-          var daysold = Math.floor(timeold / (24 * 60 * 60 * 1000));
-          document.getElementById('webinfo-runtime-count').innerHTML = daysold + ' 天';
-        </script>
-      
-
-
-      
-        <div class="webinfo-item">
-          <div>本站总字数：</div>
-          <div>42.2k 字</div>
-        </div>
-      
-
-      
-
-      
-        <div class="webinfo-item">
-          <div>本站被访问了：</div>
-          
-          <div><span id="lc-sv"><span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span></span> 次</div>
-          
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          
-            <div id="last-update" style="display: none;">Wed Dec 01 2021 21:55:47 GMT+0800 (中国标准时间)</div>
-            <div id="last-update-show">2021-12-01 日</div>
-          
-        </div>
-        
-        <script>
-          function timeago(dateTimeStamp) {
-              var minute = 1000 * 60; //把分，时，天，周，半个月，一个月用毫秒表示
-              var hour = minute * 60;
-              var day = hour * 24;
-              var week = day * 7;
-              var month = day * 30;
-              var now = new Date().getTime(); //获取当前时间毫秒
-              var diffValue = now - dateTimeStamp; //时间差
-              if (diffValue < 0) {
-                  return;
-              }
-              var minC = diffValue / minute; //计算时间差的分，时，天，周，月
-              var hourC = diffValue / hour;
-              var dayC = diffValue / day;
-              var weekC = diffValue / week;
-              var monthC = diffValue / month;
-              if (monthC >= 1 && monthC <= 3) {
-                  result = " " + parseInt(monthC) + " 月前"
-              } else if (weekC >= 1 && weekC <= 3) {
-                  result = " " + parseInt(weekC) + " 周前"
-              } else if (dayC >= 1 && dayC <= 6) {
-                  result = " " + parseInt(dayC) + " 天前"
-              } else if (hourC >= 1 && hourC <= 23) {
-                  result = " " + parseInt(hourC) + " 小时前"
-              } else if (minC >= 1 && minC <= 59) {
-                  result = " " + parseInt(minC) + " 分钟前"
-              } else if (diffValue >= 0 && diffValue <= minute) {
-                  result = "刚刚"
-              } else {
-                  var datetime = new Date();
-                  datetime.setTime(dateTimeStamp);
-                  var Nyear = datetime.getFullYear();
-                  var Nmonth = datetime.getMonth() + 1 < 10 ? "0" + (datetime.getMonth() + 1) : datetime.getMonth() + 1;
-                  var Ndate = datetime.getDate() < 10 ? "0" + datetime.getDate() : datetime.getDate();
-                  var Nhour = datetime.getHours() < 10 ? "0" + datetime.getHours() : datetime.getHours();
-                  var Nminute = datetime.getMinutes() < 10 ? "0" + datetime.getMinutes() : datetime.getMinutes();
-                  var Nsecond = datetime.getSeconds() < 10 ? "0" + datetime.getSeconds() : datetime.getSeconds();
-                  result = Nyear + "-" + Nmonth + "-" + Ndate
-              }
-              return result;
-          }
-          var lastUpDate = document.getElementById('last-update').innerHTML;
-          try {
-            document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
-          } catch (error) {
-            document.getElementById('last-update-show').innerHTML = '2021-12-01 日';
-          }
-        </script>
-        
-      
-    </div>
-  </div>
-</section>
-
-  
-
-  
-    
-     
-
- 
-<section class="widget shadow desktop mobile pjax"> 
-  
-  <header>
-    
-      <i class="fas fa-clock WISTERIA fa-fw" aria-hidden="true"></i><span class='name'>最近更新</span>
-    
-  </header>
-
- 
-  <div class='content'> 
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2021/11/30/2021-11-30-%E5%9B%9E%E9%A1%BESSM%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88/"><div class="item"><time>2021-12-01</time></div><span>回顾SSM框架整合</span></a></li><li><a class="widget-last" href="/2021/11/27/2021-11-27-eCharts%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><div class="item"><time>2021-11-29</time></div><span>eCharts学习笔记</span></a></li><li><a class="widget-last" href="/2021/11/20/2021-11-20-SpringSecurity+JWT%E5%AE%9E%E7%8E%B0%E7%9A%84%E7%99%BB%E5%BD%95%E8%AE%A4%E8%AF%81/"><div class="item"><time>2021-11-25</time></div><span>SpringSecurity+JWT实现的登录认证</span></a></li><li><a class="widget-last" href="/2021/07/22/2021-07-22-springboot+mybatis%E6%95%B4%E5%90%88%E6%94%AF%E4%BB%98%E5%AE%9D%E6%94%AF%E4%BB%98/"><div class="item"><time>2021-11-18</time></div><span>springboot+mybatis整合支付宝支付</span></a></li><li><a class="widget-last" href="/2021/10/05/2021-10-05-Swagger3%E5%85%A5%E9%97%A8%E4%BD%BF%E7%94%A8/"><div class="item"><time>2021-11-18</time></div><span>Swagger3入门使用</span></a></li></ul> 
-  </div> 
-</section> 
-
-  
-
-  
-    
-    
-
-
-  <section class='widget shadow desktop mobile pjax music'>
-    
-
-    <div class='content'>
-      
-
-  
-    <meting-js
-      theme='#1BCDFC'
-      autoplay='false'
-      volume='0.7'
-      loop='all'
-      order='list'
-      fixed='false'
-      list-max-height='320px'
-      server='tencent'
-      type='playlist'
-      id='2201397912'
-      list-folded='true'>
-    </meting-js>
-  
-
-
-    </div>
-  </section>
-
-
-  
-
-  
-    
-    
-
-<section class="widget qrcode shadow desktop mobile pjax">
-  
-
-  <div class='content article-entry'>
-    
-      <img src='https://z3.ax1x.com/2021/09/30/4ouYH1.jpg'
-      
-        height='90px'
-      />
-    
-      <img src='https://z3.ax1x.com/2021/09/30/4ouQ9U.png'
-      
-        height='90px'
-      />
-    
-  </div>
-</section>
 
   
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3070,14 +3042,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="eCharts学习笔记";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3242,8 +3215,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1638366947940')
-      volantis.js('/js/message.js?time=1638366947940', () => {
+      volantis.css('/css/message.css?time=1638366945897')
+      volantis.js('/js/message.js?time=1638366945897', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -3288,8 +3261,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1638366947940')
-      volantis.js('/js/message.js?time=1638366947940', () => {
+      volantis.css('/css/message.css?time=1638366945897')
+      volantis.js('/js/message.js?time=1638366945897', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -3348,8 +3321,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1638366947940')
-      volantis.js('/js/message.js?time=1638366947940', () => {
+      volantis.css('/css/message.css?time=1638366945897')
+      volantis.js('/js/message.js?time=1638366945897', () => {
         hideMessage(done);
       });
     } else {
@@ -3494,19 +3467,19 @@ volantis.pjax.push(bindToggleButton);
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1638366947940")
+        volantis.js("/js/plugins/sites.js?time=1638366945897")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1638366947940")
+        volantis.js("/js/plugins/friends.js?time=1638366945897")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1638366947940")
+        volantis.js("/js/plugins/contributors.js?time=1638366945897")
       }
     
   };
@@ -3697,7 +3670,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-<script src="/js/app.js?time=1638366947940.js"></script>
+<script src="/js/app.js?time=1638366945897.js"></script>
 
 
 <!-- optional -->
@@ -3710,7 +3683,7 @@ volantis.pjax.push(bindToggleButton);
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1638366947940");
+    return volantis.js("/js/search/hexo.js?time=1638366945897");
   }
 
   function loadSearchService() {
@@ -3984,7 +3957,7 @@ volantis.pjax.push(bindToggleButton);
 
 
   <script>
-  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp"];
+  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -4027,7 +4000,7 @@ volantis.pjax.push(bindToggleButton);
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/parallax.js?time=1638366947940').then(()=>{
+    volantis.js('/js/parallax.js?time=1638366945897').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4221,7 +4194,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://cyc0819.top/","name":"George's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/tags/前端/","name":"前端"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"George's Blog","url":"http://cyc0819.top/","keywords":null,"description":"","author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","description":""},"publisher":{"@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://cyc0819.top?s={search_term_string}"},"query-input":"required name=search_term_string"}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://cyc0819.top/","name":"George's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://cyc0819.top/2021/11/27/2021-11-27-eCharts学习笔记/","name":"eCharts学习笔记"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"eCharts学习笔记","description":"","datePublished":"2021-11-27T14:04:25.000Z","dateModified":"2021-11-29T09:37:00.581Z","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://cyc0819.top/2021/11/27/2021-11-27-eCharts%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"},"author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/"},"publisher":{"@type":"Organization","name":"George's Blog","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://cyc0819.top/2021/11/27/2021-11-27-eCharts%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/","wordCount":0,"keywords":"前端,eCharts","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 <!-- more -->
