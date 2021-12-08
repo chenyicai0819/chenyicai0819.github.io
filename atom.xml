@@ -6,7 +6,7 @@
   <link href="http://cyc0819.top/atom.xml" rel="self"/>
   
   <link href="http://cyc0819.top/"/>
-  <updated>2021-12-08T09:32:01.537Z</updated>
+  <updated>2021-12-08T16:51:35.156Z</updated>
   <id>http://cyc0819.top/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SpringBoot+Vue微信授权获取用户openid</title>
+    <link href="http://cyc0819.top/2021/12/09/2021-12-09-SpringBoot+Vue%E5%BE%AE%E4%BF%A1%E6%8E%88%E6%9D%83%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7openid/"/>
+    <id>http://cyc0819.top/2021/12/09/2021-12-09-SpringBoot+Vue%E5%BE%AE%E4%BF%A1%E6%8E%88%E6%9D%83%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7openid/</id>
+    <published>2021-12-08T16:16:46.000Z</published>
+    <updated>2021-12-08T16:51:35.156Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="SpringBoot-Vue微信授权获取用户openid"><a href="#SpringBoot-Vue微信授权获取用户openid" class="headerlink" title="SpringBoot+Vue微信授权获取用户openid"></a>SpringBoot+Vue微信授权获取用户openid</h1><h2 id="1、环境"><a href="#1、环境" class="headerlink" title="1、环境"></a>1、环境</h2><div class="story post-story"><ul><li>jdk 1.8.0_271</li><li>Maven 3.6.1</li><li>MySQL 8.0</li><li>Vue 3.0</li></ul></div><h2 id="2、需求"><a href="#2、需求" class="headerlink" title="2、需求"></a>2、需求</h2><div class="story post-story"><p>这几天在做桂林医学院的项目的时候，甲方提出了需求说能不能将消息通知改成微信公众号通知，因为公众号的效率比较高，同时受众也是比较多（原本用的是易班的 api，文档及其不友好，bug 官方也不解决，按照上一届学长的说法，之前发送消息接收人得等两天之后才能收到）。</p><p>而如果用到微信的公众号，必须就得接收人主动绑定自己的微信号，我们才能获取他的 openid ，才能对其发送模板消息。</p></div><h2 id="3、微信公众号模板消息"><a href="#3、微信公众号模板消息" class="headerlink" title="3、微信公众号模板消息"></a>3、微信公众号模板消息</h2><div class="story post-story"><p>开发的时候我用的是微信的<a href="https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login">测试公众账号</a>，但是实际的功能和企业的账号是一样的。</p><p>首先我们要知道， <wavy>模板消息</wavy> 是什么？以下就是公众号模板消息，我们在生活中很多场景都会接触到它。<br><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/Screenshot_2021-12-06-23-00-46-398_com.tencent.mm.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/Screenshot_2021-12-06-23-00-46-398_com.tencent.mm.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="zoom:15%;" /></p><p>在进入了测试号的管理后台之后，我们可以在这里设置我们的模板消息的 <wavy>模板</wavy></p><p><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211209002928.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211209002928.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p><p>当然，本文的主题并不是模板消息的发送，而是使用模板消息的时候引发的其他问题，具体的模板消息可以移步我的：</p><div class="tag link"><a class="link-card" title="name" href="lianjie"><div class="left"><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/256/safari.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/256/safari.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></div><div class="right"><p class="text">name</p><p class="url">lianjie</p></div></a></div></div><h2 id="4、openid"><a href="#4、openid" class="headerlink" title="4、openid"></a>4、openid</h2><div class="story post-story"><p>openid 是微信用户的唯一标识，就跟人的身份证一样，每个微信号都有一个自己的 openid ，用于识别每个微信，一般情况下，我们无法看到，更无法修改我们的 openid，此时如果需要获取，就需要微信官方给我们提供的接口：</p><p>我们点开下图中的 <span class='p blue'>蓝色</span> 字体,<br><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211209003547.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211209003547.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><br>可以进入到<a href="https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/Wechat_webpage_authorization.html">网页授权</a>的界面：</p><p>里面详细介绍了获取openid，甚至是用户信息的过程：<br><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211209003923.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211209003923.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p><p>以下是我通过 java 实现的一些过程，可供参考。</p><h3 id="4-1、第一步：用户同意授权，获取code"><a href="#4-1、第一步：用户同意授权，获取code" class="headerlink" title="4.1、第一步：用户同意授权，获取code"></a>4.1、第一步：用户同意授权，获取code</h3><p>根据官方的说法，我们需要请求一个链接来获取到用户的 CODE<br>链接如下：<br><code>https://open.weixin.qq.com/connect/oauth2/authorize?appid=APPID&amp;redirect_uri=REDIRECT_URI&amp;response_type=code&amp;scope=SCOPE&amp;state=STATE#wechat_redirect</code></p><p>这里有几个参数，官方文档都有说明，这里重点是把要去上一步中：</p><p><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211209003547.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211209003547.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p><p>最后面的修改那里，将域名改成与  REDIRECT_URI 一致</p><p><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211209004933.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211209004933.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p><p>而此时我们选择的<code>scope</code>是需要用户手动通过授权的<code>snsapi_userinfo</code></p><p>然后我们就有了我们的链接，此时就要去代码中对其进行请求了。</p></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="java" scheme="http://cyc0819.top/categories/java/"/>
+    
+    <category term="SpringBoot" scheme="http://cyc0819.top/categories/java/SpringBoot/"/>
+    
+    <category term="前端" scheme="http://cyc0819.top/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="Vue" scheme="http://cyc0819.top/categories/%E5%89%8D%E7%AB%AF/Vue/"/>
+    
+    
+    <category term="java" scheme="http://cyc0819.top/tags/java/"/>
+    
+    <category term="SpringBoot，Vue" scheme="http://cyc0819.top/tags/SpringBoot%EF%BC%8CVue/"/>
+    
+  </entry>
   
   <entry>
     <title>json—lib依赖无法下载问题</title>
@@ -511,30 +543,6 @@
     
     
     <category term="数据结构" scheme="http://cyc0819.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>准备阅读小米十年纪念《一往无前》</title>
-    <link href="http://cyc0819.top/2021/08/27/2021-08-27-%E5%87%86%E5%A4%87%E9%98%85%E8%AF%BB%E5%B0%8F%E7%B1%B3%E5%8D%81%E5%B9%B4%E7%BA%AA%E5%BF%B5%E3%80%8A%E4%B8%80%E5%BE%80%E6%97%A0%E5%89%8D%E3%80%8B%20-%20%E5%89%AF%E6%9C%AC%20-%20%E5%89%AF%E6%9C%AC/"/>
-    <id>http://cyc0819.top/2021/08/27/2021-08-27-%E5%87%86%E5%A4%87%E9%98%85%E8%AF%BB%E5%B0%8F%E7%B1%B3%E5%8D%81%E5%B9%B4%E7%BA%AA%E5%BF%B5%E3%80%8A%E4%B8%80%E5%BE%80%E6%97%A0%E5%89%8D%E3%80%8B%20-%20%E5%89%AF%E6%9C%AC%20-%20%E5%89%AF%E6%9C%AC/</id>
-    <published>2021-08-26T16:46:22.000Z</published>
-    <updated>2021-12-08T10:34:53.458Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="准备阅读小米十年纪念《一往无前》"><a href="#准备阅读小米十年纪念《一往无前》" class="headerlink" title="准备阅读小米十年纪念《一往无前》"></a>准备阅读小米十年纪念《一往无前》</h1><p>作为一个不太资深的老米粉，自从小米发布新书《一往无前》以来一直想阅读一下，感受一下大厂发展的心路历程，但是一直都没有提上日程，而今天决定正式开始阅读此书，但是可能耗时会较长，现在这里做一个标记，阅读完毕务必完成一篇读后感。</p><hr><p>2021.09.21 因为一直都在面试，所以阅读计划得往后推迟一点了。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    <category term="随笔" scheme="http://cyc0819.top/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-    <category term="随笔" scheme="http://cyc0819.top/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
