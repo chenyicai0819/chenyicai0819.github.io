@@ -23,12 +23,12 @@
   <meta content="George&#39;s Blog" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1639111791064" as="style">
+  <link rel="preload" href="/css/style.css?time=1639112165696" as="style">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- 页面元数据 -->
-  <title>Category: java - George's Blog</title>
+  <title>分类：java - George's Blog</title>
   <meta name="keywords" content="null">
   <meta property="og:type" content="website">
 <meta property="og:title" content="George&#39;s Blog">
@@ -1875,8 +1875,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1639111791064" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1639111791064"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1639112165696" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1639112165696"></noscript>
     <script>
       var userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1909,9 +1909,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>`+
-        `<span class="kill-c">Microsoft has terminated support for Internet Explorer (IE) 10 and earlier versions in 2016. <br/>There are great security risks to continue using it. Please use contemporary mainstream browsers to access.</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-cn/WindowsForBusiness/End-of-IE-support"><strong>Learn more ></strong></a>`+
+        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
+        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-cn/WindowsForBusiness/End-of-IE-support"><strong>了解详情 ></strong></a>`+
     '</div>');
 </script>
 
@@ -1939,9 +1939,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>
-        <span class="kill-c">This page requires browser support (enable) JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>Learn more ></strong></a>
+        <span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>
+        <span class="kill-c">本页面需要浏览器支持（启用）JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情 ></strong></a>
     </div>
 </noscript>
 
@@ -2728,6 +2728,84 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://cyc0819.top/2021/12/10/2021-12-10-SpringBoot%E5%8F%91%E9%80%81%E5%BE%AE%E4%BF%A1%E6%A8%A1%E6%9D%BF%E6%B6%88%E6%81%AF/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="George's Blog">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2021/12/10/2021-12-10-SpringBoot%E5%8F%91%E9%80%81%E5%BE%AE%E4%BF%A1%E6%A8%A1%E6%9D%BF%E6%B6%88%E6%81%AF/"  itemprop="url">
+        SpringBoot发送微信模板消息
+      </a>
+    </h2>
+  
+  <div class='md' itemprop="articleBody">
+    
+      
+        SpringBoot发送微信模板消息1、环境
+jdk 1.8.0_271
+Maven 3.6.1
+MySQL 8.0
+
+2、工作这段时间在做项目的时候，甲方要求将之前的易班消息推送更换成微信公众号模板消息推送，所以本文就是记录一下使用模板消息的过程，
+开发的时候我用的是微信的测试公众账号，但是实际的功能和企业的账号是一样的。
+3、准备工作首先我们要知道，模板消息是什么？以下就是公众号模板消息...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' target="_blank" rel="noopener" href='https://github.com/chenyicai0819'><img src='https://z3.ax1x.com/2021/09/30/4oKiUx.jpg' alt="This is a picture without description" ></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://z3.ax1x.com/2021/09/30/4oKiUx.jpg">
+            <meta itemprop="name" content="George chan">
+            <meta itemprop="url" content="https://github.com/chenyicai0819">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2021-12-10T12:54:26+08:00">2021-12-10</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/java/">java</a><span class="sep"></span><a class="category-link" href="/categories/java/SpringBoot/">SpringBoot</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/java/" itemprop="url"><span itemprop="name">java</span></a>
+            </span>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/java/SpringBoot/" itemprop="url"><span itemprop="name">SpringBoot</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2021/12/10/2021-12-10-SpringBoot%E5%8F%91%E9%80%81%E5%BE%AE%E4%BF%A1%E6%A8%A1%E6%9D%BF%E6%B6%88%E6%81%AF/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
   <link itemprop="mainEntityOfPage" href="http://cyc0819.top/2021/12/09/2021-12-09-SpringBoot+Vue%E5%BE%AE%E4%BF%A1%E6%8E%88%E6%9D%83%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7openid/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="George's Blog">
@@ -2798,7 +2876,7 @@ Vue 3.0
       
         <div>
           <a class='readmore' href='/2021/12/09/2021-12-09-SpringBoot+Vue%E5%BE%AE%E4%BF%A1%E6%8E%88%E6%9D%83%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7openid/' itemprop="url">
-            Read More
+            阅读全文
           </a>
         </div>
       
@@ -2874,85 +2952,7 @@ Maven源：阿里云
       
         <div>
           <a class='readmore' href='/2021/12/08/2021-12-08-json%E2%80%94lib%E4%BE%9D%E8%B5%96%E6%97%A0%E6%B3%95%E4%B8%8B%E8%BD%BD%E9%97%AE%E9%A2%98/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://cyc0819.top/2021/12/08/2021-12-10-SpringBoot%E5%8F%91%E9%80%81%E5%BE%AE%E4%BF%A1%E6%A8%A1%E6%9D%BF%E6%B6%88%E6%81%AF/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="George's Blog">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/12/08/2021-12-10-SpringBoot%E5%8F%91%E9%80%81%E5%BE%AE%E4%BF%A1%E6%A8%A1%E6%9D%BF%E6%B6%88%E6%81%AF/"  itemprop="url">
-        SpringBoot发送微信模板消息
-      </a>
-    </h2>
-  
-  <div class='md' itemprop="articleBody">
-    
-      
-        json-lib依赖无法下载问题1、环境
-jdk 1.8.0_271
-Maven 3.6.1
-Maven源：阿里云
-
-2、工作这段时间在做项目的时候，甲方要求将之前的易班消息推送更换成微信公众号模板消息推送，所以本文就是记录一下使用模板消息的过程，
-开发的时候我用的是微信的测试公众账号，但是实际的功能和企业的账号是一样的。
-3、准备工作首先我们要知道，模板消息是什么？以下就是公众号模板消息，...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' target="_blank" rel="noopener" href='https://github.com/chenyicai0819'><img src='https://z3.ax1x.com/2021/09/30/4oKiUx.jpg' alt="This is a picture without description" ></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://z3.ax1x.com/2021/09/30/4oKiUx.jpg">
-            <meta itemprop="name" content="George chan">
-            <meta itemprop="url" content="https://github.com/chenyicai0819">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-12-08T13:53:12+08:00">2021-12-08</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/java/">java</a><span class="sep"></span><a class="category-link" href="/categories/java/SpringBoot/">SpringBoot</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/java/" itemprop="url"><span itemprop="name">java</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/java/SpringBoot/" itemprop="url"><span itemprop="name">SpringBoot</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/12/08/2021-12-10-SpringBoot%E5%8F%91%E9%80%81%E5%BE%AE%E4%BF%A1%E6%A8%A1%E6%9D%BF%E6%B6%88%E6%81%AF/' itemprop="url">
-            Read More
+            阅读全文
           </a>
         </div>
       
@@ -3030,7 +3030,7 @@ Tomcat 9.0.27
       
         <div>
           <a class='readmore' href='/2021/11/30/2021-11-30-%E5%9B%9E%E9%A1%BESSM%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88/' itemprop="url">
-            Read More
+            阅读全文
           </a>
         </div>
       
@@ -3106,7 +3106,7 @@ Spring Security在 Web 编程开发中，登录安全往往也是很重要的一
       
         <div>
           <a class='readmore' href='/2021/11/20/2021-11-20-SpringSecurity+JWT%E5%AE%9E%E7%8E%B0%E7%9A%84%E7%99%BB%E5%BD%95%E8%AE%A4%E8%AF%81/' itemprop="url">
-            Read More
+            阅读全文
           </a>
         </div>
       
@@ -3185,7 +3185,7 @@ Service层，作为程序的业务层面，其中最重要的必然是程序的�
       
         <div>
           <a class='readmore' href='/2021/11/12/2021-11-12-Service%E4%B8%AD%E5%8C%85%E5%90%AB%E5%93%AA%E4%BA%9B%E4%BB%A3%E7%A0%81/' itemprop="url">
-            Read More
+            阅读全文
           </a>
         </div>
       
@@ -3261,7 +3261,7 @@ Service层，作为程序的业务层面，其中最重要的必然是程序的�
       
         <div>
           <a class='readmore' href='/2021/10/06/2021-10-06-RabbitMQ%E5%85%A5%E9%97%A8%E4%BD%BF%E7%94%A8/' itemprop="url">
-            Read More
+            阅读全文
           </a>
         </div>
       
@@ -3333,7 +3333,7 @@ swa...
       
         <div>
           <a class='readmore' href='/2021/10/05/2021-10-05-Swagger3%E5%85%A5%E9%97%A8%E4%BD%BF%E7%94%A8/' itemprop="url">
-            Read More
+            阅读全文
           </a>
         </div>
       
@@ -3405,7 +3405,7 @@ swa...
       
         <div>
           <a class='readmore' href='/2021/10/03/2021-10-03-SpringCloud%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%85%A5%E9%97%A8/' itemprop="url">
-            Read More
+            阅读全文
           </a>
         </div>
       
@@ -3477,7 +3477,7 @@ swa...
       
         <div>
           <a class='readmore' href='/2021/09/29/2021-09-29-Redis%E4%BD%BF%E7%94%A8%E6%B3%A8%E8%A7%A3%E5%AE%9E%E7%8E%B0%E4%BA%8C%E7%BA%A7%E7%BC%93%E5%AD%98/' itemprop="url">
-            Read More
+            阅读全文
           </a>
         </div>
       
@@ -3502,7 +3502,7 @@ swa...
         
           <a class="next" rel="next" href="/categories/java/page/2/">
             <section class="post next white-box shadow">
-              &nbsp;Next&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i>
+              &nbsp;下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i>
             </section>
           </a>
         
@@ -3805,7 +3805,7 @@ swa...
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Fri Dec 10 2021 12:49:49 GMT+0800 (中国标准时间)</div>
+            <div id="last-update" style="display: none;">Fri Dec 10 2021 12:56:02 GMT+0800 (中国标准时间)</div>
             <div id="last-update-show">2021-12-10 日</div>
           
         </div>
@@ -3882,7 +3882,7 @@ swa...
 
  
   <div class='content'> 
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2021/08/20/2021-08-20-%E6%9C%80%E8%BF%91%E4%B8%80%E6%AE%B5%E6%97%B6%E9%97%B4%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"><div class="item"><time>2021-12-10</time><span>随笔</span></div><span>最近一段时间的学习总结</span></a></li><li><a class="widget-last" href="/2021/12/08/2021-12-10-SpringBoot%E5%8F%91%E9%80%81%E5%BE%AE%E4%BF%A1%E6%A8%A1%E6%9D%BF%E6%B6%88%E6%81%AF/"><div class="item"><time>2021-12-10</time><span>java</span></div><span>SpringBoot发送微信模板消息</span></a></li><li><a class="widget-last" href="/2021/12/09/2021-12-09-SpringBoot+Vue%E5%BE%AE%E4%BF%A1%E6%8E%88%E6%9D%83%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7openid/"><div class="item"><time>2021-12-10</time><span>java</span></div><span>SpringBoot+Vue微信授权获取用户openid</span></a></li><li><a class="widget-last" href="/2021/08/01/2021-08-01-shiro%E5%AE%89%E5%85%A8%E6%A1%86%E6%9E%B6/"><div class="item"><time>2021-12-08</time><span>shiro</span></div><span>shiro安全框架</span></a></li><li><a class="widget-last" href="/2021/08/26/2021-08-26-%E5%AF%B9SpringIOC%E7%9A%84%E7%90%86%E8%A7%A3/"><div class="item"><time>2021-12-08</time><span>java</span></div><span>对SpringIOC的理解</span></a></li></ul> 
+    <ul class="list entry navigation"><li><a class="widget-last" href="/2021/12/10/2021-12-10-SpringBoot%E5%8F%91%E9%80%81%E5%BE%AE%E4%BF%A1%E6%A8%A1%E6%9D%BF%E6%B6%88%E6%81%AF/"><div class="item"><time>2021-12-10</time><span>java</span></div><span>SpringBoot发送微信模板消息</span></a></li><li><a class="widget-last" href="/2021/08/20/2021-08-20-%E6%9C%80%E8%BF%91%E4%B8%80%E6%AE%B5%E6%97%B6%E9%97%B4%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"><div class="item"><time>2021-12-10</time><span>随笔</span></div><span>最近一段时间的学习总结</span></a></li><li><a class="widget-last" href="/2021/12/09/2021-12-09-SpringBoot+Vue%E5%BE%AE%E4%BF%A1%E6%8E%88%E6%9D%83%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7openid/"><div class="item"><time>2021-12-10</time><span>java</span></div><span>SpringBoot+Vue微信授权获取用户openid</span></a></li><li><a class="widget-last" href="/2021/08/01/2021-08-01-shiro%E5%AE%89%E5%85%A8%E6%A1%86%E6%9E%B6/"><div class="item"><time>2021-12-08</time><span>shiro</span></div><span>shiro安全框架</span></a></li><li><a class="widget-last" href="/2021/08/26/2021-08-26-%E5%AF%B9SpringIOC%E7%9A%84%E7%90%86%E8%A7%A3/"><div class="item"><time>2021-12-08</time><span>java</span></div><span>对SpringIOC的理解</span></a></li></ul> 
   </div> 
 </section> 
 
@@ -4050,7 +4050,7 @@ swa...
       
     
       
-        <p>Uses <a target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/tree/dev">Volantis</a> as theme. You can find <a href="GitHub">source</a> in <a target="_blank" rel="noopener" href="https://github.com/volantis-x/volantis-docs">https://github.com/volantis-x/volantis-docs</a>.</p>
+        <p>本站使用 <a target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/tree/dev">Volantis</a> 作为主题，您可以在 GitHub 找到<a target="_blank" rel="noopener" href="https://github.com/volantis-x/volantis-docs">本站源码</a>。</p>
 
       
     
@@ -4112,8 +4112,8 @@ swa...
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1639111791064')
-      volantis.js('/js/message.js?time=1639111791064', () => {
+      volantis.css('/css/message.css?time=1639112165696')
+      volantis.js('/js/message.js?time=1639112165696', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -4158,8 +4158,8 @@ swa...
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1639111791064')
-      volantis.js('/js/message.js?time=1639111791064', () => {
+      volantis.css('/css/message.css?time=1639112165696')
+      volantis.js('/js/message.js?time=1639112165696', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -4218,8 +4218,8 @@ swa...
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1639111791064')
-      volantis.js('/js/message.js?time=1639111791064', () => {
+      volantis.css('/css/message.css?time=1639112165696')
+      volantis.js('/js/message.js?time=1639112165696', () => {
         hideMessage(done);
       });
     } else {
@@ -4364,19 +4364,19 @@ volantis.pjax.push(bindToggleButton);
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1639111791064")
+        volantis.js("/js/plugins/sites.js?time=1639112165696")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1639111791064")
+        volantis.js("/js/plugins/friends.js?time=1639112165696")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1639111791064")
+        volantis.js("/js/plugins/contributors.js?time=1639112165696")
       }
     
   };
@@ -4567,7 +4567,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-<script src="/js/app.js?time=1639111791064.js"></script>
+<script src="/js/app.js?time=1639112165696.js"></script>
 
 
 <!-- optional -->
@@ -4580,7 +4580,7 @@ volantis.pjax.push(bindToggleButton);
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1639111791064");
+    return volantis.js("/js/search/hexo.js?time=1639112165696");
   }
 
   function loadSearchService() {
@@ -4854,7 +4854,7 @@ volantis.pjax.push(bindToggleButton);
 
 
   <script>
-  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp"];
+  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -4897,7 +4897,7 @@ volantis.pjax.push(bindToggleButton);
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/parallax.js?time=1639111791064').then(()=>{
+    volantis.js('/js/parallax.js?time=1639112165696').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
