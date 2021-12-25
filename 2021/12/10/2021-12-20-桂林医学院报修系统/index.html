@@ -7,8 +7,8 @@
   <meta name="generator" content="Hexo 5.4.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://cyc0819.top/tags/前端/"/>
+  
+  <link rel="canonical" href="http://cyc0819.top/2021/12/10/2021-12-20-桂林医学院报修系统/"/>
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
@@ -23,20 +23,26 @@
   <meta content="George&#39;s Blog" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1640401857716" as="style">
+  <link rel="preload" href="/css/style.css?time=1640401855120" as="style">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- 页面元数据 -->
-  <title>Tag: 前端 - George's Blog</title>
-  <meta name="keywords" content="null">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="George&#39;s Blog">
-<meta property="og:url" content="http://cyc0819.top/tags/%E5%89%8D%E7%AB%AF/index.html">
+  <title>SpringBoot发送微信模板消息 - George's Blog</title>
+  <meta name="keywords" content="java,SpringBoot,null">
+  <meta name="description" content="SpringBoot发送微信模板消息1、环境 jdk 1.8.0_271 Maven 3.6.1 MySQL 8.0  2、工作这段时间在做项目的时候，甲方要求将之前的易班消息推送更换成微信公众号模板消息推送，所以本文就是记录一下使用模板消息的过程， 开发的时候我用的是微信的测试公众账号，但是实际的功能和企业的账号是一样的。 3、准备工作首先我们要知道，模板消息是什么？以下就是公众号模板消息，我们">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SpringBoot发送微信模板消息">
+<meta property="og:url" content="http://cyc0819.top/2021/12/10/2021-12-20-%E6%A1%82%E6%9E%97%E5%8C%BB%E5%AD%A6%E9%99%A2%E6%8A%A5%E4%BF%AE%E7%B3%BB%E7%BB%9F/index.html">
 <meta property="og:site_name" content="George&#39;s Blog">
+<meta property="og:description" content="SpringBoot发送微信模板消息1、环境 jdk 1.8.0_271 Maven 3.6.1 MySQL 8.0  2、工作这段时间在做项目的时候，甲方要求将之前的易班消息推送更换成微信公众号模板消息推送，所以本文就是记录一下使用模板消息的过程， 开发的时候我用的是微信的测试公众账号，但是实际的功能和企业的账号是一样的。 3、准备工作首先我们要知道，模板消息是什么？以下就是公众号模板消息，我们">
 <meta property="og:locale">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2021-12-10T04:54:26.000Z">
+<meta property="article:modified_time" content="2021-12-10T04:55:18.938Z">
 <meta property="article:author" content="George Chan">
+<meta property="article:tag" content="java">
+<meta property="article:tag" content="SpringBoot">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
   <!-- feed -->
@@ -1875,8 +1881,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1640401857716" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1640401857716"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1640401855120" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1640401855120"></noscript>
     <script>
       var userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -2607,7 +2613,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper  dock' style="display: none;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div id="parallax-window"></div>
 
@@ -2692,179 +2698,266 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
-  
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://cyc0819.top/2021/11/27/2021-11-27-eCharts%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://cyc0819.top/2021/12/10/2021-12-20-%E6%A1%82%E6%9E%97%E5%8C%BB%E5%AD%A6%E9%99%A2%E6%8A%A5%E4%BF%AE%E7%B3%BB%E7%BB%9F/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="George's Blog">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/11/27/2021-11-27-eCharts%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"  itemprop="url">
-        eCharts学习笔记
-      </a>
-    </h2>
-  
-  <div class='md' itemprop="articleBody">
     
-      
-        eCharts 学习笔记1、简介eCharts 是百度出品的一款基于 JavaScript 的数据可视化图表库，提供直观，生动，可交互，可个性化定制的数据可视化图表。最开始是由百度团队开源的，后面于2018年交由Apache基金会，称为ASF孵化项目。并于2021年1月26日正式毕业。
-2、在 Vue 中使用
-首先下载 eCharts：1npm install echarts --save
-...
-      
+    
+      <h1 class="title" itemprop="name headline">
+        SpringBoot发送微信模板消息
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' target="_blank" href="https://github.com/chenyicai0819" rel="nofollow noopener">
+    <img itemprop="image" src="https://z3.ax1x.com/2021/09/30/4oKiUx.jpg" class="lazyload" data-srcset="https://z3.ax1x.com/2021/09/30/4oKiUx.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
+    <p itemprop="name">George chan</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/java/">java</a><span class="sep"></span><a class="category-link" href="/categories/java/SpringBoot/">SpringBoot</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/java/" itemprop="url"><span itemprop="name">java</span></a>
+      </span>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/java/SpringBoot/" itemprop="url"><span itemprop="name">SpringBoot</span></a>
+      </span>
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' target="_blank" rel="noopener" href='https://github.com/chenyicai0819'><img src='https://z3.ax1x.com/2021/09/30/4oKiUx.jpg' alt="This is a picture without description" ></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://z3.ax1x.com/2021/09/30/4oKiUx.jpg">
-            <meta itemprop="name" content="George chan">
-            <meta itemprop="url" content="https://github.com/chenyicai0819">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-11-27T22:04:25+08:00">2021-11-27</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a><span class="sep"></span><a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF/eCharts/">eCharts</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url"><span itemprop="name">前端</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%89%8D%E7%AB%AF/eCharts/" itemprop="url"><span itemprop="name">eCharts</span></a>
-            </span>
+
+
           
         
-      </div>
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2021-12-10T12:54:26+08:00">
+  <a class='notlink' href="/" onclick="return false;" title="Click me!" >
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Dec 10, 2021</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink' href="/" onclick="return false;" title="Click me!" >
       
-        <div>
-          <a class='readmore' href='/2021/11/27/2021-11-27-eCharts%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/' itemprop="url">
-            Read More
-          </a>
+      <div id="lc-pv" data-title="SpringBoot发送微信模板消息" data-path="/2021/12/10/2021-12-20-%E6%A1%82%E6%9E%97%E5%8C%BB%E5%AD%A6%E9%99%A2%E6%8A%A5%E4%BF%AE%E7%B3%BB%E7%BB%9F/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h1 id="SpringBoot发送微信模板消息"><a href="#SpringBoot发送微信模板消息" class="headerlink" title="SpringBoot发送微信模板消息"></a>SpringBoot发送微信模板消息</h1><h2 id="1、环境"><a href="#1、环境" class="headerlink" title="1、环境"></a>1、环境</h2><div class="story post-story"><ul>
+<li>jdk 1.8.0_271</li>
+<li>Maven 3.6.1</li>
+<li>MySQL 8.0</li>
+</ul>
+</div><h2 id="2、工作"><a href="#2、工作" class="headerlink" title="2、工作"></a>2、工作</h2><div class="story post-story"><p>这段时间在做项目的时候，甲方要求将之前的易班消息推送更换成微信公众号模板消息推送，所以本文就是记录一下使用模板消息的过程，</p>
+<p>开发的时候我用的是微信的<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login">测试公众账号</a>，但是实际的功能和企业的账号是一样的。</p>
+</div><h2 id="3、准备工作"><a href="#3、准备工作" class="headerlink" title="3、准备工作"></a>3、准备工作</h2><div class="story post-story"><p>首先我们要知道，<wavy>模板消息</wavy>是什么？以下就是公众号模板消息，我们在生活中很多场景都会接触到它。<br><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/Screenshot_2021-12-06-23-00-46-398_com.tencent.mm.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/Screenshot_2021-12-06-23-00-46-398_com.tencent.mm.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="zoom:15%;"  alt="This is a picture without description" /></p>
+<p>在进入了测试号的管理后台之后，我们可以在这里设置我们的模板消息的<wavy>模板</wavy></p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211209002928.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211209002928.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+<p>首先我们要在公众平台中设置好我们的模板，然后 java 中根据模板信息来添加相应的内容。</p>
+</div><h2 id="4、java后端编写"><a href="#4、java后端编写" class="headerlink" title="4、java后端编写"></a>4、java后端编写</h2><div class="story post-story"><p>我们创建一个名为<code>WeChatNotify</code>的工具类，里面存放的是模板消息的设置内容</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WeChatNotify</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> IDictService ds;</span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> ParseUtil pu;</span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> JdrService js;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 发送模板信息</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">push</span><span class="params">(String openid,String map, Bxd bxd)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//1，配置</span></span><br><span class="line">        WxMpInMemoryConfigStorage wxStorage = <span class="keyword">new</span> WxMpInMemoryConfigStorage();</span><br><span class="line">        wxStorage.setAppId(<span class="string">&quot;wxacc93d31c5dbd26f&quot;</span>);</span><br><span class="line">        wxStorage.setSecret(<span class="string">&quot;f8c9e82b590ac71eb12e96f77cf65740&quot;</span>);</span><br><span class="line">        WxMpService wxMpService = <span class="keyword">new</span> WxMpServiceImpl();</span><br><span class="line">        wxMpService.setWxMpConfigStorage(wxStorage);</span><br><span class="line">        <span class="comment">//2,推送消息</span></span><br><span class="line">        WxMpTemplateMessage templateMessage = WxMpTemplateMessage.builder()</span><br><span class="line">                .toUser(openid)<span class="comment">//要推送的用户openid</span></span><br><span class="line">                .templateId(<span class="string">&quot;-1pT4MrVw4asKamh0IQMF6c22Ih74dRjxqN8fwhjoQs&quot;</span>)<span class="comment">//模版id</span></span><br><span class="line">                .url(<span class="string">&quot;https://www.cyc0819.top&quot;</span>)<span class="comment">//点击模版消息要访问的网址</span></span><br><span class="line">                .build();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 获取保修类别</span></span><br><span class="line">        String bxlb=pu.paraseBxlb(bxd.getBxlb());</span><br><span class="line">        <span class="comment">//3,正式版发送模版消息，这里需要配置你的信息，替换微信公众号上创建的模板内容</span></span><br><span class="line">        templateMessage.addData(<span class="keyword">new</span> WxMpTemplateData(<span class="string">&quot;map&quot;</span>, map, <span class="string">&quot;#173177&quot;</span>));</span><br><span class="line">        templateMessage.addData(<span class="keyword">new</span> WxMpTemplateData(<span class="string">&quot;type&quot;</span>,bxlb, <span class="string">&quot;#173177&quot;</span>));</span><br><span class="line">        templateMessage.addData(<span class="keyword">new</span> WxMpTemplateData(<span class="string">&quot;text&quot;</span>, bxd.getXxdd()+bxd.getBxnr(), <span class="string">&quot;#173177&quot;</span>));</span><br><span class="line">        templateMessage.addData(<span class="keyword">new</span> WxMpTemplateData(<span class="string">&quot;time&quot;</span>, bxd.getYysj(), <span class="string">&quot;#173177&quot;</span>));</span><br><span class="line">        templateMessage.addData(<span class="keyword">new</span> WxMpTemplateData(<span class="string">&quot;name&quot;</span>, bxd.getSbr(), <span class="string">&quot;#173177&quot;</span>));</span><br><span class="line">        templateMessage.addData(<span class="keyword">new</span> WxMpTemplateData(<span class="string">&quot;phone&quot;</span>, bxd.getSbrsj(), <span class="string">&quot;#173177&quot;</span>));</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            wxMpService.getTemplateMsgService().sendTemplateMsg(templateMessage);</span><br><span class="line">            <span class="keyword">return</span> <span class="string">&quot;推送成功&quot;</span>;</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;推送失败：&quot;</span> + e.getMessage());</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">            <span class="keyword">return</span> <span class="string">&quot;推送失败&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 检查openid是否已经绑定</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">selOpenid</span><span class="params">(String ybid)</span></span>&#123;</span><br><span class="line">        String openid=js.selOpenidForYbid(ybid);</span><br><span class="line">        <span class="keyword">if</span> (openid == <span class="keyword">null</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> openid;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在这里，我们需要公众号的<code>appid,appsecret</code>，以及接收人的<code>openid</code>。</p>
+<div class="note warning"><p>如何获取用户的 openid 可以看以下这篇文章。</p></div>
+<div class="tag link"><a class="link-card" title="SpringBoot+Vue微信授权获取用户openid" href="http://cyc0819.top/2021/12/09/2021-12-09-SpringBoot+Vue%E5%BE%AE%E4%BF%A1%E6%8E%88%E6%9D%83%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7openid/"><div class="left"><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/256/safari.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/256/safari.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" /></div><div class="right"><p class="text">SpringBoot+Vue微信授权获取用户openid</p><p class="url">http://cyc0819.top/2021/12/09/2021-12-09-SpringBoot+Vue%E5%BE%AE%E4%BF%A1%E6%8E%88%E6%9D%83%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7openid/</p></div></a></div>
+
+<p>给足所需要的消息，然后在要发送消息的地方调用即可</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">zdpdWeChat</span><span class="params">(String eid, String bxlb,Bxd bxd)</span></span>&#123;</span><br><span class="line">    String ybid=zdpd(eid,bxlb);</span><br><span class="line">    String map=es.selxxwz(Integer.parseInt(eid));</span><br><span class="line">    <span class="comment">//调用发送模板信息</span></span><br><span class="line">    wcn.push(<span class="string">&quot;OPENID&quot;</span>,map,bxd);</span><br><span class="line">    <span class="keyword">return</span> ybid;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+</div>
+  </div>
+  
+  
+    
+    <div class='footer'>
+      
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=http://cyc0819.top/2021/12/10/2021-12-20-%E6%A1%82%E6%9E%97%E5%8C%BB%E5%AD%A6%E9%99%A2%E6%8A%A5%E4%BF%AE%E7%B3%BB%E7%BB%9F/>http://cyc0819.top/2021/12/10/2021-12-20-%E6%A1%82%E6%9E%97%E5%8C%BB%E5%AD%A6%E9%99%A2%E6%8A%A5%E4%BF%AE%E7%B3%BB%E7%BB%9F/</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2021-12-10T12:55:18+08:00">
+  <a class='notlink' href="/" onclick="return false;" title="Click me!" >
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Dec 10, 2021</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://cyc0819.top/2021/11/17/2021-11-17-%E6%88%91%E4%BB%AC%E8%BF%98%E6%9C%89%E5%BF%85%E8%A6%81%E6%B7%B1%E5%85%A5%E5%AD%A6%E4%B9%A0jQuery%E5%90%97/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="George's Blog">
-  </span>
+          
   
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/11/17/2021-11-17-%E6%88%91%E4%BB%AC%E8%BF%98%E6%9C%89%E5%BF%85%E8%A6%81%E6%B7%B1%E5%85%A5%E5%AD%A6%E4%B9%A0jQuery%E5%90%97/"  itemprop="url">
-        我们还有必要深入学习jQuery吗
-      </a>
-    </h2>
-  
-  <div class='md' itemprop="articleBody">
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/java/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>java</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/SpringBoot/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>SpringBoot</p></a></div>
+  <span hidden itemprop="keywords">java SpringBoot</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
       
-        我们还有必要深入学习 jQuery 吗表达想法前几天在某个视频平台看到一个博主的视频，该博主对于『 我们还有必要深入学习 jQuery 吗？』这个问题做出了一个很肯定的答案：就是没有必要。
-而他对于这个结论并也不是空穴来风，同样是做出了一系列的解释。比如说：jQuery 已经过时了、Vue.js以及React.js这样的前端框架能更好地实现jQuery所能实现的功能等等。
-当然，作为该博主的...
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://cyc0819.top/2021/12/10/2021-12-20-%E6%A1%82%E6%9E%97%E5%8C%BB%E5%AD%A6%E9%99%A2%E6%8A%A5%E4%BF%AE%E7%B3%BB%E7%BB%9F/&title=SpringBoot发送微信模板消息 - George's Blog&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://cyc0819.top/2021/12/10/2021-12-20-%E6%A1%82%E6%9E%97%E5%8C%BB%E5%AD%A6%E9%99%A2%E6%8A%A5%E4%BF%AE%E7%B3%BB%E7%BB%9F/&title=SpringBoot发送微信模板消息 - George's Blog&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://cyc0819.top/2021/12/10/2021-12-20-%E6%A1%82%E6%9E%97%E5%8C%BB%E5%AD%A6%E9%99%A2%E6%8A%A5%E4%BF%AE%E7%B3%BB%E7%BB%9F/&title=SpringBoot发送微信模板消息 - George's Blog&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
+          
+        </a>
+      
+    
+      
+    
       
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+</div>
+
+
+
         
-          
-          <a class='avatar' target="_blank" rel="noopener" href='https://github.com/chenyicai0819'><img src='https://z3.ax1x.com/2021/09/30/4oKiUx.jpg' alt="This is a picture without description" ></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://z3.ax1x.com/2021/09/30/4oKiUx.jpg">
-            <meta itemprop="name" content="George chan">
-            <meta itemprop="url" content="https://github.com/chenyicai0819">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-11-17T23:27:41+08:00">2021-11-17</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a><span class="sep"></span><a class="category-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E9%9A%8F%E7%AC%94/" itemprop="url"><span itemprop="name">随笔</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url"><span itemprop="name">前端</span></a>
-            </span>
-          
-        
-      </div>
       
-        <div>
-          <a class='readmore' href='/2021/11/17/2021-11-17-%E6%88%91%E4%BB%AC%E8%BF%98%E6%9C%89%E5%BF%85%E8%A6%81%E6%B7%B1%E5%85%A5%E5%AD%A6%E4%B9%A0jQuery%E5%90%97/' itemprop="url">
-            Read More
-          </a>
-        </div>
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2021/12/10/2021-12-10-SpringBoot%E5%8F%91%E9%80%81%E5%BE%AE%E4%BF%A1%E6%A8%A1%E6%9D%BF%E6%B6%88%E6%81%AF/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>SpringBoot发送微信模板消息</p>
+          <p class='content'>SpringBoot发送微信模板消息1、环境
+jdk 1.8.0_271
+Maven 3.6.1
+MySQL 8.0
+
+2、工作这段时间在做项目的时候，甲方要求将之前的易班消息推送更换成微信公众...</p>
+        </a>
+      
+      
+        <a class='next' href='/2021/12/09/2021-12-09-SpringBoot+Vue%E5%BE%AE%E4%BF%A1%E6%8E%88%E6%9D%83%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7openid/'>
+          <p class='title'>SpringBoot+Vue微信授权获取用户openid<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>SpringBoot+Vue微信授权获取用户openid1、环境
+jdk 1.8.0_271
+Maven 3.6.1
+MySQL 8.0
+Vue 3.0
+
+2、需求这几天在做桂林医学院的项目的时...</p>
+        </a>
       
     </div>
   
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
+  <!-- Custom Files postEnd begin-->
   
-    
-  
+  <!-- Custom Files postEnd end-->
+</article>
 
 
-    
-  
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2934,6 +3027,28 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
   </div>
 </section>
+
+  
+
+  
+    
+    
+
+
+
+  <section class="widget toc-wrapper shadow desktop mobile pjax" id="toc-div" >
+    
+  <header>
+    
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E7%8E%AF%E5%A2%83"><span class="toc-text">1、环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E5%B7%A5%E4%BD%9C"><span class="toc-text">2、工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="toc-text">3、准备工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E3%80%81java%E5%90%8E%E7%AB%AF%E7%BC%96%E5%86%99"><span class="toc-text">4、java后端编写</span></a></li></ol>
+    </div>
+  </section>
 
   
 
@@ -3076,206 +3191,20 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   
 
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/#/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/HashMap/" style="font-size: 14px; color: #999">HashMap</a> <a href="/tags/Hexo/" style="font-size: 16px; color: #8b8b8b">Hexo</a> <a href="/tags/JWT/" style="font-size: 14px; color: #999">JWT</a> <a href="/tags/MyBatis/" style="font-size: 14px; color: #999">MyBatis</a> <a href="/tags/SpringBoot/" style="font-size: 20px; color: #707070">SpringBoot</a> <a href="/tags/SpringBoot%EF%BC%8CVue/" style="font-size: 14px; color: #999">SpringBoot，Vue</a> <a href="/tags/SpringCloud/" style="font-size: 14px; color: #999">SpringCloud</a> <a href="/tags/SpringSecurity/" style="font-size: 14px; color: #999">SpringSecurity</a> <a href="/tags/Swagger/" style="font-size: 14px; color: #999">Swagger</a> <a href="/tags/Swing/" style="font-size: 14px; color: #999">Swing</a> <a href="/tags/eCharts/" style="font-size: 14px; color: #999">eCharts</a> <a href="/tags/java/" style="font-size: 24px; color: #555">java</a> <a href="/tags/maven/" style="font-size: 14px; color: #999">maven</a> <a href="/tags/redis/" style="font-size: 16px; color: #8b8b8b">redis</a> <a href="/tags/shiro/" style="font-size: 14px; color: #999">shiro</a> <a href="/tags/spring/" style="font-size: 14px; color: #999">spring</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 16px; color: #8b8b8b">前端</a> <a href="/tags/%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/" style="font-size: 14px; color: #999">学习总结</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 14px; color: #999">数据结构</a> <a href="/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/" style="font-size: 14px; color: #999">消息队列</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 22px; color: #636363">算法</a> <a href="/tags/%E8%AE%B0%E5%BD%95/" style="font-size: 16px; color: #8b8b8b">记录</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 18px; color: #7e7e7e">随笔</a>
-    </div>
-  </section>
-
-
-  
-
-  
-    
-    
-
-<section class="widget shadow desktop mobile pjax">
-  
-  <header>
-    
-      <i class="fas fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>34 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已运行时间：</div>
-          <div id="webinfo-runtime-count" publish_date="03/24/2020 21:34:09"></div>
-        </div>
-        <script>
-          var BirthDay = new Date(new Date('2021/06/21'));
-          var today = new Date();
-          var timeold = (today.getTime() - BirthDay.getTime());
-          var daysold = Math.floor(timeold / (24 * 60 * 60 * 1000));
-          document.getElementById('webinfo-runtime-count').innerHTML = daysold + ' 天';
-        </script>
-      
-
-
-      
-        <div class="webinfo-item">
-          <div>本站总字数：</div>
-          <div>46.2k 字</div>
-        </div>
-      
-
-      
-
-      
-        <div class="webinfo-item">
-          <div>本站被访问了：</div>
-          
-          <div><span id="lc-sv"><span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span></span> 次</div>
-          
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          
-            <div id="last-update" style="display: none;">Sat Dec 25 2021 11:10:57 GMT+0800 (中国标准时间)</div>
-            <div id="last-update-show">2021-12-25 日</div>
-          
-        </div>
-        
-        <script>
-          function timeago(dateTimeStamp) {
-              var minute = 1000 * 60; //把分，时，天，周，半个月，一个月用毫秒表示
-              var hour = minute * 60;
-              var day = hour * 24;
-              var week = day * 7;
-              var month = day * 30;
-              var now = new Date().getTime(); //获取当前时间毫秒
-              var diffValue = now - dateTimeStamp; //时间差
-              if (diffValue < 0) {
-                  return;
-              }
-              var minC = diffValue / minute; //计算时间差的分，时，天，周，月
-              var hourC = diffValue / hour;
-              var dayC = diffValue / day;
-              var weekC = diffValue / week;
-              var monthC = diffValue / month;
-              if (monthC >= 1 && monthC <= 3) {
-                  result = " " + parseInt(monthC) + " 月前"
-              } else if (weekC >= 1 && weekC <= 3) {
-                  result = " " + parseInt(weekC) + " 周前"
-              } else if (dayC >= 1 && dayC <= 6) {
-                  result = " " + parseInt(dayC) + " 天前"
-              } else if (hourC >= 1 && hourC <= 23) {
-                  result = " " + parseInt(hourC) + " 小时前"
-              } else if (minC >= 1 && minC <= 59) {
-                  result = " " + parseInt(minC) + " 分钟前"
-              } else if (diffValue >= 0 && diffValue <= minute) {
-                  result = "刚刚"
-              } else {
-                  var datetime = new Date();
-                  datetime.setTime(dateTimeStamp);
-                  var Nyear = datetime.getFullYear();
-                  var Nmonth = datetime.getMonth() + 1 < 10 ? "0" + (datetime.getMonth() + 1) : datetime.getMonth() + 1;
-                  var Ndate = datetime.getDate() < 10 ? "0" + datetime.getDate() : datetime.getDate();
-                  var Nhour = datetime.getHours() < 10 ? "0" + datetime.getHours() : datetime.getHours();
-                  var Nminute = datetime.getMinutes() < 10 ? "0" + datetime.getMinutes() : datetime.getMinutes();
-                  var Nsecond = datetime.getSeconds() < 10 ? "0" + datetime.getSeconds() : datetime.getSeconds();
-                  result = Nyear + "-" + Nmonth + "-" + Ndate
-              }
-              return result;
-          }
-          var lastUpDate = document.getElementById('last-update').innerHTML;
-          try {
-            document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
-          } catch (error) {
-            document.getElementById('last-update-show').innerHTML = '2021-12-25 日';
-          }
-        </script>
-        
-      
-    </div>
-  </div>
-</section>
-
-  
-
-  
-    
-     
-
- 
-<section class="widget shadow desktop mobile pjax"> 
-  
-  <header>
-    
-      <i class="fas fa-clock WISTERIA fa-fw" aria-hidden="true"></i><span class='name'>最近更新</span>
-    
-  </header>
-
- 
-  <div class='content'> 
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2021/12/09/2021-12-09-SpringBoot+Vue%E5%BE%AE%E4%BF%A1%E6%8E%88%E6%9D%83%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7openid/"><div class="item"><time>2021-12-10</time><span>java</span></div><span>SpringBoot+Vue微信授权获取用户openid</span></a></li><li><a class="widget-last" href="/2021/12/10/2021-12-10-SpringBoot%E5%8F%91%E9%80%81%E5%BE%AE%E4%BF%A1%E6%A8%A1%E6%9D%BF%E6%B6%88%E6%81%AF/"><div class="item"><time>2021-12-10</time><span>java</span></div><span>SpringBoot发送微信模板消息</span></a></li><li><a class="widget-last" href="/2021/12/10/2021-12-20-%E6%A1%82%E6%9E%97%E5%8C%BB%E5%AD%A6%E9%99%A2%E6%8A%A5%E4%BF%AE%E7%B3%BB%E7%BB%9F/"><div class="item"><time>2021-12-10</time><span>java</span></div><span>SpringBoot发送微信模板消息</span></a></li><li><a class="widget-last" href="/2021/08/20/2021-08-20-%E6%9C%80%E8%BF%91%E4%B8%80%E6%AE%B5%E6%97%B6%E9%97%B4%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"><div class="item"><time>2021-12-10</time><span>随笔</span></div><span>最近一段时间的学习总结</span></a></li><li><a class="widget-last" href="/2021/08/01/2021-08-01-shiro%E5%AE%89%E5%85%A8%E6%A1%86%E6%9E%B6/"><div class="item"><time>2021-12-08</time><span>shiro</span></div><span>shiro安全框架</span></a></li></ul> 
-  </div> 
-</section> 
-
-  
-
-  
-    
-    
-
-
-  <section class='widget shadow desktop mobile pjax music'>
-    
-
-    <div class='content'>
-      
-
-  
-    <meting-js
-      theme='#1BCDFC'
-      autoplay='false'
-      volume='0.7'
-      loop='all'
-      order='list'
-      fixed='false'
-      list-max-height='320px'
-      server='tencent'
-      type='playlist'
-      id='2201397912'
-      list-folded='true'>
-    </meting-js>
-  
-
-
-    </div>
-  </section>
-
-
-  
-
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3292,14 +3221,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="SpringBoot发送微信模板消息";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3464,8 +3394,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1640401857716')
-      volantis.js('/js/message.js?time=1640401857716', () => {
+      volantis.css('/css/message.css?time=1640401855120')
+      volantis.js('/js/message.js?time=1640401855120', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -3510,8 +3440,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1640401857716')
-      volantis.js('/js/message.js?time=1640401857716', () => {
+      volantis.css('/css/message.css?time=1640401855120')
+      volantis.js('/js/message.js?time=1640401855120', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -3570,8 +3500,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1640401857716')
-      volantis.js('/js/message.js?time=1640401857716', () => {
+      volantis.css('/css/message.css?time=1640401855120')
+      volantis.js('/js/message.js?time=1640401855120', () => {
         hideMessage(done);
       });
     } else {
@@ -3716,19 +3646,19 @@ volantis.pjax.push(bindToggleButton);
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1640401857716")
+        volantis.js("/js/plugins/sites.js?time=1640401855120")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1640401857716")
+        volantis.js("/js/plugins/friends.js?time=1640401855120")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1640401857716")
+        volantis.js("/js/plugins/contributors.js?time=1640401855120")
       }
     
   };
@@ -3919,7 +3849,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-<script src="/js/app.js?time=1640401857716.js"></script>
+<script src="/js/app.js?time=1640401855120.js"></script>
 
 
 <!-- optional -->
@@ -3932,7 +3862,7 @@ volantis.pjax.push(bindToggleButton);
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1640401857716");
+    return volantis.js("/js/search/hexo.js?time=1640401855120");
   }
 
   function loadSearchService() {
@@ -4206,7 +4136,7 @@ volantis.pjax.push(bindToggleButton);
 
 
   <script>
-  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp"];
+  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -4249,7 +4179,7 @@ volantis.pjax.push(bindToggleButton);
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/parallax.js?time=1640401857716').then(()=>{
+    volantis.js('/js/parallax.js?time=1640401855120').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4443,7 +4373,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://cyc0819.top/","name":"George's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/tags/前端/","name":"前端"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"George's Blog","url":"http://cyc0819.top/","keywords":null,"description":"","author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","description":""},"publisher":{"@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://cyc0819.top?s={search_term_string}"},"query-input":"required name=search_term_string"}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://cyc0819.top/","name":"George's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/java/","name":"java"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/java/SpringBoot/","name":"SpringBoot"}},{"@type":"ListItem","position":3,"item":{"@id":"http://cyc0819.top/2021/12/10/2021-12-20-桂林医学院报修系统/","name":"SpringBoot发送微信模板消息"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"SpringBoot发送微信模板消息","description":"","datePublished":"2021-12-10T04:54:26.000Z","dateModified":"2021-12-10T04:55:18.938Z","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://cyc0819.top/2021/12/10/2021-12-20-%E6%A1%82%E6%9E%97%E5%8C%BB%E5%AD%A6%E9%99%A2%E6%8A%A5%E4%BF%AE%E7%B3%BB%E7%BB%9F/"},"author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/"},"publisher":{"@type":"Organization","name":"George's Blog","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://cyc0819.top/2021/12/10/2021-12-20-%E6%A1%82%E6%9E%97%E5%8C%BB%E5%AD%A6%E9%99%A2%E6%8A%A5%E4%BF%AE%E7%B3%BB%E7%BB%9F/","wordCount":0,"articleSection":"java","keywords":"java,SpringBoot","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 <!-- more -->
