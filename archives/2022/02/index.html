@@ -8,7 +8,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://cyc0819.top/tags/hashmap/"/>
+  <link rel="canonical" href="http://cyc0819.top/archives/2022/02/"/>
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
@@ -23,16 +23,16 @@
   <meta content="George&#39;s Blog" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1643698551110" as="style">
+  <link rel="preload" href="/css/style.css?time=1643698551085" as="style">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- 页面元数据 -->
-  <title>標籤：HashMap - George's Blog</title>
+  <title>歸檔：2022/2 - George's Blog</title>
   <meta name="keywords" content="null">
   <meta property="og:type" content="website">
 <meta property="og:title" content="George&#39;s Blog">
-<meta property="og:url" content="http://cyc0819.top/tags/HashMap/index.html">
+<meta property="og:url" content="http://cyc0819.top/archives/2022/02/index.html">
 <meta property="og:site_name" content="George&#39;s Blog">
 <meta property="og:locale">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
@@ -1875,8 +1875,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1643698551110" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1643698551110"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1643698551085" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1643698551085"></noscript>
     <script>
       var userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -2303,7 +2303,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <!-- Custom Files head end-->
 </head>
   <body itemscope itemtype="http://schema.org/WebPage">
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow blur " style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2607,7 +2607,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper  dock' style="display: none;">
+      <div id="half" class='cover-wrapper  dock' style="display: ;">
         
   <div id="parallax-window"></div>
 
@@ -2692,11 +2692,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
-  
-    
-      
+	
+		
   <section class="post-list">
     
       
@@ -2710,7 +2708,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://cyc0819.top/2021/06/28/2021-06-28-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0_%E7%BD%97%E9%A9%AC%E6%95%B0%E5%AD%97%E8%BD%AC%E6%95%B4%E6%95%B0/">
+  <link itemprop="mainEntityOfPage" href="http://cyc0819.top/2022/02/01/2022-02-01-%E4%BD%8D%E8%BF%90%E7%AE%97/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="George's Blog">
   </span>
@@ -2724,18 +2722,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/06/28/2021-06-28-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0_%E7%BD%97%E9%A9%AC%E6%95%B0%E5%AD%97%E8%BD%AC%E6%95%B4%E6%95%B0/"  itemprop="url">
-        算法学习_罗马数字转整数
+      <a href="/2022/02/01/2022-02-01-%E4%BD%8D%E8%BF%90%E7%AE%97/"  itemprop="url">
+        位运算
       </a>
     </h2>
   
   <div class='md' itemprop="articleBody">
     
       
-        罗马数字转整数题目lettcode-13题难度：简单
-解题思路对于每个罗马符号所对应的数值，我们可以将其用一个HashMap存起来，将其字符作为key，以及数值为相应的value
-在方法中对输入的字符串的所有字符进行遍历，get到所对应的值，并拿到它的后一位数的值，如果当前符号的值大于后一位符号的值，则进行＋运算，否则-运算。
-具体代码1234567891011121314151617181...
+        1、位运算程序中的所有数在计算机内存中都是以二进制的形式储存的。位运算就是直接对整数在内存中的二进制位进行操作。比如，and运算本来是一个逻辑运算符，但整数与整数之间也可以进行and运算。举个例子，6的二进制是110，11的二进制是1011，那么6 and 11的结果就是2，它是二进制对应位进行逻辑运算的结果.&amp;运算时，当且仅当两者都为 1 时，结果才为 1.使用二进制来表示就是如下...
       
     
   </div>
@@ -2751,24 +2746,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             <meta itemprop="url" content="https://github.com/chenyicai0819">
           </span>
         
-        <time itemprop="dateCreated datePublished" datetime="2021-06-28T14:08:30+08:00">2021-06-28</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a><span class="sep"></span><a class="category-link" href="/categories/%E7%AE%97%E6%B3%95/HashMap/">HashMap</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E7%AE%97%E6%B3%95/" itemprop="url"><span itemprop="name">算法</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E7%AE%97%E6%B3%95/HashMap/" itemprop="url"><span itemprop="name">HashMap</span></a>
-            </span>
-          
+        <time itemprop="dateCreated datePublished" datetime="2022-02-01T11:24:53+08:00">2022-02-01</time>
         
       </div>
       
         <div>
-          <a class='readmore' href='/2021/06/28/2021-06-28-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0_%E7%BD%97%E9%A9%AC%E6%95%B0%E5%AD%97%E8%BD%AC%E6%95%B4%E6%95%B0/' itemprop="url">
+          <a class='readmore' href='/2022/02/01/2022-02-01-%E4%BD%8D%E8%BF%90%E7%AE%97/' itemprop="url">
             閱讀全文
           </a>
         </div>
@@ -2788,8 +2771,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
 
-    
-  
+	
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -3238,14 +3220,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.add("show");
+    l_header.classList.remove("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="none";
-      cover_wrapper.style.display="none";
+      cover_wrapper.id="half";
+      cover_wrapper.style.display="";
       scroll_down.style.display="none";
     
   
@@ -3394,8 +3376,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1643698551110')
-      volantis.js('/js/message.js?time=1643698551110', () => {
+      volantis.css('/css/message.css?time=1643698551085')
+      volantis.js('/js/message.js?time=1643698551085', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -3440,8 +3422,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1643698551110')
-      volantis.js('/js/message.js?time=1643698551110', () => {
+      volantis.css('/css/message.css?time=1643698551085')
+      volantis.js('/js/message.js?time=1643698551085', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -3500,8 +3482,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1643698551110')
-      volantis.js('/js/message.js?time=1643698551110', () => {
+      volantis.css('/css/message.css?time=1643698551085')
+      volantis.js('/js/message.js?time=1643698551085', () => {
         hideMessage(done);
       });
     } else {
@@ -3646,19 +3628,19 @@ volantis.pjax.push(bindToggleButton);
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1643698551110")
+        volantis.js("/js/plugins/sites.js?time=1643698551085")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1643698551110")
+        volantis.js("/js/plugins/friends.js?time=1643698551085")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1643698551110")
+        volantis.js("/js/plugins/contributors.js?time=1643698551085")
       }
     
   };
@@ -3849,7 +3831,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-<script src="/js/app.js?time=1643698551110.js"></script>
+<script src="/js/app.js?time=1643698551085.js"></script>
 
 
 <!-- optional -->
@@ -3862,7 +3844,7 @@ volantis.pjax.push(bindToggleButton);
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1643698551110");
+    return volantis.js("/js/search/hexo.js?time=1643698551085");
   }
 
   function loadSearchService() {
@@ -4136,7 +4118,7 @@ volantis.pjax.push(bindToggleButton);
 
 
   <script>
-  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp"];
+  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -4179,7 +4161,7 @@ volantis.pjax.push(bindToggleButton);
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/parallax.js?time=1643698551110').then(()=>{
+    volantis.js('/js/parallax.js?time=1643698551085').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4373,7 +4355,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://cyc0819.top/","name":"George's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/tags/HashMap/","name":"HashMap"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"George's Blog","url":"http://cyc0819.top/","keywords":null,"description":"","author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","description":""},"publisher":{"@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://cyc0819.top?s={search_term_string}"},"query-input":"required name=search_term_string"}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://cyc0819.top/","name":"George's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"http://cyc0819.top/archives/2022/","name":"2022年"}},{"@type":"ListItem","position":4,"item":{"@id":"http://cyc0819.top/archives/2022/2/","name":"2月"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"George's Blog","url":"http://cyc0819.top/","keywords":null,"description":"","author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","description":""},"publisher":{"@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://cyc0819.top?s={search_term_string}"},"query-input":"required name=search_term_string"}}]</script>
 
 
 <!-- more -->
