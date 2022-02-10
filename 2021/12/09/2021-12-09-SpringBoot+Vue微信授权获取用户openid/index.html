@@ -23,13 +23,13 @@
   <meta content="George&#39;s Blog" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1643987994376" as="style">
+  <link rel="preload" href="/css/style.css?time=1644466611200" as="style">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- 页面元数据 -->
   <title>SpringBoot+Vue微信授权获取用户openid - George's Blog</title>
-  <meta name="keywords" content="java,SpringBoot，Vue,null">
+  <meta name="keywords" content="java,SpringBoot,Vue,null">
   <meta name="description" content="SpringBoot+Vue微信授权获取用户openid1、环境 jdk 1.8.0_271 Maven 3.6.1 MySQL 8.0 Vue 3.0  2、需求这几天在做桂林医学院的项目的时候，甲方提出了需求说能不能将消息通知改成微信公众号通知，因为公众号的效率比较高，同时受众也是比较多（原本用的是易班的 api，文档及其不友好，bug 官方也不解决，按照上一届学长的说法，之前发送消息接收人得">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SpringBoot+Vue微信授权获取用户openid">
@@ -39,10 +39,11 @@
 <meta property="og:locale">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2021-12-08T16:16:46.000Z">
-<meta property="article:modified_time" content="2021-12-10T05:01:27.875Z">
+<meta property="article:modified_time" content="2022-02-09T13:39:41.764Z">
 <meta property="article:author" content="George Chan">
 <meta property="article:tag" content="java">
-<meta property="article:tag" content="SpringBoot，Vue">
+<meta property="article:tag" content="SpringBoot">
+<meta property="article:tag" content="Vue">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
   <!-- feed -->
@@ -1881,8 +1882,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1643987994376" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1643987994376"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1644466611200" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1644466611200"></noscript>
     <script>
       var userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -2844,7 +2845,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211209115941.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211209115941.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
 <p><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211209120057.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211209120057.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
 <p><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211209120115.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211209120115.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
-<p><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211209120147.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211209120147.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211209120147.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211209120147.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >        </p>
 
 </div>
   </div>
@@ -2881,10 +2882,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2021-12-10T13:01:27+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-02-09T21:39:41+08:00">
   <a class='notlink' href="/" onclick="return false;" title="Click me!" >
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Dec 10, 2021</p>
+    <p>更新于：Feb 9, 2022</p>
   </a>
 </div>
 
@@ -2893,8 +2894,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/java/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>java</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/SpringBoot%EF%BC%8CVue/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>SpringBoot，Vue</p></a></div>
-  <span hidden itemprop="keywords">java SpringBoot，Vue</span>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/java/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>java</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/SpringBoot/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>SpringBoot</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Vue/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>Vue</p></a></div>
+  <span hidden itemprop="keywords">java SpringBoot Vue</span>
 
 
         
@@ -3109,7 +3110,7 @@ Maven源：阿里云
           <li><a class="flat-box"
             title="/categories/java/" href="/categories/java/"
             active-action="action-categoriesjava"
-            ><div class='name'>java</div><div class='badge'>(16)</div></a></li>
+            ><div class='name'>java</div><div class='badge'>(17)</div></a></li>
         
           <li><a class="flat-box child"
             title="/categories/java/JWT/" href="/categories/java/JWT/"
@@ -3162,6 +3163,11 @@ Maven源：阿里云
             ><div class='name'>spring</div><div class='badge'>(1)</div></a></li>
         
           <li><a class="flat-box child"
+            title="/categories/java/%E6%B3%A8%E8%A7%A3/" href="/categories/java/%E6%B3%A8%E8%A7%A3/"
+            active-action="action-categoriesjavaE6B3A8E8A7A3"
+            ><div class='name'>注解</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
             title="/categories/java/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/" href="/categories/java/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/"
             active-action="action-categoriesjavaE6B688E681AFE9989FE58897"
             ><div class='name'>消息队列</div><div class='badge'>(1)</div></a></li>
@@ -3204,17 +3210,12 @@ Maven源：阿里云
           <li><a class="flat-box"
             title="/categories/%E7%AE%97%E6%B3%95/" href="/categories/%E7%AE%97%E6%B3%95/"
             active-action="action-categoriesE7AE97E6B395"
-            ><div class='name'>算法</div><div class='badge'>(9)</div></a></li>
+            ><div class='name'>算法</div><div class='badge'>(8)</div></a></li>
         
           <li><a class="flat-box child"
             title="/categories/%E7%AE%97%E6%B3%95/HashMap/" href="/categories/%E7%AE%97%E6%B3%95/HashMap/"
             active-action="action-categoriesE7AE97E6B395HashMap"
             ><div class='name'>HashMap</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E7%AE%97%E6%B3%95/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/" href="/categories/%E7%AE%97%E6%B3%95/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/"
-            active-action="action-categoriesE7AE97E6B395E4BA8CE58886E69FA5E689BE"
-            ><div class='name'>二分查找</div><div class='badge'>(1)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/%E9%9A%8F%E7%AC%94/" href="/categories/%E9%9A%8F%E7%AC%94/"
@@ -3314,7 +3315,7 @@ Maven源：阿里云
     
       
         <div class='copyright'>
-        <p><a target="_blank" rel="noopener" href="https://github.com/chenyicai0819/">Copyright © 2017-2022 George Chab</a></p>
+        <p><a target="_blank" rel="noopener" href="https://github.com/chenyicai0819/">Copyright © 2017-2022 George Chan</a></p>
 
         </div>
         <img src="https://z3.ax1x.com/2021/10/08/59OMgU.png" class="lazyload" data-srcset="https://z3.ax1x.com/2021/10/08/59OMgU.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
@@ -3363,8 +3364,8 @@ Maven源：阿里云
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1643987994376')
-      volantis.js('/js/message.js?time=1643987994376', () => {
+      volantis.css('/css/message.css?time=1644466611200')
+      volantis.js('/js/message.js?time=1644466611200', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -3409,8 +3410,8 @@ Maven源：阿里云
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1643987994376')
-      volantis.js('/js/message.js?time=1643987994376', () => {
+      volantis.css('/css/message.css?time=1644466611200')
+      volantis.js('/js/message.js?time=1644466611200', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -3469,8 +3470,8 @@ Maven源：阿里云
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1643987994376')
-      volantis.js('/js/message.js?time=1643987994376', () => {
+      volantis.css('/css/message.css?time=1644466611200')
+      volantis.js('/js/message.js?time=1644466611200', () => {
         hideMessage(done);
       });
     } else {
@@ -3615,19 +3616,19 @@ volantis.pjax.push(bindToggleButton);
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1643987994376")
+        volantis.js("/js/plugins/sites.js?time=1644466611200")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1643987994376")
+        volantis.js("/js/plugins/friends.js?time=1644466611200")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1643987994376")
+        volantis.js("/js/plugins/contributors.js?time=1644466611200")
       }
     
   };
@@ -3818,7 +3819,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-<script src="/js/app.js?time=1643987994376.js"></script>
+<script src="/js/app.js?time=1644466611200.js"></script>
 
 
 <!-- optional -->
@@ -3831,7 +3832,7 @@ volantis.pjax.push(bindToggleButton);
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1643987994376");
+    return volantis.js("/js/search/hexo.js?time=1644466611200");
   }
 
   function loadSearchService() {
@@ -4105,7 +4106,7 @@ volantis.pjax.push(bindToggleButton);
 
 
   <script>
-  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp"];
+  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -4148,7 +4149,7 @@ volantis.pjax.push(bindToggleButton);
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/parallax.js?time=1643987994376').then(()=>{
+    volantis.js('/js/parallax.js?time=1644466611200').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4342,7 +4343,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://cyc0819.top/","name":"George's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/java/","name":"java"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/java/SpringBoot/","name":"SpringBoot"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/前端/","name":"前端"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/前端/Vue/","name":"Vue"}},{"@type":"ListItem","position":3,"item":{"@id":"http://cyc0819.top/2021/12/09/2021-12-09-SpringBoot+Vue微信授权获取用户openid/","name":"SpringBoot+Vue微信授权获取用户openid"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"SpringBoot+Vue微信授权获取用户openid","description":"","datePublished":"2021-12-08T16:16:46.000Z","dateModified":"2021-12-10T05:01:27.875Z","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://cyc0819.top/2021/12/09/2021-12-09-SpringBoot+Vue%E5%BE%AE%E4%BF%A1%E6%8E%88%E6%9D%83%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7openid/"},"author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/"},"publisher":{"@type":"Organization","name":"George's Blog","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://cyc0819.top/2021/12/09/2021-12-09-SpringBoot+Vue%E5%BE%AE%E4%BF%A1%E6%8E%88%E6%9D%83%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7openid/","wordCount":0,"articleSection":"java","keywords":"java,SpringBoot，Vue","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://cyc0819.top/","name":"George's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/java/","name":"java"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/java/SpringBoot/","name":"SpringBoot"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/前端/","name":"前端"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/前端/Vue/","name":"Vue"}},{"@type":"ListItem","position":3,"item":{"@id":"http://cyc0819.top/2021/12/09/2021-12-09-SpringBoot+Vue微信授权获取用户openid/","name":"SpringBoot+Vue微信授权获取用户openid"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"SpringBoot+Vue微信授权获取用户openid","description":"","datePublished":"2021-12-08T16:16:46.000Z","dateModified":"2022-02-09T13:39:41.764Z","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://cyc0819.top/2021/12/09/2021-12-09-SpringBoot+Vue%E5%BE%AE%E4%BF%A1%E6%8E%88%E6%9D%83%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7openid/"},"author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/"},"publisher":{"@type":"Organization","name":"George's Blog","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://cyc0819.top/2021/12/09/2021-12-09-SpringBoot+Vue%E5%BE%AE%E4%BF%A1%E6%8E%88%E6%9D%83%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7openid/","wordCount":0,"articleSection":"java","keywords":"java,SpringBoot,Vue","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 <!-- more -->
