@@ -7,8 +7,8 @@
   <meta name="generator" content="Hexo 5.4.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  
-  <link rel="canonical" href="http://cyc0819.top/2021/06/24/2021-06-24-记录博客主页的搭建(二)/"/>
+  <meta name="robots" content="noindex,follow">
+  <link rel="canonical" href="http://cyc0819.top/categories/java/反射/"/>
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
@@ -23,26 +23,20 @@
   <meta content="George&#39;s Blog" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1646371135316" as="style">
+  <link rel="preload" href="/css/style.css?time=1646371135439" as="style">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- 页面元数据 -->
-  <title>记录博客主页的搭建(二) - George's Blog</title>
-  <meta name="keywords" content="Hexo,记录,null">
-  <meta name="description" content="记录博客主页的搭建(二)完成上篇文章的所有步骤主题是个性化个人博客的很重要的一个模块，当然hexo默认也有一个主题，但是我们可以到hexo的主题商城中下载更多我们喜欢的主题。  选择想要的主题点击大图可以进行预览，点击名称就可以进入主题的GitHub仓库，就可以进行clone了 然后在本地clone主题的仓库，放到hexo目录的themes文件夹中，再去修改_config.yml文件，就可以应用这">
-<meta property="og:type" content="article">
-<meta property="og:title" content="记录博客主页的搭建(二)">
-<meta property="og:url" content="http://cyc0819.top/2021/06/24/2021-06-24-%E8%AE%B0%E5%BD%95%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E7%9A%84%E6%90%AD%E5%BB%BA(%E4%BA%8C)/index.html">
+  <title>Category: 反射 - George's Blog</title>
+  <meta name="keywords" content="null">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="George&#39;s Blog">
+<meta property="og:url" content="http://cyc0819.top/categories/java/%E5%8F%8D%E5%B0%84/index.html">
 <meta property="og:site_name" content="George&#39;s Blog">
-<meta property="og:description" content="记录博客主页的搭建(二)完成上篇文章的所有步骤主题是个性化个人博客的很重要的一个模块，当然hexo默认也有一个主题，但是我们可以到hexo的主题商城中下载更多我们喜欢的主题。  选择想要的主题点击大图可以进行预览，点击名称就可以进入主题的GitHub仓库，就可以进行clone了 然后在本地clone主题的仓库，放到hexo目录的themes文件夹中，再去修改_config.yml文件，就可以应用这">
 <meta property="og:locale">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2021-06-24T02:02:55.000Z">
-<meta property="article:modified_time" content="2021-12-08T10:26:14.634Z">
 <meta property="article:author" content="George Chan">
-<meta property="article:tag" content="Hexo">
-<meta property="article:tag" content="记录">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
   <!-- feed -->
@@ -1881,8 +1875,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1646371135316" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1646371135316"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1646371135439" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1646371135439"></noscript>
     <script>
       var userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -2613,7 +2607,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper post dock' style="display: none;">
+      <div id="none" class='cover-wrapper  dock' style="display: none;">
         
   <div id="parallax-window"></div>
 
@@ -2698,286 +2692,102 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
+
 <div id="l_main" class=''>
-  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://cyc0819.top/2021/06/24/2021-06-24-%E8%AE%B0%E5%BD%95%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E7%9A%84%E6%90%AD%E5%BB%BA(%E4%BA%8C)/">
+  
+    
+      
+  <section class="post-list">
+    
+      
+        
+          
+        
+      
+    
+    
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://cyc0819.top/2022/02/10/2022-02-10-Java%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="George's Blog">
   </span>
   
-
-
+  
   
     <span hidden>
       <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  <div class="article-meta" id="top">
-    
-    
-    
-      <h1 class="title" itemprop="name headline">
-        记录博客主页的搭建(二)
-      </h1>
-      <div class='new-meta-box'>
-        
-          
-            
-<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <a itemprop="url" class='author' target="_blank" href="https://github.com/chenyicai0819" rel="nofollow noopener">
-    <img itemprop="image" src="https://z3.ax1x.com/2021/09/30/4oKiUx.jpg" class="lazyload" data-srcset="https://z3.ax1x.com/2021/09/30/4oKiUx.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
-    <p itemprop="name">George chan</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-  <div class='new-meta-item category'>
-    <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-    <a class="category-link" href="/categories/%E5%8D%9A%E5%AE%A2/">博客</a><span class="sep"></span><a class="category-link" href="/categories/%E5%8D%9A%E5%AE%A2/Hexo/">Hexo</a>
-    
-      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-        <a href="/categories/%E5%8D%9A%E5%AE%A2/" itemprop="url"><span itemprop="name">博客</span></a>
-      </span>
-    
-      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-        <a href="/categories/%E5%8D%9A%E5%AE%A2/Hexo/" itemprop="url"><span itemprop="name">Hexo</span></a>
-      </span>
-    
-  </div>
-
-
-          
-        
-          
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2021-06-24T10:02:55+08:00">
-  <a class='notlink' href="/" onclick="return false;" title="Click me!" >
-    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Jun 24, 2021</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-  <div class="new-meta-item browse leancloud">
-    <a class='notlink' href="/" onclick="return false;" title="Click me!" >
-      
-      <div id="lc-pv" data-title="记录博客主页的搭建(二)" data-path="/2021/06/24/2021-06-24-%E8%AE%B0%E5%BD%95%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E7%9A%84%E6%90%AD%E5%BB%BA(%E4%BA%8C)/">
-        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
-        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
-        次浏览
-      </div>
-    </a>
-  </div>
-
-
-          
-        
-        <!-- Custom Files topMeta begin-->
-        
-        <!-- Custom Files topMeta end-->
-      </div>
-    
-  </div>
-
-
-  <div id="layoutHelper-page-plugins"></div>
-  <div id="post-body" itemprop="articleBody">
-    <h1 id="记录博客主页的搭建-二"><a href="#记录博客主页的搭建-二" class="headerlink" title="记录博客主页的搭建(二)"></a>记录博客主页的搭建(二)</h1><h2 id="完成上篇文章的所有步骤"><a href="#完成上篇文章的所有步骤" class="headerlink" title="完成上篇文章的所有步骤"></a>完成上篇文章的所有步骤</h2><div class="story post-story"><p>主题是个性化个人博客的很重要的一个模块，当然hexo默认也有一个主题，但是我们可以到<a target="_blank" rel="noopener" href="https://hexo.io/themes/">hexo的主题商城</a>中下载更多我们喜欢的主题。</p>
-<p><img src="https://ftp.bmp.ovh/imgs/2021/06/e2ca448dcc957f2e.jpg" class="lazyload" data-srcset="https://ftp.bmp.ovh/imgs/2021/06/e2ca448dcc957f2e.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
-</div><h2 id="选择想要的主题"><a href="#选择想要的主题" class="headerlink" title="选择想要的主题"></a>选择想要的主题</h2><div class="story post-story"><p>点击大图可以进行预览，点击名称就可以进入主题的GitHub仓库，就可以进行clone了</p>
-<p>然后在本地clone主题的仓库，放到hexo目录的themes文件夹中，再去修改_config.yml文件，就可以应用这个主题了</p>
-<p>将theme后面的名称改为刚才clone的文件夹名称，就可以应用主题了</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: hexo-theme-aircloud</span><br></pre></td></tr></table></figure>
-
-</div><h2 id="创建标签以及存档"><a href="#创建标签以及存档" class="headerlink" title="创建标签以及存档"></a>创建标签以及存档</h2><div class="story post-story"><p>默认的主题是不带有标签和介绍的，这时候需要在博客根目录的source文件夹下建立tags文件夹和about文件夹。</p>
-<p><em>注：建议不要直接新建文件，而是采用 hexo 的 hexo new page tags 和 hexo new page about 的方式新建文件，这样可以被 hexo 索引到。</em></p>
-<p>创建好之后在两个文件夹的index.md中分别输入以下内容</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">layout: &quot;tags&quot;</span><br><span class="line">title: &quot;Tags&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">layout: &quot;about&quot;</span><br><span class="line">title: &quot;About&quot;</span><br><span class="line">date: 2016-04-21 04:48:33</span><br><span class="line">comments: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>再次打开主页就会看到生成了两个新的列表</p>
-</div><h2 id="更换头像以及网站logo"><a href="#更换头像以及网站logo" class="headerlink" title="更换头像以及网站logo"></a>更换头像以及网站logo</h2><div class="story post-story"><p>在博客根目录的 source 文件夹下建立 img 文件夹<br>*采用 hexo 的 hexo new page img *</p>
-<p>然后并将头像文件命名为avatar.jpg，logo文件命名为favicon.ico</p>
-<p>然后修改_config.yml文件，增加以下内容</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sidebar-avatar: img/avatar.jpg</span><br></pre></td></tr></table></figure>
-<p>就可以了</p>
-</div><h2 id="网站标题"><a href="#网站标题" class="headerlink" title="网站标题"></a>网站标题</h2><div class="story post-story"><p>在 _config.yml 文件中，增加以下内容</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SEOTitle: George&#x27;blog</span><br></pre></td></tr></table></figure>
-<p>冒号后面修改成你想要的名字就可以了</p>
-</div><h2 id="签名"><a href="#签名" class="headerlink" title="签名"></a>签名</h2><div class="story post-story"><p>比如最顶端的签名，我们同样可以自定义</p>
-<p><img src="https://ftp.bmp.ovh/imgs/2021/06/89d7894724475826.jpg" class="lazyload" data-srcset="https://ftp.bmp.ovh/imgs/2021/06/89d7894724475826.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
-<p>只要在_config.yml文件，修改以下内容即可</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">subtitle: 你想要的签名</span><br></pre></td></tr></table></figure>
-
-</div><h2 id="搜索功能"><a href="#搜索功能" class="headerlink" title="搜索功能"></a>搜索功能</h2><div class="story post-story"><p>搜索功能同样是不自带的，我们在安装搜索功能之前，首先要安装一个插件<br>在git中输入以下命令进行安装</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-generator-search --save</span><br></pre></td></tr></table></figure>
-
-<p>然后在_config.yml文件中增加以下内容即可</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.json</span><br><span class="line">  field: post</span><br></pre></td></tr></table></figure>
-
-</div><h2 id="社交网络"><a href="#社交网络" class="headerlink" title="社交网络"></a>社交网络</h2><div class="story post-story"><p>底部的社交网络我们可以自行修改，但是只能在官方限制的范围内进行修改<br>编辑根目录的 _config.yml 文件，增加：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># SNS settings</span><br><span class="line"># 一些社交平台地址，支持以下几种：</span><br><span class="line">weibo_username:     5676314204</span><br><span class="line">zhihu_username:     swaggy-chen</span><br><span class="line">github_username:    chenyicai0819</span><br><span class="line">twitter_username:   George chan</span><br></pre></td></tr></table></figure>
-<p><em>还有一些其他的社交网络可以参考官方文档</em></p>
-</div><h2 id="赞赏功能"><a href="#赞赏功能" class="headerlink" title="赞赏功能"></a>赞赏功能</h2><div class="story post-story"><p>我们同样可以在我们的博客中添加一个赞赏功能<br>只要在img文件夹中增加收款码图片，并命名为donate.jpg<br>然后在 _config.yml 文件中增加以下内容，即可在在每篇文章下面增加一个赞赏功能</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">donate:</span><br><span class="line">  img: img/donate.jpg</span><br><span class="line">  content: 感谢鼓励</span><br></pre></td></tr></table></figure>
-
-</div><h2 id="修改用户名"><a href="#修改用户名" class="headerlink" title="修改用户名"></a>修改用户名</h2><div class="story post-story"><p>只需修改 _config.yml 文件，中以下内容，即可修改用户名</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">author: 你的用户名</span><br></pre></td></tr></table></figure>
-
-</div><h2 id="完成主题更换"><a href="#完成主题更换" class="headerlink" title="完成主题更换"></a>完成主题更换</h2><div class="story post-story"><p>至此，基本的冤死就已经设置完毕了，基本上只要修改 _config.yml 文件，就可以控制网站中所有的元素了，而官方的帮助文档也写的很清楚如何对各个模块进行设置</p>
-<p>我的这篇文章只是针对我的设置进行了一个记录，所以需要更多资料的可以去参考官方的文档，基本上是写的非常明白了</p>
-</div><h2 id="部署到GitHub"><a href="#部署到GitHub" class="headerlink" title="部署到GitHub"></a>部署到GitHub</h2><div class="story post-story"><p>跟之前一样，完成修改之后要部署到github，只需要以下几行命令</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean  //清除缓存文件db.json和已生成的静态文件public</span><br><span class="line">hexo g   //生成网站静态文件到默认设置的public文件夹</span><br><span class="line">hexo d   //部署网站到设定的仓库</span><br></pre></td></tr></table></figure>
-
-<p>部署完成之后稍等一会，就可以看到修改之后的内容了</p>
-</div><h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><div class="story post-story"><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">官方文档</a></p>
-<p><a target="_blank" rel="noopener" href="https://hexo.io/themes/">主题商城</a></p>
-
-</div>
-  </div>
-  
   
     
-    <div class='footer'>
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2022/02/10/2022-02-10-Java%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6/"  itemprop="url">
+        Java反射机制
+      </a>
+    </h2>
+  
+  <div class='md' itemprop="articleBody">
+    
       
+        Java反射机制1、反射是什么?Java反射机制（Java Reflection）是Java语言中一种动态（运行时）访问、检测以及修改它本身的能力。主要作用是动态获取类完整的结构信息和调用对象的方法。
+正射和反射的区别：一般情况下，我们使用某个类，都会知道这个类，以及要用它来做什么，可以直接通过 new 实例化创建对象，然后使用这个对象对类进行操作，这个就属于正射。而反射则是不知道要初始化的...
       
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' target="_blank" rel="noopener" href='https://github.com/chenyicai0819'><img src='https://z3.ax1x.com/2021/09/30/4oKiUx.jpg' alt="This is a picture without description" ></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://z3.ax1x.com/2021/09/30/4oKiUx.jpg">
+            <meta itemprop="name" content="George chan">
+            <meta itemprop="url" content="https://github.com/chenyicai0819">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2022-02-10T20:19:20+08:00">2022-02-10</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/java/">java</a><span class="sep"></span><a class="category-link" href="/categories/java/%E5%8F%8D%E5%B0%84/">反射</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/java/" itemprop="url"><span itemprop="name">java</span></a>
+            </span>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/java/%E5%8F%8D%E5%B0%84/" itemprop="url"><span itemprop="name">反射</span></a>
+            </span>
+          
+        
+      </div>
       
-        <div class='copyright'>
-          <blockquote>
-            
-              
-                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
-
-              
-            
-              
-                <p>本文永久链接是：<a href=http://cyc0819.top/2021/06/24/2021-06-24-%E8%AE%B0%E5%BD%95%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E7%9A%84%E6%90%AD%E5%BB%BA(%E4%BA%8C)/>http://cyc0819.top/2021/06/24/2021-06-24-%E8%AE%B0%E5%BD%95%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E7%9A%84%E6%90%AD%E5%BB%BA(%E4%BA%8C)/</a></p>
-              
-            
-          </blockquote>
+        <div>
+          <a class='readmore' href='/2022/02/10/2022-02-10-Java%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6/' itemprop="url">
+            Read More
+          </a>
         </div>
       
-      
     </div>
   
-  
-    
 
-
-  <div class='article-meta' id="bottom">
-    <div class='new-meta-box'>
-      
-        
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2021-12-08T18:26:14+08:00">
-  <a class='notlink' href="/" onclick="return false;" title="Click me!" >
-    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Dec 8, 2021</p>
-  </a>
 </div>
 
+          </div>
         
       
-        
-          
+    
+  </section>
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Hexo/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>Hexo</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E8%AE%B0%E5%BD%95/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>记录</p></a></div>
-  <span hidden itemprop="keywords">Hexo 记录</span>
-
-
-        
-      
-        
-          
-  <div class="new-meta-item share -mob-share-list">
-  <div class="-mob-share-list share-body">
     
-      
-        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://cyc0819.top/2021/06/24/2021-06-24-%E8%AE%B0%E5%BD%95%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E7%9A%84%E6%90%AD%E5%BB%BA(%E4%BA%8C)/&title=记录博客主页的搭建(二) - George's Blog&summary="
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://cyc0819.top/2021/06/24/2021-06-24-%E8%AE%B0%E5%BD%95%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E7%9A%84%E6%90%AD%E5%BB%BA(%E4%BA%8C)/&title=记录博客主页的搭建(二) - George's Blog&summary="
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://cyc0819.top/2021/06/24/2021-06-24-%E8%AE%B0%E5%BD%95%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E7%9A%84%E6%90%AD%E5%BB%BA(%E4%BA%8C)/&title=记录博客主页的搭建(二) - George's Blog&summary="
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
-          
-        </a>
-      
-    
-      
-    
-      
-    
-  </div>
-</div>
-
-
-
-        
-      
-    </div>
-    <!-- Custom Files bottomMeta begin -->
-    
-    <!-- Custom Files bottomMeta end -->
-  </div>
-
-
-  
   
 
+
+    
   
-    <div class="prev-next">
-      
-        <a class='prev' href='/2021/06/28/2021-06-28-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0_%E7%BD%97%E9%A9%AC%E6%95%B0%E5%AD%97%E8%BD%AC%E6%95%B4%E6%95%B0/'>
-          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>算法学习_罗马数字转整数</p>
-          <p class='content'>罗马数字转整数题目lettcode-13题难度：简单
-解题思路对于每个罗马符号所对应的数值，我们可以将其用一个HashMap存起来，将其字符作为key，以及数值为相应的value
-在方法中对输入...</p>
-        </a>
-      
-      
-        <a class='next' href='/2021/06/24/2021-06-24-%E8%AE%B0%E5%BD%95%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E7%9A%84%E6%90%AD%E5%BB%BA(%E4%B8%80)/'>
-          <p class='title'>记录博客主页的搭建(一)<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>记录博客主页的搭建(一)1.心血来潮有一个自己的网站，是我心中一直存在的一个想法，因最近学业压力不是很大，碰巧看到阿里云的域名首年特惠只要一元，就顺便买了一个域名，准备着手搭建个人网站，在此之前...</p>
-        </a>
-      
-    </div>
-  
-  <!-- Custom Files postEnd begin-->
-  
-  <!-- Custom Files postEnd end-->
-</article>
-
-
-
-
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -3047,28 +2857,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
   </div>
 </section>
-
-  
-
-  
-    
-    
-
-
-
-  <section class="widget toc-wrapper shadow desktop mobile pjax" id="toc-div" >
-    
-  <header>
-    
-      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
-    
-  </header>
-
-
-    <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%8C%E6%88%90%E4%B8%8A%E7%AF%87%E6%96%87%E7%AB%A0%E7%9A%84%E6%89%80%E6%9C%89%E6%AD%A5%E9%AA%A4"><span class="toc-text">完成上篇文章的所有步骤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E6%83%B3%E8%A6%81%E7%9A%84%E4%B8%BB%E9%A2%98"><span class="toc-text">选择想要的主题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%A0%87%E7%AD%BE%E4%BB%A5%E5%8F%8A%E5%AD%98%E6%A1%A3"><span class="toc-text">创建标签以及存档</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%B4%E6%8D%A2%E5%A4%B4%E5%83%8F%E4%BB%A5%E5%8F%8A%E7%BD%91%E7%AB%99logo"><span class="toc-text">更换头像以及网站logo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%AB%99%E6%A0%87%E9%A2%98"><span class="toc-text">网站标题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AD%BE%E5%90%8D"><span class="toc-text">签名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD"><span class="toc-text">搜索功能</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A4%BE%E4%BA%A4%E7%BD%91%E7%BB%9C"><span class="toc-text">社交网络</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B5%9E%E8%B5%8F%E5%8A%9F%E8%83%BD"><span class="toc-text">赞赏功能</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E7%94%A8%E6%88%B7%E5%90%8D"><span class="toc-text">修改用户名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%8C%E6%88%90%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%8D%A2"><span class="toc-text">完成主题更换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2%E5%88%B0GitHub"><span class="toc-text">部署到GitHub</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%B8%E5%85%B3%E9%93%BE%E6%8E%A5"><span class="toc-text">相关链接</span></a></li></ol>
-    </div>
-  </section>
 
   
 
@@ -3226,20 +3014,206 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   
 
+  
+    
+    
+  
+
+  <section class="widget tagcloud shadow desktop mobile pjax">
+    
+  <header>
+    
+      <a href='/#/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+    
+  </header>
+
+
+    <div class='content'>
+      <a href="/tags/HashMap/" style="font-size: 14px; color: #999">HashMap</a> <a href="/tags/Hexo/" style="font-size: 16.5px; color: #888">Hexo</a> <a href="/tags/JWT/" style="font-size: 14px; color: #999">JWT</a> <a href="/tags/MyBatis/" style="font-size: 14px; color: #999">MyBatis</a> <a href="/tags/SpringBoot/" style="font-size: 19px; color: #777">SpringBoot</a> <a href="/tags/SpringCloud/" style="font-size: 14px; color: #999">SpringCloud</a> <a href="/tags/SpringSecurity/" style="font-size: 14px; color: #999">SpringSecurity</a> <a href="/tags/Swagger/" style="font-size: 14px; color: #999">Swagger</a> <a href="/tags/Swing/" style="font-size: 14px; color: #999">Swing</a> <a href="/tags/Vue/" style="font-size: 14px; color: #999">Vue</a> <a href="/tags/eCharts/" style="font-size: 14px; color: #999">eCharts</a> <a href="/tags/java/" style="font-size: 24px; color: #555">java</a> <a href="/tags/maven/" style="font-size: 14px; color: #999">maven</a> <a href="/tags/redis/" style="font-size: 16.5px; color: #888">redis</a> <a href="/tags/shiro/" style="font-size: 14px; color: #999">shiro</a> <a href="/tags/spring/" style="font-size: 14px; color: #999">spring</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 16.5px; color: #888">前端</a> <a href="/tags/%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/" style="font-size: 14px; color: #999">学习总结</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 14px; color: #999">数据结构</a> <a href="/tags/%E6%B3%A8%E8%A7%A3/" style="font-size: 14px; color: #999">注解</a> <a href="/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/" style="font-size: 14px; color: #999">消息队列</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 21.5px; color: #666">算法</a> <a href="/tags/%E8%AE%B0%E5%BD%95/" style="font-size: 16.5px; color: #888">记录</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 19px; color: #777">随笔</a>
+    </div>
+  </section>
+
+
+  
+
+  
+    
+    
+
+<section class="widget shadow desktop mobile pjax">
+  
+  <header>
+    
+      <i class="fas fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <div class="webinfo">
+      
+        <div class="webinfo-item">
+          <div>文章数目：</div>
+          <div>37 篇</div>
+        </div>
+      
+
+      
+        <div class="webinfo-item">
+          <div>已运行时间：</div>
+          <div id="webinfo-runtime-count" publish_date="03/24/2020 21:34:09"></div>
+        </div>
+        <script>
+          var BirthDay = new Date(new Date('2021/06/21'));
+          var today = new Date();
+          var timeold = (today.getTime() - BirthDay.getTime());
+          var daysold = Math.floor(timeold / (24 * 60 * 60 * 1000));
+          document.getElementById('webinfo-runtime-count').innerHTML = daysold + ' 天';
+        </script>
+      
+
+
+      
+        <div class="webinfo-item">
+          <div>本站总字数：</div>
+          <div>52.9k 字</div>
+        </div>
+      
+
+      
+
+      
+        <div class="webinfo-item">
+          <div>本站被访问了：</div>
+          
+          <div><span id="lc-sv"><span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span></span> 次</div>
+          
+        </div>
+      
+
+      
+        <div class="webinfo-item">
+          <div>最后活动时间：</div>
+          
+            <div id="last-update" style="display: none;">Fri Mar 04 2022 13:18:53 GMT+0800 (中国标准时间)</div>
+            <div id="last-update-show">2022-03-04 日</div>
+          
+        </div>
+        
+        <script>
+          function timeago(dateTimeStamp) {
+              var minute = 1000 * 60; //把分，时，天，周，半个月，一个月用毫秒表示
+              var hour = minute * 60;
+              var day = hour * 24;
+              var week = day * 7;
+              var month = day * 30;
+              var now = new Date().getTime(); //获取当前时间毫秒
+              var diffValue = now - dateTimeStamp; //时间差
+              if (diffValue < 0) {
+                  return;
+              }
+              var minC = diffValue / minute; //计算时间差的分，时，天，周，月
+              var hourC = diffValue / hour;
+              var dayC = diffValue / day;
+              var weekC = diffValue / week;
+              var monthC = diffValue / month;
+              if (monthC >= 1 && monthC <= 3) {
+                  result = " " + parseInt(monthC) + " 月前"
+              } else if (weekC >= 1 && weekC <= 3) {
+                  result = " " + parseInt(weekC) + " 周前"
+              } else if (dayC >= 1 && dayC <= 6) {
+                  result = " " + parseInt(dayC) + " 天前"
+              } else if (hourC >= 1 && hourC <= 23) {
+                  result = " " + parseInt(hourC) + " 小时前"
+              } else if (minC >= 1 && minC <= 59) {
+                  result = " " + parseInt(minC) + " 分钟前"
+              } else if (diffValue >= 0 && diffValue <= minute) {
+                  result = "刚刚"
+              } else {
+                  var datetime = new Date();
+                  datetime.setTime(dateTimeStamp);
+                  var Nyear = datetime.getFullYear();
+                  var Nmonth = datetime.getMonth() + 1 < 10 ? "0" + (datetime.getMonth() + 1) : datetime.getMonth() + 1;
+                  var Ndate = datetime.getDate() < 10 ? "0" + datetime.getDate() : datetime.getDate();
+                  var Nhour = datetime.getHours() < 10 ? "0" + datetime.getHours() : datetime.getHours();
+                  var Nminute = datetime.getMinutes() < 10 ? "0" + datetime.getMinutes() : datetime.getMinutes();
+                  var Nsecond = datetime.getSeconds() < 10 ? "0" + datetime.getSeconds() : datetime.getSeconds();
+                  result = Nyear + "-" + Nmonth + "-" + Ndate
+              }
+              return result;
+          }
+          var lastUpDate = document.getElementById('last-update').innerHTML;
+          try {
+            document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
+          } catch (error) {
+            document.getElementById('last-update-show').innerHTML = '2022-03-04 日';
+          }
+        </script>
+        
+      
+    </div>
+  </div>
+</section>
+
+  
+
+  
+    
+     
+
+ 
+<section class="widget shadow desktop mobile pjax"> 
+  
+  <header>
+    
+      <i class="fas fa-clock WISTERIA fa-fw" aria-hidden="true"></i><span class='name'>最近更新</span>
+    
+  </header>
+
+ 
+  <div class='content'> 
+    <ul class="list entry navigation"><li><a class="widget-last" href="/2022/02/10/2022-02-10-Java%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6/"><div class="item"><time>2022-03-04</time><span>java</span></div><span>Java反射机制</span></a></li><li><a class="widget-last" href="/2022/02/09/2022-02-09-%E8%87%AA%E5%AE%9A%E4%B9%89%E6%B3%A8%E8%A7%A3/"><div class="item"><time>2022-02-10</time><span>java</span></div><span>自定义注解</span></a></li><li><a class="widget-last" href="/2021/12/09/2021-12-09-SpringBoot+Vue%E5%BE%AE%E4%BF%A1%E6%8E%88%E6%9D%83%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7openid/"><div class="item"><time>2022-02-09</time><span>java</span></div><span>SpringBoot+Vue微信授权获取用户openid</span></a></li><li><a class="widget-last" href="/2022/02/01/2022-02-01-%E4%BD%8D%E8%BF%90%E7%AE%97/"><div class="item"><time>2022-02-01</time></div><span>位运算</span></a></li><li><a class="widget-last" href="/2022/01/10/2022-01-10-2021%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/"><div class="item"><time>2022-01-10</time><span>随笔</span></div><span>2021年终总结</span></a></li></ul> 
+  </div> 
+</section> 
+
+  
+
+  
+    
+    
+
+
+  <section class='widget shadow desktop mobile pjax music'>
+    
+
+    <div class='content'>
+      
+
+  
+    <meting-js
+      theme='#1BCDFC'
+      autoplay='false'
+      volume='0.7'
+      loop='all'
+      order='list'
+      fixed='false'
+      list-max-height='320px'
+      server='tencent'
+      type='playlist'
+      id='7849540526'
+      list-folded='true'>
+    </meting-js>
+  
+
+
+    </div>
+  </section>
+
+
+  
+
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3256,15 +3230,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
-
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=true;
-  pdata.postTitle="记录博客主页的搭建(二)";
+  pdata.ispage=false;
+  pdata.postTitle="";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3351,8 +3324,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1646371135316')
-      volantis.js('/js/message.js?time=1646371135316', () => {
+      volantis.css('/css/message.css?time=1646371135439')
+      volantis.js('/js/message.js?time=1646371135439', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -3397,8 +3370,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1646371135316')
-      volantis.js('/js/message.js?time=1646371135316', () => {
+      volantis.css('/css/message.css?time=1646371135439')
+      volantis.js('/js/message.js?time=1646371135439', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -3457,8 +3430,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1646371135316')
-      volantis.js('/js/message.js?time=1646371135316', () => {
+      volantis.css('/css/message.css?time=1646371135439')
+      volantis.js('/js/message.js?time=1646371135439', () => {
         hideMessage(done);
       });
     } else {
@@ -3603,19 +3576,19 @@ volantis.pjax.push(bindToggleButton);
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1646371135316")
+        volantis.js("/js/plugins/sites.js?time=1646371135439")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1646371135316")
+        volantis.js("/js/plugins/friends.js?time=1646371135439")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1646371135316")
+        volantis.js("/js/plugins/contributors.js?time=1646371135439")
       }
     
   };
@@ -3806,7 +3779,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-<script src="/js/app.js?time=1646371135316.js"></script>
+<script src="/js/app.js?time=1646371135439.js"></script>
 
 
 <!-- optional -->
@@ -3819,7 +3792,7 @@ volantis.pjax.push(bindToggleButton);
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1646371135316");
+    return volantis.js("/js/search/hexo.js?time=1646371135439");
   }
 
   function loadSearchService() {
@@ -4093,7 +4066,7 @@ volantis.pjax.push(bindToggleButton);
 
 
   <script>
-  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp"];
+  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -4136,7 +4109,7 @@ volantis.pjax.push(bindToggleButton);
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/parallax.js?time=1646371135316').then(()=>{
+    volantis.js('/js/parallax.js?time=1646371135439').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4330,7 +4303,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://cyc0819.top/","name":"George's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/博客/","name":"博客"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/博客/Hexo/","name":"Hexo"}},{"@type":"ListItem","position":3,"item":{"@id":"http://cyc0819.top/2021/06/24/2021-06-24-记录博客主页的搭建(二)/","name":"记录博客主页的搭建(二)"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"记录博客主页的搭建(二)","description":"","datePublished":"2021-06-24T02:02:55.000Z","dateModified":"2021-12-08T10:26:14.634Z","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://cyc0819.top/2021/06/24/2021-06-24-%E8%AE%B0%E5%BD%95%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E7%9A%84%E6%90%AD%E5%BB%BA(%E4%BA%8C)/"},"author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/"},"publisher":{"@type":"Organization","name":"George's Blog","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://cyc0819.top/2021/06/24/2021-06-24-%E8%AE%B0%E5%BD%95%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E7%9A%84%E6%90%AD%E5%BB%BA(%E4%BA%8C)/","wordCount":0,"articleSection":"博客","keywords":"Hexo,记录","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://cyc0819.top/","name":"George's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/反射/","name":"反射"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"George's Blog","url":"http://cyc0819.top/","keywords":null,"description":"","author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","description":""},"publisher":{"@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://cyc0819.top?s={search_term_string}"},"query-input":"required name=search_term_string"}}]</script>
 
 
 <!-- more -->

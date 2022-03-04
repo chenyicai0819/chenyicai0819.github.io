@@ -8,7 +8,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="http://cyc0819.top/2021/06/24/2021-06-24-记录博客主页的搭建(二)/"/>
+  <link rel="canonical" href="http://cyc0819.top/2022/02/10/2022-02-10-java反射机制/"/>
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
@@ -23,26 +23,25 @@
   <meta content="George&#39;s Blog" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1646371135316" as="style">
+  <link rel="preload" href="/css/style.css?time=1646371135193" as="style">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- 页面元数据 -->
-  <title>记录博客主页的搭建(二) - George's Blog</title>
-  <meta name="keywords" content="Hexo,记录,null">
-  <meta name="description" content="记录博客主页的搭建(二)完成上篇文章的所有步骤主题是个性化个人博客的很重要的一个模块，当然hexo默认也有一个主题，但是我们可以到hexo的主题商城中下载更多我们喜欢的主题。  选择想要的主题点击大图可以进行预览，点击名称就可以进入主题的GitHub仓库，就可以进行clone了 然后在本地clone主题的仓库，放到hexo目录的themes文件夹中，再去修改_config.yml文件，就可以应用这">
+  <title>Java反射机制 - George's Blog</title>
+  <meta name="keywords" content="java,null">
+  <meta name="description" content="Java反射机制1、反射是什么?Java反射机制（Java Reflection）是Java语言中一种动态（运行时）访问、检测以及修改它本身的能力。主要作用是动态获取类完整的结构信息和调用对象的方法。 正射和反射的区别：一般情况下，我们使用某个类，都会知道这个类，以及要用它来做什么，可以直接通过 new 实例化创建对象，然后使用这个对象对类进行操作，这个就属于正射。而反射则是不知道要初始化的是什么">
 <meta property="og:type" content="article">
-<meta property="og:title" content="记录博客主页的搭建(二)">
-<meta property="og:url" content="http://cyc0819.top/2021/06/24/2021-06-24-%E8%AE%B0%E5%BD%95%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E7%9A%84%E6%90%AD%E5%BB%BA(%E4%BA%8C)/index.html">
+<meta property="og:title" content="Java反射机制">
+<meta property="og:url" content="http://cyc0819.top/2022/02/10/2022-02-10-Java%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6/index.html">
 <meta property="og:site_name" content="George&#39;s Blog">
-<meta property="og:description" content="记录博客主页的搭建(二)完成上篇文章的所有步骤主题是个性化个人博客的很重要的一个模块，当然hexo默认也有一个主题，但是我们可以到hexo的主题商城中下载更多我们喜欢的主题。  选择想要的主题点击大图可以进行预览，点击名称就可以进入主题的GitHub仓库，就可以进行clone了 然后在本地clone主题的仓库，放到hexo目录的themes文件夹中，再去修改_config.yml文件，就可以应用这">
+<meta property="og:description" content="Java反射机制1、反射是什么?Java反射机制（Java Reflection）是Java语言中一种动态（运行时）访问、检测以及修改它本身的能力。主要作用是动态获取类完整的结构信息和调用对象的方法。 正射和反射的区别：一般情况下，我们使用某个类，都会知道这个类，以及要用它来做什么，可以直接通过 new 实例化创建对象，然后使用这个对象对类进行操作，这个就属于正射。而反射则是不知道要初始化的是什么">
 <meta property="og:locale">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2021-06-24T02:02:55.000Z">
-<meta property="article:modified_time" content="2021-12-08T10:26:14.634Z">
+<meta property="article:published_time" content="2022-02-10T12:19:20.000Z">
+<meta property="article:modified_time" content="2022-03-04T05:18:05.947Z">
 <meta property="article:author" content="George Chan">
-<meta property="article:tag" content="Hexo">
-<meta property="article:tag" content="记录">
+<meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
   <!-- feed -->
@@ -1881,8 +1880,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1646371135316" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1646371135316"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1646371135193" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1646371135193"></noscript>
     <script>
       var userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -2700,7 +2699,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://cyc0819.top/2021/06/24/2021-06-24-%E8%AE%B0%E5%BD%95%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E7%9A%84%E6%90%AD%E5%BB%BA(%E4%BA%8C)/">
+  <link itemprop="mainEntityOfPage" href="http://cyc0819.top/2022/02/10/2022-02-10-Java%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="George's Blog">
   </span>
@@ -2717,7 +2716,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        记录博客主页的搭建(二)
+        Java反射机制
       </h1>
       <div class='new-meta-box'>
         
@@ -2736,14 +2735,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
   <div class='new-meta-item category'>
     <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-    <a class="category-link" href="/categories/%E5%8D%9A%E5%AE%A2/">博客</a><span class="sep"></span><a class="category-link" href="/categories/%E5%8D%9A%E5%AE%A2/Hexo/">Hexo</a>
+    <a class="category-link" href="/categories/java/">java</a><span class="sep"></span><a class="category-link" href="/categories/java/%E5%8F%8D%E5%B0%84/">反射</a>
     
       <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-        <a href="/categories/%E5%8D%9A%E5%AE%A2/" itemprop="url"><span itemprop="name">博客</span></a>
+        <a href="/categories/java/" itemprop="url"><span itemprop="name">java</span></a>
       </span>
     
       <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-        <a href="/categories/%E5%8D%9A%E5%AE%A2/Hexo/" itemprop="url"><span itemprop="name">Hexo</span></a>
+        <a href="/categories/java/%E5%8F%8D%E5%B0%84/" itemprop="url"><span itemprop="name">反射</span></a>
       </span>
     
   </div>
@@ -2752,10 +2751,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2021-06-24T10:02:55+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-02-10T20:19:20+08:00">
   <a class='notlink' href="/" onclick="return false;" title="Click me!" >
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Jun 24, 2021</p>
+    <p>发布于：Feb 10, 2022</p>
   </a>
 </div>
 
@@ -2766,7 +2765,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item browse leancloud">
     <a class='notlink' href="/" onclick="return false;" title="Click me!" >
       
-      <div id="lc-pv" data-title="记录博客主页的搭建(二)" data-path="/2021/06/24/2021-06-24-%E8%AE%B0%E5%BD%95%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E7%9A%84%E6%90%AD%E5%BB%BA(%E4%BA%8C)/">
+      <div id="lc-pv" data-title="Java反射机制" data-path="/2022/02/10/2022-02-10-Java%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6/">
         <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
         <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
         次浏览
@@ -2787,55 +2786,45 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h1 id="记录博客主页的搭建-二"><a href="#记录博客主页的搭建-二" class="headerlink" title="记录博客主页的搭建(二)"></a>记录博客主页的搭建(二)</h1><h2 id="完成上篇文章的所有步骤"><a href="#完成上篇文章的所有步骤" class="headerlink" title="完成上篇文章的所有步骤"></a>完成上篇文章的所有步骤</h2><div class="story post-story"><p>主题是个性化个人博客的很重要的一个模块，当然hexo默认也有一个主题，但是我们可以到<a target="_blank" rel="noopener" href="https://hexo.io/themes/">hexo的主题商城</a>中下载更多我们喜欢的主题。</p>
-<p><img src="https://ftp.bmp.ovh/imgs/2021/06/e2ca448dcc957f2e.jpg" class="lazyload" data-srcset="https://ftp.bmp.ovh/imgs/2021/06/e2ca448dcc957f2e.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
-</div><h2 id="选择想要的主题"><a href="#选择想要的主题" class="headerlink" title="选择想要的主题"></a>选择想要的主题</h2><div class="story post-story"><p>点击大图可以进行预览，点击名称就可以进入主题的GitHub仓库，就可以进行clone了</p>
-<p>然后在本地clone主题的仓库，放到hexo目录的themes文件夹中，再去修改_config.yml文件，就可以应用这个主题了</p>
-<p>将theme后面的名称改为刚才clone的文件夹名称，就可以应用主题了</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: hexo-theme-aircloud</span><br></pre></td></tr></table></figure>
+    <h1 id="Java反射机制"><a href="#Java反射机制" class="headerlink" title="Java反射机制"></a>Java反射机制</h1><h2 id="1、反射是什么"><a href="#1、反射是什么" class="headerlink" title="1、反射是什么?"></a>1、反射是什么?</h2><div class="story post-story"><p>Java反射机制（Java Reflection）是Java语言中一种动态（运行时）访问、检测以及修改它本身的能力。主要作用是动态获取类完整的结构信息和调用对象的方法。</p>
+<p><strong>正射和反射的区别：</strong><br>一般情况下，我们使用某个类，都会知道这个类，以及要用它来做什么，可以直接通过 new 实例化创建对象，然后使用这个对象对类进行操作，这个就属于正射。<br>而反射则是不知道要初始化的是什么类，无法使用 new 来实例化创建对象，主要通过 JDK 提供的反射 API 来实现，在运行时才知道要操作的是什么类，并且可以获取到类的完整构造以及调用对应的方法，这就是反射。</p>
+<p><strong>举例：</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Student</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> id;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setId</span><span class="params">(<span class="keyword">int</span> id)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.id = id;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getId</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> id;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line">        <span class="comment">//一、正射调用过程</span></span><br><span class="line">        Student student = <span class="keyword">new</span> Student();</span><br><span class="line">        student.setId(<span class="number">1</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;正射调用过程Student id:&quot;</span> + student.getId());</span><br><span class="line"></span><br><span class="line">        <span class="comment">//二、反射调用过程</span></span><br><span class="line">        Class clazz = Class.forName(<span class="string">&quot;com.justin.java.lang.Student&quot;</span>);</span><br><span class="line">        Constructor studentConstructor = clazz.getConstructor();</span><br><span class="line">        Object studentObj = studentConstructor.newInstance();</span><br><span class="line">        </span><br><span class="line">        Method setIdMethod = clazz.getMethod(<span class="string">&quot;setId&quot;</span>, <span class="keyword">int</span>.class);</span><br><span class="line">        setIdMethod.invoke(studentObj, <span class="number">2</span>);</span><br><span class="line">        Method getIdMethod = clazz.getMethod(<span class="string">&quot;getId&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;正射调用过程Student id:&quot;</span> + getIdMethod.invoke(studentObj));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-</div><h2 id="创建标签以及存档"><a href="#创建标签以及存档" class="headerlink" title="创建标签以及存档"></a>创建标签以及存档</h2><div class="story post-story"><p>默认的主题是不带有标签和介绍的，这时候需要在博客根目录的source文件夹下建立tags文件夹和about文件夹。</p>
-<p><em>注：建议不要直接新建文件，而是采用 hexo 的 hexo new page tags 和 hexo new page about 的方式新建文件，这样可以被 hexo 索引到。</em></p>
-<p>创建好之后在两个文件夹的index.md中分别输入以下内容</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">layout: &quot;tags&quot;</span><br><span class="line">title: &quot;Tags&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">layout: &quot;about&quot;</span><br><span class="line">title: &quot;About&quot;</span><br><span class="line">date: 2016-04-21 04:48:33</span><br><span class="line">comments: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>再次打开主页就会看到生成了两个新的列表</p>
-</div><h2 id="更换头像以及网站logo"><a href="#更换头像以及网站logo" class="headerlink" title="更换头像以及网站logo"></a>更换头像以及网站logo</h2><div class="story post-story"><p>在博客根目录的 source 文件夹下建立 img 文件夹<br>*采用 hexo 的 hexo new page img *</p>
-<p>然后并将头像文件命名为avatar.jpg，logo文件命名为favicon.ico</p>
-<p>然后修改_config.yml文件，增加以下内容</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sidebar-avatar: img/avatar.jpg</span><br></pre></td></tr></table></figure>
-<p>就可以了</p>
-</div><h2 id="网站标题"><a href="#网站标题" class="headerlink" title="网站标题"></a>网站标题</h2><div class="story post-story"><p>在 _config.yml 文件中，增加以下内容</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SEOTitle: George&#x27;blog</span><br></pre></td></tr></table></figure>
-<p>冒号后面修改成你想要的名字就可以了</p>
-</div><h2 id="签名"><a href="#签名" class="headerlink" title="签名"></a>签名</h2><div class="story post-story"><p>比如最顶端的签名，我们同样可以自定义</p>
-<p><img src="https://ftp.bmp.ovh/imgs/2021/06/89d7894724475826.jpg" class="lazyload" data-srcset="https://ftp.bmp.ovh/imgs/2021/06/89d7894724475826.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
-<p>只要在_config.yml文件，修改以下内容即可</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">subtitle: 你想要的签名</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220304122334.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220304122334.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+</div><h2 id="2、反射获取-Class-的三种方式"><a href="#2、反射获取-Class-的三种方式" class="headerlink" title="2、反射获取 Class 的三种方式"></a>2、反射获取 Class 的三种方式</h2><div class="story post-story"><p>在 Java 中，反射获取 Class 有三种方式，这三种方式各有各的优点。<br>以下是三种获取 Class 的方式：</p>
+<ol>
+<li>通过 <code>类名.class</code>来获取。</li>
+<li>通过<code>Class.forName(&quot;类的全局路径&quot;)</code>来获取。</li>
+<li>通过<code>new 类名().getClass()</code>来获取。</li>
+</ol>
+<p>使用第一种方式获取 Class，JVM 会使用 ClassLoader 类加载器将类加载到内存中，但并不会做任何类的初始化工作，返回 java.lang.Class 对象。<br>使用第二种方式获取 Class，类会被 JVM 加载到内存中，并且会进行类的静态初始化工作，返回 java.lang.Class 对象。<br>第三种获取 Class 的方式，它使用了 new 进行实例化操作，因此静态初始化和非静态初始化工作都会进行，getClass 方法属于顶级 Object 类中的方法，任何子类对象都可以调用，哪个子类调用，就返回那个子类的 java.lang.Class 对象。</p>
+</div><h2 id="3、反射的优缺点"><a href="#3、反射的优缺点" class="headerlink" title="3、反射的优缺点"></a>3、反射的优缺点</h2><div class="story post-story"><p><strong>优点:</strong><br>在运行时获得类的各种内容，进行反编译，对于Java这种先编译再运行的语言，能够让我们很方便的创建灵活的代码，这些代码可以在运行时装配，无需在组件之间进行源代码的链接，更加容易实现面向对象。</p>
+<p><strong>缺点:</strong><br>（1）反射会消耗一定的系统资源，因此，如果不需要动态地创建一个对象，那么就不需要用反射；<br>（2）反射调用方法时可以忽略权限检查，因此可能会破坏封装性而导致安全问题。</p>
+</div><h2 id="4、方法的反射"><a href="#4、方法的反射" class="headerlink" title="4、方法的反射"></a>4、方法的反射</h2><div class="story post-story"><p><strong>步骤思路：</strong><br>1.获取该类的类类型<br>2.通过类类型获取类的方法（getMethods()）<br>3.循环遍历所获取到的方法<br>4.通过这些方法的getReturnType()得到返回值类型的类类型，又通过该类类型得到返回值类型的名字<br>5.getName()得到方法的名称，getParameterTypes()获取这个方法里面的参数类型的类类型。</p>
+<p><strong>实例：</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ClassUtil</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">printClassMethodMessage</span><span class="params">(Object obj)</span></span>&#123;</span><br><span class="line">        <span class="comment">//想要获取类的信息,首先我们要获取类的类类型</span></span><br><span class="line">        Class c = obj.getClass();</span><br><span class="line">        <span class="comment">//Object类是一切类的父类，所以我们传递的是哪个子类的对象，c就是该子类的类类型。</span></span><br><span class="line">        <span class="comment">//然后获取类的名称</span></span><br><span class="line">        System.out.println(<span class="string">&quot;类的名称是:&quot;</span>+c.getName());</span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">        *既然方法也是对象，那么是谁的对象呢？</span></span><br><span class="line"><span class="comment">        * 在java里面，方法是Method类的对象</span></span><br><span class="line"><span class="comment">        *一个成员方法就是一个Method的对象，那么Method就封装了对这个成员</span></span><br><span class="line"><span class="comment">        *方法的操作</span></span><br><span class="line"><span class="comment">        */</span></span><br><span class="line">        <span class="comment">//如果我们要获得所有的方法，可以用getMethods()方法，这个方法获取的是所有的Public的函数，包括父类继承而来的。如果我们要获取所有该类自己声明的方法，就可以用getDeclaredMethods()方法，这个方法是不问访问权限的。</span></span><br><span class="line">        Method[] ms = c.getMethods();<span class="comment">//c.getDeclaredMethods()</span></span><br><span class="line">        <span class="comment">//接下来我们拿到这些方法之后干什么？我们就可以获取这些方法的信息，比如方法的名字。</span></span><br><span class="line">        <span class="comment">//首先我们要循环遍历这些方法</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; ms.length;i++)&#123;</span><br><span class="line">            <span class="comment">//然后可以得到方法的返回值类型的类类型</span></span><br><span class="line">            Class returnType = ms[i].getReturnType();</span><br><span class="line">            <span class="comment">//得到方法的返回值类型的名字</span></span><br><span class="line">            System.out.print(returnType.getName()+<span class="string">&quot; &quot;</span>);</span><br><span class="line">            <span class="comment">//得到方法的名称</span></span><br><span class="line">            System.out.print(ms[i].getName()+<span class="string">&quot;(&quot;</span>);</span><br><span class="line">            <span class="comment">//获取参数类型---&gt;得到的是参数列表的类型的类类型</span></span><br><span class="line">            Class[] paramTypes = ms[i].getParameterTypes();</span><br><span class="line">            <span class="keyword">for</span> (Class class1 : paramTypes) &#123;</span><br><span class="line">            	System.out.print(class1.getName()+<span class="string">&quot;,&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        System.out.println(<span class="string">&quot;)&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-</div><h2 id="搜索功能"><a href="#搜索功能" class="headerlink" title="搜索功能"></a>搜索功能</h2><div class="story post-story"><p>搜索功能同样是不自带的，我们在安装搜索功能之前，首先要安装一个插件<br>在git中输入以下命令进行安装</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-generator-search --save</span><br></pre></td></tr></table></figure>
+</div><h2 id="5、成员变量的反射"><a href="#5、成员变量的反射" class="headerlink" title="5、成员变量的反射"></a>5、成员变量的反射</h2><div class="story post-story"><p>成员变量也是对象，是java.lang.reflect.Field类的对象，那么也就是说Field类封装了关于成员变量的操作。既然它封装了成员变量，我们又该如何获取这些成员变量呢？它有这么一个方法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ClassUtil</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">printFieldMessage</span><span class="params">(Object obj)</span></span>&#123;</span><br><span class="line">        Class c = obj.getClass();</span><br><span class="line">        Field[] fs = c.getFields();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这里的getFields()方法获取的所有的public的成员变量的信息。和方法的反射那里public的成员变量，也有一个获取所有自己声明的成员变量的信息：<code>Field[] fs = c.getDeclaredFields();</code><br>我们得到它之后，可以进行遍历（既然封装了Field的信息，那么我们就可以得到Field类型）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (Field field : fs) &#123;</span><br><span class="line">    <span class="comment">//得到成员变量的类型的类类型</span></span><br><span class="line">    Class fieldType = field.getType();</span><br><span class="line">    String typeName = fieldType.getName();</span><br><span class="line">    <span class="comment">//得到成员变量的名称</span></span><br><span class="line">    String fieldName = field.getName();</span><br><span class="line">    System.out.println(typeName+<span class="string">&quot; &quot;</span>+fieldName);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>然后在_config.yml文件中增加以下内容即可</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.json</span><br><span class="line">  field: post</span><br></pre></td></tr></table></figure>
+</div><h2 id="6、Class类的动态加载类"><a href="#6、Class类的动态加载类" class="headerlink" title="6、Class类的动态加载类"></a>6、Class类的动态加载类</h2><div class="story post-story"><p>动态加载是啥意思？怎么样动态加载一个类呢？<br>首先我们需要明白的是，动态加载和静态加载的概念以及区别。<br>我们一般所理解的，在编译的时候所加载的类是静态加载类；而运行的时候加载的类是动态加载类。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Class A&#123;</span><br><span class="line">    <span class="function">Public <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="string">&quot;B&quot;</span>.equal(args[<span class="number">0</span>]))&#123;</span><br><span class="line">            B b=<span class="keyword">new</span> B();</span><br><span class="line">            b.start();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(<span class="string">&quot;C&quot;</span>.equal(args[<span class="number">0</span>]))&#123;</span><br><span class="line">            C c=<span class="keyword">new</span> C();</span><br><span class="line">            C.start();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>上面这一段代码，如果我们仅仅是在 IDEA 之中运行，是可以正常运行不发生错误的，而如果我们在 CMD 控制台运行的话，就会抛出问题。如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">A.java：7：错误：找不到符号</span><br><span class="line">B b=new B();</span><br><span class="line">符号:  类B</span><br><span class="line">位置： 类A</span><br><span class="line">A.java：7：错误：找不到符号</span><br><span class="line">B b=new B();</span><br><span class="line">符号:  类B</span><br><span class="line">位置： 类A</span><br><span class="line">A.java：12：错误：找不到符号</span><br><span class="line">C c=new C();</span><br><span class="line">符号:  类C</span><br><span class="line">位置： 类A</span><br><span class="line">A.java：12：错误：找不到符号</span><br><span class="line">C c=new C();</span><br><span class="line">符号:  类C</span><br><span class="line">位置： 类A</span><br><span class="line">4个错误</span><br></pre></td></tr></table></figure>
 
-</div><h2 id="社交网络"><a href="#社交网络" class="headerlink" title="社交网络"></a>社交网络</h2><div class="story post-story"><p>底部的社交网络我们可以自行修改，但是只能在官方限制的范围内进行修改<br>编辑根目录的 _config.yml 文件，增加：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># SNS settings</span><br><span class="line"># 一些社交平台地址，支持以下几种：</span><br><span class="line">weibo_username:     5676314204</span><br><span class="line">zhihu_username:     swaggy-chen</span><br><span class="line">github_username:    chenyicai0819</span><br><span class="line">twitter_username:   George chan</span><br></pre></td></tr></table></figure>
-<p><em>还有一些其他的社交网络可以参考官方文档</em></p>
-</div><h2 id="赞赏功能"><a href="#赞赏功能" class="headerlink" title="赞赏功能"></a>赞赏功能</h2><div class="story post-story"><p>我们同样可以在我们的博客中添加一个赞赏功能<br>只要在img文件夹中增加收款码图片，并命名为donate.jpg<br>然后在 _config.yml 文件中增加以下内容，即可在在每篇文章下面增加一个赞赏功能</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">donate:</span><br><span class="line">  img: img/donate.jpg</span><br><span class="line">  content: 感谢鼓励</span><br></pre></td></tr></table></figure>
-
-</div><h2 id="修改用户名"><a href="#修改用户名" class="headerlink" title="修改用户名"></a>修改用户名</h2><div class="story post-story"><p>只需修改 _config.yml 文件，中以下内容，即可修改用户名</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">author: 你的用户名</span><br></pre></td></tr></table></figure>
-
-</div><h2 id="完成主题更换"><a href="#完成主题更换" class="headerlink" title="完成主题更换"></a>完成主题更换</h2><div class="story post-story"><p>至此，基本的冤死就已经设置完毕了，基本上只要修改 _config.yml 文件，就可以控制网站中所有的元素了，而官方的帮助文档也写的很清楚如何对各个模块进行设置</p>
-<p>我的这篇文章只是针对我的设置进行了一个记录，所以需要更多资料的可以去参考官方的文档，基本上是写的非常明白了</p>
-</div><h2 id="部署到GitHub"><a href="#部署到GitHub" class="headerlink" title="部署到GitHub"></a>部署到GitHub</h2><div class="story post-story"><p>跟之前一样，完成修改之后要部署到github，只需要以下几行命令</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean  //清除缓存文件db.json和已生成的静态文件public</span><br><span class="line">hexo g   //生成网站静态文件到默认设置的public文件夹</span><br><span class="line">hexo d   //部署网站到设定的仓库</span><br></pre></td></tr></table></figure>
-
-<p>部署完成之后稍等一会，就可以看到修改之后的内容了</p>
-</div><h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><div class="story post-story"><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">官方文档</a></p>
-<p><a target="_blank" rel="noopener" href="https://hexo.io/themes/">主题商城</a></p>
+<p>此时，因为B不存在，就应该是错误的。<br>但是，仔细想想，会发现B我们不一定使用，C我们也不一定使用。<br>现在我们来模拟一下B存在的情况。<br>也就是先编译B，然后再编译A。<br>但是此时还是有问题，C也是不存在的。<br>但是我们现在根本就不想用C，我们只想用B，那怎么办？<br>想要正常使用B，我们就不得不将C一起编译。而如果有ABCDEFGHIJKLMN个类，我们同样只想用B，那么我们是不是同样得全部编译他们呢？答案是肯定的。这样子肯定不是很好的。<br>以上这种说法就是所谓的静态加载类。<br>而解决这个问题的方法也很简单，就是改为动态加载类。即要使用的时候再创建。</p>
+<p>我们新建一个类：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Class All&#123;</span><br><span class="line">    <span class="function">Public <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">start</span><span class="params">()</span></span>&#123;</span><br><span class="line">    	<span class="keyword">try</span>&#123;</span><br><span class="line">            Class cl= Class.forName(args[<span class="number">0</span>]);</span><br><span class="line">            <span class="comment">//通过类类型，创建该类的对象</span></span><br><span class="line">            cl.newInstance();</span><br><span class="line">        &#125;<span class="keyword">catch</span>(Exception e)&#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Class.forName(“类的全称”)，它不仅仅表示了类的类类型，还表示了动态加载类。当我们javac A.ava的时候，它不会报任何错误，也就是说在编译的时候是没有错误的。只有当我们具体用某个类的时候，那个类不存在，它才会报错。</p>
+<p>如果我们要加载B，那么就需要：<code>B bt = (B) cl.newInstance();</code><br>加载C，就是：<code>C ct = (C) cl.newInstance();</code><br>DEFG等等都是这样。</p>
+<p>但是如果有一百各类，我们不可能写一百句这个，太冗余了。<br>我们可以写一个统一处理的方法，统一一个标准，只要满足这个标准的都可以使用这个方法。<br><code>and s = (Stand) cl.newInstance();</code></p>
+<p>例如B类：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Class B implements Stand&#123;</span><br><span class="line">    <span class="function">Public <span class="keyword">void</span> <span class="title">start</span><span class="params">()</span></span>&#123;</span><br><span class="line">    	System.out.print(<span class="string">&quot;B...satrt&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>即满足了前面的标准。就可以通过这个统一的标准来运行。</p>
+<p>如果以后想用某一个类，不需要重新编译，只需要实现这个标准的接口即可。只需要动态的加载新的东西就行了。<br>这就是<strong>动态加载类</strong>。</p>
 
 </div>
   </div>
@@ -2855,7 +2844,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
             
               
-                <p>本文永久链接是：<a href=http://cyc0819.top/2021/06/24/2021-06-24-%E8%AE%B0%E5%BD%95%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E7%9A%84%E6%90%AD%E5%BB%BA(%E4%BA%8C)/>http://cyc0819.top/2021/06/24/2021-06-24-%E8%AE%B0%E5%BD%95%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E7%9A%84%E6%90%AD%E5%BB%BA(%E4%BA%8C)/</a></p>
+                <p>本文永久链接是：<a href=http://cyc0819.top/2022/02/10/2022-02-10-Java%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6/>http://cyc0819.top/2022/02/10/2022-02-10-Java%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6/</a></p>
               
             
           </blockquote>
@@ -2872,10 +2861,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2021-12-08T18:26:14+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-03-04T13:18:05+08:00">
   <a class='notlink' href="/" onclick="return false;" title="Click me!" >
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Dec 8, 2021</p>
+    <p>更新于：Mar 4, 2022</p>
   </a>
 </div>
 
@@ -2884,8 +2873,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Hexo/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>Hexo</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E8%AE%B0%E5%BD%95/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>记录</p></a></div>
-  <span hidden itemprop="keywords">Hexo 记录</span>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/java/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>java</p></a></div>
+  <span hidden itemprop="keywords">java</span>
 
 
         
@@ -2898,7 +2887,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://cyc0819.top/2021/06/24/2021-06-24-%E8%AE%B0%E5%BD%95%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E7%9A%84%E6%90%AD%E5%BB%BA(%E4%BA%8C)/&title=记录博客主页的搭建(二) - George's Blog&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://cyc0819.top/2022/02/10/2022-02-10-Java%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6/&title=Java反射机制 - George's Blog&summary="
           
           >
           
@@ -2910,7 +2899,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://cyc0819.top/2021/06/24/2021-06-24-%E8%AE%B0%E5%BD%95%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E7%9A%84%E6%90%AD%E5%BB%BA(%E4%BA%8C)/&title=记录博客主页的搭建(二) - George's Blog&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://cyc0819.top/2022/02/10/2022-02-10-Java%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6/&title=Java反射机制 - George's Blog&summary="
           
           >
           
@@ -2922,7 +2911,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://cyc0819.top/2021/06/24/2021-06-24-%E8%AE%B0%E5%BD%95%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E7%9A%84%E6%90%AD%E5%BB%BA(%E4%BA%8C)/&title=记录博客主页的搭建(二) - George's Blog&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://cyc0819.top/2022/02/10/2022-02-10-Java%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6/&title=Java反射机制 - George's Blog&summary="
           
           >
           
@@ -2955,17 +2944,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2021/06/28/2021-06-28-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0_%E7%BD%97%E9%A9%AC%E6%95%B0%E5%AD%97%E8%BD%AC%E6%95%B4%E6%95%B0/'>
-          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>算法学习_罗马数字转整数</p>
-          <p class='content'>罗马数字转整数题目lettcode-13题难度：简单
-解题思路对于每个罗马符号所对应的数值，我们可以将其用一个HashMap存起来，将其字符作为key，以及数值为相应的value
-在方法中对输入...</p>
-        </a>
       
-      
-        <a class='next' href='/2021/06/24/2021-06-24-%E8%AE%B0%E5%BD%95%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E7%9A%84%E6%90%AD%E5%BB%BA(%E4%B8%80)/'>
-          <p class='title'>记录博客主页的搭建(一)<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>记录博客主页的搭建(一)1.心血来潮有一个自己的网站，是我心中一直存在的一个想法，因最近学业压力不是很大，碰巧看到阿里云的域名首年特惠只要一元，就顺便买了一个域名，准备着手搭建个人网站，在此之前...</p>
+        <a class='next' href='/2022/02/09/2022-02-09-%E8%87%AA%E5%AE%9A%E4%B9%89%E6%B3%A8%E8%A7%A3/'>
+          <p class='title'>自定义注解<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>自定义注解1、注解注解是 java 这一门编程语言中很重要的一个知识点，利用注解，我们可以很方便实现很多功能。它可以用于创建文档，跟踪代码中的依赖性，甚至执行基本编译时检查。注解不会影响代码的正...</p>
         </a>
       
     </div>
@@ -3066,7 +3048,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%8C%E6%88%90%E4%B8%8A%E7%AF%87%E6%96%87%E7%AB%A0%E7%9A%84%E6%89%80%E6%9C%89%E6%AD%A5%E9%AA%A4"><span class="toc-text">完成上篇文章的所有步骤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E6%83%B3%E8%A6%81%E7%9A%84%E4%B8%BB%E9%A2%98"><span class="toc-text">选择想要的主题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%A0%87%E7%AD%BE%E4%BB%A5%E5%8F%8A%E5%AD%98%E6%A1%A3"><span class="toc-text">创建标签以及存档</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%B4%E6%8D%A2%E5%A4%B4%E5%83%8F%E4%BB%A5%E5%8F%8A%E7%BD%91%E7%AB%99logo"><span class="toc-text">更换头像以及网站logo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%AB%99%E6%A0%87%E9%A2%98"><span class="toc-text">网站标题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AD%BE%E5%90%8D"><span class="toc-text">签名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD"><span class="toc-text">搜索功能</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A4%BE%E4%BA%A4%E7%BD%91%E7%BB%9C"><span class="toc-text">社交网络</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B5%9E%E8%B5%8F%E5%8A%9F%E8%83%BD"><span class="toc-text">赞赏功能</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E7%94%A8%E6%88%B7%E5%90%8D"><span class="toc-text">修改用户名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%8C%E6%88%90%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%8D%A2"><span class="toc-text">完成主题更换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2%E5%88%B0GitHub"><span class="toc-text">部署到GitHub</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%B8%E5%85%B3%E9%93%BE%E6%8E%A5"><span class="toc-text">相关链接</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E5%8F%8D%E5%B0%84%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">1、反射是什么?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E5%8F%8D%E5%B0%84%E8%8E%B7%E5%8F%96-Class-%E7%9A%84%E4%B8%89%E7%A7%8D%E6%96%B9%E5%BC%8F"><span class="toc-text">2、反射获取 Class 的三种方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E5%8F%8D%E5%B0%84%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9"><span class="toc-text">3、反射的优缺点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E3%80%81%E6%96%B9%E6%B3%95%E7%9A%84%E5%8F%8D%E5%B0%84"><span class="toc-text">4、方法的反射</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E3%80%81%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F%E7%9A%84%E5%8F%8D%E5%B0%84"><span class="toc-text">5、成员变量的反射</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6%E3%80%81Class%E7%B1%BB%E7%9A%84%E5%8A%A8%E6%80%81%E5%8A%A0%E8%BD%BD%E7%B1%BB"><span class="toc-text">6、Class类的动态加载类</span></a></li></ol>
     </div>
   </section>
 
@@ -3264,7 +3246,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <script>
   window.pdata={}
   pdata.ispage=true;
-  pdata.postTitle="记录博客主页的搭建(二)";
+  pdata.postTitle="Java反射机制";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3351,8 +3333,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1646371135316')
-      volantis.js('/js/message.js?time=1646371135316', () => {
+      volantis.css('/css/message.css?time=1646371135193')
+      volantis.js('/js/message.js?time=1646371135193', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -3397,8 +3379,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1646371135316')
-      volantis.js('/js/message.js?time=1646371135316', () => {
+      volantis.css('/css/message.css?time=1646371135193')
+      volantis.js('/js/message.js?time=1646371135193', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -3457,8 +3439,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1646371135316')
-      volantis.js('/js/message.js?time=1646371135316', () => {
+      volantis.css('/css/message.css?time=1646371135193')
+      volantis.js('/js/message.js?time=1646371135193', () => {
         hideMessage(done);
       });
     } else {
@@ -3603,19 +3585,19 @@ volantis.pjax.push(bindToggleButton);
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1646371135316")
+        volantis.js("/js/plugins/sites.js?time=1646371135193")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1646371135316")
+        volantis.js("/js/plugins/friends.js?time=1646371135193")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1646371135316")
+        volantis.js("/js/plugins/contributors.js?time=1646371135193")
       }
     
   };
@@ -3806,7 +3788,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-<script src="/js/app.js?time=1646371135316.js"></script>
+<script src="/js/app.js?time=1646371135193.js"></script>
 
 
 <!-- optional -->
@@ -3819,7 +3801,7 @@ volantis.pjax.push(bindToggleButton);
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1646371135316");
+    return volantis.js("/js/search/hexo.js?time=1646371135193");
   }
 
   function loadSearchService() {
@@ -4093,7 +4075,7 @@ volantis.pjax.push(bindToggleButton);
 
 
   <script>
-  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp"];
+  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -4136,7 +4118,7 @@ volantis.pjax.push(bindToggleButton);
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/parallax.js?time=1646371135316').then(()=>{
+    volantis.js('/js/parallax.js?time=1646371135193').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4330,7 +4312,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://cyc0819.top/","name":"George's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/博客/","name":"博客"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/博客/Hexo/","name":"Hexo"}},{"@type":"ListItem","position":3,"item":{"@id":"http://cyc0819.top/2021/06/24/2021-06-24-记录博客主页的搭建(二)/","name":"记录博客主页的搭建(二)"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"记录博客主页的搭建(二)","description":"","datePublished":"2021-06-24T02:02:55.000Z","dateModified":"2021-12-08T10:26:14.634Z","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://cyc0819.top/2021/06/24/2021-06-24-%E8%AE%B0%E5%BD%95%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E7%9A%84%E6%90%AD%E5%BB%BA(%E4%BA%8C)/"},"author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/"},"publisher":{"@type":"Organization","name":"George's Blog","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://cyc0819.top/2021/06/24/2021-06-24-%E8%AE%B0%E5%BD%95%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A1%B5%E7%9A%84%E6%90%AD%E5%BB%BA(%E4%BA%8C)/","wordCount":0,"articleSection":"博客","keywords":"Hexo,记录","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://cyc0819.top/","name":"George's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/java/","name":"java"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/java/反射/","name":"反射"}},{"@type":"ListItem","position":3,"item":{"@id":"http://cyc0819.top/2022/02/10/2022-02-10-Java反射机制/","name":"Java反射机制"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Java反射机制","description":"","datePublished":"2022-02-10T12:19:20.000Z","dateModified":"2022-03-04T05:18:05.947Z","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://cyc0819.top/2022/02/10/2022-02-10-Java%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6/"},"author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/"},"publisher":{"@type":"Organization","name":"George's Blog","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://cyc0819.top/2022/02/10/2022-02-10-Java%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6/","wordCount":0,"articleSection":"java","keywords":"java","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 <!-- more -->
