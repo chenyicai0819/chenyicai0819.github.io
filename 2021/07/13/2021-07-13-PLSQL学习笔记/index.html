@@ -7,8 +7,8 @@
   <meta name="generator" content="Hexo 5.4.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://cyc0819.top/categories/shiro/"/>
+  
+  <link rel="canonical" href="http://cyc0819.top/2021/07/13/2021-07-13-plsql学习笔记/"/>
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
@@ -23,20 +23,25 @@
   <meta content="George&#39;s Blog" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1646789962645" as="style">
+  <link rel="preload" href="/css/style.css?time=1646839004205" as="style">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- 页面元数据 -->
-  <title>分類：shiro - George's Blog</title>
-  <meta name="keywords" content="null">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="George&#39;s Blog">
-<meta property="og:url" content="http://cyc0819.top/categories/shiro/index.html">
+  <title>PL/SQL编程学习笔记 - George's Blog</title>
+  <meta name="keywords" content="数据库,null">
+  <meta name="description" content="PL&#x2F;SQL编程学习笔记显示执行结果1set serveroutput on;  INSERT123456DECLARE v_dept dept%ROWTYPE; BEGIN v_dept.deptno:&#x3D;50; v_dept.loc:&#x3D;&amp;#x27;BEIJING&amp;#x27;; v_dept.dname:&#x3D;&amp;#x27;DEV&amp;#x27;; INSERT INTO dept VALUES v_dep">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PL&#x2F;SQL编程学习笔记">
+<meta property="og:url" content="http://cyc0819.top/2021/07/13/2021-07-13-PLSQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="George&#39;s Blog">
+<meta property="og:description" content="PL&#x2F;SQL编程学习笔记显示执行结果1set serveroutput on;  INSERT123456DECLARE v_dept dept%ROWTYPE; BEGIN v_dept.deptno:&#x3D;50; v_dept.loc:&#x3D;&amp;#x27;BEIJING&amp;#x27;; v_dept.dname:&#x3D;&amp;#x27;DEV&amp;#x27;; INSERT INTO dept VALUES v_dep">
 <meta property="og:locale">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2021-07-13T12:19:41.000Z">
+<meta property="article:modified_time" content="2022-03-09T15:14:16.883Z">
 <meta property="article:author" content="George Chan">
+<meta property="article:tag" content="数据库">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
   <!-- feed -->
@@ -1875,8 +1880,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1646789962645" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1646789962645"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1646839004205" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1646839004205"></noscript>
     <script>
       var userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1909,9 +1914,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>抱歉，您的瀏覽器無法訪問本站</b></span><br/>`+
-        `<span class="kill-c">微軟已經於2016年終止了對 Internet Explorer (IE) 10 及更早版本的支持，<br/>繼續使用存在極大的安全隱患，請使用當代主流的瀏覽器進行訪問。</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-cn/WindowsForBusiness/End-of-IE-support"><strong>了解詳情 ></strong></a>`+
+        `<span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>`+
+        `<span class="kill-c">Microsoft has terminated support for Internet Explorer (IE) 10 and earlier versions in 2016. <br/>There are great security risks to continue using it. Please use contemporary mainstream browsers to access.</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-cn/WindowsForBusiness/End-of-IE-support"><strong>Learn more ></strong></a>`+
     '</div>');
 </script>
 
@@ -1939,9 +1944,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>抱歉，您的瀏覽器無法訪問本站</b></span><br/>
-        <span class="kill-c">本頁面需要瀏覽器支持（啟用）JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解詳情 ></strong></a>
+        <span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>
+        <span class="kill-c">This page requires browser support (enable) JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>Learn more ></strong></a>
     </div>
 </noscript>
 
@@ -2607,7 +2612,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper  dock' style="display: none;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div id="parallax-window"></div>
 
@@ -2692,106 +2697,371 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
-  
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://cyc0819.top/2021/08/01/2021-08-01-shiro%E5%AE%89%E5%85%A8%E6%A1%86%E6%9E%B6/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://cyc0819.top/2021/07/13/2021-07-13-PLSQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="George's Blog">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/08/01/2021-08-01-shiro%E5%AE%89%E5%85%A8%E6%A1%86%E6%9E%B6/"  itemprop="url">
-        shiro安全框架
-      </a>
-    </h2>
-  
-  <div class='md' itemprop="articleBody">
     
-      
-        shiro安全框架1、简述shiro是apache公司所出品的开源安全框架其可以用于：
+    
+      <h1 class="title" itemprop="name headline">
+        PL/SQL编程学习笔记
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' target="_blank" href="https://github.com/chenyicai0819" rel="nofollow noopener">
+    <img itemprop="image" src="https://z3.ax1x.com/2021/09/30/4oKiUx.jpg" class="lazyload" data-srcset="https://z3.ax1x.com/2021/09/30/4oKiUx.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
+    <p itemprop="name">George chan</p>
+  </a>
+</div>
 
-处理身份认证
-授权
-企业会话管理和加密
-
-相对于Spring security来说更加简单，使用也更加灵活
-在使用shiro的时候可以不依赖于任何容器，既可以在javaSE下使用，同样可以在JavaEE下使用
-2、架构
-使用用户的登录信息构建令牌12UsernamePasswordToken token...
-      
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a><span class="sep"></span><a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/PL-SQL/">PL/SQL</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url"><span itemprop="name">数据库</span></a>
+      </span>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/PL-SQL/" itemprop="url"><span itemprop="name">PL/SQL</span></a>
+      </span>
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' target="_blank" rel="noopener" href='https://github.com/chenyicai0819'><img src='https://z3.ax1x.com/2021/09/30/4oKiUx.jpg' alt="This is a picture without description" ></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://z3.ax1x.com/2021/09/30/4oKiUx.jpg">
-            <meta itemprop="name" content="George chan">
-            <meta itemprop="url" content="https://github.com/chenyicai0819">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-08-01T20:19:41+08:00">2021-08-01</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/shiro/">shiro</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/shiro/" itemprop="url"><span itemprop="name">shiro</span></a>
-            </span>
+
+
           
         
-      </div>
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2021-07-13T20:19:41+08:00">
+  <a class='notlink' href="/" onclick="return false;" title="Click me!" >
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Jul 13, 2021</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink' href="/" onclick="return false;" title="Click me!" >
       
-        <div>
-          <a class='readmore' href='/2021/08/01/2021-08-01-shiro%E5%AE%89%E5%85%A8%E6%A1%86%E6%9E%B6/' itemprop="url">
-            閱讀全文
-          </a>
+      <div id="lc-pv" data-title="PL/SQL编程学习笔记" data-path="/2021/07/13/2021-07-13-PLSQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h1 id="PL-SQL编程学习笔记"><a href="#PL-SQL编程学习笔记" class="headerlink" title="PL/SQL编程学习笔记"></a>PL/SQL编程学习笔记</h1><h2 id="显示执行结果"><a href="#显示执行结果" class="headerlink" title="显示执行结果"></a>显示执行结果</h2><div class="story post-story"><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">set</span> serveroutput <span class="keyword">on</span>;</span><br></pre></td></tr></table></figure>
+
+</div><h2 id="INSERT"><a href="#INSERT" class="headerlink" title="INSERT"></a>INSERT</h2><div class="story post-story"><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DECLARE</span> v_dept dept<span class="operator">%</span>ROWTYPE; </span><br><span class="line"><span class="keyword">BEGIN</span> v_dept.deptno:<span class="operator">=</span><span class="number">50</span>; </span><br><span class="line">v_dept.loc:<span class="operator">=</span><span class="string">&#x27;BEIJING&#x27;</span>; </span><br><span class="line">v_dept.dname:<span class="operator">=</span><span class="string">&#x27;DEV&#x27;</span>; </span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> dept <span class="keyword">VALUES</span> v_dept;</span><br><span class="line"><span class="keyword">END</span>;</span><br></pre></td></tr></table></figure>
+
+</div><h2 id="UPDATE"><a href="#UPDATE" class="headerlink" title="UPDATE"></a>UPDATE</h2><div class="story post-story"><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DECLARE</span> v_dept dept<span class="operator">%</span>ROWTYPE; </span><br><span class="line"><span class="keyword">BEGIN</span> </span><br><span class="line">v_dept.deptno:<span class="operator">=</span><span class="number">50</span>; </span><br><span class="line">v_dept.loc:<span class="operator">=</span><span class="string">&#x27;TIANJIN&#x27;</span>; </span><br><span class="line">v_dept.dname:<span class="operator">=</span><span class="string">&#x27;SALES&#x27;</span>; </span><br><span class="line">UPDATE dept <span class="keyword">SET</span> <span class="type">ROW</span><span class="operator">=</span>v_dept <span class="keyword">WHERE</span> deptno<span class="operator">=</span><span class="number">50</span>; </span><br><span class="line"><span class="keyword">END</span>;</span><br></pre></td></tr></table></figure>
+
+</div><h2 id="DELECT"><a href="#DELECT" class="headerlink" title="DELECT"></a>DELECT</h2><div class="story post-story"><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DECLARE</span> v_emp emp<span class="operator">%</span>ROWTYPE; </span><br><span class="line"><span class="keyword">BEGIN</span> </span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">INTO</span> v_emp <span class="keyword">FROM</span> emp <span class="keyword">WHERE</span> empno<span class="operator">=</span><span class="number">7844</span>; </span><br><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> emp <span class="keyword">WHERE</span> deptno<span class="operator">=</span>v_emp.deptno; </span><br><span class="line"><span class="keyword">END</span>;</span><br></pre></td></tr></table></figure>
+
+</div><h2 id="基础语句-SELECT"><a href="#基础语句-SELECT" class="headerlink" title="基础语句(SELECT)"></a>基础语句(SELECT)</h2><div class="story post-story"><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DECLARE</span> <span class="comment">--声明部分</span></span><br><span class="line">v_name VARCHAR2(<span class="number">30</span>);</span><br><span class="line"><span class="keyword">BEGIN</span>  <span class="comment">--执行部分</span></span><br><span class="line"><span class="keyword">SELECT</span> ENAME <span class="keyword">INTO</span> v_name <span class="keyword">FROM</span> emp <span class="keyword">WHERE</span> empno<span class="operator">=</span><span class="number">7788</span>;</span><br><span class="line">dbms_output.put_line(<span class="string">&#x27;员工的名字：&#x27;</span><span class="operator">||</span>v_name);</span><br><span class="line">EXCEPTION <span class="comment">--异常处理</span></span><br><span class="line"><span class="keyword">WHEN</span> NO_DATA_FOUND <span class="keyword">THEN</span> <span class="comment">--当找不到DATA时</span></span><br><span class="line">dbms_output.put_line(<span class="string">&#x27;找不到这个员工&#x27;</span>);</span><br><span class="line"><span class="keyword">END</span>; <span class="comment">--结束</span></span><br><span class="line"><span class="operator">/</span> <span class="comment">--执行</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>dbms_output == System.out</li>
+<li>put_line == println</li>
+<li>|| == +</li>
+<li>:= 赋值符号</li>
+<li>执行结果：<img src="C:\Users\swagg\AppData\Roaming\Typora\typora-user-images\1618810809843.png" class="lazyload" data-srcset="C:\Users\swagg\AppData\Roaming\Typora\typora-user-images\1618810809843.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></li>
+</ul>
+</div><h2 id="TYPE的使用"><a href="#TYPE的使用" class="headerlink" title="%TYPE的使用"></a>%TYPE的使用</h2><div class="story post-story"><ul>
+<li><p>自动匹配对应行的数据类型以及长度</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DECLARE</span></span><br><span class="line">v_name emp.ename<span class="operator">%</span>TYPE; <span class="comment">--自动给v_name匹配ename的类型</span></span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line"><span class="keyword">SELECT</span> ename <span class="keyword">INTO</span> v_name <span class="keyword">FROM</span> emp <span class="keyword">WHERE</span> empno<span class="operator">=</span><span class="number">7788</span>;</span><br><span class="line">dbms_output.put_line(<span class="string">&#x27;员工的名字：&#x27;</span><span class="operator">||</span>v_name);</span><br><span class="line">EXCEPTION</span><br><span class="line"><span class="keyword">WHEN</span> NO_DATA_FOUND <span class="keyword">THEN</span></span><br><span class="line">dbms_output.put_line(<span class="string">&#x27;找不到这个员工&#x27;</span>);</span><br><span class="line"><span class="keyword">END</span>;</span><br></pre></td></tr></table></figure></li>
+<li><p>执行结果：<img src="C:\Users\swagg\AppData\Roaming\Typora\typora-user-images\1618811436871.png" class="lazyload" data-srcset="C:\Users\swagg\AppData\Roaming\Typora\typora-user-images\1618811436871.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+</li>
+</ul>
+</div><h2 id="ROWTYPE的使用"><a href="#ROWTYPE的使用" class="headerlink" title="%ROWTYPE的使用"></a>%ROWTYPE的使用</h2><div class="story post-story"><ul>
+<li>TYPE只能一行一行地匹配类型，当我们查找多个数据时要写很多，不是很方便，所以这里我们使用%ROWTYPE来一次性匹配表里所有的行地类型</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DECLARE</span></span><br><span class="line">v_emp emp<span class="operator">%</span>ROWTYPE;</span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">INTO</span> v_emp <span class="keyword">FROM</span> emp <span class="keyword">WHERE</span> empno<span class="operator">=</span><span class="number">7788</span>;</span><br><span class="line">dbms_output.put_line(<span class="string">&#x27;员工的名字：&#x27;</span><span class="operator">||</span>v_emp.ename<span class="operator">||</span> <span class="string">&#x27;，薪水：&#x27;</span><span class="operator">||</span>v_emp.sal);</span><br><span class="line"><span class="keyword">END</span>;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>执行结果：<img src="C:\Users\swagg\AppData\Roaming\Typora\typora-user-images\1618812138968.png" class="lazyload" data-srcset="C:\Users\swagg\AppData\Roaming\Typora\typora-user-images\1618812138968.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></li>
+</ul>
+</div><h2 id="游标-类似java中的迭代器"><a href="#游标-类似java中的迭代器" class="headerlink" title="游标(类似java中的迭代器)"></a>游标(类似java中的迭代器)</h2><div class="story post-story"><ol>
+<li>游标的作用：游标通常用于处理多行记录的事务</li>
+<li>游标里面存储了查询到的结果集，相当于一个工作区域</li>
+<li>游标的分类：显式游标、隐式游标、REF游标</li>
+</ol>
+<h3 id="隐式游标"><a href="#隐式游标" class="headerlink" title="隐式游标"></a>隐式游标</h3><p>在PL/SQL中执行DML SQL时会自动创建隐式游标</p>
+<h3 id="显式游标"><a href="#显式游标" class="headerlink" title="显式游标"></a>显式游标</h3><p>显式游标可用于处理返回多行数据的查询</p>
+<h3 id="REF游标"><a href="#REF游标" class="headerlink" title="REF游标"></a>REF游标</h3><p>用于在处理运行时才能确定的动态SQL查询的结果</p>
+<h3 id="使用游标的步骤"><a href="#使用游标的步骤" class="headerlink" title="使用游标的步骤"></a>使用游标的步骤</h3><ol>
+<li>声明游标<ul>
+<li>CURSOR cur_emp IS SELECT * FROM emp;</li>
+</ul>
+</li>
+<li>打开游标<ul>
+<li>OPEN cur_emp;</li>
+</ul>
+</li>
+<li>提取游标数据<ul>
+<li>FETCH cur_emp INTO v_emp;</li>
+</ul>
+</li>
+<li>关闭游标<ul>
+<li>CLOSE cur_emp;</li>
+</ul>
+</li>
+</ol>
+</div><h2 id="游标（简单循环）"><a href="#游标（简单循环）" class="headerlink" title="游标（简单循环）"></a>游标（简单循环）</h2><div class="story post-story"><ul>
+<li><p>游标的作用：可以用于处理多行事务</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DECLARE</span></span><br><span class="line"><span class="keyword">CURSOR</span> cur_emp <span class="keyword">IS</span> <span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> emp; <span class="comment">--声明游标</span></span><br><span class="line">v_emp  emp<span class="operator">%</span>ROWTYPE;</span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line"><span class="keyword">OPEN</span> cur_emp; <span class="comment">--执行游标</span></span><br><span class="line">LOOP <span class="comment">-- 简单循环</span></span><br><span class="line"><span class="keyword">FETCH</span> cur_emp <span class="keyword">INTO</span> v_emp; <span class="comment">--提取游标中的数据放到变量中</span></span><br><span class="line">EXIT <span class="keyword">WHEN</span> cur_emp<span class="operator">%</span>NOTFOUND; <span class="comment">--%NOTFOUND游标地属性，循环推出的条件</span></span><br><span class="line">dbms_output.put_line(<span class="string">&#x27;员工名字：&#x27;</span><span class="operator">||</span>v_emp.ename<span class="operator">||</span><span class="string">&#x27;，薪水：&#x27;</span><span class="operator">||</span>v_emp.sal);</span><br><span class="line"><span class="keyword">END</span> LOOP; <span class="comment">--循环停止</span></span><br><span class="line"><span class="keyword">CLOSE</span> cur_emp; <span class="comment">--关闭游标</span></span><br><span class="line"><span class="keyword">END</span>;</span><br></pre></td></tr></table></figure></li>
+<li><p>执行结果：<img src="C:\Users\swagg\AppData\Roaming\Typora\typora-user-images\1618813038599.png" class="lazyload" data-srcset="C:\Users\swagg\AppData\Roaming\Typora\typora-user-images\1618813038599.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+</li>
+</ul>
+</div><h2 id="WHILE循环"><a href="#WHILE循环" class="headerlink" title="WHILE循环"></a>WHILE循环</h2><div class="story post-story"><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DECLARE</span></span><br><span class="line"><span class="keyword">CURSOR</span> cur_emp <span class="keyword">IS</span> <span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> emp;</span><br><span class="line">v_emp  emp<span class="operator">%</span>ROWTYPE;</span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line">  <span class="keyword">OPEN</span> cur_emp;<span class="comment">--执行游标</span></span><br><span class="line">  <span class="keyword">FETCH</span> cur_emp <span class="keyword">INTO</span> v_emp;<span class="comment">--WHILE循环之前，必须先FETCH一次</span></span><br><span class="line">  WHILE cur_emp<span class="operator">%</span>FOUND LOOP <span class="comment">--进入循环</span></span><br><span class="line">    dbms_output.put_line(<span class="string">&#x27;员工名字：&#x27;</span><span class="operator">||</span>v_emp.ename<span class="operator">||</span><span class="string">&#x27;，薪水：&#x27;</span><span class="operator">||</span>v_emp.sal);</span><br><span class="line">    <span class="keyword">FETCH</span> cur_emp <span class="keyword">INTO</span> v_emp; <span class="comment">--提取游标中的数据</span></span><br><span class="line">  <span class="keyword">END</span> LOOP; <span class="comment">--结束循环</span></span><br><span class="line">  <span class="keyword">CLOSE</span> cur_emp; <span class="comment">--关闭游标</span></span><br><span class="line"><span class="keyword">END</span>;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>执行结果：<img src="C:\Users\swagg\AppData\Roaming\Typora\typora-user-images\1618813402019.png" class="lazyload" data-srcset="C:\Users\swagg\AppData\Roaming\Typora\typora-user-images\1618813402019.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></li>
+</ul>
+</div><h2 id="FOR循环"><a href="#FOR循环" class="headerlink" title="FOR循环"></a>FOR循环</h2><div class="story post-story"><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DECLARE</span></span><br><span class="line"><span class="keyword">CURSOR</span> cur_emp <span class="keyword">IS</span> <span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> emp;</span><br><span class="line">cur cur_emp<span class="operator">%</span>ROWTYPE;</span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line"><span class="keyword">FOR</span> cur <span class="keyword">IN</span> cur_emp LOOP</span><br><span class="line">dbms_output.put_line(<span class="string">&#x27;员工名字：&#x27;</span><span class="operator">||</span>cur.ename<span class="operator">||</span><span class="string">&#x27;，薪水：&#x27;</span><span class="operator">||</span>cur.sal);</span><br><span class="line"><span class="keyword">END</span> LOOP;</span><br><span class="line"><span class="keyword">END</span>;</span><br><span class="line"><span class="operator">/</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>执行结果：<img src="C:\Users\swagg\AppData\Roaming\Typora\typora-user-images\1618814102440.png" class="lazyload" data-srcset="C:\Users\swagg\AppData\Roaming\Typora\typora-user-images\1618814102440.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></li>
+</ul>
+</div><h2 id="函数-命名块"><a href="#函数-命名块" class="headerlink" title="函数(命名块)"></a>函数(命名块)</h2><div class="story post-story"><ul>
+<li>函数可以重复使用</li>
+<li>函数实际上是封装在服务器上一段PLSQL代码片段。</li>
+<li>当函数没有参数时，可以不用加函数名后面的括号。</li>
+</ul>
+<h3 id="函数的语法"><a href="#函数的语法" class="headerlink" title="函数的语法"></a>函数的语法</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> [<span class="keyword">OR</span> REPLACE] <span class="keyword">FUNCTION</span> function_name </span><br><span class="line">(parameter1_name [mode] datatype </span><br><span class="line">    [<span class="keyword">DEFAULT</span><span class="operator">|</span>:<span class="operator">=</span><span class="keyword">value</span>]</span><br><span class="line">[, parameter2_name [mode] datatype </span><br><span class="line">    [<span class="keyword">DEFAULT</span><span class="operator">|</span>:<span class="operator">=</span><span class="keyword">value</span>],…])</span><br><span class="line"><span class="keyword">RETURN</span> return_datatype </span><br><span class="line"><span class="keyword">AS</span><span class="operator">|</span><span class="keyword">IS</span></span><br><span class="line">     <span class="comment">/*Declarative section is here */</span></span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line">    <span class="comment">/*Executable section is here*/</span> </span><br><span class="line">EXCEPTION</span><br><span class="line">    <span class="comment">/*Exception section is here*/</span> </span><br><span class="line"><span class="keyword">END</span> [function_name];</span><br></pre></td></tr></table></figure>
+
+<h3 id="函数的定义"><a href="#函数的定义" class="headerlink" title="函数的定义"></a>函数的定义</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">OR</span> REPLACE <span class="keyword">FUNCTION</span> f1(v_count NUMBER) <span class="comment">--定义函数的名称以及数据类型</span></span><br><span class="line"><span class="keyword">RETURN</span> NUMBER   <span class="comment">--定义函数的返回类型</span></span><br><span class="line"><span class="keyword">AS</span> 	<span class="comment">--相当于DECLARE，后面接定义的变量</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="函数的使用"><a href="#函数的使用" class="headerlink" title="函数的使用"></a>函数的使用</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> f1(<span class="string">&#x27;数据&#x27;</span>) <span class="keyword">from</span> 表名;</span><br></pre></td></tr></table></figure>
+
+<p>通过这种方式可以简单多次使用函数中所封装的内容</p>
+</div><h2 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h2><div class="story post-story"><h3 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DECLARE</span></span><br><span class="line">v_name VARCHAR2(<span class="number">30</span>);</span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line"><span class="keyword">SELECT</span> ENAME <span class="keyword">INTO</span> v_name <span class="keyword">FROM</span> emp;</span><br><span class="line">dbms_output.put_line(<span class="string">&#x27;员工的名字：&#x27;</span><span class="operator">||</span>v_name);</span><br><span class="line">EXCEPTION</span><br><span class="line"><span class="keyword">WHEN</span> NO_DATA_FOUND <span class="keyword">THEN</span></span><br><span class="line">dbms_output.put_line(<span class="string">&#x27;找不到这个员工&#x27;</span>);</span><br><span class="line"><span class="keyword">WHEN</span> OTHERS <span class="keyword">THEN</span> <span class="comment">--出现其他错误时</span></span><br><span class="line">dbms_output.put_line(<span class="string">&#x27;XXXXX&#x27;</span>);</span><br><span class="line"><span class="keyword">END</span>;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>执行结果：<img src="C:\Users\swagg\AppData\Roaming\Typora\typora-user-images\1618811108639.png" class="lazyload" data-srcset="C:\Users\swagg\AppData\Roaming\Typora\typora-user-images\1618811108639.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></li>
+</ul>
+<h3 id="预定义异常-有名称有编号的异常"><a href="#预定义异常-有名称有编号的异常" class="headerlink" title="预定义异常(有名称有编号的异常)"></a>预定义异常(有名称有编号的异常)</h3><ul>
+<li>oracle官方已经写好的异常，在出现异常时我们可以直接使用，如：<ol>
+<li>NO_DATA_FOUND ：没有找到数据</li>
+<li>TOO_MANY_ROWS：一个SELECT INTO语句匹配了多行数据</li>
+<li>ZERO_DIVIDE：除数为0</li>
+</ol>
+</li>
+</ul>
+<h3 id="非预定义异常-有编号没有名称的异常"><a href="#非预定义异常-有编号没有名称的异常" class="headerlink" title="非预定义异常(有编号没有名称的异常)"></a>非预定义异常(有编号没有名称的异常)</h3><ul>
+<li>有一些异常，官方给他们分配了编号，但是没有为他们关联处理的方法，所以这是我们就需要自己定义一个异常，并与他的编号进行关联，才可以进行异常的处理。</li>
+</ul>
+<h3 id="用户定义异常-啥都没有的异常"><a href="#用户定义异常-啥都没有的异常" class="headerlink" title="用户定义异常(啥都没有的异常)"></a>用户定义异常(啥都没有的异常)</h3><ul>
+<li>用户定义异常编号范围：-20999~-20000</li>
+<li>用户定义异常是指，有些操作并不会产生Oracle错误，但是从业务规则角度考虑，认为是一<br>种错误。例如，执行UPDATE操作没有更新任何行时，不会引发Oracle错误，也不会产生异<br>常，但是，有时需要开发人员为此操作产生一个异常，以便进行处理，即用户定义异常。</li>
+<li>用户自定义异常要对异常进行捕捉并抛出(RAISE)</li>
+</ul>
+</div><h2 id="检验字符串是否可以转换成数值型-函数-异常处理"><a href="#检验字符串是否可以转换成数值型-函数-异常处理" class="headerlink" title="检验字符串是否可以转换成数值型(函数+异常处理)"></a>检验字符串是否可以转换成数值型(函数+异常处理)</h2><div class="story post-story"><ul>
+<li>to_number函数：类型转换函数可以将字符串转换成数字</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">OR</span> REPLACE <span class="keyword">FUNCTION</span> f1(v_num VARCHAR2) <span class="comment">--定义函数</span></span><br><span class="line"><span class="keyword">RETURN</span> NUMBER  <span class="comment">--定义返回类型</span></span><br><span class="line"><span class="keyword">AS</span></span><br><span class="line">	ex_char2number EXCEPTION; <span class="comment">--声明一个非预定义异常</span></span><br><span class="line">	PRAGMA EXCEPTION_INIT (ex_char2number,<span class="number">-6502</span>); <span class="comment">--连接异常与异常处理</span></span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line">	IF to_number(v_num)<span class="operator">&gt;=</span><span class="number">0</span> <span class="keyword">THEN</span></span><br><span class="line">		<span class="keyword">RETURN</span> <span class="number">1</span></span><br><span class="line">	<span class="keyword">ELSE</span></span><br><span class="line">		RAISE ex_char2number; <span class="comment">--捕捉并抛出异常</span></span><br><span class="line">	<span class="keyword">END</span> IF;</span><br><span class="line">EXCEPTION</span><br><span class="line">	<span class="keyword">WHEN</span> ex_char2number <span class="keyword">THEN</span><span class="comment">--处理异常</span></span><br><span class="line">		<span class="keyword">RETURN</span> <span class="number">0</span>;</span><br><span class="line"><span class="keyword">END</span>;</span><br></pre></td></tr></table></figure>
+
+</div><h2 id="存储过程-命名块"><a href="#存储过程-命名块" class="headerlink" title="存储过程(命名块)"></a>存储过程(命名块)</h2><div class="story post-story"><ul>
+<li>存储过程的语法与函数类似</li>
+<li>创建存储过程可以理解为相当于函数中的FUNCTION function_name 更换成PROCEDURE procedure_name</li>
+<li>两者其他部分都差不多</li>
+</ul>
+<h3 id="存储过程的语法"><a href="#存储过程的语法" class="headerlink" title="存储过程的语法"></a>存储过程的语法</h3><ul>
+<li>定义：</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> [<span class="keyword">OR</span> REPLACE] <span class="keyword">PROCEDURE</span> procedure_name</span><br><span class="line">(parameter1_name [mode] datatype </span><br><span class="line">    [<span class="keyword">DEFAULT</span><span class="operator">|</span>:<span class="operator">=</span><span class="keyword">value</span>]</span><br><span class="line">[, parameter2_name [mode] datatype </span><br><span class="line">    [<span class="keyword">DEFAULT</span><span class="operator">|</span>:<span class="operator">=</span><span class="keyword">value</span>],…])</span><br><span class="line"><span class="keyword">AS</span><span class="operator">|</span><span class="keyword">IS</span></span><br><span class="line">   <span class="comment">/*Declarative section is here */</span></span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line">   <span class="comment">/*Executable section is here*/</span> </span><br><span class="line">EXCEPTION</span><br><span class="line">   <span class="comment">/*Exception section is here*/</span> </span><br><span class="line"><span class="keyword">END</span>[procedure_name];</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>调用</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">BEGIN</span> </span><br><span class="line">	procedure_name(parameter_list); </span><br><span class="line"><span class="keyword">END</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">OR</span> REPLACE <span class="keyword">PROCEDURE</span> proc_transfer(v_empno NUMBER)</span><br><span class="line"><span class="keyword">AS</span></span><br><span class="line">  v_sal emp.sal<span class="operator">%</span>TYPE;</span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line">  <span class="keyword">SELECT</span> sal <span class="keyword">INTO</span> v_sal <span class="keyword">FROM</span> emp <span class="keyword">WHERE</span> empno<span class="operator">=</span>v_empno;</span><br><span class="line">  dbms_output.put_line(<span class="string">&#x27;工资：&#x27;</span><span class="operator">||</span>v_sal);</span><br><span class="line"><span class="keyword">END</span>;</span><br></pre></td></tr></table></figure>
+
+<p>定义一个存储过程，用于查询员工的工资</p>
+<p>使用：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">BEGIN</span> </span><br><span class="line">  proc_transfer(<span class="number">7788</span>); </span><br><span class="line"><span class="keyword">END</span>;</span><br></pre></td></tr></table></figure>
+<p>结果：<br><img src="C:\Users\swagg\AppData\Roaming\Typora\typora-user-images\1618969132341.png" class="lazyload" data-srcset="C:\Users\swagg\AppData\Roaming\Typora\typora-user-images\1618969132341.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+</div><h2 id="分页查询-SQL"><a href="#分页查询-SQL" class="headerlink" title="分页查询(SQL)"></a>分页查询(SQL)</h2><div class="story post-story"><h3 id="实例-1"><a href="#实例-1" class="headerlink" title="实例"></a>实例</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span></span><br><span class="line"><span class="keyword">FROM</span> (<span class="keyword">SELECT</span> rownum rn,t.<span class="operator">*</span> <span class="keyword">FROM</span> (<span class="keyword">SELECT</span> <span class="operator">*</span><span class="keyword">FROM</span> emp <span class="keyword">ORDER</span> <span class="keyword">BY</span> sal) t <span class="keyword">WHERE</span> rownum<span class="operator">&lt;=</span><span class="number">10</span>) </span><br><span class="line"><span class="keyword">WHERE</span> rn<span class="operator">&gt;=</span><span class="number">5</span>;</span><br></pre></td></tr></table></figure>
+
+</div><h2 id="分页存储过程"><a href="#分页存储过程" class="headerlink" title="分页存储过程"></a>分页存储过程</h2><div class="story post-story"><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">OR</span> REPLACE <span class="keyword">PROCEDURE</span> proc_page(</span><br><span class="line">    v_tableName <span class="keyword">IN</span> VARCHAR2,</span><br><span class="line">    v_rowsPerPage <span class="keyword">IN</span> NUMBER,</span><br><span class="line">    v_currentPage <span class="keyword">IN</span> NUMBER,</span><br><span class="line">    v_totalPage <span class="keyword">OUT</span> NUMBER,</span><br><span class="line">    v_data <span class="keyword">OUT</span> SYS_REFCURSOR<span class="comment">--游标变量，游标：缓冲区，存了SQL语句所查询的内容</span></span><br><span class="line">)</span><br><span class="line"><span class="keyword">AS</span></span><br><span class="line">v_endRow NUMBER;</span><br><span class="line">v_startRow NUMBER;</span><br><span class="line">v_sql VARCHAR2(<span class="number">300</span>);</span><br><span class="line">v_totalRows NUMBER;</span><br><span class="line"><span class="keyword">BEGIN</span></span><br><span class="line">v_endRow:<span class="operator">=</span>v_rowsPerPage<span class="operator">*</span>v_currentPage;</span><br><span class="line">v_startRow:<span class="operator">=</span>(v_currentPage<span class="number">-1</span>)<span class="operator">*</span>v_rowsPerPage<span class="operator">+</span><span class="number">1</span>;</span><br><span class="line">v_sql:<span class="operator">=</span><span class="string">&#x27;SELECT * FROM (SELECT rownum rn,t.* FROM (SELECT * FROM &#x27;</span><span class="operator">||</span>v_tableName<span class="operator">||</span><span class="string">&#x27;) t WHERE rownum&lt;=&#x27;</span><span class="operator">||</span>v_endRow<span class="operator">||</span><span class="string">&#x27;) WHERE rn&gt;=&#x27;</span><span class="operator">||</span>v_startRow;</span><br><span class="line"><span class="keyword">OPEN</span> v_data <span class="keyword">FOR</span> v_sql;<span class="comment">--游标和动态SQL绑定，已经执行了</span></span><br><span class="line">v_sql:<span class="operator">=</span><span class="string">&#x27;SELECT COUNT(*) FROM &#x27;</span><span class="operator">||</span>v_tableName;</span><br><span class="line"><span class="keyword">EXECUTE</span> IMMEDIATE v_sql <span class="keyword">INTO</span> v_totalRows;</span><br><span class="line">IF <span class="built_in">MOD</span>(v_totalRows,v_rowsPerPage)<span class="operator">=</span><span class="number">0</span> <span class="keyword">THEN</span></span><br><span class="line">	v_totalPage:<span class="operator">=</span>v_totalRows<span class="operator">/</span>v_rowsPerPage;</span><br><span class="line"><span class="keyword">ELSE</span></span><br><span class="line">	v_totalPage:<span class="operator">=</span>(v_totalRows<span class="operator">/</span>v_rowsPerPage)<span class="operator">+</span><span class="number">1</span>;</span><br><span class="line"><span class="keyword">END</span> IF;</span><br><span class="line"><span class="keyword">END</span>;</span><br><span class="line"><span class="operator">/</span></span><br></pre></td></tr></table></figure>
+
+
+</div>
+  </div>
+  
+  
+    
+    <div class='footer'>
+      
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=http://cyc0819.top/2021/07/13/2021-07-13-PLSQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/>http://cyc0819.top/2021/07/13/2021-07-13-PLSQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-03-09T23:14:16+08:00">
+  <a class='notlink' href="/" onclick="return false;" title="Click me!" >
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Mar 9, 2022</p>
+  </a>
 </div>
 
-          </div>
         
       
-    
-  </section>
+        
+          
   
-    
-  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>数据库</p></a></div>
+  <span hidden itemprop="keywords">数据库</span>
 
 
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://cyc0819.top/2021/07/13/2021-07-13-PLSQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&title=PL/SQL编程学习笔记 - George's Blog&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://cyc0819.top/2021/07/13/2021-07-13-PLSQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&title=PL/SQL编程学习笔记 - George's Blog&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://cyc0819.top/2021/07/13/2021-07-13-PLSQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&title=PL/SQL编程学习笔记 - George's Blog&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
   
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2021/07/21/2021-07-21-Springboot%E5%AD%98%E5%82%A8%E5%9B%BE%E7%89%87%E5%88%B0%E6%95%B0%E6%8D%AE%E5%BA%93/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>SpringBoot将图片存储到数据库</p>
+          <p class='content'>SpringBoot将图片存储到数据库存储方式将图片转化为blob的二进制格式，然后存储到数据库即可，从数据中取出时，将blob格式的二进制文字从数据库中取出，用Object的方式来获取，然后转...</p>
+        </a>
+      
+      
+        <a class='next' href='/2021/07/01/2021-07-01-%E8%BF%87%E6%BB%A4%E5%99%A8(Filter)%E5%9C%A8Web%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/'>
+          <p class='title'>过滤器(Filter)在Web中的应用<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>Java Web之过滤器(Filter)过滤器(Filter)过滤器，从字面意思上理解，就是用于过滤作用的工具。在Java web中，过滤器的作用是对Web资源进行拦截，经过处理之后，再交给下一...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2867,6 +3137,28 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     
+
+
+
+  <section class="widget toc-wrapper shadow desktop mobile pjax" id="toc-div" >
+    
+  <header>
+    
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%98%BE%E7%A4%BA%E6%89%A7%E8%A1%8C%E7%BB%93%E6%9E%9C"><span class="toc-text">显示执行结果</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#INSERT"><span class="toc-text">INSERT</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#UPDATE"><span class="toc-text">UPDATE</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DELECT"><span class="toc-text">DELECT</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E8%AF%AD%E5%8F%A5-SELECT"><span class="toc-text">基础语句(SELECT)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TYPE%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-text">%TYPE的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ROWTYPE%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-text">%ROWTYPE的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B8%B8%E6%A0%87-%E7%B1%BB%E4%BC%BCjava%E4%B8%AD%E7%9A%84%E8%BF%AD%E4%BB%A3%E5%99%A8"><span class="toc-text">游标(类似java中的迭代器)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9A%90%E5%BC%8F%E6%B8%B8%E6%A0%87"><span class="toc-text">隐式游标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%98%BE%E5%BC%8F%E6%B8%B8%E6%A0%87"><span class="toc-text">显式游标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#REF%E6%B8%B8%E6%A0%87"><span class="toc-text">REF游标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%B8%B8%E6%A0%87%E7%9A%84%E6%AD%A5%E9%AA%A4"><span class="toc-text">使用游标的步骤</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B8%B8%E6%A0%87%EF%BC%88%E7%AE%80%E5%8D%95%E5%BE%AA%E7%8E%AF%EF%BC%89"><span class="toc-text">游标（简单循环）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#WHILE%E5%BE%AA%E7%8E%AF"><span class="toc-text">WHILE循环</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#FOR%E5%BE%AA%E7%8E%AF"><span class="toc-text">FOR循环</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%BD%E6%95%B0-%E5%91%BD%E5%90%8D%E5%9D%97"><span class="toc-text">函数(命名块)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E7%9A%84%E8%AF%AD%E6%B3%95"><span class="toc-text">函数的语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-text">函数的定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-text">函数的使用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86"><span class="toc-text">异常处理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B"><span class="toc-text">实例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%84%E5%AE%9A%E4%B9%89%E5%BC%82%E5%B8%B8-%E6%9C%89%E5%90%8D%E7%A7%B0%E6%9C%89%E7%BC%96%E5%8F%B7%E7%9A%84%E5%BC%82%E5%B8%B8"><span class="toc-text">预定义异常(有名称有编号的异常)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%9E%E9%A2%84%E5%AE%9A%E4%B9%89%E5%BC%82%E5%B8%B8-%E6%9C%89%E7%BC%96%E5%8F%B7%E6%B2%A1%E6%9C%89%E5%90%8D%E7%A7%B0%E7%9A%84%E5%BC%82%E5%B8%B8"><span class="toc-text">非预定义异常(有编号没有名称的异常)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E5%AE%9A%E4%B9%89%E5%BC%82%E5%B8%B8-%E5%95%A5%E9%83%BD%E6%B2%A1%E6%9C%89%E7%9A%84%E5%BC%82%E5%B8%B8"><span class="toc-text">用户定义异常(啥都没有的异常)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A3%80%E9%AA%8C%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%98%AF%E5%90%A6%E5%8F%AF%E4%BB%A5%E8%BD%AC%E6%8D%A2%E6%88%90%E6%95%B0%E5%80%BC%E5%9E%8B-%E5%87%BD%E6%95%B0-%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86"><span class="toc-text">检验字符串是否可以转换成数值型(函数+异常处理)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B-%E5%91%BD%E5%90%8D%E5%9D%97"><span class="toc-text">存储过程(命名块)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B%E7%9A%84%E8%AF%AD%E6%B3%95"><span class="toc-text">存储过程的语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BE%8B%E5%AD%90"><span class="toc-text">例子</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2-SQL"><span class="toc-text">分页查询(SQL)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B-1"><span class="toc-text">实例</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E9%A1%B5%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B"><span class="toc-text">分页存储过程</span></a></li></ol>
+    </div>
+  </section>
+
+  
+
+  
+    
+    
   
 
   <section class="widget category shadow desktop pjax">
@@ -2882,9 +3174,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <ul class="entry navigation">
         
           <li><a class="flat-box"
+            title="/categories/java-shiro-java-%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/" href="/categories/java-shiro-java-%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/"
+            active-action="action-categoriesjava-shiro-java-E69D83E99990E7AEA1E79086"
+            ><div class='name'>-[java,shiro] -[java,权限管理]</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
             title="/categories/java/" href="/categories/java/"
             active-action="action-categoriesjava"
-            ><div class='name'>java</div><div class='badge'>(18)</div></a></li>
+            ><div class='name'>java</div><div class='badge'>(19)</div></a></li>
         
           <li><a class="flat-box child"
             title="/categories/java/JWT/" href="/categories/java/JWT/"
@@ -2942,6 +3239,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             ><div class='name'>反射</div><div class='badge'>(1)</div></a></li>
         
           <li><a class="flat-box child"
+            title="/categories/java/%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/" href="/categories/java/%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/"
+            active-action="action-categoriesjavaE69D83E99990E7AEA1E79086"
+            ><div class='name'>权限管理</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box child"
             title="/categories/java/%E6%B3%A8%E8%A7%A3/" href="/categories/java/%E6%B3%A8%E8%A7%A3/"
             active-action="action-categoriesjavaE6B3A8E8A7A3"
             ><div class='name'>注解</div><div class='badge'>(1)</div></a></li>
@@ -2950,11 +3252,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             title="/categories/java/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/" href="/categories/java/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/"
             active-action="action-categoriesjavaE6B688E681AFE9989FE58897"
             ><div class='name'>消息队列</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/shiro/" href="/categories/shiro/"
-            active-action="action-categoriesshiro"
-            ><div class='name'>shiro</div><div class='badge'>(1)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/%E5%89%8D%E7%AB%AF/" href="/categories/%E5%89%8D%E7%AB%AF/"
@@ -2974,7 +3271,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           <li><a class="flat-box"
             title="/categories/%E5%8D%9A%E5%AE%A2/" href="/categories/%E5%8D%9A%E5%AE%A2/"
             active-action="action-categoriesE58D9AE5AEA2"
-            ><div class='name'>博客</div><div class='badge'>(5)</div></a></li>
+            ><div class='name'>博客</div><div class='badge'>(6)</div></a></li>
         
           <li><a class="flat-box child"
             title="/categories/%E5%8D%9A%E5%AE%A2/Hexo/" href="/categories/%E5%8D%9A%E5%AE%A2/Hexo/"
@@ -2984,7 +3281,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           <li><a class="flat-box child"
             title="/categories/%E5%8D%9A%E5%AE%A2/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/" href="/categories/%E5%8D%9A%E5%AE%A2/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/"
             active-action="action-categoriesE58D9AE5AEA2E4B8AAE4BABAE7BD91E7AB99"
-            ><div class='name'>个人网站</div><div class='badge'>(3)</div></a></li>
+            ><div class='name'>个人网站</div><div class='badge'>(4)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"
+            active-action="action-categoriesE695B0E68DAEE5BA93"
+            ><div class='name'>数据库</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/PL-SQL/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/PL-SQL/"
+            active-action="action-categoriesE695B0E68DAEE5BA93PL-SQL"
+            ><div class='name'>PL/SQL</div><div class='badge'>(1)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"
@@ -3023,206 +3330,20 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   
 
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/#/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/HashMap/" style="font-size: 14px; color: #999">HashMap</a> <a href="/tags/Hexo/" style="font-size: 16px; color: #8b8b8b">Hexo</a> <a href="/tags/JWT/" style="font-size: 14px; color: #999">JWT</a> <a href="/tags/MyBatis/" style="font-size: 14px; color: #999">MyBatis</a> <a href="/tags/SpringBoot/" style="font-size: 18px; color: #7e7e7e">SpringBoot</a> <a href="/tags/SpringCloud/" style="font-size: 14px; color: #999">SpringCloud</a> <a href="/tags/SpringSecurity/" style="font-size: 14px; color: #999">SpringSecurity</a> <a href="/tags/Swagger/" style="font-size: 14px; color: #999">Swagger</a> <a href="/tags/Swing/" style="font-size: 14px; color: #999">Swing</a> <a href="/tags/Vue/" style="font-size: 14px; color: #999">Vue</a> <a href="/tags/eCharts/" style="font-size: 14px; color: #999">eCharts</a> <a href="/tags/java/" style="font-size: 24px; color: #555">java</a> <a href="/tags/maven/" style="font-size: 14px; color: #999">maven</a> <a href="/tags/redis/" style="font-size: 16px; color: #8b8b8b">redis</a> <a href="/tags/shiro/" style="font-size: 14px; color: #999">shiro</a> <a href="/tags/spring/" style="font-size: 14px; color: #999">spring</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 16px; color: #8b8b8b">前端</a> <a href="/tags/%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/" style="font-size: 14px; color: #999">学习总结</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 14px; color: #999">数据结构</a> <a href="/tags/%E6%B3%A8%E8%A7%A3/" style="font-size: 14px; color: #999">注解</a> <a href="/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/" style="font-size: 14px; color: #999">消息队列</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 22px; color: #636363">算法</a> <a href="/tags/%E8%AE%B0%E5%BD%95/" style="font-size: 20px; color: #707070">记录</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 18px; color: #7e7e7e">随笔</a>
-    </div>
-  </section>
-
-
-  
-
-  
-    
-    
-
-<section class="widget shadow desktop mobile pjax">
-  
-  <header>
-    
-      <i class="fas fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>40 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已运行时间：</div>
-          <div id="webinfo-runtime-count" publish_date="03/24/2020 21:34:09"></div>
-        </div>
-        <script>
-          var BirthDay = new Date(new Date('2021/06/21'));
-          var today = new Date();
-          var timeold = (today.getTime() - BirthDay.getTime());
-          var daysold = Math.floor(timeold / (24 * 60 * 60 * 1000));
-          document.getElementById('webinfo-runtime-count').innerHTML = daysold + ' 天';
-        </script>
-      
-
-
-      
-        <div class="webinfo-item">
-          <div>本站总字数：</div>
-          <div>56.2k 字</div>
-        </div>
-      
-
-      
-
-      
-        <div class="webinfo-item">
-          <div>本站被访问了：</div>
-          
-          <div><span id="lc-sv"><span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span></span> 次</div>
-          
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          
-            <div id="last-update" style="display: none;">Wed Mar 09 2022 09:39:19 GMT+0800 (中国标准时间)</div>
-            <div id="last-update-show">2022-03-09 日</div>
-          
-        </div>
-        
-        <script>
-          function timeago(dateTimeStamp) {
-              var minute = 1000 * 60; //把分，时，天，周，半个月，一个月用毫秒表示
-              var hour = minute * 60;
-              var day = hour * 24;
-              var week = day * 7;
-              var month = day * 30;
-              var now = new Date().getTime(); //获取当前时间毫秒
-              var diffValue = now - dateTimeStamp; //时间差
-              if (diffValue < 0) {
-                  return;
-              }
-              var minC = diffValue / minute; //计算时间差的分，时，天，周，月
-              var hourC = diffValue / hour;
-              var dayC = diffValue / day;
-              var weekC = diffValue / week;
-              var monthC = diffValue / month;
-              if (monthC >= 1 && monthC <= 3) {
-                  result = " " + parseInt(monthC) + " 月前"
-              } else if (weekC >= 1 && weekC <= 3) {
-                  result = " " + parseInt(weekC) + " 周前"
-              } else if (dayC >= 1 && dayC <= 6) {
-                  result = " " + parseInt(dayC) + " 天前"
-              } else if (hourC >= 1 && hourC <= 23) {
-                  result = " " + parseInt(hourC) + " 小时前"
-              } else if (minC >= 1 && minC <= 59) {
-                  result = " " + parseInt(minC) + " 分钟前"
-              } else if (diffValue >= 0 && diffValue <= minute) {
-                  result = "刚刚"
-              } else {
-                  var datetime = new Date();
-                  datetime.setTime(dateTimeStamp);
-                  var Nyear = datetime.getFullYear();
-                  var Nmonth = datetime.getMonth() + 1 < 10 ? "0" + (datetime.getMonth() + 1) : datetime.getMonth() + 1;
-                  var Ndate = datetime.getDate() < 10 ? "0" + datetime.getDate() : datetime.getDate();
-                  var Nhour = datetime.getHours() < 10 ? "0" + datetime.getHours() : datetime.getHours();
-                  var Nminute = datetime.getMinutes() < 10 ? "0" + datetime.getMinutes() : datetime.getMinutes();
-                  var Nsecond = datetime.getSeconds() < 10 ? "0" + datetime.getSeconds() : datetime.getSeconds();
-                  result = Nyear + "-" + Nmonth + "-" + Ndate
-              }
-              return result;
-          }
-          var lastUpDate = document.getElementById('last-update').innerHTML;
-          try {
-            document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
-          } catch (error) {
-            document.getElementById('last-update-show').innerHTML = '2022-03-09 日';
-          }
-        </script>
-        
-      
-    </div>
-  </div>
-</section>
-
-  
-
-  
-    
-     
-
- 
-<section class="widget shadow desktop mobile pjax"> 
-  
-  <header>
-    
-      <i class="fas fa-clock WISTERIA fa-fw" aria-hidden="true"></i><span class='name'>最近更新</span>
-    
-  </header>
-
- 
-  <div class='content'> 
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2022/03/09/2022-03-09-%E7%BB%99%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E5%8A%A0%E4%B8%8A%E5%A4%A9%E6%B0%94%E6%8F%92%E4%BB%B6/"><div class="item"><time>2022-03-09</time><span>博客</span></div><span>给个人网站加上天气插件</span></a></li><li><a class="widget-last" href="/2022/03/08/2022-03-08-%E7%BB%99%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E5%8A%A0%E4%B8%8A%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE%E6%8F%92%E4%BB%B6/"><div class="item"><time>2022-03-08</time><span>博客</span></div><span>给个人网站加上高德地图插件</span></a></li><li><a class="widget-last" href="/2022/03/06/2022-03-06-%E7%BB%99%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E5%8A%A0%E4%B8%8A%E9%82%AE%E7%AE%B1%E9%80%9A%E7%9F%A5/"><div class="item"><time>2022-03-06</time><span>博客</span></div><span>给个人网站加上邮箱通知</span></a></li><li><a class="widget-last" href="/2022/03/04/2022-03-04-Java%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6/"><div class="item"><time>2022-03-04</time><span>java</span></div><span>Java反射机制</span></a></li><li><a class="widget-last" href="/2022/02/09/2022-02-09-%E8%87%AA%E5%AE%9A%E4%B9%89%E6%B3%A8%E8%A7%A3/"><div class="item"><time>2022-02-10</time><span>java</span></div><span>自定义注解</span></a></li></ul> 
-  </div> 
-</section> 
-
-  
-
-  
-    
-    
-
-
-  <section class='widget shadow desktop mobile pjax music'>
-    
-
-    <div class='content'>
-      
-
-  
-    <meting-js
-      theme='#1BCDFC'
-      autoplay='false'
-      volume='0.7'
-      loop='all'
-      order='list'
-      fixed='false'
-      list-max-height='320px'
-      server='tencent'
-      type='playlist'
-      id='7849540526'
-      list-folded='true'>
-    </meting-js>
-  
-
-
-    </div>
-  </section>
-
-
-  
-
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3239,14 +3360,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="PL/SQL编程学习笔记";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3333,8 +3455,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1646789962645')
-      volantis.js('/js/message.js?time=1646789962645', () => {
+      volantis.css('/css/message.css?time=1646839004205')
+      volantis.js('/js/message.js?time=1646839004205', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -3379,8 +3501,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1646789962645')
-      volantis.js('/js/message.js?time=1646789962645', () => {
+      volantis.css('/css/message.css?time=1646839004205')
+      volantis.js('/js/message.js?time=1646839004205', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -3439,8 +3561,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1646789962645')
-      volantis.js('/js/message.js?time=1646789962645', () => {
+      volantis.css('/css/message.css?time=1646839004205')
+      volantis.js('/js/message.js?time=1646839004205', () => {
         hideMessage(done);
       });
     } else {
@@ -3585,19 +3707,19 @@ volantis.pjax.push(bindToggleButton);
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1646789962645")
+        volantis.js("/js/plugins/sites.js?time=1646839004205")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1646789962645")
+        volantis.js("/js/plugins/friends.js?time=1646839004205")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1646789962645")
+        volantis.js("/js/plugins/contributors.js?time=1646839004205")
       }
     
   };
@@ -3788,7 +3910,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-<script src="/js/app.js?time=1646789962645.js"></script>
+<script src="/js/app.js?time=1646839004205.js"></script>
 
 
 <!-- optional -->
@@ -3801,7 +3923,7 @@ volantis.pjax.push(bindToggleButton);
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1646789962645");
+    return volantis.js("/js/search/hexo.js?time=1646839004205");
   }
 
   function loadSearchService() {
@@ -4075,7 +4197,7 @@ volantis.pjax.push(bindToggleButton);
 
 
   <script>
-  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp"];
+  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -4118,7 +4240,7 @@ volantis.pjax.push(bindToggleButton);
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/parallax.js?time=1646789962645').then(()=>{
+    volantis.js('/js/parallax.js?time=1646839004205').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4312,7 +4434,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://cyc0819.top/","name":"George's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/shiro/","name":"shiro"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"George's Blog","url":"http://cyc0819.top/","keywords":null,"description":"","author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","description":""},"publisher":{"@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://cyc0819.top?s={search_term_string}"},"query-input":"required name=search_term_string"}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://cyc0819.top/","name":"George's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/数据库/","name":"数据库"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/数据库/PL-SQL/","name":"PL/SQL"}},{"@type":"ListItem","position":3,"item":{"@id":"http://cyc0819.top/2021/07/13/2021-07-13-PLSQL学习笔记/","name":"PL/SQL编程学习笔记"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"PL/SQL编程学习笔记","description":"","datePublished":"2021-07-13T12:19:41.000Z","dateModified":"2022-03-09T15:14:16.883Z","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://cyc0819.top/2021/07/13/2021-07-13-PLSQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"},"author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/"},"publisher":{"@type":"Organization","name":"George's Blog","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://cyc0819.top/2021/07/13/2021-07-13-PLSQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/","wordCount":0,"articleSection":"数据库","keywords":"数据库","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 <!-- more -->
