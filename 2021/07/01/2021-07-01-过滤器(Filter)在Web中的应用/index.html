@@ -23,23 +23,23 @@
   <meta content="George&#39;s Blog" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1646840146247" as="style">
+  <link rel="preload" href="/css/style.css?time=1651367857037" as="style">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- 页面元数据 -->
   <title>过滤器(Filter)在Web中的应用 - George's Blog</title>
   <meta name="keywords" content="java,null">
-  <meta name="description" content="Java Web之过滤器(Filter)过滤器(Filter)过滤器，从字面意思上理解，就是用于过滤作用的工具。在Java web中，过滤器的作用是对Web资源进行拦截，经过处理之后，再交给下一步进行处理；而下一步可以是一个新的过滤器，也可以是一个service">
+  <meta name="description" content="Java Web之过滤器(Filter)1、过滤器(Filter)过滤器，从字面意思上理解，就是用于过滤作用的工具。在Java web中，过滤器的作用是对Web资源进行拦截，经过处理之后，再交给下一步进行处理；而下一步可以是一个新的过滤器，也可以是一个service。 Filter可认为是Servlet的一种“变种”，它主要用于对用户请求(HttpServletRequest)进行预处理,也可以对">
 <meta property="og:type" content="article">
 <meta property="og:title" content="过滤器(Filter)在Web中的应用">
 <meta property="og:url" content="http://cyc0819.top/2021/07/01/2021-07-01-%E8%BF%87%E6%BB%A4%E5%99%A8(Filter)%E5%9C%A8Web%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/index.html">
 <meta property="og:site_name" content="George&#39;s Blog">
-<meta property="og:description" content="Java Web之过滤器(Filter)过滤器(Filter)过滤器，从字面意思上理解，就是用于过滤作用的工具。在Java web中，过滤器的作用是对Web资源进行拦截，经过处理之后，再交给下一步进行处理；而下一步可以是一个新的过滤器，也可以是一个service">
+<meta property="og:description" content="Java Web之过滤器(Filter)1、过滤器(Filter)过滤器，从字面意思上理解，就是用于过滤作用的工具。在Java web中，过滤器的作用是对Web资源进行拦截，经过处理之后，再交给下一步进行处理；而下一步可以是一个新的过滤器，也可以是一个service。 Filter可认为是Servlet的一种“变种”，它主要用于对用户请求(HttpServletRequest)进行预处理,也可以对">
 <meta property="og:locale">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2021-07-01T13:17:51.000Z">
-<meta property="article:modified_time" content="2021-12-08T09:27:20.943Z">
+<meta property="article:modified_time" content="2022-03-10T04:57:10.151Z">
 <meta property="article:author" content="George Chan">
 <meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
@@ -1880,8 +1880,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1646840146247" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1646840146247"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1651367857037" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1651367857037"></noscript>
     <script>
       var userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1914,9 +1914,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
-        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-cn/WindowsForBusiness/End-of-IE-support"><strong>了解详情 ></strong></a>`+
+        `<span class="kill-t"><b>抱歉，您的瀏覽器無法訪問本站</b></span><br/>`+
+        `<span class="kill-c">微軟已經於2016年終止了對 Internet Explorer (IE) 10 及更早版本的支持，<br/>繼續使用存在極大的安全隱患，請使用當代主流的瀏覽器進行訪問。</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-cn/WindowsForBusiness/End-of-IE-support"><strong>了解詳情 ></strong></a>`+
     '</div>');
 </script>
 
@@ -1944,9 +1944,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>
-        <span class="kill-c">本页面需要浏览器支持（启用）JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情 ></strong></a>
+        <span class="kill-t"><b>抱歉，您的瀏覽器無法訪問本站</b></span><br/>
+        <span class="kill-c">本頁面需要瀏覽器支持（啟用）JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解詳情 ></strong></a>
     </div>
 </noscript>
 
@@ -2782,7 +2782,33 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h1 id="Java-Web之过滤器-Filter"><a href="#Java-Web之过滤器-Filter" class="headerlink" title="Java Web之过滤器(Filter)"></a>Java Web之过滤器(Filter)</h1><h2 id="过滤器-Filter"><a href="#过滤器-Filter" class="headerlink" title="过滤器(Filter)"></a>过滤器(Filter)</h2><div class="story post-story"><p>过滤器，从字面意思上理解，就是用于过滤作用的工具。<br>在Java web中，过滤器的作用是对Web资源进行拦截，经过处理之后，再交给下一步进行处理；而下一步可以是一个新的过滤器，也可以是一个service</p>
+    <h1 id="Java-Web之过滤器-Filter"><a href="#Java-Web之过滤器-Filter" class="headerlink" title="Java Web之过滤器(Filter)"></a>Java Web之过滤器(Filter)</h1><h2 id="1、过滤器-Filter"><a href="#1、过滤器-Filter" class="headerlink" title="1、过滤器(Filter)"></a>1、过滤器(Filter)</h2><div class="story post-story"><p>过滤器，从字面意思上理解，就是用于过滤作用的工具。<br>在Java web中，过滤器的作用是对Web资源进行拦截，经过处理之后，再交给下一步进行处理；而下一步可以是一个新的过滤器，也可以是一个service。</p>
+<p>Filter可认为是Servlet的一种“变种”，它主要用于对用户请求(HttpServletRequest)进行预处理,也可以对服务器响应(HttpServletResponse)进行后处理，是个典型的处理链。它与Servlet的区别在于：它不能直接向用户生成响应。完整的流程是：<strong>Filter对用户请求进行预处理，接着将请求交给Servlet进行处理并生成响应，最后Filter再对服务器响应进行后处理。</strong> </p>
+</div><h2 id="2、可以用来干嘛？"><a href="#2、可以用来干嘛？" class="headerlink" title="2、可以用来干嘛？"></a>2、可以用来干嘛？</h2><div class="story post-story"><ul>
+<li>在HttpServletRequest到达Servlet之前，拦截客户的HttpServletRequest。</li>
+<li>根据需要检查HttpServletRequest，也可以修改HttpServletRequest头和数据。</li>
+<li>在HttpServletResponse到达客户端之前，拦截HttpServletResponse。</li>
+<li>根据需要检查HttpServletResponse,也可以修改HttpServletResponse头和数据。</li>
+</ul>
+</div><h2 id="3、Filter的类型"><a href="#3、Filter的类型" class="headerlink" title="3、Filter的类型"></a>3、Filter的类型</h2><div class="story post-story"><ul>
+<li>用户授权的Filter：Filter负责检查用户请求，根据请求过滤用户非法请求。</li>
+<li>日志Filter：详细记录某些特殊的用户请求。</li>
+<li>负责解码的Filter：包括对非标准编码的请求解码。</li>
+<li>Filter可拦截多个请求或响应；一个请求或响应也可被多个请求拦截。</li>
+</ul>
+</div><h2 id="4、Filter在Web中的应用"><a href="#4、Filter在Web中的应用" class="headerlink" title="4、Filter在Web中的应用"></a>4、Filter在Web中的应用</h2><div class="story post-story"><p>在java中创建一个 filter 其实很简单，只需要两个步骤：</p>
+<ol>
+<li>创建Filter处理类(如：MyFiletr)实现javax.servlet.Filter接口；</li>
+<li>web.xml中配置Filter</li>
+</ol>
+<h3 id="4-1、简单的记录日志的Filter"><a href="#4-1、简单的记录日志的Filter" class="headerlink" title="4.1、简单的记录日志的Filter"></a>4.1、简单的记录日志的Filter</h3><p>简单的记录日志的Filter，这个Filter负责拦截所符合条件的用户请求，并将请求的信息记录在日志中。 </p>
+<p><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220310124857.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220310124857.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ><br><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220310125444.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220310125444.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ><br><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220310124925.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220310124925.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+<p>总结：上面的程序实现了doFilter()方法，实现该方法就可以实现对用户请求进行预处理，也可以实现对服务器响应进行后处理–他们的分界线为是否调用了chain.doFilter(),执行该方法之前，即对用户请求进行预处理；执行该方法之后，即对服务器响应进行后处理。</p>
+<p>在上面的请求Filter中，仅在日志中记录请求的URL，对所有的请求都执行chain.doFilter (request,reponse)方法，当Filter对请求过滤后，依然将请求发送到目的地址。如果需要检查权限，可以在Filter中根据用户请求的HttpSession，判断用户权限是否足够。如果权限不够，直接调用重定向即可，无须调用chain.doFilter(request,reponse)方法。</p>
+<h3 id="4-2、简单的认证登录Filter"><a href="#4-2、简单的认证登录Filter" class="headerlink" title="4.2、简单的认证登录Filter"></a>4.2、简单的认证登录Filter</h3><p><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220310125537.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220310125537.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ><br><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220310125602.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220310125602.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+</div><h2 id="5、总结"><a href="#5、总结" class="headerlink" title="5、总结"></a>5、总结</h2><div class="story post-story"><p>Filter接口中有一个doFilter方法，当开发人员编写好Filter类实现doFilter方法，并配置对哪个web资源进行拦截后，WEB服务器每次在调用web资源的service方法之前(服务器内部对资源的访问机制决定的)，都会先调用一下filter的doFilter方法。</p>
+<p>Filter的生命周期和Servlet一样，Filter的创建和销毁也是由WEB服务器负责。不过与Servlet区别的是，它是1&gt;在应用启动的时候就进行装载Filter类(与Servlet的load-on-startup配置效果相同)。2&gt;容器创建好Filter对象实例后，调用init()方法。接着被Web容器保存进应用级的集合容器中去了等待着，用户访问资源。3&gt;当用户访问的资源正好被Filter的url-pattern拦截时，容器会取出Filter类调用doFilter方法，下次或多次访问被拦截的资源时，Web容器会直接取出指定Filter对象实例调用doFilter方法(Filter对象常驻留Web容器了)。4&gt;当应用服务被停止或重新装载了，则会执行Filter的destroy方法，Filter对象销毁。注意：init方法与destroy方法只会直接一次。</p>
+<p>Filter不仅可以通过url-pattern来指定拦截哪些url匹配的资源。而且还可以通过servlet-name来指定拦截哪个指定的servlet(专门为某个servlet服务了,servlet-name对应Servlet的相关配置)。</p>
 
 </div>
   </div>
@@ -2819,10 +2845,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2021-12-08T17:27:20+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-03-10T12:57:10+08:00">
   <a class='notlink' href="/" onclick="return false;" title="Click me!" >
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Dec 8, 2021</p>
+    <p>更新于：Mar 10, 2022</p>
   </a>
 </div>
 
@@ -3015,7 +3041,7 @@ INSERT123456DECLARE v_dept dept%ROWTYPE; BEGIN v_dept.de...</p>
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%87%E6%BB%A4%E5%99%A8-Filter"><span class="toc-text">过滤器(Filter)</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E8%BF%87%E6%BB%A4%E5%99%A8-Filter"><span class="toc-text">1、过滤器(Filter)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E5%8F%AF%E4%BB%A5%E7%94%A8%E6%9D%A5%E5%B9%B2%E5%98%9B%EF%BC%9F"><span class="toc-text">2、可以用来干嘛？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81Filter%E7%9A%84%E7%B1%BB%E5%9E%8B"><span class="toc-text">3、Filter的类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E3%80%81Filter%E5%9C%A8Web%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8"><span class="toc-text">4、Filter在Web中的应用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1%E3%80%81%E7%AE%80%E5%8D%95%E7%9A%84%E8%AE%B0%E5%BD%95%E6%97%A5%E5%BF%97%E7%9A%84Filter"><span class="toc-text">4.1、简单的记录日志的Filter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2%E3%80%81%E7%AE%80%E5%8D%95%E7%9A%84%E8%AE%A4%E8%AF%81%E7%99%BB%E5%BD%95Filter"><span class="toc-text">4.2、简单的认证登录Filter</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E3%80%81%E6%80%BB%E7%BB%93"><span class="toc-text">5、总结</span></a></li></ol>
     </div>
   </section>
 
@@ -3041,7 +3067,7 @@ INSERT123456DECLARE v_dept dept%ROWTYPE; BEGIN v_dept.de...</p>
           <li><a class="flat-box"
             title="/categories/java/" href="/categories/java/"
             active-action="action-categoriesjava"
-            ><div class='name'>java</div><div class='badge'>(20)</div></a></li>
+            ><div class='name'>java</div><div class='badge'>(19)</div></a></li>
         
           <li><a class="flat-box child"
             title="/categories/java/JWT/" href="/categories/java/JWT/"
@@ -3106,7 +3132,7 @@ INSERT123456DECLARE v_dept dept%ROWTYPE; BEGIN v_dept.de...</p>
           <li><a class="flat-box child"
             title="/categories/java/%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/" href="/categories/java/%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/"
             active-action="action-categoriesjavaE69D83E99990E7AEA1E79086"
-            ><div class='name'>权限管理</div><div class='badge'>(3)</div></a></li>
+            ><div class='name'>权限管理</div><div class='badge'>(2)</div></a></li>
         
           <li><a class="flat-box child"
             title="/categories/java/%E6%B3%A8%E8%A7%A3/" href="/categories/java/%E6%B3%A8%E8%A7%A3/"
@@ -3136,7 +3162,7 @@ INSERT123456DECLARE v_dept dept%ROWTYPE; BEGIN v_dept.de...</p>
           <li><a class="flat-box"
             title="/categories/%E5%8D%9A%E5%AE%A2/" href="/categories/%E5%8D%9A%E5%AE%A2/"
             active-action="action-categoriesE58D9AE5AEA2"
-            ><div class='name'>博客</div><div class='badge'>(6)</div></a></li>
+            ><div class='name'>博客</div><div class='badge'>(5)</div></a></li>
         
           <li><a class="flat-box child"
             title="/categories/%E5%8D%9A%E5%AE%A2/Hexo/" href="/categories/%E5%8D%9A%E5%AE%A2/Hexo/"
@@ -3146,7 +3172,7 @@ INSERT123456DECLARE v_dept dept%ROWTYPE; BEGIN v_dept.de...</p>
           <li><a class="flat-box child"
             title="/categories/%E5%8D%9A%E5%AE%A2/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/" href="/categories/%E5%8D%9A%E5%AE%A2/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/"
             active-action="action-categoriesE58D9AE5AEA2E4B8AAE4BABAE7BD91E7AB99"
-            ><div class='name'>个人网站</div><div class='badge'>(4)</div></a></li>
+            ><div class='name'>个人网站</div><div class='badge'>(3)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"
@@ -3320,8 +3346,8 @@ INSERT123456DECLARE v_dept dept%ROWTYPE; BEGIN v_dept.de...</p>
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1646840146247')
-      volantis.js('/js/message.js?time=1646840146247', () => {
+      volantis.css('/css/message.css?time=1651367857037')
+      volantis.js('/js/message.js?time=1651367857037', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -3366,8 +3392,8 @@ INSERT123456DECLARE v_dept dept%ROWTYPE; BEGIN v_dept.de...</p>
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1646840146247')
-      volantis.js('/js/message.js?time=1646840146247', () => {
+      volantis.css('/css/message.css?time=1651367857037')
+      volantis.js('/js/message.js?time=1651367857037', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -3426,8 +3452,8 @@ INSERT123456DECLARE v_dept dept%ROWTYPE; BEGIN v_dept.de...</p>
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1646840146247')
-      volantis.js('/js/message.js?time=1646840146247', () => {
+      volantis.css('/css/message.css?time=1651367857037')
+      volantis.js('/js/message.js?time=1651367857037', () => {
         hideMessage(done);
       });
     } else {
@@ -3572,19 +3598,19 @@ volantis.pjax.push(bindToggleButton);
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1646840146247")
+        volantis.js("/js/plugins/sites.js?time=1651367857037")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1646840146247")
+        volantis.js("/js/plugins/friends.js?time=1651367857037")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1646840146247")
+        volantis.js("/js/plugins/contributors.js?time=1651367857037")
       }
     
   };
@@ -3775,7 +3801,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-<script src="/js/app.js?time=1646840146247.js"></script>
+<script src="/js/app.js?time=1651367857037.js"></script>
 
 
 <!-- optional -->
@@ -3788,7 +3814,7 @@ volantis.pjax.push(bindToggleButton);
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1646840146247");
+    return volantis.js("/js/search/hexo.js?time=1651367857037");
   }
 
   function loadSearchService() {
@@ -4062,7 +4088,7 @@ volantis.pjax.push(bindToggleButton);
 
 
   <script>
-  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp"];
+  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -4105,7 +4131,7 @@ volantis.pjax.push(bindToggleButton);
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/parallax.js?time=1646840146247').then(()=>{
+    volantis.js('/js/parallax.js?time=1651367857037').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4299,7 +4325,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://cyc0819.top/","name":"George's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/java/","name":"java"}},{"@type":"ListItem","position":3,"item":{"@id":"http://cyc0819.top/2021/07/01/2021-07-01-过滤器(Filter)在Web中的应用/","name":"过滤器(Filter)在Web中的应用"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"过滤器(Filter)在Web中的应用","description":"","datePublished":"2021-07-01T13:17:51.000Z","dateModified":"2021-12-08T09:27:20.943Z","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://cyc0819.top/2021/07/01/2021-07-01-%E8%BF%87%E6%BB%A4%E5%99%A8(Filter)%E5%9C%A8Web%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/"},"author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/"},"publisher":{"@type":"Organization","name":"George's Blog","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://cyc0819.top/2021/07/01/2021-07-01-%E8%BF%87%E6%BB%A4%E5%99%A8(Filter)%E5%9C%A8Web%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/","wordCount":0,"articleSection":"java","keywords":"java","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://cyc0819.top/","name":"George's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/java/","name":"java"}},{"@type":"ListItem","position":3,"item":{"@id":"http://cyc0819.top/2021/07/01/2021-07-01-过滤器(Filter)在Web中的应用/","name":"过滤器(Filter)在Web中的应用"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"过滤器(Filter)在Web中的应用","description":"","datePublished":"2021-07-01T13:17:51.000Z","dateModified":"2022-03-10T04:57:10.151Z","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://cyc0819.top/2021/07/01/2021-07-01-%E8%BF%87%E6%BB%A4%E5%99%A8(Filter)%E5%9C%A8Web%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/"},"author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/"},"publisher":{"@type":"Organization","name":"George's Blog","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://cyc0819.top/2021/07/01/2021-07-01-%E8%BF%87%E6%BB%A4%E5%99%A8(Filter)%E5%9C%A8Web%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/","wordCount":0,"articleSection":"java","keywords":"java","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 <!-- more -->

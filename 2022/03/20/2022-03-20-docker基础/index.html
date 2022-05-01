@@ -8,7 +8,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="http://cyc0819.top/about/"/>
+  <link rel="canonical" href="http://cyc0819.top/2022/03/20/2022-03-20-docker基础/"/>
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
@@ -23,24 +23,25 @@
   <meta content="George&#39;s Blog" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1651367856873" as="style">
+  <link rel="preload" href="/css/style.css?time=1651367856902" as="style">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- 页面元数据 -->
-  <title>关于 - George's Blog</title>
-  <meta name="keywords" content="null">
-  <meta name="description" content="flag🚩将学到的东西都记录下来📌  个人资料🎫 一个大4️⃣的在校的暂未秃头🤵(以后可能也不秃头)的初级软件工程师💻(高端)来自桂林电子科技大学🏫(清华又称北京小桂电) 业余的java开发,业余的🏀运动员,职业的睡觉💤达人 想写出更多💯文章📄  联系📞我 我的📫： &amp;#x63;&amp;#x68;&amp;#101;&amp;#110;&amp;#x79;&amp;#105;&amp;#99;&amp;#x61;&amp;#x69;">
-<meta property="og:type" content="website">
-<meta property="og:title" content="关于">
-<meta property="og:url" content="http://cyc0819.top/about/index.html">
+  <title>docker基础 - George's Blog</title>
+  <meta name="keywords" content="docker,null">
+  <meta name="description" content="docker基础1、安装以及配置1.1、docker的基本组成  镜像  镜像就是一个只读的模板，可以通过这个模板创建容器服务，一个镜像可以创建多个容器（最终服务运行或者项目运行就是在容器中）。  容器   Docker利用容器技术，独立运行的一个或一组应用。容器是用镜像创建的运行实例。 它可以被启用，开始，停止，删除。每个容器都是相互隔离的，保证安全的平台。 可以把容器看作是一个简易版的Linu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="docker基础">
+<meta property="og:url" content="http://cyc0819.top/2022/03/20/2022-03-20-docker%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="George&#39;s Blog">
-<meta property="og:description" content="flag🚩将学到的东西都记录下来📌  个人资料🎫 一个大4️⃣的在校的暂未秃头🤵(以后可能也不秃头)的初级软件工程师💻(高端)来自桂林电子科技大学🏫(清华又称北京小桂电) 业余的java开发,业余的🏀运动员,职业的睡觉💤达人 想写出更多💯文章📄  联系📞我 我的📫： &amp;#x63;&amp;#x68;&amp;#101;&amp;#110;&amp;#x79;&amp;#105;&amp;#99;&amp;#x61;&amp;#x69;">
+<meta property="og:description" content="docker基础1、安装以及配置1.1、docker的基本组成  镜像  镜像就是一个只读的模板，可以通过这个模板创建容器服务，一个镜像可以创建多个容器（最终服务运行或者项目运行就是在容器中）。  容器   Docker利用容器技术，独立运行的一个或一组应用。容器是用镜像创建的运行实例。 它可以被启用，开始，停止，删除。每个容器都是相互隔离的，保证安全的平台。 可以把容器看作是一个简易版的Linu">
 <meta property="og:locale">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2021-12-08T13:25:25.814Z">
-<meta property="article:modified_time" content="2021-12-08T13:25:25.814Z">
+<meta property="article:published_time" content="2022-03-20T02:17:43.000Z">
+<meta property="article:modified_time" content="2022-03-20T11:14:28.493Z">
 <meta property="article:author" content="George Chan">
+<meta property="article:tag" content="docker">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
   <!-- feed -->
@@ -1879,8 +1880,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1651367856873" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1651367856873"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1651367856902" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1651367856902"></noscript>
     <script>
       var userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -2611,7 +2612,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper about dock' style="display: none;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div id="parallax-window"></div>
 
@@ -2697,8 +2698,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow article-type-about" id="about" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://cyc0819.top/about/index.html">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://cyc0819.top/2022/03/20/2022-03-20-docker%E5%9F%BA%E7%A1%80/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="George's Blog">
   </span>
@@ -2715,7 +2716,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        关于
+        docker基础
       </h1>
       <div class='new-meta-box'>
         
@@ -2736,10 +2737,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2021-12-08T21:25:25+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-03-20T10:17:43+08:00">
   <a class='notlink' href="/" onclick="return false;" title="Click me!" >
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Dec 8, 2021</p>
+    <p>发布于：Mar 20, 2022</p>
   </a>
 </div>
 
@@ -2750,7 +2751,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item browse leancloud">
     <a class='notlink' href="/" onclick="return false;" title="Click me!" >
       
-      <div id="lc-pv" data-title="关于" data-path="/about/">
+      <div id="lc-pv" data-title="docker基础" data-path="/2022/03/20/2022-03-20-docker%E5%9F%BA%E7%A1%80/">
         <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
         <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
         次浏览
@@ -2771,30 +2772,189 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <hr>
-<p><strong>flag🚩</strong><br>将学到的东西都记录下来📌</p>
-<hr>
-<p><strong>个人资料🎫</strong></p>
-<p>一个大4️⃣的在校的暂未秃头🤵(以后可能也不秃头)的初级软件工程师💻(高端)<br>来自桂林电子科技大学🏫(清华又称北京小桂电)</p>
-<p>业余的java开发,业余的🏀运动员,职业的睡觉💤达人</p>
-<p>想写出更多💯文章📄</p>
-<hr>
-<p><strong>联系📞我</strong></p>
-<p>我的📫： <a href="mailto:&#x63;&#x68;&#101;&#110;&#x79;&#105;&#99;&#x61;&#x69;&#48;&#x38;&#49;&#57;&#64;&#102;&#111;&#x78;&#x6d;&#x61;&#105;&#x6c;&#46;&#99;&#111;&#x6d;">&#x63;&#x68;&#101;&#110;&#x79;&#105;&#99;&#x61;&#x69;&#48;&#x38;&#49;&#57;&#64;&#102;&#111;&#x78;&#x6d;&#x61;&#105;&#x6c;&#46;&#99;&#111;&#x6d;</a></p>
-<p>我的WeChatℹ：George_Chan0819</p>
-<p>我的🐧🐧：2495842975</p>
-<hr>
-<p><strong>我的标签🔖</strong></p>
-<div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='one'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://img.shields.io/badge/-java-brightgreen' data-fancybox='one' data-caption='undefined'><img fancybox itemprop="contentUrl" src="https://img.shields.io/badge/-java-brightgreen" class="lazyload" data-srcset="https://img.shields.io/badge/-java-brightgreen" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></a><span></span></div><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://img.shields.io/badge/-html-green' data-fancybox='one' data-caption='undefined'><img fancybox itemprop="contentUrl" src="https://img.shields.io/badge/-html-green" class="lazyload" data-srcset="https://img.shields.io/badge/-html-green" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></a><span></span></div><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://img.shields.io/badge/-linux-red' data-fancybox='one' data-caption='undefined'><img fancybox itemprop="contentUrl" src="https://img.shields.io/badge/-linux-red" class="lazyload" data-srcset="https://img.shields.io/badge/-linux-red" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></a><span></span></div><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://img.shields.io/badge/-basketball-blueviolet' data-fancybox='one' data-caption='undefined'><img fancybox itemprop="contentUrl" src="https://img.shields.io/badge/-basketball-blueviolet" class="lazyload" data-srcset="https://img.shields.io/badge/-basketball-blueviolet" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></a><span></span></div><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://img.shields.io/badge/-google-blue' data-fancybox='one' data-caption='undefined'><img fancybox itemprop="contentUrl" src="https://img.shields.io/badge/-google-blue" class="lazyload" data-srcset="https://img.shields.io/badge/-google-blue" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></a><span></span></div><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" target="_blank" rel="noopener" href='https://img.shields.io/badge/-xiaomi-orange' data-fancybox='one' data-caption='undefined'><img fancybox itemprop="contentUrl" src="https://img.shields.io/badge/-xiaomi-orange" class="lazyload" data-srcset="https://img.shields.io/badge/-xiaomi-orange" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></a><span></span></div></div>
+    <h1 id="docker基础"><a href="#docker基础" class="headerlink" title="docker基础"></a>docker基础</h1><h2 id="1、安装以及配置"><a href="#1、安装以及配置" class="headerlink" title="1、安装以及配置"></a>1、安装以及配置</h2><div class="story post-story"><h3 id="1-1、docker的基本组成"><a href="#1-1、docker的基本组成" class="headerlink" title="1.1、docker的基本组成"></a>1.1、docker的基本组成</h3><p><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220320151027.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220320151027.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+<ol>
+<li>镜像</li>
+</ol>
+<p>镜像就是一个只读的模板，可以通过这个模板创建容器服务，一个镜像可以创建多个容器（最终服务运行或者项目运行就是在容器中）。</p>
+<ol start="2">
+<li>容器</li>
+</ol>
+<ul>
+<li>Docker利用容器技术，独立运行的一个或一组应用。容器是用镜像创建的运行实例。</li>
+<li>它可以被启用，开始，停止，删除。每个容器都是相互隔离的，保证安全的平台。</li>
+<li>可以把容器看作是一个简易版的Linux系统(包括root用户权限，进程空间，用户空间和网络空间等)和运行在其中的应用程序。</li>
+<li>容器的定义和镜像几乎一摸一样，也是一堆层的统一视角，唯一区别在于容器的最上面那一层是可读可写的</li>
+</ul>
+<ol start="3">
+<li>仓库</li>
+</ol>
+<ul>
+<li>仓库是集中存放镜像文件的场所。</li>
+<li>仓库和仓库注册服务器(Registry)是有区别的，仓库注册服务器上往往存放着多个仓库，每个仓库中又包含了多个镜像，每个镜像有不同的标签</li>
+<li>仓库分为公开仓库(public)和私有仓库(private)两种形式</li>
+<li>最大的开放仓库是国外的 Docker Hub，存放了数量庞大的镜像供用户下载。</li>
+<li>国内的公开仓库包括阿里云，网易云都有容器服务器（需要配置镜像加速）等</li>
+</ul>
+<h3 id="1-2、准备安装环境"><a href="#1-2、准备安装环境" class="headerlink" title="1.2、准备安装环境"></a>1.2、准备安装环境</h3><p>需要准备一台系统为<code>Cent OS 7&amp;8</code>的服务器，这里我所使用的是阿里云的服务器。</p>
+<h3 id="1-3、安装"><a href="#1-3、安装" class="headerlink" title="1.3、安装"></a>1.3、安装</h3><ol>
+<li>卸载旧版本</li>
+</ol>
+<p>直接通过<code>yum</code>来安装 docker 服务。<br>如果在系统之中有旧版本的 docker ，需要首先卸载旧的版本</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">sudo yum remove docker \</span><br><span class="line">                  docker-client \</span><br><span class="line">                  docker-client-latest \</span><br><span class="line">                  docker-common \</span><br><span class="line">                  docker-latest \</span><br><span class="line">                  docker-latest-logrotate \</span><br><span class="line">                  docker-logrotate \</span><br><span class="line">                  docker-engine</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>安装新版本<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install -y yum-utils</span><br></pre></td></tr></table></figure></li>
+<li>设置镜像地址<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 默认是国外的</span></span><br><span class="line">sudo yum-config-manager \</span><br><span class="line">    --add-repo \</span><br><span class="line">    https://download.docker.com/linux/centos/docker-ce.repo</span><br><span class="line">    </span><br><span class="line"><span class="meta">#</span><span class="bash"> 换成阿里云镜像地址</span></span><br><span class="line">sudo yum-config-manager \</span><br><span class="line">    --add-repo \</span><br><span class="line">    http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<li>安装最新版Docker Engine和容器<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> docker-ce社区版(docker-ee企业版)</span></span><br><span class="line">sudo yum install docker-ce docker-ce-cli containerd.io</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="1-4、安装完成后启动"><a href="#1-4、安装完成后启动" class="headerlink" title="1.4、安装完成后启动"></a>1.4、安装完成后启动</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl start docker</span><br></pre></td></tr></table></figure>
 
+<p>查看是否安装成功并启动</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker version</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220320153252.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220320153252.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+<h3 id="1-5、测试"><a href="#1-5、测试" class="headerlink" title="1.5、测试"></a>1.5、测试</h3><p>运行hello world测试</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo docker run hello-world</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220320153514.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220320153514.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+<p>查看刚才运行的镜像</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker images</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220320153657.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220320153657.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+</div><h2 id="2、docker常用命令"><a href="#2、docker常用命令" class="headerlink" title="2、docker常用命令"></a>2、docker常用命令</h2><div class="story post-story"><h2 id="3、实战部署"><a href="#3、实战部署" class="headerlink" title="3、实战部署"></a>3、实战部署</h2><h3 id="3-1、部署Nginx"><a href="#3-1、部署Nginx" class="headerlink" title="3.1、部署Nginx"></a>3.1、部署Nginx</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 1. 搜索镜像</span></span><br><span class="line">docker search nginx</span><br><span class="line"><span class="meta">#</span><span class="bash"> 2. 下载镜像</span></span><br><span class="line">docker pull nginx</span><br><span class="line"><span class="meta">#</span><span class="bash"> 3. 查看镜像是否下载成功</span></span><br><span class="line">docker images</span><br><span class="line"><span class="meta">#</span><span class="bash"> 4. 启动容器(-d:后台运行 --name:容器名 -p:暴露端口 宿主机端口3344:容器端口80)</span></span><br><span class="line">docker run -d --name nginx01 -p 3344:80 nginx</span><br><span class="line"><span class="meta">#</span><span class="bash"> 5. 查看容器是否启动</span></span><br><span class="line">docker ps</span><br><span class="line"><span class="meta">#</span><span class="bash"> 6. 本机测试</span></span><br><span class="line">curl localhost:3344</span><br></pre></td></tr></table></figure>
 
+<h3 id="3-2、部署Tomcat"><a href="#3-2、部署Tomcat" class="headerlink" title="3.2、部署Tomcat"></a>3.2、部署Tomcat</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 官方使用</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 之前我们都是后台启动,停止容器后,仍可以通过docker ps -a命令查到容器的使用记录</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> --rm表示用完就删除容器及历史记录,通过命令查不到;</span></span><br><span class="line">docker run -it --rm tomcat:9.0</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
+</div><h2 id="3、容器数据卷"><a href="#3、容器数据卷" class="headerlink" title="3、容器数据卷"></a>3、容器数据卷</h2><div class="story post-story"><h3 id="3-1、什么是容器数据卷"><a href="#3-1、什么是容器数据卷" class="headerlink" title="3.1、什么是容器数据卷"></a>3.1、什么是容器数据卷</h3><p>docker的理念：将应用和环境打包成一个镜像！通过镜像启动容器运行。</p>
+<p>而现在有这样一个问题：在容器中存储的程序数据是需要持久化的，不能容器删了数据也随之删除。比如，安装一个MySQL容器，在其中存储了大量数据，结果把容器删了数据也没了，就相当于删库跑路，这是不可能发生的</p>
+<p>而为了解决这个问题，就有了 容器数据卷 的概念：Docker容器所产生的数据会自动同步到本地，这样子即使将容器删除了，数据依然还在；同时，同一份数据还可以在多个容器中进行共享。<br>类似于将容器的目录挂载到本地（本地指的是：服务器的本地）</p>
+<h3 id="3-2、使用容器数据卷"><a href="#3-2、使用容器数据卷" class="headerlink" title="3.2、使用容器数据卷"></a>3.2、使用容器数据卷</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -it -v 主机目录:容器内目录</span><br></pre></td></tr></table></figure>
+<p>举例：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -it -v /home/test:/home centos /bin/bash</span><br></pre></td></tr></table></figure>
+<p>启动之后可以用docker inspect查看容器详细信息，可以看到挂载的信息</p>
+
+</div>
   </div>
   
   
+    
+    <div class='footer'>
+      
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=http://cyc0819.top/2022/03/20/2022-03-20-docker%E5%9F%BA%E7%A1%80/>http://cyc0819.top/2022/03/20/2022-03-20-docker%E5%9F%BA%E7%A1%80/</a></p>
+              
+            
+          </blockquote>
+        </div>
+      
+      
+    </div>
+  
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-03-20T19:14:28+08:00">
+  <a class='notlink' href="/" onclick="return false;" title="Click me!" >
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Mar 20, 2022</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/docker/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>docker</p></a></div>
+  <span hidden itemprop="keywords">docker</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://cyc0819.top/2022/03/20/2022-03-20-docker%E5%9F%BA%E7%A1%80/&title=docker基础 - George's Blog&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://cyc0819.top/2022/03/20/2022-03-20-docker%E5%9F%BA%E7%A1%80/&title=docker基础 - George's Blog&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://cyc0819.top/2022/03/20/2022-03-20-docker%E5%9F%BA%E7%A1%80/&title=docker基础 - George's Blog&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" >
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
   
   
 
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2022/03/09/2022-03-09-%E7%BB%99%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E5%8A%A0%E4%B8%8A%E5%A4%A9%E6%B0%94%E6%8F%92%E4%BB%B6/'>
+          <p class='title'>给个人网站加上天气插件<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>给个人网站加上天气插件1、前言在修改个人网站的时候，想加上一个天气的插件，以用于打开我的个人网站的时候就可以看到当前地区的天气，这个功能既可以给网站增添光彩，也可以给游客打开网站增加了一个理由。...</p>
+        </a>
+      
+    </div>
   
   <!-- Custom Files postEnd begin-->
   
@@ -2882,9 +3042,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
+  <section class="widget toc-wrapper shadow desktop mobile pjax" id="toc-div" >
+    
+  <header>
+    
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E9%85%8D%E7%BD%AE"><span class="toc-text">1、安装以及配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1%E3%80%81docker%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%84%E6%88%90"><span class="toc-text">1.1、docker的基本组成</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2%E3%80%81%E5%87%86%E5%A4%87%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83"><span class="toc-text">1.2、准备安装环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3%E3%80%81%E5%AE%89%E8%A3%85"><span class="toc-text">1.3、安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4%E3%80%81%E5%AE%89%E8%A3%85%E5%AE%8C%E6%88%90%E5%90%8E%E5%90%AF%E5%8A%A8"><span class="toc-text">1.4、安装完成后启动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-5%E3%80%81%E6%B5%8B%E8%AF%95"><span class="toc-text">1.5、测试</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-text">2、docker常用命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E5%AE%9E%E6%88%98%E9%83%A8%E7%BD%B2"><span class="toc-text">3、实战部署</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1%E3%80%81%E9%83%A8%E7%BD%B2Nginx"><span class="toc-text">3.1、部署Nginx</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2%E3%80%81%E9%83%A8%E7%BD%B2Tomcat"><span class="toc-text">3.2、部署Tomcat</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E5%AE%B9%E5%99%A8%E6%95%B0%E6%8D%AE%E5%8D%B7"><span class="toc-text">3、容器数据卷</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%E5%AE%B9%E5%99%A8%E6%95%B0%E6%8D%AE%E5%8D%B7"><span class="toc-text">3.1、什么是容器数据卷</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2%E3%80%81%E4%BD%BF%E7%94%A8%E5%AE%B9%E5%99%A8%E6%95%B0%E6%8D%AE%E5%8D%B7"><span class="toc-text">3.2、使用容器数据卷</span></a></li></ol></li></ol>
+    </div>
+  </section>
 
   
 
@@ -3099,8 +3269,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="docker基础";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3187,8 +3357,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1651367856873')
-      volantis.js('/js/message.js?time=1651367856873', () => {
+      volantis.css('/css/message.css?time=1651367856902')
+      volantis.js('/js/message.js?time=1651367856902', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -3233,8 +3403,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1651367856873')
-      volantis.js('/js/message.js?time=1651367856873', () => {
+      volantis.css('/css/message.css?time=1651367856902')
+      volantis.js('/js/message.js?time=1651367856902', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -3293,8 +3463,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1651367856873')
-      volantis.js('/js/message.js?time=1651367856873', () => {
+      volantis.css('/css/message.css?time=1651367856902')
+      volantis.js('/js/message.js?time=1651367856902', () => {
         hideMessage(done);
       });
     } else {
@@ -3439,19 +3609,19 @@ volantis.pjax.push(bindToggleButton);
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1651367856873")
+        volantis.js("/js/plugins/sites.js?time=1651367856902")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1651367856873")
+        volantis.js("/js/plugins/friends.js?time=1651367856902")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1651367856873")
+        volantis.js("/js/plugins/contributors.js?time=1651367856902")
       }
     
   };
@@ -3642,7 +3812,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-<script src="/js/app.js?time=1651367856873.js"></script>
+<script src="/js/app.js?time=1651367856902.js"></script>
 
 
 <!-- optional -->
@@ -3655,7 +3825,7 @@ volantis.pjax.push(bindToggleButton);
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1651367856873");
+    return volantis.js("/js/search/hexo.js?time=1651367856902");
   }
 
   function loadSearchService() {
@@ -3929,7 +4099,7 @@ volantis.pjax.push(bindToggleButton);
 
 
   <script>
-  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp"];
+  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -3972,7 +4142,7 @@ volantis.pjax.push(bindToggleButton);
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/parallax.js?time=1651367856873').then(()=>{
+    volantis.js('/js/parallax.js?time=1651367856902').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4166,7 +4336,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://cyc0819.top/","name":"George's Blog"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"George's Blog","url":"http://cyc0819.top/","keywords":null,"description":"","author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","description":""},"publisher":{"@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://cyc0819.top?s={search_term_string}"},"query-input":"required name=search_term_string"}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://cyc0819.top/","name":"George's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"http://cyc0819.top/2022/03/20/2022-03-20-docker基础/","name":"docker基础"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"docker基础","description":"","datePublished":"2022-03-20T02:17:43.000Z","dateModified":"2022-03-20T11:14:28.493Z","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://cyc0819.top/2022/03/20/2022-03-20-docker%E5%9F%BA%E7%A1%80/"},"author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/"},"publisher":{"@type":"Organization","name":"George's Blog","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://cyc0819.top/2022/03/20/2022-03-20-docker%E5%9F%BA%E7%A1%80/","wordCount":0,"keywords":"docker","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 <!-- more -->
