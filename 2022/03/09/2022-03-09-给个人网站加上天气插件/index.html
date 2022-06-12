@@ -23,7 +23,7 @@
   <meta content="George&#39;s Blog" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1652182198665" as="style">
+  <link rel="preload" href="/css/style.css?time=1655051374204" as="style">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
@@ -39,7 +39,7 @@
 <meta property="og:locale">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-03-09T01:09:43.000Z">
-<meta property="article:modified_time" content="2022-03-09T01:56:41.031Z">
+<meta property="article:modified_time" content="2022-06-12T16:27:02.678Z">
 <meta property="article:author" content="George Chan">
 <meta property="article:tag" content="记录">
 <meta name="twitter:card" content="summary">
@@ -1880,8 +1880,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1652182198665" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1652182198665"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1655051374204" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1655051374204"></noscript>
     <script>
       var userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1914,9 +1914,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>`+
-        `<span class="kill-c">Microsoft has terminated support for Internet Explorer (IE) 10 and earlier versions in 2016. <br/>There are great security risks to continue using it. Please use contemporary mainstream browsers to access.</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-cn/WindowsForBusiness/End-of-IE-support"><strong>Learn more ></strong></a>`+
+        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
+        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-cn/WindowsForBusiness/End-of-IE-support"><strong>了解详情 ></strong></a>`+
     '</div>');
 </script>
 
@@ -1944,9 +1944,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>
-        <span class="kill-c">This page requires browser support (enable) JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>Learn more ></strong></a>
+        <span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>
+        <span class="kill-c">本页面需要浏览器支持（启用）JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情 ></strong></a>
     </div>
 </noscript>
 
@@ -2788,13 +2788,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div id="post-body" itemprop="articleBody">
     <h1 id="给个人网站加上天气插件"><a href="#给个人网站加上天气插件" class="headerlink" title="给个人网站加上天气插件"></a>给个人网站加上天气插件</h1><h2 id="1、前言"><a href="#1、前言" class="headerlink" title="1、前言"></a>1、前言</h2><div class="story post-story"><p>在修改个人网站的时候，想加上一个天气的插件，以用于打开我的个人网站的时候就可以看到当前地区的天气，这个功能既可以给网站增添光彩，也可以给游客打开网站增加了一个理由。</p>
 <p>在看了多款天气插件之后，如：中国天气网、心知天气、彩云天气等等。<br>最终还是选了<a target="_blank" rel="noopener" href="https://www.qweather.com/">和风天气</a>作为最终的插件</p>
-</div><h2 id="2、API设置"><a href="#2、API设置" class="headerlink" title="2、API设置"></a>2、API设置</h2><div class="story post-story"><p>首先我们需要进入和风天气的<a target="_blank" rel="noopener" href="https://dev.qweather.com/">开发平台</a><br><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220308232438.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220308232438.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ><br>点开右上角的<code>控制台</code>登录进入<br><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220308232654.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220308232654.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ><br>然后打开应用管理中的创建新应用，创建一个 <code>Web API</code>类幸应用</p>
-<p>创建成功后，会得到这样的一个应用，重要的是这个KEY，后面再开发的时候会用到！<br><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220308233225.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220308233225.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+</div><h2 id="2、API设置"><a href="#2、API设置" class="headerlink" title="2、API设置"></a>2、API设置</h2><div class="story post-story"><p>首先我们需要进入和风天气的<a target="_blank" rel="noopener" href="https://dev.qweather.com/">开发平台</a><br><img src="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220308232438.png" class="lazyload" data-srcset="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220308232438.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ><br>点开右上角的<code>控制台</code>登录进入<br><img src="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220308232654.png" class="lazyload" data-srcset="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220308232654.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ><br>然后打开应用管理中的创建新应用，创建一个 <code>Web API</code>类幸应用</p>
+<p>创建成功后，会得到这样的一个应用，重要的是这个KEY，后面再开发的时候会用到！<br><img src="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220308233225.png" class="lazyload" data-srcset="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220308233225.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
 </div><h2 id="3、插件设置"><a href="#3、插件设置" class="headerlink" title="3、插件设置"></a>3、插件设置</h2><div class="story post-story"><p>除了上面的 API 的方式之外，可能更多使用的是插件，因为插件不用自己写样式，可以直接进行调用，而 API 仅仅是一堆数据，需要我们手写样式才能将其显示出来。<br>所以说如果不是特别强调要匹配网站原始风格的，直接使用插件，会更加方便。</p>
-<h3 id="3-1、配置插件设置"><a href="#3-1、配置插件设置" class="headerlink" title="3.1、配置插件设置"></a>3.1、配置插件设置</h3><p>首先我们打开和风天气的插件管理界面,点击左侧的开发文档<br><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220309091452.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220309091452.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ><br>然后选择插件开发文档，会显示以下的内容，根据自己的需要进行创建。<br><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220309091611.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220309091611.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ><br>这里以网页标准插件作为例子</p>
-<p>此处在配置完成插件的内容之后，点击生成代码，即可完成制作<br><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220309091801.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220309091801.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
-<p><strong>注意：此处的代码是不能直接在 vue 中进行使用的，所以我们需要对其进行一些处理</strong><br><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220309091924.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220309091924.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
-<p>首先我们复制第二个 script 中的连接，在浏览器中打开<br>记录下这些内容，这个就是这个连接所对应的源码<br><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220309092119.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220309092119.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+<h3 id="3-1、配置插件设置"><a href="#3-1、配置插件设置" class="headerlink" title="3.1、配置插件设置"></a>3.1、配置插件设置</h3><p>首先我们打开和风天气的插件管理界面,点击左侧的开发文档<br><img src="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220309091452.png" class="lazyload" data-srcset="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220309091452.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ><br>然后选择插件开发文档，会显示以下的内容，根据自己的需要进行创建。<br><img src="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220309091611.png" class="lazyload" data-srcset="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220309091611.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ><br>这里以网页标准插件作为例子</p>
+<p>此处在配置完成插件的内容之后，点击生成代码，即可完成制作<br><img src="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220309091801.png" class="lazyload" data-srcset="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220309091801.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+<p><strong>注意：此处的代码是不能直接在 vue 中进行使用的，所以我们需要对其进行一些处理</strong><br><img src="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220309091924.png" class="lazyload" data-srcset="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220309091924.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+<p>首先我们复制第二个 script 中的连接，在浏览器中打开<br>记录下这些内容，这个就是这个连接所对应的源码<br><img src="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220309092119.png" class="lazyload" data-srcset="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220309092119.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
 <h3 id="3-2、vue代码编写"><a href="#3-2、vue代码编写" class="headerlink" title="3.2、vue代码编写"></a>3.2、vue代码编写</h3><p>首先我们需要创建一个 div 作为容器，并将其id设置为<code>he-plugin-standard</code></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;he-plugin-standard&quot; &gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 
@@ -2802,7 +2802,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>我们需要在页面创建的时候就创建天气插件，所以我们将代码放到一个<code>created</code>代码块中。<br>注意此处在<code>WIDGET</code>的前面要加上<code>window</code>才可以。<br>其他的就是直接法制黏贴即可</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">created</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    <span class="built_in">window</span>.WIDGET = &#123;</span><br><span class="line">      <span class="string">&quot;CONFIG&quot;</span>: &#123;</span><br><span class="line">        <span class="string">&quot;layout&quot;</span>: <span class="string">&quot;1&quot;</span>,</span><br><span class="line">        <span class="string">&quot;width&quot;</span>: <span class="string">&quot;500&quot;</span>,</span><br><span class="line">        <span class="string">&quot;height&quot;</span>: <span class="string">&quot;200&quot;</span>,</span><br><span class="line">        <span class="string">&quot;background&quot;</span>: <span class="string">&quot;1&quot;</span>,</span><br><span class="line">        <span class="string">&quot;dataColor&quot;</span>: <span class="string">&quot;FFFFFF&quot;</span>,</span><br><span class="line">        <span class="string">&quot;borderRadius&quot;</span>: <span class="string">&quot;5&quot;</span>,</span><br><span class="line">        <span class="string">&quot;key&quot;</span>: <span class="string">&quot;94096c96a79b4e3d9bf421612639f9e9&quot;</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">    (<span class="function"><span class="keyword">function</span> (<span class="params">d</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">var</span> c = d.createElement(<span class="string">&#x27;link&#x27;</span>)</span><br><span class="line">      c.rel = <span class="string">&#x27;stylesheet&#x27;</span></span><br><span class="line">      c.href = <span class="string">&#x27;https://widget.heweather.net/standard/static/css/he-standard.css?v=1.4.0&#x27;</span></span><br><span class="line">      <span class="keyword">var</span> s = d.createElement(<span class="string">&#x27;script&#x27;</span>)</span><br><span class="line">      s.src = <span class="string">&#x27;https://widget.heweather.net/standard/static/js/he-standard.js?v=1.4.0&#x27;</span></span><br><span class="line">      <span class="keyword">var</span> sn = d.getElementsByTagName(<span class="string">&#x27;script&#x27;</span>)[<span class="number">0</span>]</span><br><span class="line">      sn.parentNode.insertBefore(c, sn)</span><br><span class="line">      sn.parentNode.insertBefore(s, sn)</span><br><span class="line">    &#125;)(<span class="built_in">document</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>在官方这些代码的基础上，我们可以进行一些修改，达到自己想要的一些效果。<br>以下就是最终的结果<br><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220309093544.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220309093544.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+<p>在官方这些代码的基础上，我们可以进行一些修改，达到自己想要的一些效果。<br>以下就是最终的结果<br><img src="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220309093544.png" class="lazyload" data-srcset="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220309093544.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
 
 </div>
   </div>
@@ -2839,10 +2839,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-03-09T09:56:41+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-06-13T00:27:02+08:00">
   <a class='notlink' href="/" onclick="return false;" title="Click me!" >
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Mar 9, 2022</p>
+    <p>更新于：Jun 13, 2022</p>
   </a>
 </div>
 
@@ -3361,8 +3361,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1652182198665')
-      volantis.js('/js/message.js?time=1652182198665', () => {
+      volantis.css('/css/message.css?time=1655051374204')
+      volantis.js('/js/message.js?time=1655051374204', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -3407,8 +3407,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1652182198665')
-      volantis.js('/js/message.js?time=1652182198665', () => {
+      volantis.css('/css/message.css?time=1655051374204')
+      volantis.js('/js/message.js?time=1655051374204', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -3467,8 +3467,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1652182198665')
-      volantis.js('/js/message.js?time=1652182198665', () => {
+      volantis.css('/css/message.css?time=1655051374204')
+      volantis.js('/js/message.js?time=1655051374204', () => {
         hideMessage(done);
       });
     } else {
@@ -3613,19 +3613,19 @@ volantis.pjax.push(bindToggleButton);
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1652182198665")
+        volantis.js("/js/plugins/sites.js?time=1655051374204")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1652182198665")
+        volantis.js("/js/plugins/friends.js?time=1655051374204")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1652182198665")
+        volantis.js("/js/plugins/contributors.js?time=1655051374204")
       }
     
   };
@@ -3816,7 +3816,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-<script src="/js/app.js?time=1652182198665.js"></script>
+<script src="/js/app.js?time=1655051374204.js"></script>
 
 
 <!-- optional -->
@@ -3829,7 +3829,7 @@ volantis.pjax.push(bindToggleButton);
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1652182198665");
+    return volantis.js("/js/search/hexo.js?time=1655051374204");
   }
 
   function loadSearchService() {
@@ -4103,7 +4103,7 @@ volantis.pjax.push(bindToggleButton);
 
 
   <script>
-  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp"];
+  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -4146,7 +4146,7 @@ volantis.pjax.push(bindToggleButton);
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/parallax.js?time=1652182198665').then(()=>{
+    volantis.js('/js/parallax.js?time=1655051374204').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4340,7 +4340,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://cyc0819.top/","name":"George's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/博客/","name":"博客"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/博客/个人网站/","name":"个人网站"}},{"@type":"ListItem","position":3,"item":{"@id":"http://cyc0819.top/2022/03/09/2022-03-09-给个人网站加上天气插件/","name":"给个人网站加上天气插件"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"给个人网站加上天气插件","description":"","datePublished":"2022-03-09T01:09:43.000Z","dateModified":"2022-03-09T01:56:41.031Z","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://cyc0819.top/2022/03/09/2022-03-09-%E7%BB%99%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E5%8A%A0%E4%B8%8A%E5%A4%A9%E6%B0%94%E6%8F%92%E4%BB%B6/"},"author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/"},"publisher":{"@type":"Organization","name":"George's Blog","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://cyc0819.top/2022/03/09/2022-03-09-%E7%BB%99%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E5%8A%A0%E4%B8%8A%E5%A4%A9%E6%B0%94%E6%8F%92%E4%BB%B6/","wordCount":0,"articleSection":"博客","keywords":"记录","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://cyc0819.top/","name":"George's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/博客/","name":"博客"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/博客/个人网站/","name":"个人网站"}},{"@type":"ListItem","position":3,"item":{"@id":"http://cyc0819.top/2022/03/09/2022-03-09-给个人网站加上天气插件/","name":"给个人网站加上天气插件"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"给个人网站加上天气插件","description":"","datePublished":"2022-03-09T01:09:43.000Z","dateModified":"2022-06-12T16:27:02.678Z","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://cyc0819.top/2022/03/09/2022-03-09-%E7%BB%99%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E5%8A%A0%E4%B8%8A%E5%A4%A9%E6%B0%94%E6%8F%92%E4%BB%B6/"},"author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/"},"publisher":{"@type":"Organization","name":"George's Blog","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://cyc0819.top/2022/03/09/2022-03-09-%E7%BB%99%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E5%8A%A0%E4%B8%8A%E5%A4%A9%E6%B0%94%E6%8F%92%E4%BB%B6/","wordCount":0,"articleSection":"博客","keywords":"记录","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 <!-- more -->

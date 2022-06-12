@@ -23,7 +23,7 @@
   <meta content="George&#39;s Blog" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1652182198702" as="style">
+  <link rel="preload" href="/css/style.css?time=1655051374292" as="style">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
@@ -39,7 +39,7 @@
 <meta property="og:locale">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2021-12-08T05:53:12.000Z">
-<meta property="article:modified_time" content="2021-12-08T09:32:01.537Z">
+<meta property="article:modified_time" content="2022-06-12T16:16:42.864Z">
 <meta property="article:author" content="George Chan">
 <meta property="article:tag" content="java">
 <meta property="article:tag" content="maven">
@@ -1881,8 +1881,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1652182198702" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1652182198702"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1655051374292" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1655051374292"></noscript>
     <script>
       var userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1915,9 +1915,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>`+
-        `<span class="kill-c">Microsoft has terminated support for Internet Explorer (IE) 10 and earlier versions in 2016. <br/>There are great security risks to continue using it. Please use contemporary mainstream browsers to access.</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-cn/WindowsForBusiness/End-of-IE-support"><strong>Learn more ></strong></a>`+
+        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
+        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-cn/WindowsForBusiness/End-of-IE-support"><strong>了解详情 ></strong></a>`+
     '</div>');
 </script>
 
@@ -1945,9 +1945,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>
-        <span class="kill-c">This page requires browser support (enable) JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>Learn more ></strong></a>
+        <span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>
+        <span class="kill-c">本页面需要浏览器支持（启用）JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情 ></strong></a>
     </div>
 </noscript>
 
@@ -2797,12 +2797,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <h3 id="3-2、报错"><a href="#3-2、报错" class="headerlink" title="3.2、报错"></a>3.2、报错</h3><p>此时直接进行下载会提示找不到依赖的相关内容</p>
 <h3 id="3-3、解决方法一"><a href="#3-3、解决方法一" class="headerlink" title="3.3、解决方法一"></a>3.3、解决方法一</h3><p>翻阅了网上的说法，说是在依赖后面加上一句：<code>&lt;classifier&gt;jdk15&lt;/classifier&gt;</code> ，因为远程提供了两个包，我试了一下在我这里并不管用。<br>所以，此方法基本放弃。</p>
-<h3 id="3-4、解决方法二"><a href="#3-4、解决方法二" class="headerlink" title="3.4、解决方法二"></a>3.4、解决方法二</h3><p>另一个方法，就是去<a target="_blank" rel="noopener" href="https://mvnrepository.com/">MAVEN存储库</a>直接下载jar包，<br>但是在我打开网站的时候，点击 jar 包进行下载，却发现，这里的也无法下载了<br><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211208141505.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211208141505.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ><br><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211208141543.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211208141543.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+<h3 id="3-4、解决方法二"><a href="#3-4、解决方法二" class="headerlink" title="3.4、解决方法二"></a>3.4、解决方法二</h3><p>另一个方法，就是去<a target="_blank" rel="noopener" href="https://mvnrepository.com/">MAVEN存储库</a>直接下载jar包，<br>但是在我打开网站的时候，点击 jar 包进行下载，却发现，这里的也无法下载了<br><img src="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211208141505.png" class="lazyload" data-srcset="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211208141505.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ><br><img src="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211208141543.png" class="lazyload" data-srcset="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211208141543.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
 <p>所以基本上可以判断不是我们自己的问题了。</p>
 <p>偶然之间，我发现这个依赖竟然有一个官网：<a target="_blank" rel="noopener" href="http://json-lib.sourceforge.net/">JSON-lib</a></p>
-<p>进去看看<img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211208142229.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211208142229.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ><br>官网里应该有 jar 包的下载链接<br>果然，点击下面这个按钮就可以正常下载了<br><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211208142313.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211208142313.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ><br><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211208142413.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211208142413.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+<p>进去看看<img src="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211208142229.png" class="lazyload" data-srcset="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211208142229.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ><br>官网里应该有 jar 包的下载链接<br>果然，点击下面这个按钮就可以正常下载了<br><img src="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211208142313.png" class="lazyload" data-srcset="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211208142313.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ><br><img src="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211208142413.png" class="lazyload" data-srcset="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211208142413.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
 <p><strong>下载完成之后就可以进行手动的导入了</strong><br>我这里选择的是将我们手动下载的 jar 包，放在 maven 本地仓库的相应位置<br>首先，我们需要将后面的 <code>jdk15</code> 去掉，因为我们的依赖里是没有的。</p>
-<p>然后根据自己的本地仓库位置，找到 json-lib的本地仓库<br><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211208143118.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211208143118.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ><br>点击进入 2.4 文件夹,将我们更名之后的 jar 包放到其中<br><img src="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211208143204.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211208143204.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ><br>最后记得把带有 <code>last</code> 的文件删掉</p>
+<p>然后根据自己的本地仓库位置，找到 json-lib的本地仓库<br><img src="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211208143118.png" class="lazyload" data-srcset="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211208143118.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ><br>点击进入 2.4 文件夹,将我们更名之后的 jar 包放到其中<br><img src="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211208143204.png" class="lazyload" data-srcset="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20211208143204.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ><br>最后记得把带有 <code>last</code> 的文件删掉</p>
 <p>最后到 java 项目中重新载入一下 maven 就可以了。</p>
 </div><h2 id="4、结束"><a href="#4、结束" class="headerlink" title="4、结束"></a>4、结束</h2><div class="story post-story"><p><code>json-lib</code> 相当于 <code>jackson,fastjson</code>这样的 jar 来说，效率不高，所以建议使用后者。</p>
 <p><code>json-lib</code>中的 <code>JSONObject.fromObject(result)</code> 方法可用<br><code>fastjson</code>中的<code>JSON.parseObject(result);</code>进行替代</p>
@@ -2842,10 +2842,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2021-12-08T17:32:01+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-06-13T00:16:42+08:00">
   <a class='notlink' href="/" onclick="return false;" title="Click me!" >
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Dec 8, 2021</p>
+    <p>更新于：Jun 13, 2022</p>
   </a>
 </div>
 
@@ -3372,8 +3372,8 @@ Tomcat 9.0.27
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1652182198702')
-      volantis.js('/js/message.js?time=1652182198702', () => {
+      volantis.css('/css/message.css?time=1655051374292')
+      volantis.js('/js/message.js?time=1655051374292', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -3418,8 +3418,8 @@ Tomcat 9.0.27
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1652182198702')
-      volantis.js('/js/message.js?time=1652182198702', () => {
+      volantis.css('/css/message.css?time=1655051374292')
+      volantis.js('/js/message.js?time=1655051374292', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -3478,8 +3478,8 @@ Tomcat 9.0.27
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1652182198702')
-      volantis.js('/js/message.js?time=1652182198702', () => {
+      volantis.css('/css/message.css?time=1655051374292')
+      volantis.js('/js/message.js?time=1655051374292', () => {
         hideMessage(done);
       });
     } else {
@@ -3624,19 +3624,19 @@ volantis.pjax.push(bindToggleButton);
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1652182198702")
+        volantis.js("/js/plugins/sites.js?time=1655051374292")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1652182198702")
+        volantis.js("/js/plugins/friends.js?time=1655051374292")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1652182198702")
+        volantis.js("/js/plugins/contributors.js?time=1655051374292")
       }
     
   };
@@ -3827,7 +3827,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-<script src="/js/app.js?time=1652182198702.js"></script>
+<script src="/js/app.js?time=1655051374292.js"></script>
 
 
 <!-- optional -->
@@ -3840,7 +3840,7 @@ volantis.pjax.push(bindToggleButton);
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1652182198702");
+    return volantis.js("/js/search/hexo.js?time=1655051374292");
   }
 
   function loadSearchService() {
@@ -4114,7 +4114,7 @@ volantis.pjax.push(bindToggleButton);
 
 
   <script>
-  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp"];
+  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -4157,7 +4157,7 @@ volantis.pjax.push(bindToggleButton);
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/parallax.js?time=1652182198702').then(()=>{
+    volantis.js('/js/parallax.js?time=1655051374292').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4351,7 +4351,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://cyc0819.top/","name":"George's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/java/","name":"java"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/java/maven/","name":"maven"}},{"@type":"ListItem","position":3,"item":{"@id":"http://cyc0819.top/2021/12/08/2021-12-08-json—lib依赖无法下载问题/","name":"json—lib依赖无法下载问题"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"json—lib依赖无法下载问题","description":"","datePublished":"2021-12-08T05:53:12.000Z","dateModified":"2021-12-08T09:32:01.537Z","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://cyc0819.top/2021/12/08/2021-12-08-json%E2%80%94lib%E4%BE%9D%E8%B5%96%E6%97%A0%E6%B3%95%E4%B8%8B%E8%BD%BD%E9%97%AE%E9%A2%98/"},"author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/"},"publisher":{"@type":"Organization","name":"George's Blog","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://cyc0819.top/2021/12/08/2021-12-08-json%E2%80%94lib%E4%BE%9D%E8%B5%96%E6%97%A0%E6%B3%95%E4%B8%8B%E8%BD%BD%E9%97%AE%E9%A2%98/","wordCount":0,"articleSection":"java","keywords":"java,maven","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://cyc0819.top/","name":"George's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/java/","name":"java"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/java/maven/","name":"maven"}},{"@type":"ListItem","position":3,"item":{"@id":"http://cyc0819.top/2021/12/08/2021-12-08-json—lib依赖无法下载问题/","name":"json—lib依赖无法下载问题"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"json—lib依赖无法下载问题","description":"","datePublished":"2021-12-08T05:53:12.000Z","dateModified":"2022-06-12T16:16:42.864Z","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://cyc0819.top/2021/12/08/2021-12-08-json%E2%80%94lib%E4%BE%9D%E8%B5%96%E6%97%A0%E6%B3%95%E4%B8%8B%E8%BD%BD%E9%97%AE%E9%A2%98/"},"author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/"},"publisher":{"@type":"Organization","name":"George's Blog","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://cyc0819.top/2021/12/08/2021-12-08-json%E2%80%94lib%E4%BE%9D%E8%B5%96%E6%97%A0%E6%B3%95%E4%B8%8B%E8%BD%BD%E9%97%AE%E9%A2%98/","wordCount":0,"articleSection":"java","keywords":"java,maven","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 <!-- more -->
