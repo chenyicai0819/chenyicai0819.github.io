@@ -35,18 +35,18 @@
     
     <category term="java" scheme="http://cyc0819.top/categories/java/"/>
     
-    <category term="数据库" scheme="http://cyc0819.top/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
     <category term="SpringBoot" scheme="http://cyc0819.top/categories/java/SpringBoot/"/>
+    
+    <category term="数据库" scheme="http://cyc0819.top/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     <category term="SSH连接" scheme="http://cyc0819.top/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/SSH%E8%BF%9E%E6%8E%A5/"/>
     
     
-    <category term="数据库" scheme="http://cyc0819.top/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
     <category term="java" scheme="http://cyc0819.top/tags/java/"/>
     
     <category term="SpringBoot" scheme="http://cyc0819.top/tags/SpringBoot/"/>
+    
+    <category term="数据库" scheme="http://cyc0819.top/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   
