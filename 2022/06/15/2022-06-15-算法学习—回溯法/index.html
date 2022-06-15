@@ -23,23 +23,23 @@
   <meta content="George&#39;s Blog" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1655307254156" as="style">
+  <link rel="preload" href="/css/style.css?time=1655312113092" as="style">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- 页面元数据 -->
   <title>算法学习—回溯法 - George's Blog</title>
   <meta name="keywords" content="算法,null">
-  <meta name="description" content="算法学习—回溯法1、回溯法的概念回溯法，顾名思义就是不断地重复枚举结果集，直到找到我们所要的结果。这种思想类似于暴力搜索，但是又与暴力搜索有着不同，回溯法使用了剪枝函数，除去了一些错误的解法。回溯法在搜索的过程中，如果发现这一步的结果不符合结果的要求，则会放弃下面的查找，回溯到上一步，更换一种新的查找方式，它其实是一种选优搜索，根据选优条件逐步搜索，以达到目标。回溯法中满足回溯条件的点我们称为 “">
+  <meta name="description" content="[TOC] 算法学习—回溯法1、回溯法的概念回溯法，顾名思义就是不断地重复枚举结果集，直到找到我们所要的结果。这种思想类似于暴力搜索，但是又与暴力搜索有着不同，回溯法使用了剪枝函数，除去了一些错误的解法。回溯法在搜索的过程中，如果发现这一步的结果不符合结果的要求，则会放弃下面的查找，回溯到上一步，更换一种新的查找方式，它其实是一种选优搜索，根据选优条件逐步搜索，以达到目标。回溯法中满足回溯条件的点">
 <meta property="og:type" content="article">
 <meta property="og:title" content="算法学习—回溯法">
 <meta property="og:url" content="http://cyc0819.top/2022/06/15/2022-06-15-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%80%94%E5%9B%9E%E6%BA%AF%E6%B3%95/index.html">
 <meta property="og:site_name" content="George&#39;s Blog">
-<meta property="og:description" content="算法学习—回溯法1、回溯法的概念回溯法，顾名思义就是不断地重复枚举结果集，直到找到我们所要的结果。这种思想类似于暴力搜索，但是又与暴力搜索有着不同，回溯法使用了剪枝函数，除去了一些错误的解法。回溯法在搜索的过程中，如果发现这一步的结果不符合结果的要求，则会放弃下面的查找，回溯到上一步，更换一种新的查找方式，它其实是一种选优搜索，根据选优条件逐步搜索，以达到目标。回溯法中满足回溯条件的点我们称为 “">
+<meta property="og:description" content="[TOC] 算法学习—回溯法1、回溯法的概念回溯法，顾名思义就是不断地重复枚举结果集，直到找到我们所要的结果。这种思想类似于暴力搜索，但是又与暴力搜索有着不同，回溯法使用了剪枝函数，除去了一些错误的解法。回溯法在搜索的过程中，如果发现这一步的结果不符合结果的要求，则会放弃下面的查找，回溯到上一步，更换一种新的查找方式，它其实是一种选优搜索，根据选优条件逐步搜索，以达到目标。回溯法中满足回溯条件的点">
 <meta property="og:locale">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-06-15T15:36:35.000Z">
-<meta property="article:modified_time" content="2022-06-15T15:32:01.505Z">
+<meta property="article:modified_time" content="2022-06-15T16:54:05.086Z">
 <meta property="article:author" content="George Chan">
 <meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
@@ -1880,8 +1880,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1655307254156" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1655307254156"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1655312113092" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1655312113092"></noscript>
     <script>
       var userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -2782,7 +2782,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h1 id="算法学习—回溯法"><a href="#算法学习—回溯法" class="headerlink" title="算法学习—回溯法"></a>算法学习—回溯法</h1><h2 id="1、回溯法的概念"><a href="#1、回溯法的概念" class="headerlink" title="1、回溯法的概念"></a>1、回溯法的概念</h2><div class="story post-story"><p>回溯法，顾名思义就是不断地重复枚举结果集，直到找到我们所要的结果。这种思想类似于暴力搜索，但是又与暴力搜索有着不同，回溯法使用了剪枝函数，除去了一些错误的解法。<br>回溯法在搜索的过程中，如果发现这一步的结果不符合结果的要求，则会放弃下面的查找，回溯到上一步，更换一种新的查找方式，它其实是一种选优搜索，根据选优条件逐步搜索，以达到目标。回溯法中满足回溯条件的点我们称为 “回溯点”。<br>在一些复杂问题，或者是比较大规模的问题中，我们都可以使用回溯法来解决，所以回溯法也有着“通用解题方法”的美称。</p>
+    <p>[TOC]</p>
+<h1 id="算法学习—回溯法"><a href="#算法学习—回溯法" class="headerlink" title="算法学习—回溯法"></a>算法学习—回溯法</h1><h2 id="1、回溯法的概念"><a href="#1、回溯法的概念" class="headerlink" title="1、回溯法的概念"></a>1、回溯法的概念</h2><div class="story post-story"><p>回溯法，顾名思义就是不断地重复枚举结果集，直到找到我们所要的结果。这种思想类似于暴力搜索，但是又与暴力搜索有着不同，回溯法使用了剪枝函数，除去了一些错误的解法。<br>回溯法在搜索的过程中，如果发现这一步的结果不符合结果的要求，则会放弃下面的查找，回溯到上一步，更换一种新的查找方式，它其实是一种选优搜索，根据选优条件逐步搜索，以达到目标。回溯法中满足回溯条件的点我们称为 “回溯点”。<br>在一些复杂问题，或者是比较大规模的问题中，我们都可以使用回溯法来解决，所以回溯法也有着“通用解题方法”的美称。</p>
 </div><h2 id="2、基本思想"><a href="#2、基本思想" class="headerlink" title="2、基本思想"></a>2、基本思想</h2><div class="story post-story"><p>回溯法的基本思想是：从一条路往前走，能进则进，不能进则退回来，换一条新的路尝试。回溯法是一个既带有系统性又带有跳跃性的的搜索算法。它在包含问题的所有解的解空间树中，按照深度优先的策略，从根结点出发搜索解空间树。算法搜索至解空间树的任一结点时，总是先判断该结点是否肯定不包含问题的解。如果肯定不包含，则跳过对以该结点为根的子树的系统搜索，逐层向其祖先结点回溯。否则，进入该子树，继续按深度优先的策略进行搜索。回溯法在用来求问题的所有解时，要回溯到根，且根结点的所有子树都已被搜索遍才结束。而回溯法在用来求问题的任一解时，只要搜索到问题的一个解就可以结束。这种以深度优先的方式系统地搜索问题的解的算法称为回溯法，它适用于解一些组合数较大的问题。</p>
 </div><h2 id="3、解题步骤"><a href="#3、解题步骤" class="headerlink" title="3、解题步骤"></a>3、解题步骤</h2><div class="story post-story"><p>1.定义一个解空间，它包含问题的解；<br>2.利用适于搜索的方法组织解空间；<br>3.利用深度优先法搜索解空间；<br>4.利用限界函数避免移动到不可能产生解的子空间。</p>
 </div><h2 id="4、实际例子"><a href="#4、实际例子" class="headerlink" title="4、实际例子"></a>4、实际例子</h2><div class="story post-story"><h3 id="4-1、全排列问题"><a href="#4-1、全排列问题" class="headerlink" title="4.1、全排列问题"></a>4.1、全排列问题</h3><p><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/permutations/">leetcode-46</a></p>
@@ -2803,7 +2804,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>如果 first=n，说明我们已经填完了 n 个位置（注意下标从 0 开始），找到了一个可行的解，我们将 output 放入答案数组中，递归结束。</li>
 <li>如果 first&lt;n，我们要考虑这第 first 个位置我们要填哪个数。根据题目要求我们肯定不能填已经填过的数，因此很容易想到的一个处理手段是我们定义一个标记数组 vis 来标记已经填过的数，那么在填第 first 个数的时候我们遍历题目给定的 n 个数，如果这个数没有被标记过，我们就尝试填入，并将其标记，继续尝试填下一个位置，即调用函数 backtrack(first+1,output)。回溯的时候要撤销这一个位置填的数以及标记，并继续尝试其他没被标记过的数。</li>
 </ol>
-<p>示例图：<br><img src="https://assets.leetcode-cn.com/solution-static/46/fig14.PNG" class="lazyload" data-srcset="https://assets.leetcode-cn.com/solution-static/46/fig14.PNG" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
+<p>示例图：<br><img src="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220616005347.png" class="lazyload" data-srcset="https://fastly.jsdelivr.net/gh/chenyicai0819/MyImage/Imgs/20220616005347.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="This is a picture without description" ></p>
 <p>完整代码：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> List&lt;List&lt;Integer&gt;&gt; permute(<span class="keyword">int</span>[] nums) &#123;</span><br><span class="line">    	<span class="comment">// 首先建立一个返回的集合</span></span><br><span class="line">        List&lt;List&lt;Integer&gt;&gt; list=<span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        List&lt;Integer&gt; output = <span class="keyword">new</span> ArrayList&lt;Integer&gt;();</span><br><span class="line">        <span class="comment">// 将输入的数组变成集合</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> num:nums)&#123;</span><br><span class="line">            output.add(num);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> n=nums.length;</span><br><span class="line">        <span class="comment">// 进入回溯</span></span><br><span class="line">        backtrack(n,output,list,<span class="number">0</span>);</span><br><span class="line">        <span class="keyword">return</span> list;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">backtrack</span><span class="params">(<span class="keyword">int</span> n,List&lt;Integer&gt; output,List&lt;List&lt;Integer&gt;&gt; list,<span class="keyword">int</span> first)</span></span>&#123;</span><br><span class="line">    <span class="comment">// 如果已经到了最后一个，就终止，将当前的数组结构加到集合中</span></span><br><span class="line">        <span class="keyword">if</span> (first==n)&#123;</span><br><span class="line">            list.add(<span class="keyword">new</span> ArrayList&lt;Integer&gt;(output));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = first; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="comment">// 动态维护数组(交换两个集合中任意两个元素（first和i）的位置)</span></span><br><span class="line">            Collections.swap(output, first, i);</span><br><span class="line">            <span class="comment">// 继续递归填下一个数</span></span><br><span class="line">            backtrack(n, output, list, first + <span class="number">1</span>);</span><br><span class="line">            <span class="comment">// 撤销操作（即撤销上一步中交换的操作）</span></span><br><span class="line">            Collections.swap(output, first, i);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -2871,10 +2872,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-06-15T23:32:01+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-06-16T00:54:05+08:00">
   <a class='notlink' href="/" onclick="return false;" title="Click me!" >
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Jun 15, 2022</p>
+    <p>更新于：Jun 16, 2022</p>
   </a>
 </div>
 
@@ -3388,8 +3389,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1655307254156')
-      volantis.js('/js/message.js?time=1655307254156', () => {
+      volantis.css('/css/message.css?time=1655312113092')
+      volantis.js('/js/message.js?time=1655312113092', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -3434,8 +3435,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1655307254156')
-      volantis.js('/js/message.js?time=1655307254156', () => {
+      volantis.css('/css/message.css?time=1655312113092')
+      volantis.js('/js/message.js?time=1655312113092', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -3494,8 +3495,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1655307254156')
-      volantis.js('/js/message.js?time=1655307254156', () => {
+      volantis.css('/css/message.css?time=1655312113092')
+      volantis.js('/js/message.js?time=1655312113092', () => {
         hideMessage(done);
       });
     } else {
@@ -3640,19 +3641,19 @@ volantis.pjax.push(bindToggleButton);
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1655307254156")
+        volantis.js("/js/plugins/sites.js?time=1655312113092")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1655307254156")
+        volantis.js("/js/plugins/friends.js?time=1655312113092")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1655307254156")
+        volantis.js("/js/plugins/contributors.js?time=1655312113092")
       }
     
   };
@@ -3843,7 +3844,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-<script src="/js/app.js?time=1655307254156.js"></script>
+<script src="/js/app.js?time=1655312113092.js"></script>
 
 
 <!-- optional -->
@@ -3856,7 +3857,7 @@ volantis.pjax.push(bindToggleButton);
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1655307254156");
+    return volantis.js("/js/search/hexo.js?time=1655312113092");
   }
 
   function loadSearchService() {
@@ -4130,7 +4131,7 @@ volantis.pjax.push(bindToggleButton);
 
 
   <script>
-  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp"];
+  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -4173,7 +4174,7 @@ volantis.pjax.push(bindToggleButton);
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/parallax.js?time=1655307254156').then(()=>{
+    volantis.js('/js/parallax.js?time=1655312113092').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4367,7 +4368,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://cyc0819.top/","name":"George's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/算法/","name":"算法"}},{"@type":"ListItem","position":3,"item":{"@id":"http://cyc0819.top/2022/06/15/2022-06-15-算法学习—回溯法/","name":"算法学习—回溯法"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"算法学习—回溯法","description":"","datePublished":"2022-06-15T15:36:35.000Z","dateModified":"2022-06-15T15:32:01.505Z","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://cyc0819.top/2022/06/15/2022-06-15-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%80%94%E5%9B%9E%E6%BA%AF%E6%B3%95/"},"author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/"},"publisher":{"@type":"Organization","name":"George's Blog","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://cyc0819.top/2022/06/15/2022-06-15-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%80%94%E5%9B%9E%E6%BA%AF%E6%B3%95/","wordCount":0,"articleSection":"算法","keywords":"算法","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://cyc0819.top/","name":"George's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/算法/","name":"算法"}},{"@type":"ListItem","position":3,"item":{"@id":"http://cyc0819.top/2022/06/15/2022-06-15-算法学习—回溯法/","name":"算法学习—回溯法"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"算法学习—回溯法","description":"","datePublished":"2022-06-15T15:36:35.000Z","dateModified":"2022-06-15T16:54:05.086Z","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://cyc0819.top/2022/06/15/2022-06-15-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%80%94%E5%9B%9E%E6%BA%AF%E6%B3%95/"},"author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/"},"publisher":{"@type":"Organization","name":"George's Blog","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://cyc0819.top/2022/06/15/2022-06-15-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%80%94%E5%9B%9E%E6%BA%AF%E6%B3%95/","wordCount":0,"articleSection":"算法","keywords":"算法","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 <!-- more -->

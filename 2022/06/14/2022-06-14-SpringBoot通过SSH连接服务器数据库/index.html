@@ -23,13 +23,13 @@
   <meta content="George&#39;s Blog" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1655307254164" as="style">
+  <link rel="preload" href="/css/style.css?time=1655312113101" as="style">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- 页面元数据 -->
   <title>SpringBoot通过SSH连接服务器数据库 - George's Blog</title>
-  <meta name="keywords" content="java,数据库,SpringBoot,null">
+  <meta name="keywords" content="java,SpringBoot,数据库,null">
   <meta name="description" content="SpringBoot通过SSH连接服务器数据库有一些情况下，数据库为了安全起见，往往只允许一些特定的 IP 进行连接，而此时我们其他的服务区想对其进行连接，一种方法是使得该数据库允许我们的服务器对其进行连接，一种是将数据库设置成所有人可连接，还有一种方法就是本文我们所讲的方法：通过 SSH 连接到被允许链接的服务器 IP ，将此服务器作为一个支点，然后再连接到数据库中。  以 Mysql 数据库为">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SpringBoot通过SSH连接服务器数据库">
@@ -42,8 +42,8 @@
 <meta property="article:modified_time" content="2022-06-14T14:35:10.384Z">
 <meta property="article:author" content="George Chan">
 <meta property="article:tag" content="java">
-<meta property="article:tag" content="数据库">
 <meta property="article:tag" content="SpringBoot">
+<meta property="article:tag" content="数据库">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
   <!-- feed -->
@@ -1882,8 +1882,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1655307254164" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1655307254164"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1655312113101" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1655312113101"></noscript>
     <script>
       var userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -2744,11 +2744,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       </span>
     
       <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-        <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url"><span itemprop="name">数据库</span></a>
+        <a href="/categories/java/SpringBoot/" itemprop="url"><span itemprop="name">SpringBoot</span></a>
       </span>
     
       <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-        <a href="/categories/java/SpringBoot/" itemprop="url"><span itemprop="name">SpringBoot</span></a>
+        <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url"><span itemprop="name">数据库</span></a>
       </span>
     
       <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -2858,8 +2858,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/java/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>java</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>数据库</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/SpringBoot/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>SpringBoot</p></a></div>
-  <span hidden itemprop="keywords">java 数据库 SpringBoot</span>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/java/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>java</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/SpringBoot/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>SpringBoot</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>数据库</p></a></div>
+  <span hidden itemprop="keywords">java SpringBoot 数据库</span>
 
 
         
@@ -2931,7 +2931,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class='prev' href='/2022/06/15/2022-06-15-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E2%80%94%E5%9B%9E%E6%BA%AF%E6%B3%95/'>
           <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>算法学习—回溯法</p>
-          <p class='content'>算法学习—回溯法1、回溯法的概念回溯法，顾名思义就是不断地重复枚举结果集，直到找到我们所要的结果。这种思想类似于暴力搜索，但是又与暴力搜索有着不同，回溯法使用了剪枝函数，除去了一些错误的解法。回...</p>
+          <p class='content'>[TOC]
+算法学习—回溯法1、回溯法的概念回溯法，顾名思义就是不断地重复枚举结果集，直到找到我们所要的结果。这种思想类似于暴力搜索，但是又与暴力搜索有着不同，回溯法使用了剪枝函数，除去了一些错...</p>
         </a>
       
       
@@ -3368,8 +3369,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1655307254163')
-      volantis.js('/js/message.js?time=1655307254163', () => {
+      volantis.css('/css/message.css?time=1655312113101')
+      volantis.js('/js/message.js?time=1655312113101', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -3414,8 +3415,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1655307254163')
-      volantis.js('/js/message.js?time=1655307254163', () => {
+      volantis.css('/css/message.css?time=1655312113101')
+      volantis.js('/js/message.js?time=1655312113101', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -3474,8 +3475,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1655307254163')
-      volantis.js('/js/message.js?time=1655307254163', () => {
+      volantis.css('/css/message.css?time=1655312113101')
+      volantis.js('/js/message.js?time=1655312113101', () => {
         hideMessage(done);
       });
     } else {
@@ -3620,19 +3621,19 @@ volantis.pjax.push(bindToggleButton);
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1655307254163")
+        volantis.js("/js/plugins/sites.js?time=1655312113101")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1655307254163")
+        volantis.js("/js/plugins/friends.js?time=1655312113101")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1655307254163")
+        volantis.js("/js/plugins/contributors.js?time=1655312113101")
       }
     
   };
@@ -3823,7 +3824,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-<script src="/js/app.js?time=1655307254164.js"></script>
+<script src="/js/app.js?time=1655312113101.js"></script>
 
 
 <!-- optional -->
@@ -3836,7 +3837,7 @@ volantis.pjax.push(bindToggleButton);
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1655307254163");
+    return volantis.js("/js/search/hexo.js?time=1655312113101");
   }
 
   function loadSearchService() {
@@ -4110,7 +4111,7 @@ volantis.pjax.push(bindToggleButton);
 
 
   <script>
-  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp"];
+  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -4153,7 +4154,7 @@ volantis.pjax.push(bindToggleButton);
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/parallax.js?time=1655307254163').then(()=>{
+    volantis.js('/js/parallax.js?time=1655312113101').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4347,7 +4348,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://cyc0819.top/","name":"George's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/java/","name":"java"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/数据库/","name":"数据库"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/java/SpringBoot/","name":"SpringBoot"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/数据库/SSH连接/","name":"SSH连接"}},{"@type":"ListItem","position":3,"item":{"@id":"http://cyc0819.top/2022/06/14/2022-06-14-SpringBoot通过SSH连接服务器数据库/","name":"SpringBoot通过SSH连接服务器数据库"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"SpringBoot通过SSH连接服务器数据库","description":"","datePublished":"2022-06-14T13:33:33.000Z","dateModified":"2022-06-14T14:35:10.384Z","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://cyc0819.top/2022/06/14/2022-06-14-SpringBoot%E9%80%9A%E8%BF%87SSH%E8%BF%9E%E6%8E%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%B0%E6%8D%AE%E5%BA%93/"},"author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/"},"publisher":{"@type":"Organization","name":"George's Blog","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://cyc0819.top/2022/06/14/2022-06-14-SpringBoot%E9%80%9A%E8%BF%87SSH%E8%BF%9E%E6%8E%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%B0%E6%8D%AE%E5%BA%93/","wordCount":0,"articleSection":"java","keywords":"java,数据库,SpringBoot","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://cyc0819.top/","name":"George's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/java/","name":"java"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/java/SpringBoot/","name":"SpringBoot"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/数据库/","name":"数据库"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/数据库/SSH连接/","name":"SSH连接"}},{"@type":"ListItem","position":3,"item":{"@id":"http://cyc0819.top/2022/06/14/2022-06-14-SpringBoot通过SSH连接服务器数据库/","name":"SpringBoot通过SSH连接服务器数据库"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"SpringBoot通过SSH连接服务器数据库","description":"","datePublished":"2022-06-14T13:33:33.000Z","dateModified":"2022-06-14T14:35:10.384Z","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage","@id":"http://cyc0819.top/2022/06/14/2022-06-14-SpringBoot%E9%80%9A%E8%BF%87SSH%E8%BF%9E%E6%8E%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%B0%E6%8D%AE%E5%BA%93/"},"author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/"},"publisher":{"@type":"Organization","name":"George's Blog","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://cyc0819.top/2022/06/14/2022-06-14-SpringBoot%E9%80%9A%E8%BF%87SSH%E8%BF%9E%E6%8E%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%B0%E6%8D%AE%E5%BA%93/","wordCount":0,"articleSection":"java","keywords":"java,SpringBoot,数据库","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 <!-- more -->
