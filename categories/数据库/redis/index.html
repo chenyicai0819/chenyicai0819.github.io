@@ -8,7 +8,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://cyc0819.top/archives/2021/11/"/>
+  <link rel="canonical" href="http://cyc0819.top/categories/数据库/redis/"/>
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
@@ -23,16 +23,16 @@
   <meta content="George&#39;s Blog" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1655558785269" as="style">
+  <link rel="preload" href="/css/style.css?time=1655558785470" as="style">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- 页面元数据 -->
-  <title>Archive: 2021/11 - George's Blog</title>
+  <title>Category: redis - George's Blog</title>
   <meta name="keywords" content="null">
   <meta property="og:type" content="website">
 <meta property="og:title" content="George&#39;s Blog">
-<meta property="og:url" content="http://cyc0819.top/archives/2021/11/index.html">
+<meta property="og:url" content="http://cyc0819.top/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/index.html">
 <meta property="og:site_name" content="George&#39;s Blog">
 <meta property="og:locale">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
@@ -1875,8 +1875,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1655558785269" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1655558785269"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1655558785470" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1655558785470"></noscript>
     <script>
       var userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -2303,7 +2303,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <!-- Custom Files head end-->
 </head>
   <body itemscope itemtype="http://schema.org/WebPage">
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2607,7 +2607,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  dock' style="display: ;">
+      <div id="none" class='cover-wrapper  dock' style="display: none;">
         
   <div id="parallax-window"></div>
 
@@ -2692,9 +2692,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
+
 <div id="l_main" class=''>
-	
-		
+  
+    
+      
   <section class="post-list">
     
       
@@ -2705,10 +2707,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
-          
-        
-          
-        
       
     
     
@@ -2716,7 +2714,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://cyc0819.top/2021/11/30/2021-11-30-%E5%9B%9E%E9%A1%BESSM%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88/">
+  <link itemprop="mainEntityOfPage" href="http://cyc0819.top/2022/06/18/2022-06-18-Redis%E8%BF%9B%E9%98%B6/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="George's Blog">
   </span>
@@ -2730,22 +2728,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/11/30/2021-11-30-%E5%9B%9E%E9%A1%BESSM%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88/"  itemprop="url">
-        回顾SSM框架整合
+      <a href="/2022/06/18/2022-06-18-Redis%E8%BF%9B%E9%98%B6/"  itemprop="url">
+        Redis进阶学习
       </a>
     </h2>
   
   <div class='md' itemprop="articleBody">
     
       
-        回顾SSM框架整合1、环境
-jdk 1.8.0_271
-Maven 3.6.1
-mySQL 8.0
-Tomcat 9.0.27
-
-2、创建数据库首先创建一个测试用的数据库 books：
-12345678create table books(    bid     int     not null primary key,    sname   varchar(255) null,    bn...
+        Redis进阶学习1、Redis事务1.1、事务的概念Redis 事务可以一次执行多个命令， 并且带有以下两个重要的保证：事务是一个单独的隔离操作：事务中的所有命令都会序列化、按顺序地执行。事务在执行的过程中，不会被其他客户端发送来的命令请求所打断；但是队列中的命令没有提交之前都不会实际被执行，因为事务提交前任何指令都不会被实际执行。也就是说 Redis 的事务具有隔离性，但是它没有隔离级别...
       
     
   </div>
@@ -2761,24 +2752,104 @@ Tomcat 9.0.27
             <meta itemprop="url" content="https://github.com/chenyicai0819">
           </span>
         
-        <time itemprop="dateCreated datePublished" datetime="2021-11-30T13:13:21+08:00">2021-11-30</time>
+        <time itemprop="dateCreated datePublished" datetime="2022-06-18T21:25:15+08:00">2022-06-18</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="/categories/java/">java</a><span class="sep"></span><a class="category-link" href="/categories/java/spring/">spring</a>
+          <a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a><span class="sep"></span><a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/">redis</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url"><span itemprop="name">数据库</span></a>
+            </span>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/" itemprop="url"><span itemprop="name">redis</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2022/06/18/2022-06-18-Redis%E8%BF%9B%E9%98%B6/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://cyc0819.top/2021/09/29/2021-09-29-Redis%E4%BD%BF%E7%94%A8%E6%B3%A8%E8%A7%A3%E5%AE%9E%E7%8E%B0%E4%BA%8C%E7%BA%A7%E7%BC%93%E5%AD%98/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="George's Blog">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2021/09/29/2021-09-29-Redis%E4%BD%BF%E7%94%A8%E6%B3%A8%E8%A7%A3%E5%AE%9E%E7%8E%B0%E4%BA%8C%E7%BA%A7%E7%BC%93%E5%AD%98/"  itemprop="url">
+        Redis使用注解实现二级缓存
+      </a>
+    </h2>
+  
+  <div class='md' itemprop="articleBody">
+    
+      
+        Redis使用注解实现二级缓存1、介绍上一篇文章中，我们实现二级缓存的方式是通过java代码判断Redis是否存在缓存，然后决定从何处取数据，但是这种方法在我们有大量的需要用到缓存的地方的时候，会产生大量的冗余代码，而且有大量的判断语句，让我们的代码不能够专注于业务上面，这样子是不太好的。
+所以在Spring的3.1版本之后就引入了对注解的支持，我们可以通过在类上、方法上标记注解来实现二级缓...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' target="_blank" rel="noopener" href='https://github.com/chenyicai0819'><img src='https://z3.ax1x.com/2021/09/30/4oKiUx.jpg' alt="This is a picture without description" ></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://z3.ax1x.com/2021/09/30/4oKiUx.jpg">
+            <meta itemprop="name" content="George chan">
+            <meta itemprop="url" content="https://github.com/chenyicai0819">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2021-09-29T17:34:06+08:00">2021-09-29</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/java/">java</a><span class="sep"></span><a class="category-link" href="/categories/java/redis/">redis</a><span class="sep"></span><a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a><span class="sep"></span><a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/">redis</a>
           
             <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
               <a href="/categories/java/" itemprop="url"><span itemprop="name">java</span></a>
             </span>
           
             <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/java/spring/" itemprop="url"><span itemprop="name">spring</span></a>
+              <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url"><span itemprop="name">数据库</span></a>
+            </span>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/java/redis/" itemprop="url"><span itemprop="name">redis</span></a>
+            </span>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/" itemprop="url"><span itemprop="name">redis</span></a>
             </span>
           
         
       </div>
       
         <div>
-          <a class='readmore' href='/2021/11/30/2021-11-30-%E5%9B%9E%E9%A1%BESSM%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88/' itemprop="url">
+          <a class='readmore' href='/2021/09/29/2021-09-29-Redis%E4%BD%BF%E7%94%A8%E6%B3%A8%E8%A7%A3%E5%AE%9E%E7%8E%B0%E4%BA%8C%E7%BA%A7%E7%BC%93%E5%AD%98/' itemprop="url">
             Read More
           </a>
         </div>
@@ -2794,7 +2865,7 @@ Tomcat 9.0.27
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://cyc0819.top/2021/11/27/2021-11-27-eCharts%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+  <link itemprop="mainEntityOfPage" href="http://cyc0819.top/2021/09/29/2021-09-29-Redis%E7%9A%84%E5%85%A5%E9%97%A8%E4%BD%BF%E7%94%A8/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="George's Blog">
   </span>
@@ -2808,18 +2879,19 @@ Tomcat 9.0.27
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/11/27/2021-11-27-eCharts%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"  itemprop="url">
-        eCharts学习笔记
+      <a href="/2021/09/29/2021-09-29-Redis%E7%9A%84%E5%85%A5%E9%97%A8%E4%BD%BF%E7%94%A8/"  itemprop="url">
+        Redis入门使用
       </a>
     </h2>
   
   <div class='md' itemprop="articleBody">
     
       
-        eCharts 学习笔记1、简介eCharts 是百度出品的一款基于 JavaScript 的数据可视化图表库，提供直观，生动，可交互，可个性化定制的数据可视化图表。最开始是由百度团队开源的，后面于2018年交由Apache基金会，称为ASF孵化项目。并于2021年1月26日正式毕业。
-2、在 Vue 中使用
-首先下载 eCharts：1npm install echarts --save
-...
+        Redis入门使用1、Redis简介
+简介Redis 是完全开源的，遵守 BSD 协议，是一个高性能的 key-value 数据库。Redis 与其他 key - value 缓存产品有以下三个特点：
+
+Redis支持数据的持久化，可以将内存中的数据保存在磁盘中，重启的时候可以再次加载进行使用。
+Redis不仅仅支持简单的key-value类型的数据，同时还提供list，set，zset，h...
       
     
   </div>
@@ -2835,256 +2907,32 @@ Tomcat 9.0.27
             <meta itemprop="url" content="https://github.com/chenyicai0819">
           </span>
         
-        <time itemprop="dateCreated datePublished" datetime="2021-11-27T22:04:25+08:00">2021-11-27</time>
+        <time itemprop="dateCreated datePublished" datetime="2021-09-29T01:01:06+08:00">2021-09-29</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a><span class="sep"></span><a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF/eCharts/">eCharts</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url"><span itemprop="name">前端</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%89%8D%E7%AB%AF/eCharts/" itemprop="url"><span itemprop="name">eCharts</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/11/27/2021-11-27-eCharts%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://cyc0819.top/2021/11/20/2021-11-20-SpringSecurity+JWT%E5%AE%9E%E7%8E%B0%E7%9A%84%E7%99%BB%E5%BD%95%E8%AE%A4%E8%AF%81/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="George's Blog">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/11/20/2021-11-20-SpringSecurity+JWT%E5%AE%9E%E7%8E%B0%E7%9A%84%E7%99%BB%E5%BD%95%E8%AE%A4%E8%AF%81/"  itemprop="url">
-        SpringSecurity+JWT实现的登录认证
-      </a>
-    </h2>
-  
-  <div class='md' itemprop="articleBody">
-    
-      
-        SpringSecurity+JWT实现的登录认证1、简介
-Spring Security在 Web 编程开发中，登录安全往往也是很重要的一个部分，而 Spring Security 所做得就是这个工作。在 java 领域，成熟的安全框架解决方案一般有 Apache Shiro、Spring Security 等两种技术选型。Apache Shiro 简单易用也算是一大优势，但其功能还是远不...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' target="_blank" rel="noopener" href='https://github.com/chenyicai0819'><img src='https://z3.ax1x.com/2021/09/30/4oKiUx.jpg' alt="This is a picture without description" ></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://z3.ax1x.com/2021/09/30/4oKiUx.jpg">
-            <meta itemprop="name" content="George chan">
-            <meta itemprop="url" content="https://github.com/chenyicai0819">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-11-20T09:39:55+08:00">2021-11-20</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/java/">java</a><span class="sep"></span><a class="category-link" href="/categories/java/JWT/">JWT</a><span class="sep"></span><a class="category-link" href="/categories/java/SpringSecurity/">SpringSecurity</a><span class="sep"></span><a class="category-link" href="/categories/java/%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/">权限管理</a>
+          <a class="category-link" href="/categories/java/">java</a><span class="sep"></span><a class="category-link" href="/categories/java/redis/">redis</a><span class="sep"></span><a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a><span class="sep"></span><a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/">redis</a>
           
             <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
               <a href="/categories/java/" itemprop="url"><span itemprop="name">java</span></a>
             </span>
           
             <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/java/%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/" itemprop="url"><span itemprop="name">权限管理</span></a>
+              <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url"><span itemprop="name">数据库</span></a>
             </span>
           
             <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/java/SpringSecurity/" itemprop="url"><span itemprop="name">SpringSecurity</span></a>
+              <a href="/categories/java/redis/" itemprop="url"><span itemprop="name">redis</span></a>
             </span>
           
             <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/java/JWT/" itemprop="url"><span itemprop="name">JWT</span></a>
+              <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/" itemprop="url"><span itemprop="name">redis</span></a>
             </span>
           
         
       </div>
       
         <div>
-          <a class='readmore' href='/2021/11/20/2021-11-20-SpringSecurity+JWT%E5%AE%9E%E7%8E%B0%E7%9A%84%E7%99%BB%E5%BD%95%E8%AE%A4%E8%AF%81/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://cyc0819.top/2021/11/17/2021-11-17-%E6%88%91%E4%BB%AC%E8%BF%98%E6%9C%89%E5%BF%85%E8%A6%81%E6%B7%B1%E5%85%A5%E5%AD%A6%E4%B9%A0jQuery%E5%90%97/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="George's Blog">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/11/17/2021-11-17-%E6%88%91%E4%BB%AC%E8%BF%98%E6%9C%89%E5%BF%85%E8%A6%81%E6%B7%B1%E5%85%A5%E5%AD%A6%E4%B9%A0jQuery%E5%90%97/"  itemprop="url">
-        我们还有必要深入学习jQuery吗
-      </a>
-    </h2>
-  
-  <div class='md' itemprop="articleBody">
-    
-      
-        我们还有必要深入学习 jQuery 吗表达想法前几天在某个视频平台看到一个博主的视频，该博主对于『 我们还有必要深入学习 jQuery 吗？』这个问题做出了一个很肯定的答案：就是没有必要。
-而他对于这个结论并也不是空穴来风，同样是做出了一系列的解释。比如说：jQuery 已经过时了、Vue.js以及React.js这样的前端框架能更好地实现jQuery所能实现的功能等等。
-当然，作为该博主的...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' target="_blank" rel="noopener" href='https://github.com/chenyicai0819'><img src='https://z3.ax1x.com/2021/09/30/4oKiUx.jpg' alt="This is a picture without description" ></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://z3.ax1x.com/2021/09/30/4oKiUx.jpg">
-            <meta itemprop="name" content="George chan">
-            <meta itemprop="url" content="https://github.com/chenyicai0819">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-11-17T23:27:41+08:00">2021-11-17</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a><span class="sep"></span><a class="category-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E9%9A%8F%E7%AC%94/" itemprop="url"><span itemprop="name">随笔</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url"><span itemprop="name">前端</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/11/17/2021-11-17-%E6%88%91%E4%BB%AC%E8%BF%98%E6%9C%89%E5%BF%85%E8%A6%81%E6%B7%B1%E5%85%A5%E5%AD%A6%E4%B9%A0jQuery%E5%90%97/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://cyc0819.top/2021/11/12/2021-11-12-Service%E4%B8%AD%E5%8C%85%E5%90%AB%E5%93%AA%E4%BA%9B%E4%BB%A3%E7%A0%81/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="George's Blog">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2021/11/12/2021-11-12-Service%E4%B8%AD%E5%8C%85%E5%90%AB%E5%93%AA%E4%BA%9B%E4%BB%A3%E7%A0%81/"  itemprop="url">
-        Service中包含哪些代码
-      </a>
-    </h2>
-  
-  <div class='md' itemprop="articleBody">
-    
-      
-        Service中包含哪些代码1、简介Service层中 = 核心功能(几十行 上百代码) + 额外功能(附加功能)
-
-核心功能业务运算DAO调用
-额外功能 
-不属于业务
-可有可无
-代码量很小 
-
-
-
-以及：事务、日志、性能…
-Service层，作为程序的业务层面，其中最重要的必然是程序的业务流程，只有对程序的业务流程有足够的了解，才能写出优秀的Service层代码。
-不冗余，是一个程序员代码...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' target="_blank" rel="noopener" href='https://github.com/chenyicai0819'><img src='https://z3.ax1x.com/2021/09/30/4oKiUx.jpg' alt="This is a picture without description" ></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://z3.ax1x.com/2021/09/30/4oKiUx.jpg">
-            <meta itemprop="name" content="George chan">
-            <meta itemprop="url" content="https://github.com/chenyicai0819">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2021-11-12T23:49:01+08:00">2021-11-12</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/java/">java</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/java/" itemprop="url"><span itemprop="name">java</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/11/12/2021-11-12-Service%E4%B8%AD%E5%8C%85%E5%90%AB%E5%93%AA%E4%BA%9B%E4%BB%A3%E7%A0%81/' itemprop="url">
+          <a class='readmore' href='/2021/09/29/2021-09-29-Redis%E7%9A%84%E5%85%A5%E9%97%A8%E4%BD%BF%E7%94%A8/' itemprop="url">
             Read More
           </a>
         </div>
@@ -3104,7 +2952,8 @@ Service层，作为程序的业务层面，其中最重要的必然是程序的�
   
 
 
-	
+    
+  
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -3462,7 +3311,7 @@ Service层，作为程序的业务层面，其中最重要的必然是程序的�
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Sat Jun 18 2022 21:26:16 GMT+0800 (中国标准时间)</div>
+            <div id="last-update" style="display: none;">Sat Jun 18 2022 21:26:19 GMT+0800 (中国标准时间)</div>
             <div id="last-update-show">2022-06-18 日</div>
           
         </div>
@@ -3613,14 +3462,14 @@ Service层，作为程序的业务层面，其中最重要的必然是程序的�
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.remove("show");
+    l_header.classList.add("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="half";
-      cover_wrapper.style.display="";
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
       scroll_down.style.display="none";
     
   
@@ -3691,8 +3540,8 @@ Service层，作为程序的业务层面，其中最重要的必然是程序的�
   <script>
   volantis.message = (title, message, option = {}, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1655558785269')
-      volantis.js('/js/message.js?time=1655558785269', () => {
+      volantis.css('/css/message.css?time=1655558785469')
+      volantis.js('/js/message.js?time=1655558785469', () => {
         tozashMessage(title, message, option, done);
       });
     } else {
@@ -3737,8 +3586,8 @@ Service层，作为程序的业务层面，其中最重要的必然是程序的�
 
   volantis.question = (title, message, option = {}, success = null, cancel = null, done = null) => {
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1655558785269')
-      volantis.js('/js/message.js?time=1655558785269', () => {
+      volantis.css('/css/message.css?time=1655558785469')
+      volantis.js('/js/message.js?time=1655558785469', () => {
         tozashQuestion(title, message, option, success, cancel, done);
       });
     } else {
@@ -3797,8 +3646,8 @@ Service层，作为程序的业务层面，其中最重要的必然是程序的�
     }
     
     if (typeof iziToast === "undefined") {
-      volantis.css('/css/message.css?time=1655558785269')
-      volantis.js('/js/message.js?time=1655558785269', () => {
+      volantis.css('/css/message.css?time=1655558785469')
+      volantis.js('/js/message.js?time=1655558785469', () => {
         hideMessage(done);
       });
     } else {
@@ -3943,19 +3792,19 @@ volantis.pjax.push(bindToggleButton);
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1655558785269")
+        volantis.js("/js/plugins/sites.js?time=1655558785469")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1655558785269")
+        volantis.js("/js/plugins/friends.js?time=1655558785469")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1655558785269")
+        volantis.js("/js/plugins/contributors.js?time=1655558785469")
       }
     
   };
@@ -4146,7 +3995,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-<script src="/js/app.js?time=1655558785269.js"></script>
+<script src="/js/app.js?time=1655558785470.js"></script>
 
 
 <!-- optional -->
@@ -4159,7 +4008,7 @@ volantis.pjax.push(bindToggleButton);
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1655558785269");
+    return volantis.js("/js/search/hexo.js?time=1655558785470");
   }
 
   function loadSearchService() {
@@ -4433,7 +4282,7 @@ volantis.pjax.push(bindToggleButton);
 
 
   <script>
-  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp"];
+  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -4476,7 +4325,7 @@ volantis.pjax.push(bindToggleButton);
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/parallax.js?time=1655558785269').then(()=>{
+    volantis.js('/js/parallax.js?time=1655558785469').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4670,7 +4519,7 @@ volantis.pjax.push(bindToggleButton);
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://cyc0819.top/","name":"George's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"http://cyc0819.top/archives/2021/","name":"2021年"}},{"@type":"ListItem","position":4,"item":{"@id":"http://cyc0819.top/archives/2021/11/","name":"11月"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"George's Blog","url":"http://cyc0819.top/","keywords":null,"description":"","author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","description":""},"publisher":{"@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://cyc0819.top?s={search_term_string}"},"query-input":"required name=search_term_string"}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://cyc0819.top/","name":"George's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://cyc0819.top/categories/redis/","name":"redis"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"George's Blog","url":"http://cyc0819.top/","keywords":null,"description":"","author":{"@type":"Person","name":"George Chan","image":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png"},"url":"http://cyc0819.top/","description":""},"publisher":{"@type":"Organization","name":"George's Blog","url":"http://cyc0819.top/","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://cyc0819.top?s={search_term_string}"},"query-input":"required name=search_term_string"}}]</script>
 
 
 <!-- more -->
